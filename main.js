@@ -6,11 +6,11 @@ const dots = document.getElementsByClassName("carousel__dot")
 let dotPosition = 0
 const totalDots = dots.length
 
-
 document.getElementById("carousel__btn--next").addEventListener("click", moveToNextSlide)
-
 document.getElementById("carousel__btn--prev").addEventListener("click", moveToPrevSlide)
 
+
+// hide all slides
 function hideAllSlides() {
     for (let slide of slides) {
         slide.classList.remove("carousel__item--visible")
@@ -19,6 +19,7 @@ function hideAllSlides() {
     }
 }
 
+//hide all active dots
 function hideAllDots() {
     for (let dot of dots) {
         dot.classList.remove("carousel__dot--active")
@@ -26,8 +27,33 @@ function hideAllDots() {
     }
 }
 
-
+//move to next slide function
 function moveToNextSlide() {
+    hideAllSlides()
+    hideAllDots()
+
+
+    if (slidePosition === totalSlides - 1) {
+        slidePosition = 0
+    } else {
+        slidePosition++
+    }
+
+    slides[slidePosition].classList.add("carousel__item--visible")
+
+    if (dotPosition === totalDots - 1) {
+        dotPosition = 0
+    } else {
+        dotPosition++
+    }
+
+    dots[dotPosition].classList.add("carousel__dot--active")
+
+
+}
+
+//autoplay slider
+setInterval(() => {
     hideAllSlides()
     hideAllDots()
 
@@ -47,9 +73,9 @@ function moveToNextSlide() {
 
     dots[dotPosition].classList.add("carousel__dot--active")
 
-}
+}, 8000);
 
-
+//move to prev slide function
 function moveToPrevSlide() {
     hideAllSlides()
     hideAllDots()
@@ -69,7 +95,11 @@ function moveToPrevSlide() {
     }
 
     dots[dotPosition].classList.add("carousel__dot--active")
+
 }
+
+
+
 
 
 

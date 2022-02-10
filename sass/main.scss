@@ -10,9 +10,11 @@
 @import 'base/utilities';
 //components
 @import 'components/carousel';
+@import 'components/buttons';
 //layout
 @import 'layout/grid-layout';
 @import 'layout/sidebar';
 @import 'layout/header';
+@import 'layout/featured-grid';
 //pages
 @import 'pages/home';

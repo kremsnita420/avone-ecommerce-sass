@@ -5,16 +5,21 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
     justify-content: space-between;
 
 
-
+    h1 {
+        line-height: 1;
+        margin: auto 0;
+    }
 
 
     &__logo {
-
+        margin: 1rem;
         max-width: 9rem;
         max-height: 3rem;
+        transform: translateY(0.25rem);
 
     }
 
@@ -30,12 +35,17 @@
 
     &__nav-list-item {
         display: block;
-        padding: 1rem;
+        margin: 2rem;
         text-transform: uppercase;
         cursor: pointer;
+        transition: color .2s;
 
         &:not(:last-child) {
             margin-right: 1em;
+        }
+
+        &:hover {
+            color: $color-red;
         }
     }
 
@@ -70,8 +80,9 @@
 
 
     &__nav-icon {
-        font-size: 2rem;
-        display: inline-block;
+        font-size: 1.5rem;
+
+        line-height: 1;
         cursor: pointer;
 
         &:not(:last-child) {

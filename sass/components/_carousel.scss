@@ -1,8 +1,3 @@
-.carousel__item--hidden {
-    display: none;
-}
-
-
 .carousel {
     grid-column: full-start / full-end;
 
@@ -13,6 +8,12 @@
         width: 100%;
         height: 100%;
         display: none;
+        position: relative;
+
+        &--hidden {
+            display: none;
+        }
+
 
 
         &--image-1 {
@@ -26,9 +27,58 @@
         &--image-2 {
             background: url('../../img/hero-banner-2.jpg');
             background-size: cover;
-            background-position: center top;
+            background-position: center center;
             width: 100%;
             height: 100%;
+        }
+
+
+
+        &__text-wrapper {
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60rem;
+            transition: all .2s;
+
+
+            &--scale-up {
+                transform: translate(-50%, -50%) scale(1);
+
+            }
+
+
+            &--scale-down {
+                transform: translate(-50%, -50%) scale(.5);
+            }
+
+
+        }
+
+        &__text-wrapper--1 {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 75%;
+            transition: all .2s;
+
+
+        }
+
+        &__text-wrapper--2 {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transition: all 2s;
+
+
         }
     }
 
@@ -50,13 +100,14 @@
         transform: translate(-50%, -50%);
 
         button {
-            background-color: transparent;
-
+            background-color: rgba($color-white, .6);
+            border-radius: 3px;
             border: 0;
         }
 
         button i {
-            color: $color-white;
+            color: $color-black;
+            padding: 1rem;
             opacity: .5;
             transition: opacity .5s;
 
