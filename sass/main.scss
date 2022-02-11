@@ -9,12 +9,15 @@
 @import 'base/typography';
 @import 'base/utilities';
 //components
-@import 'components/carousel';
 @import 'components/buttons';
+@import 'components/carousel';
+@import 'components/shop-now-window';
+@import 'components/product-card';
 //layout
-@import 'layout/grid-layout';
-@import 'layout/sidebar';
-@import 'layout/header';
 @import 'layout/featured-grid';
+@import 'layout/grid-layout';
+@import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/new-arrivals';
 //pages
 @import 'pages/home';

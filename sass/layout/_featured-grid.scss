@@ -20,9 +20,15 @@
         }
     }
 
+    &__item {
+        position: relative;
+
+    }
+
     &__item--1 {
         grid-area: 1 / 1 / 4 / 4;
         overflow: hidden;
+
     }
 
     &__item--2 {
