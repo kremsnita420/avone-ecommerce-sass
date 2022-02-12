@@ -1,4 +1,5 @@
 .container {
+    position: relative;
     background-color: $color-white;
     display: grid;
     grid-template-columns: [sidebar-start] 0rem [sidebar-end full-start] minmax(3rem,
