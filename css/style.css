@@ -1,6 +1,6 @@
 @keyframes fadeVisibility {
   0% {
-    opacity: 0; }
+    opacity: .5; }
   100% {
     opacity: 1;
     transform: opacity linear; } }
@@ -136,8 +136,7 @@ body {
       position: absolute;
       top: 50%;
       left: 75%;
-      animation: scaleVisibility 1s;
-      transition: all .2s; }
+      animation: scaleVisibility 1s; }
     .carousel__item__text-wrapper--2 {
       display: flex;
       flex-direction: column;
@@ -303,7 +302,6 @@ body {
 
 .slider {
   height: 50rem;
-  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -320,17 +318,34 @@ body {
     cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items: center;
-    transition: all 0.5s; }
+    align-items: center; }
   .slider--img-1 {
     background-image: url("../../img/new-arival-1-1.jpg"); }
+    .slider--img-1:hover {
+      background-image: url("/img/new-arival-1-2.jpg");
+      animation: fadeVisibility 1s; }
   .slider--img-2 {
     background-image: url("/img/new-arival-1-2.jpg"); }
+    .slider--img-2:hover {
+      background-image: url("/img/new-arival-1-1.jpg");
+      animation: fadeVisibility 1s; }
   .slider--img-3 {
     background-image: url("/img/new-arival-1-1.jpg"); }
+    .slider--img-3:hover {
+      background-image: url("/img/new-arival-1-2.jpg");
+      animation: fadeVisibility 1s; }
   .slider--img-4 {
     background-image: url("/img/new-arival-1-2.jpg"); }
+    .slider--img-4:hover {
+      background-image: url("/img/new-arival-1-1.jpg");
+      animation: fadeVisibility 1s; }
   .slider--img-5 {
     background-image: url("/img/new-arival-1-1.jpg"); }
+    .slider--img-5:hover {
+      background-image: url("/img/new-arival-1-2.jpg");
+      animation: fadeVisibility 1s; }
   .slider--img-6 {
     background-image: url("/img/new-arival-1-2.jpg"); }
+    .slider--img-6:hover {
+      background-image: url("/img/new-arival-1-1.jpg");
+      animation: fadeVisibility 1s; }
