@@ -17,6 +17,21 @@
 			crossorigin="anonymous"
 		/>
 
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+			integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+			integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="shortcut icon" type="image/png" href="img/favicon_32x32.png" />
 
@@ -233,53 +248,98 @@
 			<p class="small-subtitle mb-lg">
 				Shop our new arrivals from established brands
 			</p>
-			<!-- ! Product cards -->
-			<div class="new-arrivals__cards">
-				<!-- ! card 1 -->
-				<div class="product-card">
-					<div class="product-card__image-container mb-xsm"></div>
-					<div class="product-card__info-container">
-						<p class="small-subtitle mb-xsm">Toledo Mules Shoes</p>
-						<span class="product-card__price">€177,95</span>
-						<div class="product-card__stars mb-xsm">
-							<i class="product-card__star fas fa-star"></i>
-							<i class="product-card__star fas fa-star"></i>
-							<i class="product-card__star fas fa-star"></i>
-							<i class="product-card__star fas fa-star"></i>
-							<i class="product-card__star fas fa-star"></i>
-						</div>
-						<div class="product-card__radio-wrapper">
-							
-								<input
-									type="radio"
-									class="product-card__radio-input"
-									id="color1"
-									name="red"
-								/>
-							
-						
-								<input
-									type="radio"
-									class="product-card__radio-input"
-									id="color2"
-									name="green"
-								/>
-							
-							
-								<input
-									type="radio"
-									class="product-card__radio-input"
-									id="color1"
-									name="blue"
-								/>
-							
+
+			<!-- ! Slider  -->
+			<div class="slider">
+				<div class="slider__container">
+					<div class="slider__sub-container">
+						<div class="slider__slider-wrapper">
+							<div class="slider__my-slider">
+								<!-- slide 1 -->
+								<div>
+									<div class="slider__slide">
+										<div class="slider__slide-img slider--img-1"></div>
+
+										<div class="slider__slide-info">
+											<h3 class="slider__slide-header">Item 1</h3>
+											<p class="slider__slide-price">€123,44</p>
+										</div>
+									</div>
+								</div>
+								<!-- slide 2 -->
+								<div>
+									<div class="slider__slide">
+										<div class="slider__slide-img slider--img-2"></div>
+
+										<div class="slider__slide-info">
+											<h3 class="slider__slide-header">Item 2</h3>
+											<p class="slider__slide-price">€123,44</p>
+										</div>
+									</div>
+								</div>
+								<!-- slide 3 -->
+								<div>
+									<div class="slider__slide">
+										<div class="slider__slide-img slider--img-3"></div>
+
+										<div class="slider__slide-info">
+											<h3 class="slider__slide-header">Item 3</h3>
+											<p class="slider__slide-price">€123,44</p>
+										</div>
+									</div>
+								</div>
+								<!-- slide 4 -->
+								<div>
+									<div class="slider__slide">
+										<div class="slider__slide-img slider--img-4"></div>
+
+										<div class="slider__slide-info">
+											<h3 class="slider__slide-header">Item 4</h3>
+											<p class="slider__slide-price">€123,44</p>
+										</div>
+									</div>
+								</div>
+								<!-- slide 4 -->
+								<div>
+									<div class="slider__slide">
+										<div class="slider__slide-img slider--img-4"></div>
+
+										<div class="slider__slide-info">
+											<h3 class="slider__slide-header">Item 4</h3>
+											<p class="slider__slide-price">€123,44</p>
+										</div>
+									</div>
+								</div>
+								<!-- slide 5 -->
+								<div>
+									<div class="slider__slide">
+										<div class="slider__slide-img slider--img-5"></div>
+
+										<div class="slider__slide-info">
+											<h3 class="slider__slide-header">Item 5</h3>
+											<p class="slider__slide-price">€123,44</p>
+										</div>
+									</div>
+								</div>
+								<!-- slide 6 -->
+								<div>
+									<div class="slider__slide">
+										<div class="slider__slide-img slider--img-6"></div>
+
+										<div class="slider__slide-info">
+											<h3 class="slider__slide-header">Item 6</h3>
+											<p class="slider__slide-price">€123,44</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				
+			</div>
 		</section>
 
 		<script src="hero-carousel.js"></script>
-		<script src="featured-carousel.js"></script>
+		<script src="new-arrivals-carousel.js"></script>
 	</body>
 </html>

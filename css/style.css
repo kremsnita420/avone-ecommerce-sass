@@ -201,35 +201,6 @@ body {
   padding: 2rem;
   background-color: #fff; }
 
-.product-card {
-  width: 27rem;
-  height: 45rem; }
-  .product-card:not(:last-child) {
-    margin-right: 2rem; }
-  .product-card__image-container {
-    background-image: url("../../img/new-arival-1-1.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 35rem; }
-  .product-card__info-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .product-card__price {
-    font-size: 1.4rem; }
-  .product-card__star {
-    display: inline-block;
-    font-size: 1.2rem;
-    letter-spacing: -5px;
-    line-height: 1;
-    color: #FFB503; }
-  .product-card__radio-wrapper {
-    display: flex; }
-  .product-card__radio-input {
-    display: block; }
-    .product-card__radio-input:not(:last-child) {
-      margin-right: .5rem; }
-
 .featured-grid {
   grid-column: center-start / center-end;
   display: grid;
@@ -329,6 +300,35 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .new-arrivals__cards {
+
+.slider {
+  height: 50rem;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .slider__sub-container {
+    width: 100%;
+    margin: auto; }
+  .slider__slide-img {
+    width: 100%;
+    height: 275px;
+    background-position: top;
+    background-size: cover;
+    cursor: pointer;
     display: flex;
-    align-items: center; }
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s; }
+  .slider--img-1 {
+    background-image: url("../../img/new-arival-1-1.jpg"); }
+  .slider--img-2 {
+    background-image: url("/img/new-arival-1-2.jpg"); }
+  .slider--img-3 {
+    background-image: url("/img/new-arival-1-1.jpg"); }
+  .slider--img-4 {
+    background-image: url("/img/new-arival-1-2.jpg"); }
+  .slider--img-5 {
+    background-image: url("/img/new-arival-1-1.jpg"); }
+  .slider--img-6 {
+    background-image: url("/img/new-arival-1-2.jpg"); }
