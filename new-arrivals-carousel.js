@@ -1,5 +1,6 @@
 let slider = tns({
     container: '.slider__my-slider',
+    controlsContainer: "#slider__actions",
     'slideBy': '1',
     'speed': 400,
     'nav': false,

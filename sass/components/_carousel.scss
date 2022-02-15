@@ -91,22 +91,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
 
-        button {
-            background-color: rgba($color-white, .6);
-            border-radius: 3px;
-            border: 0;
-        }
+    }
 
-        button i {
-            color: $color-black;
-            padding: 1rem;
-            opacity: 0.1;
-            transition: all .4s;
-
-            &:hover {
-                opacity: 1;
-            }
-        }
+    &:hover &__buttons &__btn {
+        opacity: 1;
     }
 
     // ! Dots
