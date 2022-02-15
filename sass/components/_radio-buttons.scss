@@ -1,0 +1,72 @@
+.radio-buttons {
+    display: flex;
+
+
+
+    &__radio-label {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        cursor: pointer;
+
+    }
+
+    &__radio-input {
+        display: none;
+
+    }
+
+    &__radio-input:checked~&__radio-label &__radio-span::after {
+        background-color: red;
+    }
+
+    &__radio-input:hover~&__radio-label &__radio-span::after {
+        background-color: red;
+    }
+
+    &__radio-span {
+        position: relative;
+        display: block;
+        line-height: 1;
+        height: 1.4rem;
+        width: 1.4rem;
+        margin: 1rem;
+        border-radius: 50%;
+
+
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            bottom: -.2rem;
+            left: -.2rem;
+            z-index: -1;
+            width: 130%;
+            height: 130%;
+            border-radius: 50%;
+
+            border: 1px solid gray;
+
+
+        }
+
+
+
+
+        &--red {
+            background-color: $color-red;
+        }
+
+        &--green {
+            background-color: $color-green;
+        }
+
+        &--blue {
+            background-color: $color-blue;
+        }
+    }
+
+
+}

@@ -4,7 +4,7 @@ let slider = tns({
     'slideBy': '1',
     'speed': 400,
     'nav': false,
-    autoplay: true,
+    autoplay: false,
     controls: true,
     autoplayButtonOutput: false,
     items: 4,

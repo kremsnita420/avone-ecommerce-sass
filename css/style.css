@@ -61,7 +61,7 @@ body {
   font-size: 1.4rem; }
 
 .medium-subtitle {
-  font-size: 1.8rem; }
+  font-size: 1.6rem; }
 
 .mb-xsm {
   margin-bottom: 1rem; }
@@ -205,6 +205,45 @@ body {
   z-index: 1000;
   padding: 2rem;
   background-color: #fff; }
+
+.radio-buttons {
+  display: flex; }
+  .radio-buttons__radio-label {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    cursor: pointer; }
+  .radio-buttons__radio-input {
+    display: none; }
+  .radio-buttons__radio-input:checked ~ .radio-buttons__radio-label .radio-buttons__radio-span::after {
+    background-color: red; }
+  .radio-buttons__radio-input:hover ~ .radio-buttons__radio-label .radio-buttons__radio-span::after {
+    background-color: red; }
+  .radio-buttons__radio-span {
+    position: relative;
+    display: block;
+    line-height: 1;
+    height: 1.4rem;
+    width: 1.4rem;
+    margin: 1rem;
+    border-radius: 50%; }
+    .radio-buttons__radio-span::after {
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: -.2rem;
+      left: -.2rem;
+      z-index: -1;
+      width: 130%;
+      height: 130%;
+      border-radius: 50%;
+      border: 1px solid gray; }
+    .radio-buttons__radio-span--red {
+      background-color: #FF6464; }
+    .radio-buttons__radio-span--green {
+      background-color: #4db338; }
+    .radio-buttons__radio-span--blue {
+      background-color: #1417be; }
 
 .featured-grid {
   grid-column: center-start / center-end;
@@ -357,6 +396,16 @@ body {
     .slider--img-6:hover {
       background-image: url("/img/new-arival-1-1.jpg");
       animation: fadeVisibility 1s; }
+  .slider__slide-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .slider__slide-colors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
   .slider__actions {
     display: flex;
     justify-content: space-between;
