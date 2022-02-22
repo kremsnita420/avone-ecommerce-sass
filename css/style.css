@@ -223,19 +223,20 @@ body {
     position: relative;
     display: block;
     line-height: 1;
-    height: 1.4rem;
-    width: 1.4rem;
+    height: 1.1rem;
+    width: 1.1rem;
     margin: 1rem;
-    border-radius: 50%; }
+    border-radius: 50%;
+    padding: .8rem; }
     .radio-buttons__radio-span::after {
       content: '';
       position: absolute;
       display: block;
-      bottom: -.2rem;
-      left: -.2rem;
+      bottom: -.25rem;
+      left: -.35rem;
       z-index: -1;
-      width: 130%;
-      height: 130%;
+      width: 140%;
+      height: 140%;
       border-radius: 50%;
       border: 1px solid gray; }
     .radio-buttons__radio-span--red {
