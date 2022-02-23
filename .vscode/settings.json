@@ -19,5 +19,8 @@
         "titleBar.inactiveForeground": "#15202b99"
     },
     "peacock.color": "#bde250",
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "cSpell.words": [
+        "Avone"
+    ]
 }

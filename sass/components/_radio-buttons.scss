@@ -20,7 +20,7 @@
         background-color: red;
     }
 
-    &__radio-input:checked~&__radio-label &__radio-span::after {
+    &__radio-input:checked ~ &__radio-label &__radio-span::after {
         background-color: red;
     }
 
@@ -43,12 +43,11 @@
             position: absolute;
             display: block;
             bottom: -.35rem;
-            left: -.25rem;
+            left: -.35rem;
             z-index: -1;
             width: 140%;
             height: 140%;
             border-radius: 50%;
-
             border: 1px solid gray;
 
 

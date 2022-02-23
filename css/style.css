@@ -231,7 +231,7 @@ body {
       position: absolute;
       display: block;
       bottom: -.35rem;
-      left: -.25rem;
+      left: -.35rem;
       z-index: -1;
       width: 140%;
       height: 140%;
@@ -400,11 +400,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .slider__slide-colors {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; }
   .slider__actions {
     display: flex;
     justify-content: space-between;
