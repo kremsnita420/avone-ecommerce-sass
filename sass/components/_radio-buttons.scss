@@ -12,17 +12,18 @@
     }
 
     &__radio-input {
-        display: none;
+        //display: none;
 
+    }
+
+    &__radio-label:hover &__radio-span::after {
+        background-color: red;
     }
 
     &__radio-input:checked~&__radio-label &__radio-span::after {
         background-color: red;
     }
 
-    &__radio-input:hover~&__radio-label &__radio-span::after {
-        background-color: red;
-    }
 
     &__radio-span {
         position: relative;
@@ -41,8 +42,8 @@
             content: '';
             position: absolute;
             display: block;
-            bottom: -.25rem;
-            left: -.35rem;
+            bottom: -.35rem;
+            left: -.25rem;
             z-index: -1;
             width: 140%;
             height: 140%;
