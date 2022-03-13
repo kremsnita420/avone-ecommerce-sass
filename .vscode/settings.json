@@ -21,6 +21,8 @@
     "peacock.color": "#bde250",
     "git.ignoreLimitWarning": true,
     "cSpell.words": [
-        "Avone"
+        "Avone",
+        "checkmark",
+        "glidejs"
     ]
 }

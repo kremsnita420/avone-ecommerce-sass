@@ -23,6 +23,8 @@
 		"postcss-cli": "^9.1.0"
 	},
 	"dependencies": {
+		"@glidejs/glide": "^3.5.2",
+		"@splidejs/splide": "^3.6.12",
 		"tiny-slider": "^2.9.4"
 	}
 }

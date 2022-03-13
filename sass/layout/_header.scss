@@ -28,6 +28,10 @@
         align-items: center;
         justify-content: center;
 
+        @media screen and (max-width: 1000px){
+            display: none;
+        }
+
 
     }
 
@@ -71,8 +75,6 @@
                 padding: 3px 5px;
             }
         }
-
-
 
     }
 

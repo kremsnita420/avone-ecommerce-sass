@@ -12,7 +12,7 @@
     }
 
     &__radio-input {
-        //display: none;
+        display: none;
 
     }
 
@@ -27,8 +27,6 @@
 
     &__radio-span {
         position: relative;
-        display: block;
-        line-height: 1;
         height: 1.1rem;
         width: 1.1rem;
         margin: 1rem;
@@ -41,12 +39,12 @@
         &::after {
             content: '';
             position: absolute;
-            display: block;
+            
             bottom: -.35rem;
             left: -.35rem;
             z-index: -1;
-            width: 140%;
-            height: 140%;
+            width: 2.4rem;
+            height: 2.4rem;
             border-radius: 50%;
             border: 1px solid gray;
 

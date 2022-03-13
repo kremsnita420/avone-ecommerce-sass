@@ -42,7 +42,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 60rem;
+            max-width: 50rem;
 
 
         }
@@ -54,8 +54,9 @@
             position: absolute;
             top: 50%;
             left: 75%;
+            transform: translate(-50%,-50%);
             animation: scaleVisibility 1s;
-
+            transition: all .2s;
 
 
         }
@@ -67,6 +68,7 @@
             position: absolute;
             top: 50%;
             left: 25%;
+            transform: translate(-50%,-50%);
             animation: scaleVisibility 1s;
             transition: all .2s;
 

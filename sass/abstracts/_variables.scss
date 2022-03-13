@@ -3,6 +3,12 @@ $font-primary: 'Poppins',
 sans-serif;
 $defultFontSize: 1.6rem;
 
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px/16px
+$bp-large: 62.5em; // 1000px/16px
+$bp-medium: 50em; // 800px/16px
+$bp-small: 37.5em; // 600px/16px
+
 //COLORS    
 $color-black: #000;
 $color-grey-1: #cccccc;
