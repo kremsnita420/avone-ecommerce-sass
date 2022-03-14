@@ -1,41 +1,60 @@
 // !extends nad helpers
 %heading {
-    font-family: $font-primary;
-    font-weight: 400;
+	font-family: $font-primary;
+	font-weight: 400;
 }
 
 // ! Headings
 .heading-1 {
-    @extend %heading;
+	@extend %heading;
 
-    font-size: 4.25rem;
-    font-weight: 900;
-    line-height: 1.1;
+	font-size: 4.25rem;
+	font-weight: 900;
+	line-height: 1.1;
 }
 
 .heading-2 {
-    @extend %heading;
+	@extend %heading;
 
-    font-size: 2.5rem;
-    font-weight: 900;
-    line-height: 1.1;
-    text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: 900;
+	line-height: 1.1;
+	text-transform: uppercase;
+}
+
+.heading-3 {
+	@extend %heading;
+
+	font-size: 1.6rem;
+	font-weight: 900;
+	line-height: 1.1;
 }
 
 .small-title {
-    font-size: 1.4rem;
-    text-transform: uppercase;
+	font-size: 1.4rem;
+	font-weight: 900;
 }
 
 .medium-title {
-    font-size: 1.7rem;
-    text-transform: uppercase;
-}
-
-.small-subtitle {
-    font-size: 1.4rem;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .medium-subtitle {
-    font-size: 1.6rem;
+	@extend %heading;
+
+	font-size: 1.6rem;
+}
+
+.small-subtitle {
+	@extend %heading;
+
+	font-size: 1.3rem;
+	font-weight: 400;
+}
+
+.xsm-subtitle {
+	font-size: 1.1rem;
+	font-weight: 400;
 }

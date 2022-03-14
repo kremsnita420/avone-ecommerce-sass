@@ -1,6 +1,5 @@
 //FONTS
-$font-primary: 'Poppins',
-sans-serif;
+$font-primary: 'Poppins', sans-serif;
 $defultFontSize: 1.6rem;
 
 // RESPONSIVE BREAKPOINTS
@@ -9,11 +8,12 @@ $bp-large: 62.5em; // 1000px/16px
 $bp-medium: 50em; // 800px/16px
 $bp-small: 37.5em; // 600px/16px
 
-//COLORS    
+//COLORS
 $color-black: #000;
-$color-grey-1: #cccccc;
+$color-dark-gray: #131313;
+$color-grey-1: #faf8f8;
 $color-white: #fff;
-$color-yellow: #FFB503;
-$color-red: #FF6464;
+$color-yellow: #ffb503;
+$color-red: #ff6464;
 $color-green: #4db338;
-$color-blue:#1417be;
+$color-blue: #1417be;

@@ -1,12 +1,12 @@
 .container {
-    position: relative;
-    background-color: $color-white;
-    display: grid;
-    grid-template-columns: [sidebar-start] 0rem [sidebar-end full-start] minmax(3rem,
-            1fr) [center-start] repeat(8, [col-start] minmax(5rem, 14rem) [col-end]) [center-end] minmax(3rem,
-            1fr) [full-end];
+	position: relative;
+	background-color: $color-white;
+	display: grid;
+	grid-template-columns:
+		[sidebar-start] 0rem [sidebar-end full-start] minmax(3rem, 1fr)
+		[center-start] repeat(8, [col-start] minmax(5rem, 14rem) [col-end])
+		[center-end] minmax(3rem, 1fr)
+		[full-end];
 
-    grid-template-rows: 6rem minmax(10rem, 70rem);
-
-
+	grid-template-rows: 6rem minmax(10rem, 70rem);
 }

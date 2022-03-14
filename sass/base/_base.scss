@@ -2,29 +2,39 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    // border: 1px solid red;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	// border: 1px solid red;
 }
 
 //BASE STYLES
 html {
-    letter-spacing: 1px;
-    box-sizing: border-box;
-    font-size: 62.5%; //10px/16px = 62.5% -> 1rem = 10px
-    scroll-behavior: smooth;
-
+	letter-spacing: 1px;
+	box-sizing: border-box;
+	font-size: 62.5%; //10px/16px = 62.5% -> 1rem = 10px
+	scroll-behavior: smooth;
 }
 
 body {
-    font-size: $defultFontSize;
-    font-family: $font-primary;
-    color: $color-black;
-    font-weight: 300;
+	font-size: $defultFontSize;
+	font-family: $font-primary;
+	color: $color-black;
+	font-weight: 300;
+}
+
+a,
+a:visited {
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.4s;
+}
+
+ul {
+	list-style: none;
 }
 
 ::selection {
-    background-color: $color-red;
-    color: $color-grey-1;
+	background-color: $color-red;
+	color: $color-grey-1;
 }
