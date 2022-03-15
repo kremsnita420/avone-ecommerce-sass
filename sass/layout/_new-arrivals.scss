@@ -69,15 +69,22 @@
 	max-height: 38rem;
 
 	display: grid;
-	grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+	grid-template: repeat(2, minmax(10rem, 1fr)) / repeat(6, minmax(10rem, 1fr));
 	gap: 2rem;
+
+	@media screen and (max-width: 770px) {
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		max-height: 60rem;
+	}
 
 	&__image {
 		width: 100%;
 		height: 100%;
 		display: block;
-		object-fit: cover;
-		background-position: bottom;
+		background-size: cover;
+		background-position: top;
+		overflow: hidden;
 
 		transition: all 0.8s;
 
@@ -92,10 +99,18 @@
 		&--item-1 {
 			grid-area: 1 / 1 / 3 / 4;
 			overflow: hidden;
+
+			@media screen and (max-width: 770px) {
+				grid-area: 1 / 1 / 2 / 7;
+			}
 		}
 		&--item-2 {
 			grid-area: 1 / 4 / 3 / 7;
 			overflow: hidden;
+
+			@media screen and (max-width: 770px) {
+				grid-area: 2 / 1 / 3 / 7;
+			}
 		}
 	}
 }

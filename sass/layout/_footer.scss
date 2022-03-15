@@ -10,11 +10,30 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
+
+		@media screen and (max-width: 1000px) {
+			flex-direction: column;
+		}
 	}
 
 	&__navigation-block {
 		flex: 1;
-		padding-left: 3rem;
+		padding-right: 3rem;
+		@media screen and (max-width: 1000px) {
+			padding-right: 0;
+		}
+	}
+
+	&__block-set-wrapper {
+		display: flex;
+
+		@media screen and (max-width: 1000px) {
+			flex-direction: column;
+		}
+	}
+
+	&__block-set {
+		display: flex;
 	}
 
 	&__social-links {
@@ -40,5 +59,10 @@
 		&:hover {
 			opacity: 0.8;
 		}
+	}
+
+	&__logo {
+		max-width: 9rem;
+		max-height: 2.5rem;
 	}
 }

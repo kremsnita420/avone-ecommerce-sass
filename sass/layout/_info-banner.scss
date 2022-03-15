@@ -1,12 +1,17 @@
 .info-banner {
 	grid-column: sidebar-start / full-end;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: start;
-	align-items: center;
 
-	@media screen and (min-width: 1135px) {
+	&__wrapper {
+		grid-column: center-start / center-end;
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
+		align-items: flex-start;
+
+		@media screen and (max-width: 1166px) {
+			justify-content: start;
+		}
 	}
 
 	background-color: $color-dark-gray;
