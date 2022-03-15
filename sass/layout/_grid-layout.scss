@@ -8,5 +8,9 @@
 		[center-end] minmax(3rem, 1fr)
 		[full-end];
 
-	grid-template-rows: 6rem minmax(10rem, 70rem);
+	grid-template-rows: 6rem minmax(10rem, 70vh);
+
+	@media screen and (max-width: 770px) {
+		grid-template-rows: 6rem minmax(10rem, 40vh);
+	}
 }
