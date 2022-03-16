@@ -42,7 +42,8 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			width: 50vw;
+			max-width: 57rem;
+			min-width: 30rem;
 		}
 
 		&__text-wrapper--1 {
@@ -52,7 +53,6 @@
 			position: absolute;
 			top: 50%;
 			left: 75%;
-			width: 50vw;
 			transform: translate(-50%, -50%);
 			animation: scaleVisibility 1s;
 			transition: all 0.2s;
@@ -70,7 +70,7 @@
 			position: absolute;
 			top: 50%;
 			left: 25%;
-			max-width: 57rem;
+
 			transform: translate(-50%, -50%);
 			animation: scaleVisibility 1s;
 			transition: all 0.4s;

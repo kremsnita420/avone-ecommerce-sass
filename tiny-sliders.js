@@ -42,7 +42,6 @@ let slider2 = tns({
 
     responsive: {
 
-
         1200: {
             items: 4,
             gutter: 20,

@@ -2,6 +2,8 @@ const slides = document.getElementsByClassName("carousel__item")
 let slidePosition = 0
 const totalSlides = slides.length
 
+let interval = 6000
+
 const dots = document.getElementsByClassName("carousel__dot")
 let dotPosition = 0
 const totalDots = dots.length
@@ -73,7 +75,7 @@ setInterval(() => {
 
     dots[dotPosition].classList.add("carousel__dot--active")
 
-}, 8000);
+}, interval);
 
 //move to prev slide function
 function moveToPrevSlide() {

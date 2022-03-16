@@ -5,7 +5,7 @@
 	&:visited {
 		text-transform: uppercase;
 		text-decoration: none;
-		padding: 1.5rem 2.5rem;
+		padding: 1rem 2rem;
 		display: inline-block;
 		border: none;
 		cursor: pointer;
@@ -30,8 +30,8 @@
 .carousel__btn {
 	background-color: rgba($color-white, 0.5);
 	border-radius: 3px;
-	border: 0;
-	padding: 0.25rem 0.5rem;
+	border: none;
+	padding: 0 0.5rem;
 	transition: opacity 0.4s;
 	cursor: pointer;
 

@@ -1,0 +1,35 @@
+.company-logos {
+	&__container {
+		max-width: 80vw;
+		margin: auto;
+
+		@media screen and (min-width: 1200px) {
+			width: 112rem;
+		}
+	}
+
+	&__sub-container {
+		width: 100%;
+		margin: auto;
+		position: relative;
+
+		.carousel__btn {
+			background-color: white;
+			opacity: 1;
+		}
+
+		.slider__controls1 {
+			@media screen and (min-width: 1200px) {
+				display: none;
+			}
+		}
+	}
+
+	&__company-logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 2rem;
+		width: 14rem;
+	}
+}

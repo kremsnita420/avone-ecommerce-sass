@@ -17,14 +17,6 @@
 			crossorigin="anonymous"
 		/>
 
-		<!-- Tiny slider -->
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
-			integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
-
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
@@ -167,6 +159,7 @@
 
 		<!-- ! Featured grid -->
 		<section class="featured-grid mb-lg">
+			<!-- item 1 -->
 			<div class="featured-grid__item featured-grid__item--1">
 				<img
 					src="/img/featured-image-1.jpg"
@@ -179,7 +172,7 @@
 					<div class="btn btn--black">Discover Now</div>
 				</div>
 			</div>
-
+			<!-- item 2 -->
 			<div class="featured-grid__item featured-grid__item--2">
 				<img
 					src="/img/featured-image-2.jpg"
@@ -192,7 +185,7 @@
 					<div class="btn btn--black">Shop Now</div>
 				</div>
 			</div>
-
+			<!-- item 3 -->
 			<div class="featured-grid__item featured-grid__item--3">
 				<img
 					src="/img/featured-image-3.jpg"
@@ -205,7 +198,7 @@
 					<div class="btn btn--black">Discover Now</div>
 				</div>
 			</div>
-
+			<!-- item 4 -->
 			<div class="featured-grid__item featured-grid__item--4">
 				<img
 					src="/img/featured-image-4.jpg"
@@ -222,13 +215,13 @@
 
 		<!-- ! New arrivals -->
 		<section class="new-arrivals mb-lg">
-			<!-- ! Title -->
+			<!-- title -->
 			<h3 class="heading-2 mb-xsm">New Arrivals</h3>
-			<p class="small-subtitle">
+			<p class="small-subtitle mb-xsm">
 				Shop our new arrivals from established brands
 			</p>
 
-			<!--! Slider -->
+			<!-- slider -->
 			<div class="slider">
 				<div class="slider__container">
 					<div class="slider__sub-container">
@@ -237,12 +230,27 @@
 							<!-- slide 1 -->
 							<div>
 								<div class="slider__slide">
-									<div class="slider__slide-img slider__slide-img--img-1"></div>
+									<div class="slider__slide-img slider__slide-img--img-1">
+										<span class="countdown-timer">timer</span>
+									</div>
+
 									<br />
 
-									<div>
-										<h3>California 1</h3>
-										<p>Los Angeles</p>
+									<div class="slider__slide-info">
+										<p class="small-subtitle">Innerbloom Puffer Jacket</p>
+										<p class="small-subtitle">
+											<strike>€694,95</strike>
+											<span class="slider__slide-span small-subtitle">
+												€443,95
+											</span>
+										</p>
+										<div title="rating" class="slider__slide-stars">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -335,6 +343,7 @@
 				</div>
 			</div>
 
+			<!-- two column grid -->
 			<div class="two-column-grid my-lg">
 				<div class="two-column-grid__item two-column-grid__item--item-1">
 					<img
@@ -367,6 +376,7 @@
 				</div>
 			</div>
 
+			<!-- company logos -->
 			<div class="company-logos">
 				<div class="company-logos__container">
 					<div class="company-logos__sub-container">
@@ -570,9 +580,9 @@
 							</a>
 							<div class="footer__custom-texts">
 								<p class="small-subtitle mb-xsm">
-									55 Gallaxy Enque,
+									55 Galaxy Enqueue,
 									<br />
-									2568 steet, 23568 NY
+									2568 street, 23568 NY
 								</p>
 								<p class="small-subtitle mb-xsm">
 									<b>Phone:</b>
@@ -601,7 +611,10 @@
 
 						<!-- block 2 -->
 						<div class="footer__navigation-block">
-							<h4 class="accordion-toggle medium-title mb-xsm">Information</h4>
+							<h4 class="accordion-toggle medium-title mb-xsm">
+								Information
+								<i class="fas fa-chevron-down"></i>
+							</h4>
 							<ul
 								id="acordion-toggle-1"
 								class="footer__nav-links small-subtitle"
@@ -618,7 +631,7 @@
 								<li class="footer__nav-link mb-xsm">
 									<a href="#">My account</a>
 								</li>
-								<li class="footer__nav-link">
+								<li class="footer__nav-link mb-xsm">
 									<a href="#">Orders and Returns</a>
 								</li>
 							</ul>
@@ -627,7 +640,10 @@
 					<div class="footer__block-set">
 						<!-- block 3 -->
 						<div class="footer__navigation-block">
-							<h4 class="accordion-toggle medium-title mb-xsm">Quick Shop</h4>
+							<h4 class="accordion-toggle medium-title mb-xsm">
+								Quick Shop
+								<i class="fas fa-chevron-down"></i>
+							</h4>
 							<ul class="footer__nav-links small-subtitle">
 								<li class="footer__nav-link mb-xsm">
 									<a href="#">Fashion</a>
@@ -644,7 +660,7 @@
 								<li class="footer__nav-link mb-xsm">
 									<a href="#">Home Decor</a>
 								</li>
-								<li class="footer__nav-link">
+								<li class="footer__nav-link mb-xsm">
 									<a href="#">Shoes</a>
 								</li>
 							</ul>
@@ -654,6 +670,7 @@
 						<div class="footer__navigation-block">
 							<h4 class="accordion-toggle medium-title mb-xsm">
 								Customer Service
+								<i class="fas fa-chevron-down"></i>
 							</h4>
 							<ul class="footer__nav-links small-subtitle">
 								<li class="footer__nav-link mb-xsm">
@@ -668,7 +685,7 @@
 								<li class="footer__nav-link mb-xsm">
 									<a href="#">Privacy Policy</a>
 								</li>
-								<li class="footer__nav-link">
+								<li class="footer__nav-link mb-xsm">
 									<a href="#">Support Center</a>
 								</li>
 							</ul>
@@ -678,7 +695,9 @@
 
 				<!-- block 5 -->
 				<div class="footer__navigation-block">
-					<h4 class="medium-title mb-xsm">Newsletter</h4>
+					<h4 class="medium-title mb-xsm" style="cursor: default">
+						Newsletter
+					</h4>
 					<p class="small-subtitle mb-xsm">
 						Enter your email to receive daily news and get 20% off coupon for
 						all items.
@@ -691,6 +710,14 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- Tiny slider -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+			integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 
 		<script src="/script.js"></script>
 		<script src="/tiny-sliders.js"></script>
