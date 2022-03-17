@@ -1,5 +1,5 @@
 .blog {
-	grid-column: sidebar-start / full-end;
+	grid-column: full-start / full-end;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -9,6 +9,10 @@
 
 	a:hover {
 		color: $color-red;
+	}
+
+	p {
+		text-align: center;
 	}
 
 	&__container {
@@ -39,7 +43,7 @@
 		}
 	}
 
-	&__logo {
+	&__image {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -48,7 +52,7 @@
 		img {
 			display: block;
 			cursor: pointer;
-			width: 100%;
+			width: 90%;
 			background-size: cover;
 			transition: opacity 0.4s;
 

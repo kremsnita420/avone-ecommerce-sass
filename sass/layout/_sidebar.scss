@@ -1,6 +1,44 @@
 .sidebar {
-    grid-column: sidebar-start / sidebar-end;
-    grid-row: 1 / -1;
+	background-color: lightcoral;
+	grid-column: sidebar-start / sidebar-end;
+	grid-row: 1 / 15;
 
-    background-color: lightblue;
+	position: fixed;
+	width: 30rem;
+	height: 100vh;
+	z-index: 3000;
+	top: 0;
+	left: 0;
+	padding: 1rem;
+	display: none;
+
+	li,
+	&__dropdown-title {
+		border-bottom: 1px solid $color-grey-1;
+		margin: 1rem 0;
+	}
+
+	&__close-icon {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	&__navigation-block {
+	}
+
+	&__dropdown-title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	&__nav {
+		display: none;
+	}
+
+	&__nav-link {
+	}
 }

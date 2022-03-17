@@ -1,16 +1,17 @@
 .container {
+	overflow-x: hidden;
 	position: relative;
 	background-color: $color-white;
 	display: grid;
 	grid-template-columns:
-		[sidebar-start] 0rem [sidebar-end full-start] minmax(3rem, 1fr)
+		[sidebar-start] 0 [sidebar-end full-start] minmax(3rem, 1fr)
 		[center-start] repeat(8, [col-start] minmax(1rem, 14rem) [col-end])
 		[center-end] minmax(3rem, 1fr)
 		[full-end];
 
-	grid-template-rows: 6rem minmax(10rem, 70vh);
+	grid-template-rows: 6rem 70vh repeat(13, min-content);
 
 	@media screen and (max-width: 770px) {
-		grid-template-rows: 6rem minmax(10rem, 40vh);
+		grid-template-rows: 6rem 40vh repeat(13, min-content);
 	}
 }

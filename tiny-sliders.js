@@ -36,6 +36,7 @@ let slider2 = tns({
     slideBy: '1',
     autoplay: false,
     "nav": false,
+    viewportMax: true,
     controlsContainer: ".slider__controls",
     prevButton: ".slider__previous",
     nextButton: ".slider__next",
