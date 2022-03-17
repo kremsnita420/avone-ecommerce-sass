@@ -1,5 +1,5 @@
 .sidebar {
-	background-color: lightcoral;
+	background-color: $color-white;
 	grid-column: sidebar-start / sidebar-end;
 	grid-row: 1 / 15;
 
@@ -8,14 +8,20 @@
 	height: 100vh;
 	z-index: 3000;
 	top: 0;
-	left: 0;
-	padding: 1rem;
-	display: none;
+
+	transition: all 1s;
+
+	&--visible {
+		left: 0;
+	}
+	&--hidden {
+		left: -30rem;
+	}
 
 	li,
 	&__dropdown-title {
-		border-bottom: 1px solid $color-grey-1;
 		margin: 1rem 0;
+		border-bottom: 1px solid $color-grey-1;
 	}
 
 	&__close-icon {
@@ -25,7 +31,10 @@
 		cursor: pointer;
 	}
 
-	&__navigation-block {
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	&__dropdown-title {
@@ -37,8 +46,11 @@
 
 	&__nav {
 		display: none;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	&__nav-link {
+		border-bottom: 1px solid $color-grey-1;
 	}
 }

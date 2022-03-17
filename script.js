@@ -1,16 +1,49 @@
-
-
 const acc = document.getElementsByClassName("accordion-toggle");
+const navOpen = document.getElementsByClassName('header__hamburger-menu')
+const navClose = document.getElementsByClassName('sidebar__close-icon')
+const sidebar = document.getElementsByClassName('sidebar')
+
 let i;
 
+// ! Navigation toggle
+
+
+navClose[0].addEventListener("click", () => {
+
+    if (sidebar[0].classList === "sidebar--hidden") {
+        sidebar[0].classList.remove("sidebar--hidden")
+        sidebar[0].classList.add("sidebar--visible")
+
+    } else {
+        sidebar[0].classList.add("sidebar--hidden")
+        sidebar[0].classList.remove("sidebar--visible")
+
+    }
+});
+
+navOpen[0].addEventListener("click", () => {
+
+    if (sidebar[0].classList === "sidebar--hidden") {
+        sidebar[0].classList.add("sidebar--hidden")
+        sidebar[0].classList.remove("sidebar--visible")
+        console.log('1')
+    } else {
+        sidebar[0].classList.remove("sidebar--hidden")
+        sidebar[0].classList.add("sidebar--visible")
+        console.log('2')
+    }
+});
+
+
+// ! Accordion toggle
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
         this.classList.toggle("active");
         const panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
+        if (panel.style.display === "flex") {
             panel.style.display = "none";
         } else {
-            panel.style.display = "block";
+            panel.style.display = "flex";
         }
     });
 }
