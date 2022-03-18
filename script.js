@@ -6,8 +6,6 @@ const sidebar = document.getElementsByClassName('sidebar')
 let i;
 
 // ! Navigation toggle
-
-
 navClose[0].addEventListener("click", () => {
 
     if (sidebar[0].classList === "sidebar--hidden") {
@@ -26,11 +24,11 @@ navOpen[0].addEventListener("click", () => {
     if (sidebar[0].classList === "sidebar--hidden") {
         sidebar[0].classList.add("sidebar--hidden")
         sidebar[0].classList.remove("sidebar--visible")
-        console.log('1')
+
     } else {
         sidebar[0].classList.remove("sidebar--hidden")
         sidebar[0].classList.add("sidebar--visible")
-        console.log('2')
+
     }
 });
 
@@ -40,10 +38,10 @@ for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
         this.classList.toggle("active");
         const panel = this.nextElementSibling;
-        if (panel.style.display === "flex") {
+        if (panel.style.display === "block") {
             panel.style.display = "none";
         } else {
-            panel.style.display = "flex";
+            panel.style.display = "block";
         }
     });
 }
@@ -79,19 +77,4 @@ const x = setInterval(function () {
     }
 }, 1000);
 
-function startTimer(duration, display) {
-    let timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
 
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = duration;
-        }
-    }, 1000);
-}

@@ -739,7 +739,7 @@ ul {
         flex-direction: column; } }
   .footer__navigation-block {
     flex: 1;
-    padding-right: 3rem; }
+    padding-right: 2rem; }
     @media screen and (max-width: 1000px) {
       .footer__navigation-block {
         padding-right: 0; } }
@@ -773,11 +773,13 @@ ul {
     display: flex; }
     @media screen and (max-width: 770px) {
       .footer__social-links {
-        border-bottom: 1px solid #faf8f8;
         margin-bottom: 1rem; } }
-  @media screen and (max-width: 770px) {
-    .footer__nav-links {
-      display: none; } }
+  .footer__nav-links {
+    flex-direction: column; }
+    @media screen and (max-width: 770px) {
+      .footer__nav-links {
+        display: none;
+        border-bottom: 1px solid #faf8f8; } }
   .footer__nav-link a {
     transition: all 0.5s; }
     .footer__nav-link a:hover {

@@ -14,7 +14,7 @@
 
 	&__navigation-block {
 		flex: 1;
-		padding-right: 3rem;
+		padding-right: 2rem;
 
 		@media screen and (max-width: 1000px) {
 			padding-right: 0;
@@ -67,14 +67,15 @@
 		display: flex;
 
 		@media screen and (max-width: 770px) {
-			border-bottom: 1px solid $color-grey-1;
 			margin-bottom: 1rem;
 		}
 	}
 
 	&__nav-links {
+		flex-direction: column;
 		@media screen and (max-width: 770px) {
 			display: none;
+			border-bottom: 1px solid $color-grey-1;
 		}
 	}
 
