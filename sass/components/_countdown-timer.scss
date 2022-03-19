@@ -1,0 +1,24 @@
+.countdown-timer {
+	display: flex;
+
+	span {
+		display: inline-block;
+	}
+
+	&__block-wrapper {
+		display: flex;
+		flex-direction: column;
+
+		background-color: rgba($color-white, 0.8);
+		padding: 0.4rem;
+		margin: 1rem 0.2rem;
+	}
+
+	&__block {
+	}
+
+	&__time-block {
+		font-weight: 700;
+		font-size: 1.2rem;
+	}
+}

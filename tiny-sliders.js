@@ -2,7 +2,7 @@ let slider = tns({
     container: '.company-logos__my-logos',
     items: 2,
     gutter: 20,
-    edgePadding: 0,
+    edgePadding: 20,
     slideBy: '1',
     autoplay: false,
     "nav": false,
@@ -20,6 +20,7 @@ let slider = tns({
         },
         1200: {
             items: 5,
+            edgePadding: 0,
         },
 
 
@@ -34,7 +35,7 @@ let slider2 = tns({
     container: '.slider__my-slider',
     items: 1,
     gutter: 20,
-    edgePadding: 10,
+    edgePadding: 30,
     slideBy: '1',
     loop: false,
     rewind: true,
@@ -47,13 +48,14 @@ let slider2 = tns({
 
     responsive: {
 
-        1200: {
+        1020: {
             items: 4,
-            gutter: 20,
+            edgePadding: 0,
+
         },
-        770: {
+        720: {
             items: 3,
-            gutter: 20,
+            edgePadding: 0,
         },
         480: {
             items: 2,
@@ -70,7 +72,7 @@ let slider2 = tns({
 let slider3 = tns({
     container: '.blog__my-articles',
     items: 1,
-    edgePadding: 0,
+    edgePadding: 10,
     slideBy: '1',
     autoplay: false,
     "nav": false,
@@ -86,6 +88,7 @@ let slider3 = tns({
         },
         1200: {
             items: 3,
+            edgePadding: 0,
         }
     }
 });

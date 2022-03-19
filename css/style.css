@@ -73,6 +73,11 @@ ul {
   text-transform: uppercase;
   font-weight: normal; }
 
+.small-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: normal; }
+
 .medium-subtitle {
   font-size: 1.6rem; }
 
@@ -409,6 +414,20 @@ ul {
     .company-logos__sub-container .slider__controls1 {
       display: none; } }
 
+.countdown-timer {
+  display: flex; }
+  .countdown-timer span {
+    display: inline-block; }
+  .countdown-timer__block-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.4rem;
+    margin: 1rem 0.2rem; }
+  .countdown-timer__time-block {
+    font-weight: 700;
+    font-size: 1.2rem; }
+
 .featured-grid {
   grid-column: center-start / center-end;
   display: grid;
@@ -608,7 +627,6 @@ ul {
         width: 112rem; } }
   .slider__sub-container {
     width: 100%;
-    margin: auto;
     position: relative; }
     .slider__sub-container:hover .carousel__btn {
       opacity: 1; }
@@ -616,19 +634,62 @@ ul {
     position: relative; }
   .slider__slide-img {
     width: 100%;
-    height: 36rem;
+    height: 33rem;
     background-position: center;
     background-size: cover;
     cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     z-index: 4; }
     .slider__slide-img--img-1 {
       background-image: url("/img/new-arival-1-1.jpg"); }
       .slider__slide-img--img-1:hover {
         background-image: url("/img/new-arival-1-2.jpg");
         animation: fadeVisibility 2s; }
+  .slider__slide-colors {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .slider__slide-color {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0.5rem; }
+    .slider__slide-color input {
+      display: none; }
+  .slider__slide-color-span {
+    display: inline-block;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    transform: scale(0.7);
+    border-radius: 50%; }
+    .slider__slide-color-span--red {
+      background-color: lightcoral; }
+    .slider__slide-color-span--green {
+      background-color: #4db338; }
+    .slider__slide-color-span--black {
+      background-color: #000; }
+  .slider__slide-color-span::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid;
+    border-radius: 50%;
+    width: 140%;
+    height: 140%; }
+  .slider__slide-color:hover .slider__slide-color-span--red::before,
+  input:checked ~ .slider__slide-color-span--red::before {
+    background-color: lightcoral; }
+  .slider__slide-color:hover .slider__slide-color-span--green::before,
+  input:checked ~ .slider__slide-color-span--green::before {
+    background-color: #4db338; }
+  .slider__slide-color:hover .slider__slide-color-span--black::before,
+  input:checked ~ .slider__slide-color-span--black::before {
+    background-color: #000; }
   .slider__controls {
     display: flex;
     justify-content: space-between;
@@ -638,6 +699,9 @@ ul {
     width: 100%;
     z-index: 2;
     transform: translate(-50%, -50%); }
+    @media screen and (max-width: 770px) {
+      .slider__controls {
+        width: 95%; } }
 
 .blog {
   grid-column: full-start / full-end;
@@ -676,7 +740,7 @@ ul {
     .blog__image img {
       display: block;
       cursor: pointer;
-      width: 90%;
+      width: 100%;
       background-size: cover;
       transition: opacity 0.4s; }
       .blog__image img:hover {
@@ -694,8 +758,9 @@ ul {
     display: flex;
     flex-wrap: wrap;
     text-align: left;
+    justify-content: center;
     align-items: flex-start; }
-    @media screen and (max-width: 1230px) {
+    @media screen and (max-width: 1260px) {
       .info-banner__wrapper {
         justify-content: start; } }
   .info-banner__item {

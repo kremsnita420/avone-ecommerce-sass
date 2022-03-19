@@ -27,7 +27,7 @@
 
 	&__sub-container {
 		width: 100%;
-		margin: auto;
+
 		position: relative;
 
 		&:hover .carousel__btn {
@@ -41,14 +41,14 @@
 
 	&__slide-img {
 		width: 100%;
-		height: 36rem;
+		height: 33rem;
 		background-position: center;
 		background-size: cover;
 		cursor: pointer;
 
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-end;
 		z-index: 4;
 
 		&--img-1 {
@@ -61,6 +61,68 @@
 		}
 	}
 
+	&__slide-colors {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__slide-color {
+		input {
+			display: none;
+		}
+
+		cursor: pointer;
+		display: inline-block;
+		margin: 0 0.5rem;
+	}
+
+	&__slide-color-span {
+		display: inline-block;
+		position: relative;
+		width: 2rem;
+		height: 2rem;
+		transform: scale(0.7);
+
+		border-radius: 50%;
+
+		&--red {
+			background-color: lightcoral;
+		}
+		&--green {
+			background-color: $color-green;
+		}
+		&--black {
+			background-color: $color-black;
+		}
+	}
+
+	&__slide-color-span::before {
+		content: '';
+		position: absolute;
+		display: inline-block;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: 1px solid;
+		border-radius: 50%;
+		width: 140%;
+		height: 140%;
+	}
+
+	&__slide-color:hover &__slide-color-span--red::before,
+	input:checked ~ &__slide-color-span--red::before {
+		background-color: lightcoral;
+	}
+	&__slide-color:hover &__slide-color-span--green::before,
+	input:checked ~ &__slide-color-span--green::before {
+		background-color: $color-green;
+	}
+	&__slide-color:hover &__slide-color-span--black::before,
+	input:checked ~ &__slide-color-span--black::before {
+		background-color: $color-black;
+	}
+
 	&__controls {
 		display: flex;
 		justify-content: space-between;
@@ -70,5 +132,9 @@
 		width: 100%;
 		z-index: 2;
 		transform: translate(-50%, -50%);
+
+		@media screen and (max-width: 770px) {
+			width: 95%;
+		}
 	}
 }
