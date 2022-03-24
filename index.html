@@ -1,874 +1,921 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
-			rel="stylesheet"
-		/>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-			crossorigin="anonymous"
-		/>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+		rel="stylesheet" />
 
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
-			integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="shortcut icon" type="image/png" href="img/favicon_32x32.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+		integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-		<title>Avone | Online eCommerce website</title>
-	</head>
-	<body class="container">
-		<!-- ! Sidebar -->
-		<div class="sidebar sidebar--hidden medium-title py-xsm">
-			<div class="sidebar__close-icon px-xsm">
-				<i class="fas fa-times-circle"></i>
-				<p style="text-transform: lowercase">Close Menu</p>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" type="image/png" href="img/favicon_32x32.png" />
+
+	<title>Avone | Online eCommerce website</title>
+</head>
+
+<body class="container">
+	<!-- ! Sidebar -->
+	<div class="sidebar sidebar--hidden medium-title py-xsm">
+		<div class="sidebar__close-icon px-xsm">
+			<i class="fas fa-times-circle"></i>
+			<p style="text-transform: lowercase">Close Menu</p>
+		</div>
+		<div class="sidebar__wrapper">
+			<div class="sidebar__navigation-block">
+				<div class="sidebar__dropdown-title accordion-toggle px-xsm">
+					<p>Shop</p>
+					<i class="fas fa-plus"></i>
+				</div>
+
+				<ul id="acordion-toggle" class="sidebar__nav">
+					<li class="sidebar__nav-link mb-xsm px-sm">
+						<a href="#">About us</a>
+					</li>
+					<li class="sidebar__nav-link mb-xsm px-sm">
+						<a href="#">Contact us</a>
+					</li>
+					<li class="sidebar__nav-link mb-xsm px-sm">
+						<a href="#">Career</a>
+					</li>
+					<li class="sidebar__nav-link mb-xsm px-sm">
+						<a href="#">My account</a>
+					</li>
+					<li class="sidebar__nav-link mb-xsm px-sm">
+						<a href="#">Orders and Returns</a>
+					</li>
+				</ul>
 			</div>
-			<div class="sidebar__wrapper">
-				<div class="sidebar__navigation-block">
-					<div class="sidebar__dropdown-title accordion-toggle px-xsm">
-						<p>Shop</p>
-						<i class="fas fa-plus"></i>
-					</div>
 
-					<ul id="acordion-toggle" class="sidebar__nav">
-						<li class="sidebar__nav-link mb-xsm px-sm">
-							<a href="#">About us</a>
-						</li>
-						<li class="sidebar__nav-link mb-xsm px-sm">
-							<a href="#">Contact us</a>
-						</li>
-						<li class="sidebar__nav-link mb-xsm px-sm">
-							<a href="#">Career</a>
-						</li>
-						<li class="sidebar__nav-link mb-xsm px-sm">
-							<a href="#">My account</a>
-						</li>
-						<li class="sidebar__nav-link mb-xsm px-sm">
-							<a href="#">Orders and Returns</a>
-						</li>
-					</ul>
+			<div class="sidebar__navigation-block">
+				<div class="sidebar__dropdown-title accordion-toggle px-xsm">
+					<p>Collections</p>
+					<i class="fas fa-plus"></i>
 				</div>
 
-				<div class="sidebar__navigation-block">
-					<div class="sidebar__dropdown-title accordion-toggle px-xsm">
-						<p>Collections</p>
-						<i class="fas fa-plus"></i>
-					</div>
+				<ul id="acordion-toggle" class="sidebar__nav">
+					<li class="sidebar__nav-link mb-xsm px-sm">
+						<a href="#">About us</a>
+					</li>
+					<li class="sidebar__nav-link mb-xsm px-sm">
+						<a href="#">Contact us</a>
+					</li>
+					<li class="sidebar__nav-link mb-xsm px-sm">
+						<a href="#">Career</a>
+					</li>
+					<li class="sidebar__nav-link mb-xsm px-sm">
+						<a href="#">My account</a>
+					</li>
+					<li class="sidebar__nav-link mb-xsm px-sm">
+						<a href="#">Orders and Returns</a>
+					</li>
+				</ul>
+			</div>
 
-					<ul id="acordion-toggle" class="sidebar__nav">
-						<li class="sidebar__nav-link mb-xsm px-sm">
-							<a href="#">About us</a>
-						</li>
-						<li class="sidebar__nav-link mb-xsm px-sm">
-							<a href="#">Contact us</a>
-						</li>
-						<li class="sidebar__nav-link mb-xsm px-sm">
-							<a href="#">Career</a>
-						</li>
-						<li class="sidebar__nav-link mb-xsm px-sm">
-							<a href="#">My account</a>
-						</li>
-						<li class="sidebar__nav-link mb-xsm px-sm">
-							<a href="#">Orders and Returns</a>
-						</li>
-					</ul>
+			<div class="sidebar__navigation-block">
+				<div class="sidebar__dropdown-title accordion-toggle px-xsm">
+					<p>Collections</p>
+					<i class="fas fa-plus"></i>
 				</div>
 
-				<div class="sidebar__navigation-block">
-					<div class="sidebar__dropdown-title accordion-toggle px-xsm">
-						<p>Collections</p>
-						<i class="fas fa-plus"></i>
-					</div>
+				<ul id="acordion-toggle" class="sidebar__nav small-subtitle">
+					<li class="sidebar__nav-link mb-xsm px-sm">
+						<a href="#">About us</a>
+					</li>
+					<li class="sidebar__nav-link mb-xsm px-sm">
+						<a href="#">Contact us</a>
+					</li>
+					<li class="sidebar__nav-link mb-xsm px-sm">
+						<a href="#">Career</a>
+					</li>
+					<li class="sidebar__nav-link mb-xsm px-sm">
+						<a href="#">My account</a>
+					</li>
+					<li class="sidebar__nav-link mb-xsm px-sm">
+						<a href="#">Orders and Returns</a>
+					</li>
+				</ul>
+			</div>
 
-					<ul id="acordion-toggle" class="sidebar__nav small-subtitle">
-						<li class="sidebar__nav-link mb-xsm px-sm">
-							<a href="#">About us</a>
-						</li>
-						<li class="sidebar__nav-link mb-xsm px-sm">
-							<a href="#">Contact us</a>
-						</li>
-						<li class="sidebar__nav-link mb-xsm px-sm">
-							<a href="#">Career</a>
-						</li>
-						<li class="sidebar__nav-link mb-xsm px-sm">
-							<a href="#">My account</a>
-						</li>
-						<li class="sidebar__nav-link mb-xsm px-sm">
-							<a href="#">Orders and Returns</a>
-						</li>
-					</ul>
-				</div>
+			<div class="sidebar__navigation-block">
+				<ul class="sidebar__user-nav">
+					<li class="sidebar__nav-link mb-xsm px-xsm">
+						<a href="#">Login</a>
+					</li>
+					<li class="sidebar__nav-link mb-xsm px-xsm">
+						<a href="#">Register Now</a>
+					</li>
+					<li class="sidebar__nav-link mb-xsm px-xsm">
+						<a href="#">Wishlist</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
-				<div class="sidebar__navigation-block">
-					<ul class="sidebar__user-nav">
-						<li class="sidebar__nav-link mb-xsm px-xsm">
-							<a href="#">Login</a>
-						</li>
-						<li class="sidebar__nav-link mb-xsm px-xsm">
-							<a href="#">Register Now</a>
-						</li>
-						<li class="sidebar__nav-link mb-xsm px-xsm">
-							<a href="#">Wishlist</a>
-						</li>
-					</ul>
-				</div>
+	<!-- ! Header -->
+	<header class="header">
+		<div class="header__left-icons">
+			<!-- hamburger icon -->
+			<div class="header__hamburger-menu nav-toggler">
+				<span class="header__hamburger-line-1"></span>
+				<span class="header__hamburger-line-2"></span>
+				<span class="header__hamburger-line-3"></span>
+			</div>
+			<!-- search icon -->
+			<i class="header__nav-icon header__search-icon fas fa-search px-xsm"></i>
+		</div>
+		<!-- logo -->
+		<a href="#">
+			<svg class="header__logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+				width="400px" height="82px" viewBox="0 0 400 82" enable-background="new 0 0 400 82"
+				xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+				<g>
+					<path
+						d="M54.766,67.227H27.107L22.81,80.229H0L28.54,2.543h25.014l28.43,77.687h-22.92L54.766,67.227z M49.367,50.918l-8.375-25.345l-8.485,25.345H49.367z">
+					</path>
+					<path
+						d="M100.386,2.212l17.631,56.199l17.521-56.199h23.03l-26.667,78.018h-27.878L77.356,2.212H100.386z">
+					</path>
+					<path
+						d="M225.401,6.124c6.062,3.416,10.835,8.173,14.326,14.27c3.488,6.099,5.234,12.968,5.234,20.607c0,7.641-1.764,14.509-5.291,20.605c-3.527,6.099-8.318,10.854-14.381,14.27c-6.059,3.417-12.725,5.125-19.998,5.125c-7.272,0-13.959-1.708-20.057-5.125c-6.099-3.416-10.908-8.171-14.435-14.27c-3.527-6.097-5.288-12.965-5.288-20.605c0-7.64,1.761-14.509,5.288-20.607c3.527-6.097,8.336-10.854,14.435-14.27c6.098-3.416,12.784-5.125,20.057-5.125C212.637,0.999,219.342,2.708,225.401,6.124z M192.289,26.399c-3.159,3.564-4.741,8.43-4.741,14.602c0,6.023,1.582,10.836,4.741,14.435c3.157,3.601,7.491,5.399,13.003,5.399c5.435,0,9.733-1.799,12.893-5.399c3.156-3.599,4.738-8.411,4.738-14.435c0-6.172-1.563-11.037-4.684-14.602c-3.125-3.563-7.438-5.345-12.947-5.345C199.78,21.055,195.446,22.837,192.289,26.399z">
+					</path>
+					<path
+						d="M332.231,80.229h-21.707l-28.648-43.526v43.526h-21.711V2.322h21.711l28.648,44.077V2.322h21.707V80.229z">
+					</path>
+					<path
+						d="M371.462,19.513v12.893h25.232v16.419h-25.232v14.104H400v17.301h-50.249V2.212H400v17.301H371.462z">
+					</path>
+				</g>
+			</svg>
+		</a>
+
+		<!-- navigation -->
+		<ul class="header__nav-list">
+			<li href="#" class="header__nav-list-item">Home</li>
+			<li href="#" class="header__nav-list-item">Shop</li>
+			<li href="#" class="header__nav-list-item">Look Book</li>
+			<li href="#" class="header__nav-list-item">About Us</li>
+			<li href="#" class="header__nav-list-item">Contact Us</li>
+			<li href="#" class="header__nav-list-item">FAQs</li>
+			<li href="#" class="header__nav-list-item">Blog</li>
+		</ul>
+
+		<!-- icons -->
+		<div class="header__nav-icons">
+			<i class="header__nav-icon header__nav-icon--hidden fas fa-search"></i>
+			<i class="header__nav-icon fas fa-cog"></i>
+			<i class="header__nav-icon header__nav-icon--hidden fas fa-heart"></i>
+			<i class="header__nav-icon fas fa-shopping-bag">
+				<span>2</span>
+			</i>
+		</div>
+	</header>
+
+	<!-- ! Hero banner -->
+	<div class="carousel">
+		<!-- ! image 1 -->
+		<div class="carousel__item carousel__item--image-1">
+			<div id="carousel__item__text-wrapper-1"
+				class="carousel__item__text-wrapper carousel__item__text-wrapper--1">
+				<h2 class="heading-1 mb-sm">
+					Speed up your store to convert more sales
+				</h2>
+				<p class="small-subtitle mb-sm">The powerful store you can trust</p>
+				<button class="btn btn--black">Shop Now</button>
 			</div>
 		</div>
 
-		<!-- ! Header -->
-		<header class="header">
-			<div class="header__left-icons">
-				<!-- hamburger icon -->
-				<div class="header__hamburger-menu nav-toggler">
-					<span class="header__hamburger-line-1"></span>
-					<span class="header__hamburger-line-2"></span>
-					<span class="header__hamburger-line-3"></span>
-				</div>
-				<!-- search icon -->
-				<i
-					class="header__nav-icon header__search-icon fas fa-search px-xsm"
-				></i>
-			</div>
-			<!-- logo -->
-			<a href="#">
-				<svg
-					class="header__logo"
-					version="1.1"
-					id="Layer_1"
-					xmlns="http://www.w3.org/2000/svg"
-					x="0px"
-					y="0px"
-					width="400px"
-					height="82px"
-					viewBox="0 0 400 82"
-					enable-background="new 0 0 400 82"
-					xmlns:xlink="http://www.w3.org/1999/xlink"
-					xml:space="preserve"
-				>
-					<g>
-						<path
-							d="M54.766,67.227H27.107L22.81,80.229H0L28.54,2.543h25.014l28.43,77.687h-22.92L54.766,67.227z M49.367,50.918l-8.375-25.345l-8.485,25.345H49.367z"
-						></path>
-						<path
-							d="M100.386,2.212l17.631,56.199l17.521-56.199h23.03l-26.667,78.018h-27.878L77.356,2.212H100.386z"
-						></path>
-						<path
-							d="M225.401,6.124c6.062,3.416,10.835,8.173,14.326,14.27c3.488,6.099,5.234,12.968,5.234,20.607c0,7.641-1.764,14.509-5.291,20.605c-3.527,6.099-8.318,10.854-14.381,14.27c-6.059,3.417-12.725,5.125-19.998,5.125c-7.272,0-13.959-1.708-20.057-5.125c-6.099-3.416-10.908-8.171-14.435-14.27c-3.527-6.097-5.288-12.965-5.288-20.605c0-7.64,1.761-14.509,5.288-20.607c3.527-6.097,8.336-10.854,14.435-14.27c6.098-3.416,12.784-5.125,20.057-5.125C212.637,0.999,219.342,2.708,225.401,6.124z M192.289,26.399c-3.159,3.564-4.741,8.43-4.741,14.602c0,6.023,1.582,10.836,4.741,14.435c3.157,3.601,7.491,5.399,13.003,5.399c5.435,0,9.733-1.799,12.893-5.399c3.156-3.599,4.738-8.411,4.738-14.435c0-6.172-1.563-11.037-4.684-14.602c-3.125-3.563-7.438-5.345-12.947-5.345C199.78,21.055,195.446,22.837,192.289,26.399z"
-						></path>
-						<path
-							d="M332.231,80.229h-21.707l-28.648-43.526v43.526h-21.711V2.322h21.711l28.648,44.077V2.322h21.707V80.229z"
-						></path>
-						<path
-							d="M371.462,19.513v12.893h25.232v16.419h-25.232v14.104H400v17.301h-50.249V2.212H400v17.301H371.462z"
-						></path>
-					</g>
-				</svg>
-			</a>
-
-			<!-- navigation -->
-			<ul class="header__nav-list">
-				<li href="#" class="header__nav-list-item">Home</li>
-				<li href="#" class="header__nav-list-item">Shop</li>
-				<li href="#" class="header__nav-list-item">Look Book</li>
-				<li href="#" class="header__nav-list-item">About Us</li>
-				<li href="#" class="header__nav-list-item">Contact Us</li>
-				<li href="#" class="header__nav-list-item">FAQs</li>
-				<li href="#" class="header__nav-list-item">Blog</li>
-			</ul>
-
-			<!-- icons -->
-			<div class="header__nav-icons">
-				<i class="header__nav-icon header__nav-icon--hidden fas fa-search"></i>
-				<i class="header__nav-icon fas fa-cog"></i>
-				<i class="header__nav-icon header__nav-icon--hidden fas fa-heart"></i>
-				<i class="header__nav-icon fas fa-shopping-bag">
-					<span>2</span>
-				</i>
-			</div>
-		</header>
-
-		<!-- ! Hero banner -->
-		<div class="carousel">
-			<!-- ! image 1 -->
-			<div class="carousel__item carousel__item--image-1">
-				<div
-					id="carousel__item__text-wrapper-1"
-					class="carousel__item__text-wrapper carousel__item__text-wrapper--1"
-				>
-					<h2 class="heading-1 mb-sm">
-						Speed up your store to convert more sales
-					</h2>
-					<p class="small-subtitle mb-sm">The powerful store you can trust</p>
-					<button class="btn btn--black">Shop Now</button>
-				</div>
-			</div>
-
-			<!-- ! image 2 -->
-			<div
-				class="carousel__item carousel__item--image-2 carousel__item--visible"
-			>
-				<div
-					id="carousel__item__text-wrapper-2"
-					class="carousel__item__text-wrapper carousel__item__text-wrapper--2"
-				>
-					<p class="small-title">Are you ready?</p>
-					<h2 class="heading-1 mb-sm">Start Selling Online Successfully</h2>
-					<p class="small-subtitle mb-sm">Creative and Flexible Online Store</p>
-					<button class="btn btn--black">Shop Now</button>
-				</div>
-			</div>
-
-			<!-- ! actions -->
-			<div class="carousel__buttons">
-				<button class="carousel__btn" id="carousel__btn--prev">
-					<i
-						class="carousel__nav-icon fas fa-chevron-left"
-						aria-label="previous slide"
-					></i>
-				</button>
-				<button class="carousel__btn" id="carousel__btn--next">
-					<i
-						class="carousel__nav-icon fas fa-chevron-right"
-						aria-label="next slide"
-					></i>
-				</button>
-			</div>
-
-			<div class="carousel__dots">
-				<span class="carousel__dot"><i class="fas fa-circle"></i></span>
-				<span class="carousel__dot"><i class="fas fa-circle"></i></span>
+		<!-- ! image 2 -->
+		<div class="carousel__item carousel__item--image-2 carousel__item--visible">
+			<div id="carousel__item__text-wrapper-2"
+				class="carousel__item__text-wrapper carousel__item__text-wrapper--2">
+				<p class="small-title">Are you ready?</p>
+				<h2 class="heading-1 mb-sm">Start Selling Online Successfully</h2>
+				<p class="small-subtitle mb-sm">Creative and Flexible Online Store</p>
+				<button class="btn btn--black">Shop Now</button>
 			</div>
 		</div>
 
-		<!-- ! Featured grid -->
-		<section class="featured-grid mb-sm">
-			<!-- item 1 -->
-			<div class="featured-grid__item featured-grid__item--1">
-				<img
-					src="/img/featured-image-1.jpg"
-					alt="Featured image 1"
-					class="featured-grid__image"
-				/>
-				<div class="shop-now-window">
-					<h3 class="medium-title"><strong>Women Tops</strong></h3>
-					<p class="small-subtitle mb-sm">From world's top designers</p>
-					<div class="btn btn--black">Discover Now</div>
-				</div>
-			</div>
-			<!-- item 2 -->
-			<div class="featured-grid__item featured-grid__item--2">
-				<img
-					src="/img/featured-image-2.jpg"
-					alt="Featured image 2"
-					class="featured-grid__image"
-				/>
-				<div class="shop-now-window">
-					<h3 class="medium-title"><strong>Men shirts</strong></h3>
-					<p class="small-subtitle mb-sm">Up to 70% of on selected items</p>
-					<div class="btn btn--black">Shop Now</div>
-				</div>
-			</div>
-			<!-- item 3 -->
-			<div class="featured-grid__item featured-grid__item--3">
-				<img
-					src="/img/featured-image-3.jpg"
-					alt="Featured image 3"
-					class="featured-grid__image"
-				/>
-				<div class="shop-now-window">
-					<h3 class="medium-title"><strong>Accessories</strong></h3>
-					<p class="small-subtitle mb-sm">Add finishing touch to your outfit</p>
-					<div class="btn btn--black">Discover Now</div>
-				</div>
-			</div>
-			<!-- item 4 -->
-			<div class="featured-grid__item featured-grid__item--4">
-				<img
-					src="/img/featured-image-4.jpg"
-					alt="Featured image 4"
-					class="featured-grid__image"
-				/>
-				<div class="shop-now-window">
-					<h3 class="medium-title"><strong>Denim</strong></h3>
-					<p class="small-subtitle mb-sm">Find your perfect outfit</p>
-					<div class="btn btn--black">Discover Now</div>
-				</div>
-			</div>
-		</section>
+		<!-- ! actions -->
+		<div class="carousel__buttons">
+			<button class="carousel__btn" id="carousel__btn--prev">
+				<i class="carousel__nav-icon fas fa-chevron-left" aria-label="previous slide"></i>
+			</button>
+			<button class="carousel__btn" id="carousel__btn--next">
+				<i class="carousel__nav-icon fas fa-chevron-right" aria-label="next slide"></i>
+			</button>
+		</div>
 
-		<!-- ! New arrivals -->
-		<section class="new-arrivals">
-			<!-- title -->
-			<h3 class="heading-2 mb-xsm">New Arrivals</h3>
-			<p class="small-subtitle mb-xsm">
-				Shop our new arrivals from established brands
-			</p>
+		<div class="carousel__dots">
+			<span class="carousel__dot"><i class="fas fa-circle"></i></span>
+			<span class="carousel__dot"><i class="fas fa-circle"></i></span>
+		</div>
+	</div>
 
-			<!-- slider -->
-			<div class="slider">
-				<div class="slider__container">
-					<div class="slider__sub-container">
-						<!-- slider -->
-						<div class="slider__my-slider my-lg">
-							<!-- slide 1 -->
-							<div>
-								<div class="slider__slide">
-									<div class="slider__slide-img slider__slide-img--img-1">
-										<!--! countdown timer -->
-										<div class="countdown-timer small-title">
-											<!-- days -->
-											<div class="countdown-timer__block-wrapper">
-												<span
-													id="days"
-													class="countdown-timer__time-block"
-												></span>
-												<span class="countdown-timer__text-block">days</span>
-											</div>
-											<!-- hours -->
-											<div class="countdown-timer__block-wrapper">
-												<span
-													id="hours"
-													class="countdown-timer__time-block"
-												></span>
-												<span class="countdown-timer__text-block">hrs</span>
-											</div>
-											<!-- minutes -->
-											<div class="countdown-timer__block-wrapper">
-												<span
-													id="minutes"
-													class="countdown-timer__time-block"
-												></span>
-												<span class="countdown-timer__text-block">min</span>
-											</div>
-											<!-- seconds -->
-											<div class="countdown-timer__block-wrapper">
-												<span
-													id="seconds"
-													class="countdown-timer__time-block"
-												></span>
-												<span class="countdown-timer__text-block">sec</span>
-											</div>
+	<!-- ! Featured grid -->
+	<section class="featured-grid mb-sm">
+		<!-- item 1 -->
+		<div class="featured-grid__item featured-grid__item--1">
+			<img src="/img/featured-image-1.jpg" alt="Featured image 1" class="featured-grid__image" />
+			<div class="shop-now-window">
+				<h3 class="medium-title"><b>Women Tops</b></h3>
+				<p class="small-subtitle mb-sm">From world's top designers</p>
+				<div class="btn btn--black">Discover Now</div>
+			</div>
+		</div>
+		<!-- item 2 -->
+		<div class="featured-grid__item featured-grid__item--2">
+			<img src="/img/featured-image-2.jpg" alt="Featured image 2" class="featured-grid__image" />
+			<div class="shop-now-window">
+				<h3 class="medium-title"><b>Men shirts</b></h3>
+				<p class="small-subtitle mb-sm">Up to 70% of on selected items</p>
+				<div class="btn btn--black">Shop Now</div>
+			</div>
+		</div>
+		<!-- item 3 -->
+		<div class="featured-grid__item featured-grid__item--3">
+			<img src="/img/featured-image-3.jpg" alt="Featured image 3" class="featured-grid__image" />
+			<div class="shop-now-window">
+				<h3 class="medium-title"><b>Accessories</b></h3>
+				<p class="small-subtitle mb-sm">Add finishing touch to your outfit</p>
+				<div class="btn btn--black">Discover Now</div>
+			</div>
+		</div>
+		<!-- item 4 -->
+		<div class="featured-grid__item featured-grid__item--4">
+			<img src="/img/featured-image-4.jpg" alt="Featured image 4" class="featured-grid__image" />
+			<div class="shop-now-window">
+				<h3 class="medium-title"><b>Denim</b></h3>
+				<p class="small-subtitle mb-sm">Find your perfect outfit</p>
+				<div class="btn btn--black">Discover Now</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ! New arrivals -->
+	<section class="new-arrivals">
+		<!-- title -->
+		<h3 class="heading-2 mb-xsm">New Arrivals</h3>
+		<p class="small-subtitle mb-xsm">
+			Shop our new arrivals from established brands
+		</p>
+
+		<!-- slider -->
+		<div class="slider">
+			<div class="slider__container">
+				<div class="slider__sub-container">
+					<!-- slider -->
+					<div class="slider__my-slider my-lg">
+						<!-- slide 1 -->
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-img slider__slide-img--img-1">
+									<!--! countdown timer -->
+									<div class="countdown-timer small-title">
+										<!-- days -->
+										<div class="countdown-timer__block-wrapper">
+											<span id="days" class="countdown-timer__time-block"></span>
+											<span class="countdown-timer__text-block">days</span>
 										</div>
-									</div>
-
-									<br />
-
-									<div class="slider__slide-info">
-										<p class="small-subtitle">Innerbloom Puffer Jacket</p>
-										<p class="small-subtitle">
-											<strike>€694,95</strike>
-											<span class="slider__slide-span small-subtitle">
-												€443,95
-											</span>
-										</p>
-										<div title="rating" class="slider__slide-stars">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
+										<!-- hours -->
+										<div class="countdown-timer__block-wrapper">
+											<span id="hours" class="countdown-timer__time-block"></span>
+											<span class="countdown-timer__text-block">hrs</span>
 										</div>
-										<div class="slider__slide-colors">
-											<label class="slider__slide-color">
-												<input type="radio" checked="checked" name="radio" />
-												<span
-													class="slider__slide-color-span slider__slide-color-span--red"
-												></span>
-											</label>
-											<label class="slider__slide-color">
-												<input type="radio" name="radio" />
-												<span
-													class="slider__slide-color-span slider__slide-color-span--green"
-												></span>
-											</label>
-											<label class="slider__slide-color">
-												<input type="radio" name="radio" />
-												<span
-													class="slider__slide-color-span slider__slide-color-span--black"
-												></span>
-											</label>
+										<!-- minutes -->
+										<div class="countdown-timer__block-wrapper">
+											<span id="minutes" class="countdown-timer__time-block"></span>
+											<span class="countdown-timer__text-block">min</span>
+										</div>
+										<!-- seconds -->
+										<div class="countdown-timer__block-wrapper">
+											<span id="seconds" class="countdown-timer__time-block"></span>
+											<span class="countdown-timer__text-block">sec</span>
 										</div>
 									</div>
 								</div>
-							</div>
-							<!-- slide 2 -->
-							<div>
-								<div class="slider__slide">
-									<div class="slider__slide-img slider__slide-img--img-1"></div>
-									<br />
 
-									<div>
-										<h3>California 2</h3>
-										<p>Los Angeles</p>
-									</div>
-								</div>
-							</div>
-							<!-- slide 3 -->
-							<div>
-								<div class="slider__slide">
-									<div class="slider__slide-img slider__slide-img--img-1"></div>
-									<br />
+								<br />
 
-									<div>
-										<h3>California 3</h3>
-										<p>Los Angeles</p>
-									</div>
-								</div>
-							</div>
-							<!-- slide 4 -->
-							<div>
-								<div class="slider__slide">
-									<div class="slider__slide-img slider__slide-img--img-1"></div>
-									<br />
-
-									<div>
-										<h3>California 4</h3>
-										<p>Los Angeles</p>
-									</div>
-								</div>
-							</div>
-							<!-- slide 5 -->
-							<div>
-								<div class="slider__slide">
-									<div class="slider__slide-img slider__slide-img--img-1"></div>
-									<br />
-
-									<div>
-										<h3>California 5</h3>
-										<p>Los Angeles</p>
-									</div>
-								</div>
-							</div>
-							<!-- slide 6 -->
-							<div>
-								<div class="slider__slide">
-									<div class="slider__slide-img slider__slide-img--img-1"></div>
-									<br />
-
-									<div>
-										<h3>California 6</h3>
-										<p>Los Angeles</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- controls -->
-						<div class="slider__controller">
-							<div class="slider__controls">
-								<button
-									class="slider__previous carousel__btn"
-									id="carousel__btn--prev"
-								>
-									<i
-										class="carousel__nav-icon fas fa-chevron-left"
-										aria-label="previous slide"
-									></i>
-								</button>
-								<button
-									class="slider__next carousel__btn"
-									id="carousel__btn--next"
-								>
-									<i
-										class="carousel__nav-icon fas fa-chevron-right"
-										aria-label="next slide"
-									></i>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- two column grid -->
-			<div class="two-column-grid my-lg">
-				<div class="two-column-grid__item two-column-grid__item--item-1">
-					<img
-						src="/img/two-column-grid-1.webp"
-						alt="Featured image 1"
-						class="two-column-grid__image"
-					/>
-					<div class="shop-now-window">
-						<h3 class="medium-title mb-sm">
-							Find the best collection around the world
-						</h3>
-
-						<button class="btn btn--black">Discover Now</button>
-					</div>
-				</div>
-
-				<div class="two-column-grid__item two-column-grid__item--item-2">
-					<img
-						src="/img/two-column-grid-2.webp"
-						alt="Featured image 2"
-						class="two-column-grid__image"
-					/>
-					<div class="shop-now-window">
-						<h3 class="medium-title mb-sm">
-							Awesome t-shirts, crop tops and more...
-						</h3>
-
-						<div class="btn btn--black">View collection</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- company logos -->
-			<div class="company-logos">
-				<div class="company-logos__container">
-					<div class="company-logos__sub-container">
-						<div class="company-logos__my-logos">
-							<div>
-								<div class="company-logos__company-logo">
-									<img src="/img/company-logo-1.webp" alt="company logo 1" />
-								</div>
-							</div>
-
-							<div>
-								<div class="company-logos__company-logo">
-									<img src="/img/company-logo-2.webp" alt="company logo 2" />
-								</div>
-							</div>
-
-							<div>
-								<div class="company-logos__company-logo">
-									<img src="/img/company-logo-3.webp" alt="company logo 3" />
-								</div>
-							</div>
-
-							<div>
-								<div class="company-logos__company-logo">
-									<img src="/img/company-logo-4.webp" alt="company logo 4" />
-								</div>
-							</div>
-
-							<div>
-								<div class="company-logos__company-logo">
-									<img src="/img/company-logo-5.webp" alt="company logo 5" />
-								</div>
-							</div>
-						</div>
-
-						<!-- controls -->
-						<div class="slider__controller">
-							<div class="slider__controls slider__controls1">
-								<button class="slider__previous1 carousel__btn">
-									<i
-										class="carousel__nav-icon fas fa-chevron-left"
-										aria-label="previous slide"
-									></i>
-								</button>
-								<button class="slider__next1 carousel__btn">
-									<i
-										class="carousel__nav-icon fas fa-chevron-right"
-										aria-label="next slide"
-									></i>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- ! Blog section -->
-		<section class="blog py-lg">
-			<!-- ! Title -->
-			<h3 class="heading-2 mb-xsm">Fresh from our blog</h3>
-			<p class="small-subtitle mb-lg">
-				You are going to love this amazing shopify theme.
-			</p>
-
-			<div class="blog__articles">
-				<div class="blog__container">
-					<div class="blog__sub-container">
-						<div class="blog__my-articles">
-							<div>
-								<div class="blog__image">
-									<img src="/img/blog-1.webp" alt="blog img 1" />
-									<h4 class="small-title mt-sm">
-										<a href="#">Our development is your success</a>
-									</h4>
-									<p class="xsm-subtitle my-xsm">
-										March 6, 2022
-										<i class="fas fa-comments"></i>
-										<a href="#">2 comments</a>
+								<div class="slider__slide-info">
+									<p class="small-subtitle">Innerbloom Puffer Jacket</p>
+									<p class="small-subtitle  my-xsm">
+										<strike>€694,95</strike>
+										<span class="slider__slide-span small-subtitle">
+											€443,95
+										</span>
 									</p>
-								</div>
-							</div>
 
-							<div>
-								<div class="blog__image">
-									<img src="/img/blog-2.webp" alt="blog img 2" />
-									<h4 class="small-title mt-sm">
-										<a href="#">Ensuring Customer Success</a>
-									</h4>
-									<p class="xsm-subtitle my-xsm">February, 11, 2022</p>
-								</div>
-							</div>
+									<div class="slider__slide-colors my-xsm">
+										<label class="slider__slide-color">
+											<input type="radio" checked="checked" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
+										</label>
+										<label class="slider__slide-color">
+											<input type="radio" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"></span>
+										</label>
+										<label class="slider__slide-color">
+											<input type="radio" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
+										</label>
+									</div>
 
-							<div>
-								<div class="blog__image">
-									<img src="/img/blog-3.webp" alt="blog img 3" />
-									<h4 class="small-title mt-sm">
-										<a href="#">We can make your business shine</a>
-									</h4>
-									<p class="xsm-subtitle my-xsm">January 18, 2022</p>
+									<div title="rating" class="slider__slide-stars my-xsm">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
 								</div>
 							</div>
 						</div>
+						<!-- slide 2 -->
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-img slider__slide-img--img-1">
 
-						<!-- controls -->
-						<div class="slider__controller">
-							<div class="slider__controls slider__controls2">
-								<button
-									class="slider__previous slider__previous2 carousel__btn"
-								>
-									<i
-										class="carousel__nav-icon fas fa-chevron-left"
-										aria-label="previous slide"
-									></i>
-								</button>
-								<button class="slider__next slider__next2 carousel__btn">
-									<i
-										class="carousel__nav-icon fas fa-chevron-right"
-										aria-label="next slide"
-									></i>
-								</button>
+								</div>
+
+								<br />
+
+								<div class="slider__slide-info">
+									<p class="small-subtitle">Innerbloom Puffer Jacket</p>
+									<p class="small-subtitle  my-xsm">
+										€694,95
+									</p>
+
+									<div class="slider__slide-colors my-xsm">
+										<label class="slider__slide-color">
+											<input type="radio" checked="checked" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
+										</label>
+										<label class="slider__slide-color">
+											<input type="radio" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"></span>
+										</label>
+										<label class="slider__slide-color">
+											<input type="radio" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
+										</label>
+									</div>
+
+									<div title="rating" class="slider__slide-stars my-xsm">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
 							</div>
+						</div>
+						<!-- slide 3 -->
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-img slider__slide-img--img-1">
+
+								</div>
+
+								<br />
+
+								<div class="slider__slide-info">
+									<p class="small-subtitle">Innerbloom Puffer Jacket</p>
+									<p class="small-subtitle  my-xsm">
+										€694,95
+									</p>
+
+									<div class="slider__slide-colors my-xsm">
+										<label class="slider__slide-color">
+											<input type="radio" checked="checked" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
+										</label>
+										<label class="slider__slide-color">
+											<input type="radio" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"></span>
+										</label>
+										<label class="slider__slide-color">
+											<input type="radio" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
+										</label>
+									</div>
+
+									<div title="rating" class="slider__slide-stars my-xsm">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slide 4 -->
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-img slider__slide-img--img-1">
+
+								</div>
+
+								<br />
+
+								<div class="slider__slide-info">
+									<p class="small-subtitle">Innerbloom Puffer Jacket</p>
+									<p class="small-subtitle  my-xsm">
+										€694,95
+									</p>
+
+									<div class="slider__slide-colors my-xsm">
+										<label class="slider__slide-color">
+											<input type="radio" checked="checked" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
+										</label>
+										<label class="slider__slide-color">
+											<input type="radio" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"></span>
+										</label>
+										<label class="slider__slide-color">
+											<input type="radio" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
+										</label>
+									</div>
+
+									<div title="rating" class="slider__slide-stars my-xsm">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slide 5 -->
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-img slider__slide-img--img-1">
+
+								</div>
+
+								<br />
+
+								<div class="slider__slide-info">
+									<p class="small-subtitle">Innerbloom Puffer Jacket</p>
+									<p class="small-subtitle  my-xsm">
+										€694,95
+									</p>
+
+									<div class="slider__slide-colors my-xsm">
+										<label class="slider__slide-color">
+											<input type="radio" checked="checked" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
+										</label>
+										<label class="slider__slide-color">
+											<input type="radio" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"></span>
+										</label>
+										<label class="slider__slide-color">
+											<input type="radio" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
+										</label>
+									</div>
+
+									<div title="rating" class="slider__slide-stars my-xsm">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slide 6 -->
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-img slider__slide-img--img-1">
+
+								</div>
+
+								<br />
+
+								<div class="slider__slide-info">
+									<p class="small-subtitle">Innerbloom Puffer Jacket</p>
+									<p class="small-subtitle  my-xsm">
+										€694,95
+									</p>
+
+									<div class="slider__slide-colors my-xsm">
+										<label class="slider__slide-color">
+											<input type="radio" checked="checked" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
+										</label>
+										<label class="slider__slide-color">
+											<input type="radio" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"></span>
+										</label>
+										<label class="slider__slide-color">
+											<input type="radio" name="radio" />
+											<span
+												class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
+										</label>
+									</div>
+
+									<div title="rating" class="slider__slide-stars my-xsm">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- controls -->
+					<div class="slider__controller">
+						<div class="slider__controls">
+							<button class="slider__previous carousel__btn" id="carousel__btn--prev">
+								<i class="carousel__nav-icon fas fa-chevron-left" aria-label="previous slide"></i>
+							</button>
+							<button class="slider__next carousel__btn" id="carousel__btn--next">
+								<i class="carousel__nav-icon fas fa-chevron-right" aria-label="next slide"></i>
+							</button>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 
-		<!-- ! Info banner -->
-		<section class="info-banner py-md">
-			<div class="info-banner__wrapper">
-				<!-- item 1 -->
-				<div class="info-banner__item">
-					<i class="info-banner__icon fas fa-shipping-fast"></i>
-					<div class="info-banner__text">
-						<h3 class="medium-title mb-xsm">Free Shipping & Return</h3>
-						<p class="small-subtitle">Free Shipping on orders above 50€.</p>
-					</div>
-				</div>
+		<!-- two column grid -->
+		<div class="two-column-grid my-lg">
+			<div class="two-column-grid__item two-column-grid__item--item-1">
+				<img src="/img/two-column-grid-1.webp" alt="Featured image 1" class="two-column-grid__image" />
+				<div class="shop-now-window">
+					<h3 class="medium-title mb-sm">
+						<b>Find the best collection around the world</b>
+					</h3>
 
-				<!-- item 2 -->
-				<div class="info-banner__item">
-					<i class="info-banner__icon fas fa-hand-holding-usd"></i>
-					<div class="info-banner__text">
-						<h3 class="medium-title mb-xsm">Money Guarantee</h3>
-						<p class="small-subtitle">30 days money back guarantee</p>
-					</div>
-				</div>
-
-				<!-- item 3 -->
-				<div class="info-banner__item">
-					<i class="info-banner__icon fas fa-headset"></i>
-					<div class="info-banner__text">
-						<h3 class="medium-title mb-xsm">Online Support</h3>
-						<p class="small-subtitle">We support online 24/7 on day</p>
-					</div>
+					<button class="btn btn--black">Discover Now</button>
 				</div>
 			</div>
-		</section>
 
-		<!-- ! Footer -->
-		<footer class="footer py-md">
-			<div class="footer__navigation">
-				<div class="footer__block-set-wrapper mb-md">
-					<div class="footer__block-set mb-md">
-						<!-- block 1 -->
-						<div class="footer__navigation-block">
-							<a href="#">
-								<svg
-									class="footer__logo mb-xsm"
-									version="1.1"
-									id="Layer_1"
-									xmlns="http://www.w3.org/2000/svg"
-									x="0px"
-									y="0px"
-									width="400px"
-									height="82px"
-									viewBox="0 0 400 82"
-									enable-background="new 0 0 400 82"
-									xmlns:xlink="http://www.w3.org/1999/xlink"
-									xml:space="preserve"
-								>
-									<g>
-										<path
-											d="M54.766,67.227H27.107L22.81,80.229H0L28.54,2.543h25.014l28.43,77.687h-22.92L54.766,67.227z M49.367,50.918l-8.375-25.345l-8.485,25.345H49.367z"
-										></path>
-										<path
-											d="M100.386,2.212l17.631,56.199l17.521-56.199h23.03l-26.667,78.018h-27.878L77.356,2.212H100.386z"
-										></path>
-										<path
-											d="M225.401,6.124c6.062,3.416,10.835,8.173,14.326,14.27c3.488,6.099,5.234,12.968,5.234,20.607c0,7.641-1.764,14.509-5.291,20.605c-3.527,6.099-8.318,10.854-14.381,14.27c-6.059,3.417-12.725,5.125-19.998,5.125c-7.272,0-13.959-1.708-20.057-5.125c-6.099-3.416-10.908-8.171-14.435-14.27c-3.527-6.097-5.288-12.965-5.288-20.605c0-7.64,1.761-14.509,5.288-20.607c3.527-6.097,8.336-10.854,14.435-14.27c6.098-3.416,12.784-5.125,20.057-5.125C212.637,0.999,219.342,2.708,225.401,6.124z M192.289,26.399c-3.159,3.564-4.741,8.43-4.741,14.602c0,6.023,1.582,10.836,4.741,14.435c3.157,3.601,7.491,5.399,13.003,5.399c5.435,0,9.733-1.799,12.893-5.399c3.156-3.599,4.738-8.411,4.738-14.435c0-6.172-1.563-11.037-4.684-14.602c-3.125-3.563-7.438-5.345-12.947-5.345C199.78,21.055,195.446,22.837,192.289,26.399z"
-										></path>
-										<path
-											d="M332.231,80.229h-21.707l-28.648-43.526v43.526h-21.711V2.322h21.711l28.648,44.077V2.322h21.707V80.229z"
-										></path>
-										<path
-											d="M371.462,19.513v12.893h25.232v16.419h-25.232v14.104H400v17.301h-50.249V2.212H400v17.301H371.462z"
-										></path>
-									</g>
-								</svg>
-							</a>
-							<div class="footer__custom-texts">
-								<p class="small-subtitle mb-xsm">
-									55 Galaxy Enqueue,
-									<br />
-									2568 street, 23568 NY
-								</p>
-								<p class="small-subtitle mb-xsm">
-									<b>Phone:</b>
-									+386 1 2345 678
-								</p>
-								<p class="small-subtitle mb-xsm">
-									<b>Email:</b>
-									sales@yousite.com
-								</p>
-								<ul class="footer__social-links">
-									<li class="footer__social-link">
-										<i class="fab fa-facebook-f"></i>
-									</li>
-									<li class="footer__social-link">
-										<i class="fab fa-twitter"></i>
-									</li>
-									<li class="footer__social-link">
-										<i class="fab fa-pinterest-p"></i>
-									</li>
-									<li class="footer__social-link">
-										<i class="fab fa-instagram"></i>
-									</li>
-								</ul>
+			<div class="two-column-grid__item two-column-grid__item--item-2">
+				<img src="/img/two-column-grid-2.webp" alt="Featured image 2" class="two-column-grid__image" />
+				<div class="shop-now-window">
+					<h3 class="medium-title mb-sm">
+						<b>Awesome t-shirts, crop tops and more...</b>
+					</h3>
+
+					<div class="btn btn--black">View collection</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- company logos -->
+		<div class="company-logos">
+			<div class="company-logos__container">
+				<div class="company-logos__sub-container">
+					<div class="company-logos__my-logos">
+						<div>
+							<div class="company-logos__company-logo">
+								<img src="/img/company-logo-1.webp" alt="company logo 1" />
 							</div>
 						</div>
 
-						<!-- block 2 -->
-						<div class="footer__navigation-block">
-							<h4 class="accordion-toggle medium-title mb-xsm">
-								<strong>Information</strong>
-								<i class="fas fa-chevron-down"></i>
-							</h4>
-							<ul id="acordion-toggle" class="footer__nav-links small-subtitle">
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">About us</a>
-								</li>
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">Contact us</a>
-								</li>
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">Career</a>
-								</li>
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">My account</a>
-								</li>
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">Orders and Returns</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="footer__block-set">
-						<!-- block 3 -->
-						<div class="footer__navigation-block">
-							<h4 class="accordion-toggle medium-title mb-xsm">
-								<strong>Quick Shop</strong>
-								<i class="fas fa-chevron-down"></i>
-							</h4>
-							<ul class="footer__nav-links small-subtitle">
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">Fashion</a>
-								</li>
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">Men</a>
-								</li>
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">Women</a>
-								</li>
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">Furniture</a>
-								</li>
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">Home Decor</a>
-								</li>
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">Shoes</a>
-								</li>
-							</ul>
+						<div>
+							<div class="company-logos__company-logo">
+								<img src="/img/company-logo-2.webp" alt="company logo 2" />
+							</div>
 						</div>
 
-						<!-- block 4 -->
-						<div class="footer__navigation-block">
-							<h4 class="accordion-toggle medium-title mb-xsm">
-								<strong>Customer Service</strong>
-								<i class="fas fa-chevron-down"></i>
-							</h4>
-							<ul class="footer__nav-links small-subtitle">
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">Help & FAQs</a>
-								</li>
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">Returns Policy</a>
-								</li>
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">Terms & Conditions</a>
-								</li>
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">Privacy Policy</a>
-								</li>
-								<li class="footer__nav-link mb-xsm">
-									<a href="#">Support Center</a>
-								</li>
-							</ul>
+						<div>
+							<div class="company-logos__company-logo">
+								<img src="/img/company-logo-3.webp" alt="company logo 3" />
+							</div>
+						</div>
+
+						<div>
+							<div class="company-logos__company-logo">
+								<img src="/img/company-logo-4.webp" alt="company logo 4" />
+							</div>
+						</div>
+
+						<div>
+							<div class="company-logos__company-logo">
+								<img src="/img/company-logo-5.webp" alt="company logo 5" />
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<!-- block 5 -->
-				<div class="footer__navigation-block">
-					<h4 class="medium-title mb-xsm" style="cursor: default">
-						<strong>Newsletter</strong>
-					</h4>
-					<p class="small-subtitle mb-xsm">
-						Enter your email to receive daily news and get 20% off coupon for
-						all items.
-					</p>
-					<form action="#">
-						<input class="mb-xsm" type="email" placeholder="Email address" />
-						<br />
-						<button class="btn btn--black">Subscribe</button>
-					</form>
+					<!-- controls -->
+					<div class="slider__controller">
+						<div class="slider__controls slider__controls1">
+							<button class="slider__previous1 carousel__btn">
+								<i class="carousel__nav-icon fas fa-chevron-left" aria-label="previous slide"></i>
+							</button>
+							<button class="slider__next1 carousel__btn">
+								<i class="carousel__nav-icon fas fa-chevron-right" aria-label="next slide"></i>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</section>
 
-		<!-- Tiny slider -->
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
-			integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
+	<!-- ! Blog section -->
+	<section class="blog py-lg">
+		<!-- ! Title -->
+		<h3 class="heading-2 mb-xsm">Fresh from our blog</h3>
+		<p class="small-subtitle mb-lg">
+			You are going to love this amazing shopify theme.
+		</p>
 
-		<script src="/script.js"></script>
-		<script src="/tiny-sliders.js"></script>
-		<script src="/hero-carousel.js"></script>
-	</body>
+		<div class="blog__articles">
+			<div class="blog__container">
+				<div class="blog__sub-container">
+					<div class="blog__my-articles">
+						<div>
+							<div class="blog__image">
+								<img src="/img/blog-1.webp" alt="blog img 1" />
+								<h4 class="medium-title mt-sm">
+									<a href="#"><b>Our development is your success</b></a>
+								</h4>
+								<p class="xsm-subtitle my-xsm">
+									March 6, 2022
+									<i class="fas fa-comments"></i>
+									<a href="#">2 comments</a>
+								</p>
+							</div>
+						</div>
+
+						<div>
+							<div class="blog__image">
+								<img src="/img/blog-2.webp" alt="blog img 2" />
+								<h4 class="medium-title mt-sm">
+									<a href="#"><b>Ensuring Customer Success</b></a>
+								</h4>
+								<p class="xsm-subtitle my-xsm">February, 11, 2022</p>
+							</div>
+						</div>
+
+						<div>
+							<div class="blog__image">
+								<img src="/img/blog-3.webp" alt="blog img 3" />
+								<h4 class="medium-title mt-sm">
+									<a href="#"><b>We can make your business shine</b></a>
+								</h4>
+								<p class="xsm-subtitle my-xsm">January 18, 2022</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- controls -->
+					<div class="slider__controller">
+						<div class="slider__controls slider__controls2">
+							<button class="slider__previous slider__previous2 carousel__btn">
+								<i class="carousel__nav-icon fas fa-chevron-left" aria-label="previous slide"></i>
+							</button>
+							<button class="slider__next slider__next2 carousel__btn">
+								<i class="carousel__nav-icon fas fa-chevron-right" aria-label="next slide"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ! Info banner -->
+	<section class="info-banner py-md">
+		<div class="info-banner__wrapper">
+			<!-- item 1 -->
+			<div class="info-banner__item">
+				<i class="info-banner__icon fas fa-shipping-fast"></i>
+				<div class="info-banner__text">
+					<h3 class="medium-title mb-xsm">Free Shipping & Return</h3>
+					<p class="small-subtitle">Free Shipping on orders above 50€.</p>
+				</div>
+			</div>
+
+			<!-- item 2 -->
+			<div class="info-banner__item">
+				<i class="info-banner__icon fas fa-hand-holding-usd"></i>
+				<div class="info-banner__text">
+					<h3 class="medium-title mb-xsm">Money Guarantee</h3>
+					<p class="small-subtitle">30 days money back guarantee</p>
+				</div>
+			</div>
+
+			<!-- item 3 -->
+			<div class="info-banner__item">
+				<i class="info-banner__icon fas fa-headset"></i>
+				<div class="info-banner__text">
+					<h3 class="medium-title mb-xsm">Online Support</h3>
+					<p class="small-subtitle">We support online 24/7 on day</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ! Footer -->
+	<footer class="footer py-md">
+		<div class="footer__navigation">
+			<div class="footer__block-set-wrapper mb-md">
+				<div class="footer__block-set mb-md">
+					<!-- block 1 -->
+					<div class="footer__navigation-block">
+						<a href="#">
+							<svg class="footer__logo mb-xsm" version="1.1" id="Layer_1"
+								xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="400px" height="82px"
+								viewBox="0 0 400 82" enable-background="new 0 0 400 82"
+								xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+								<g>
+									<path
+										d="M54.766,67.227H27.107L22.81,80.229H0L28.54,2.543h25.014l28.43,77.687h-22.92L54.766,67.227z M49.367,50.918l-8.375-25.345l-8.485,25.345H49.367z">
+									</path>
+									<path
+										d="M100.386,2.212l17.631,56.199l17.521-56.199h23.03l-26.667,78.018h-27.878L77.356,2.212H100.386z">
+									</path>
+									<path
+										d="M225.401,6.124c6.062,3.416,10.835,8.173,14.326,14.27c3.488,6.099,5.234,12.968,5.234,20.607c0,7.641-1.764,14.509-5.291,20.605c-3.527,6.099-8.318,10.854-14.381,14.27c-6.059,3.417-12.725,5.125-19.998,5.125c-7.272,0-13.959-1.708-20.057-5.125c-6.099-3.416-10.908-8.171-14.435-14.27c-3.527-6.097-5.288-12.965-5.288-20.605c0-7.64,1.761-14.509,5.288-20.607c3.527-6.097,8.336-10.854,14.435-14.27c6.098-3.416,12.784-5.125,20.057-5.125C212.637,0.999,219.342,2.708,225.401,6.124z M192.289,26.399c-3.159,3.564-4.741,8.43-4.741,14.602c0,6.023,1.582,10.836,4.741,14.435c3.157,3.601,7.491,5.399,13.003,5.399c5.435,0,9.733-1.799,12.893-5.399c3.156-3.599,4.738-8.411,4.738-14.435c0-6.172-1.563-11.037-4.684-14.602c-3.125-3.563-7.438-5.345-12.947-5.345C199.78,21.055,195.446,22.837,192.289,26.399z">
+									</path>
+									<path
+										d="M332.231,80.229h-21.707l-28.648-43.526v43.526h-21.711V2.322h21.711l28.648,44.077V2.322h21.707V80.229z">
+									</path>
+									<path
+										d="M371.462,19.513v12.893h25.232v16.419h-25.232v14.104H400v17.301h-50.249V2.212H400v17.301H371.462z">
+									</path>
+								</g>
+							</svg>
+						</a>
+						<div class="footer__custom-texts">
+							<p class="small-subtitle mb-xsm">
+								55 Galaxy Enqueue,
+								<br />
+								2568 street, 23568 NY
+							</p>
+							<p class="small-subtitle mb-xsm">
+								<b>Phone:</b>
+								+386 1 2345 678
+							</p>
+							<p class="small-subtitle mb-xsm">
+								<b>Email:</b>
+								sales@yousite.com
+							</p>
+							<ul class="footer__social-links">
+								<li class="footer__social-link">
+									<i class="fab fa-facebook-f"></i>
+								</li>
+								<li class="footer__social-link">
+									<i class="fab fa-twitter"></i>
+								</li>
+								<li class="footer__social-link">
+									<i class="fab fa-pinterest-p"></i>
+								</li>
+								<li class="footer__social-link">
+									<i class="fab fa-instagram"></i>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- block 2 -->
+					<div class="footer__navigation-block">
+						<h4 class="accordion-toggle medium-title mb-xsm">
+							<b>Information</b>
+							<i class="fas fa-chevron-down"></i>
+						</h4>
+						<ul id="acordion-toggle" class="footer__nav-links small-subtitle">
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">About us</a>
+							</li>
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">Contact us</a>
+							</li>
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">Career</a>
+							</li>
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">My account</a>
+							</li>
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">Orders and Returns</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__block-set">
+					<!-- block 3 -->
+					<div class="footer__navigation-block">
+						<h4 class="accordion-toggle medium-title mb-xsm">
+							<b>Quick Shop</b>
+							<i class="fas fa-chevron-down"></i>
+						</h4>
+						<ul class="footer__nav-links small-subtitle">
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">Fashion</a>
+							</li>
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">Men</a>
+							</li>
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">Women</a>
+							</li>
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">Furniture</a>
+							</li>
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">Home Decor</a>
+							</li>
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">Shoes</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- block 4 -->
+					<div class="footer__navigation-block">
+						<h4 class="accordion-toggle medium-title mb-xsm">
+							<b>Customer Service</b>
+							<i class="fas fa-chevron-down"></i>
+						</h4>
+						<ul class="footer__nav-links small-subtitle">
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">Help & FAQs</a>
+							</li>
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">Returns Policy</a>
+							</li>
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">Terms & Conditions</a>
+							</li>
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">Privacy Policy</a>
+							</li>
+							<li class="footer__nav-link mb-xsm">
+								<a href="#">Support Center</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- block 5 -->
+			<div class="footer__navigation-block">
+				<h4 class="medium-title mb-xsm" style="cursor: default">
+					<b>Newsletter</b>
+				</h4>
+				<p class="small-subtitle mb-xsm">
+					Enter your email to receive daily news and get 20% off coupon for
+					all items.
+				</p>
+				<form action="#">
+					<input class="mb-xsm" type="email" placeholder="Email address" />
+					<br />
+					<button class="btn btn--black">Subscribe</button>
+				</form>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Tiny slider -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+		integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="/script.js"></script>
+	<script src="/tiny-sliders.js"></script>
+	<script src="/hero-carousel.js"></script>
+</body>
+
 </html>

@@ -90,7 +90,7 @@ ul {
   font-weight: 400; }
 
 .mb-xsm {
-  margin-bottom: 1rem; }
+  margin-bottom: 0.5rem; }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -117,7 +117,7 @@ ul {
   margin-bottom: 8rem; }
 
 .my-xsm {
-  margin: 0.5rem 0; }
+  margin: 0.75rem 0; }
 
 .my-sm {
   margin: 2rem 0; }
@@ -647,6 +647,10 @@ ul {
       .slider__slide-img--img-1:hover {
         background-image: url("/img/new-arival-1-2.jpg");
         animation: fadeVisibility 2s; }
+  .slider__slide-span {
+    color: #ff6464; }
+  .slider__slide-stars {
+    color: #ffb503; }
   .slider__slide-colors {
     display: flex;
     align-items: center;
@@ -654,7 +658,8 @@ ul {
   .slider__slide-color {
     cursor: pointer;
     display: inline-block;
-    margin: 0 0.5rem; }
+    margin: 0 0.5rem;
+    padding: 0 0.5rem; }
     .slider__slide-color input {
       display: none; }
   .slider__slide-color-span {
@@ -662,7 +667,7 @@ ul {
     position: relative;
     width: 2rem;
     height: 2rem;
-    transform: scale(0.7);
+    transform: scale(0.8);
     border-radius: 50%; }
     .slider__slide-color-span--red {
       background-color: lightcoral; }
@@ -681,9 +686,9 @@ ul {
     border-radius: 50%;
     width: 140%;
     height: 140%; }
-  .slider__slide-color:hover .slider__slide-color-span--red::before,
-  input:checked ~ .slider__slide-color-span--red::before {
-    background-color: lightcoral; }
+  .slider__slide-color:hover .slider__slide-color-span::before,
+  input:checked ~ .slider__slide-color-span::before {
+    background-color: #ff6464; }
   .slider__slide-color:hover .slider__slide-color-span--green::before,
   input:checked ~ .slider__slide-color-span--green::before {
     background-color: #4db338; }
@@ -802,11 +807,7 @@ ul {
         border-bottom: 1px solid #faf8f8;
         cursor: pointer; }
       .footer__navigation-block h4 i {
-        display: inline-block; }
-      .footer__navigation-block .accordion-toggle {
-        display: flex;
-        justify-content: space-between;
-        align-items: center; } }
+        display: inline-block; } }
   .footer__block-set-wrapper {
     display: flex; }
     @media screen and (max-width: 1000px) {

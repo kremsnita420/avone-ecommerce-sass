@@ -33,12 +33,6 @@
 			h4 i {
 				display: inline-block;
 			}
-
-			.accordion-toggle {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-			}
 		}
 	}
 
@@ -73,6 +67,7 @@
 
 	&__nav-links {
 		flex-direction: column;
+
 		@media screen and (max-width: 770px) {
 			display: none;
 			border-bottom: 1px solid $color-grey-1;

@@ -35,7 +35,7 @@ let slider2 = tns({
     container: '.slider__my-slider',
     items: 1,
     gutter: 20,
-    edgePadding: 30,
+    edgePadding: 40,
     slideBy: '1',
     loop: false,
     rewind: true,
@@ -55,7 +55,7 @@ let slider2 = tns({
         },
         720: {
             items: 3,
-            edgePadding: 0,
+
         },
         480: {
             items: 2,
