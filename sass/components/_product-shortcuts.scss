@@ -1,0 +1,32 @@
+.product-shortcuts {
+	position: absolute;
+	bottom: -5rem;
+	left: 50%;
+	opacity: 0;
+	transform: translate(-50%) ;
+	width: 100%;
+	transition: all .5s ease;
+	
+
+	@media screen and (max-width: 1000px) {
+			bottom: 2rem;
+			opacity: 1;
+		}
+
+	&__icon {
+		background-color: $color-black;
+		color: $color-white;
+		padding: 1rem;
+		border-radius: .5rem;
+
+		&:not(:last-child) {
+			margin-right: .5rem;
+		}
+	}
+
+	.slider__slide-img:hover & {
+		bottom: 2rem;
+		opacity: 1;
+	}
+	
+}

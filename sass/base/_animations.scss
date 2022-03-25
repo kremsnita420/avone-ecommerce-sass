@@ -1,12 +1,12 @@
 // ! Hero carousel animations
 @keyframes fadeVisibility {
 	0% {
-		opacity: 0.5;
+		opacity: 0;
 	}
 
 	100% {
 		opacity: 1;
-		transform: opacity 1s;
+		
 	}
 }
 
@@ -17,5 +17,21 @@
 
 	100% {
 		transform: translate(-50%, -50%) scale(1);
+	}
+}
+
+@keyframes translateY {
+	0% {
+		bottom: -5rem;
+		opacity: 0;
+	}
+
+	90% {
+		bottom: 0;
+		opacity: .5;
+	}
+	100% {
+		bottom: 2rem;
+		opacity: 1;
 	}
 }

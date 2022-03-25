@@ -11,6 +11,8 @@
 		height: 100%;
 		display: none;
 		position: relative;
+		transform: all 2s;
+		
 
 		&--hidden {
 			display: none;
@@ -19,6 +21,7 @@
 		&--image-1 {
 			background: url('../../img/hero-banner-1.jpg') no-repeat center top;
 			background-size: cover;
+			animation: fadeVisibility 2s;
 
 			@media screen and (max-width: 770px) {
 				background: url('../../img/hero-banner-1-mobile.webp') no-repeat center
@@ -29,6 +32,7 @@
 		&--image-2 {
 			background: url('../../img/hero-banner-2.jpg') no-repeat center top;
 			background-size: cover;
+			animation: fadeVisibility 2s;
 
 			@media screen and (max-width: 770px) {
 				background: url('../../img/hero-banner-2-mobile.webp') no-repeat center
@@ -44,6 +48,7 @@
 			align-items: center;
 			max-width: 57rem;
 			min-width: 30rem;
+			animation: scaleVisibility 1s;
 		}
 
 		&__text-wrapper--1 {
@@ -54,8 +59,8 @@
 			top: 50%;
 			left: 75%;
 			transform: translate(-50%, -50%);
-			animation: scaleVisibility 1s;
-			transition: all 0.2s;
+			
+			
 
 			@media screen and (max-width: 770px) {
 				left: 50%;
@@ -72,9 +77,8 @@
 			left: 25%;
 
 			transform: translate(-50%, -50%);
-			animation: scaleVisibility 1s;
-			transition: all 0.4s;
-
+			
+			
 			@media screen and (max-width: 770px) {
 				left: 50%;
 				width: 90vw;

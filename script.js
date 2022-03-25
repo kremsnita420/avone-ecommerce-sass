@@ -1,11 +1,8 @@
-const acc = document.getElementsByClassName("accordion-toggle");
+// ! Navigation toggle
 const navOpen = document.getElementsByClassName('header__hamburger-menu')
 const navClose = document.getElementsByClassName('sidebar__close-icon')
 const sidebar = document.getElementsByClassName('sidebar')
 
-let i;
-
-// ! Navigation toggle
 navClose[0].addEventListener("click", () => {
 
     if (sidebar[0].classList === "sidebar--hidden") {
@@ -34,10 +31,17 @@ navOpen[0].addEventListener("click", () => {
 
 
 // ! Accordion toggle
+const acc = document.getElementsByClassName("accordion-toggle");
+let i;
+
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
         this.classList.toggle("active");
-        const panel = this.nextElementSibling;
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
         if (panel.style.display === "block") {
             panel.style.display = "none";
         } else {

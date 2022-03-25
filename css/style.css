@@ -1,15 +1,25 @@
 @keyframes fadeVisibility {
   0% {
-    opacity: 0.5; }
+    opacity: 0; }
   100% {
-    opacity: 1;
-    transform: opacity 1s; } }
+    opacity: 1; } }
 
 @keyframes scaleVisibility {
   0% {
     transform: translate(-50%, -50%) scale(0.8); }
   100% {
     transform: translate(-50%, -50%) scale(1); } }
+
+@keyframes translateY {
+  0% {
+    bottom: -5rem;
+    opacity: 0; }
+  90% {
+    bottom: 0;
+    opacity: .5; }
+  100% {
+    bottom: 2rem;
+    opacity: 1; } }
 
 *,
 *::before,
@@ -223,18 +233,21 @@ ul {
     width: 100%;
     height: 100%;
     display: none;
-    position: relative; }
+    position: relative;
+    transform: all 2s; }
     .carousel__item--hidden {
       display: none; }
     .carousel__item--image-1 {
       background: url("../../img/hero-banner-1.jpg") no-repeat center top;
-      background-size: cover; }
+      background-size: cover;
+      animation: fadeVisibility 2s; }
       @media screen and (max-width: 770px) {
         .carousel__item--image-1 {
           background: url("../../img/hero-banner-1-mobile.webp") no-repeat center top; } }
     .carousel__item--image-2 {
       background: url("../../img/hero-banner-2.jpg") no-repeat center top;
-      background-size: cover; }
+      background-size: cover;
+      animation: fadeVisibility 2s; }
       @media screen and (max-width: 770px) {
         .carousel__item--image-2 {
           background: url("../../img/hero-banner-2-mobile.webp") no-repeat center top; } }
@@ -245,7 +258,8 @@ ul {
       justify-content: center;
       align-items: center;
       max-width: 57rem;
-      min-width: 30rem; }
+      min-width: 30rem;
+      animation: scaleVisibility 1s; }
     .carousel__item__text-wrapper--1 {
       display: flex;
       flex-direction: column;
@@ -253,9 +267,7 @@ ul {
       position: absolute;
       top: 50%;
       left: 75%;
-      transform: translate(-50%, -50%);
-      animation: scaleVisibility 1s;
-      transition: all 0.2s; }
+      transform: translate(-50%, -50%); }
       @media screen and (max-width: 770px) {
         .carousel__item__text-wrapper--1 {
           left: 50%;
@@ -267,9 +279,7 @@ ul {
       position: absolute;
       top: 50%;
       left: 25%;
-      transform: translate(-50%, -50%);
-      animation: scaleVisibility 1s;
-      transition: all 0.4s; }
+      transform: translate(-50%, -50%); }
       @media screen and (max-width: 770px) {
         .carousel__item__text-wrapper--2 {
           left: 50%;
@@ -408,14 +418,22 @@ ul {
   margin: auto;
   position: relative; }
   .company-logos__sub-container .carousel__btn {
-    background-color: white;
+    background-color: #fff;
     opacity: 1; }
   @media screen and (min-width: 1200px) {
     .company-logos__sub-container .slider__controls1 {
       display: none; } }
 
 .countdown-timer {
-  display: flex; }
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .5s ease; }
+  @media screen and (max-width: 1000px) {
+    .countdown-timer {
+      bottom: 7rem; } }
   .countdown-timer span {
     display: inline-block; }
   .countdown-timer__block-wrapper {
@@ -427,6 +445,29 @@ ul {
   .countdown-timer__time-block {
     font-weight: 700;
     font-size: 1.2rem; }
+
+.product-shortcuts {
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%);
+  width: 100%;
+  transition: all .5s ease; }
+  @media screen and (max-width: 1000px) {
+    .product-shortcuts {
+      bottom: 2rem;
+      opacity: 1; } }
+  .product-shortcuts__icon {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem; }
+    .product-shortcuts__icon:not(:last-child) {
+      margin-right: .5rem; }
+  .slider__slide-img:hover .product-shortcuts {
+    bottom: 2rem;
+    opacity: 1; }
 
 .featured-grid {
   grid-column: center-start / center-end;
@@ -638,6 +679,8 @@ ul {
     background-position: center;
     background-size: cover;
     cursor: pointer;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -645,8 +688,11 @@ ul {
     .slider__slide-img--img-1 {
       background-image: url("/img/new-arival-1-1.jpg"); }
       .slider__slide-img--img-1:hover {
-        background-image: url("/img/new-arival-1-2.jpg");
-        animation: fadeVisibility 2s; }
+        background-image: url("/img/new-arival-1-2.jpg"); }
+        .slider__slide-img--img-1:hover .countdown-timer {
+          bottom: 7rem; }
+  .slider__slide-info {
+    background-color: #fff; }
   .slider__slide-span {
     color: #ff6464; }
   .slider__slide-stars {
@@ -828,7 +874,8 @@ ul {
       .footer__social-links {
         margin-bottom: 1rem; } }
   .footer__nav-links {
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: space-between; }
     @media screen and (max-width: 770px) {
       .footer__nav-links {
         display: none;

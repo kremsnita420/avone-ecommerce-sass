@@ -10,7 +10,6 @@ let slider = tns({
     prevButton: ".slider__previous1",
     nextButton: ".slider__next1",
 
-
     responsive: {
         560: {
             items: 3,
@@ -22,11 +21,6 @@ let slider = tns({
             items: 5,
             edgePadding: 0,
         },
-
-
-
-
-
     }
 });
 
@@ -35,7 +29,7 @@ let slider2 = tns({
     container: '.slider__my-slider',
     items: 1,
     gutter: 20,
-    edgePadding: 40,
+    edgePadding: 20,
     slideBy: '1',
     loop: false,
     rewind: true,
@@ -47,24 +41,16 @@ let slider2 = tns({
     nextButton: ".slider__next",
 
     responsive: {
-
         1020: {
             items: 4,
             edgePadding: 0,
-
         },
-        720: {
+        740: {
             items: 3,
-
         },
-        480: {
+        490: {
             items: 2,
-
         },
-
-
-
-
     }
 });
 
@@ -72,7 +58,7 @@ let slider2 = tns({
 let slider3 = tns({
     container: '.blog__my-articles',
     items: 1,
-    edgePadding: 10,
+    edgePadding: 20,
     slideBy: '1',
     autoplay: false,
     "nav": false,
@@ -80,7 +66,6 @@ let slider3 = tns({
     controlsContainer: ".slider__controls2",
     prevButton: ".slider__previous2",
     nextButton: ".slider__next2",
-
 
     responsive: {
         770: {

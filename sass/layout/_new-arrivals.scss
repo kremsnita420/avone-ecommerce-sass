@@ -1,4 +1,5 @@
 .new-arrivals {
+	
 	grid-column: center-start / center-end;
 	display: flex;
 	flex-direction: column;
@@ -45,6 +46,9 @@
 		background-position: center;
 		background-size: cover;
 		cursor: pointer;
+		position: relative;
+		//hide products shortcuts when they go outside container
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 
 		display: flex;
 		justify-content: center;
@@ -53,12 +57,21 @@
 
 		&--img-1 {
 			background-image: url('/img/new-arival-1-1.jpg');
+			
+			
 
 			&:hover {
 				background-image: url('/img/new-arival-1-2.jpg');
-				animation: fadeVisibility 2s;
+
+				.countdown-timer {
+					bottom: 7rem;
+				}
 			}
 		}
+	}
+
+	&__slide-info {
+		background-color: $color-white;
 	}
 
 	&__slide-span {
