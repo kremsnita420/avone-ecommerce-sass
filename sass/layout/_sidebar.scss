@@ -29,6 +29,9 @@
 		justify-content: flex-start;
 		align-items: center;
 		cursor: pointer;
+		border-bottom: 1px solid $color-grey-1;
+		font-size: 1rem;
+		padding-bottom: .25rem;
 	}
 
 	&__wrapper {

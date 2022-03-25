@@ -92,7 +92,7 @@ ul {
   font-size: 1.6rem; }
 
 .small-subtitle {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 400; }
 
 .xsm-subtitle {
@@ -629,7 +629,10 @@ ul {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    cursor: pointer; }
+    cursor: pointer;
+    border-bottom: 1px solid #faf8f8;
+    font-size: 1rem;
+    padding-bottom: .25rem; }
   .sidebar__wrapper {
     display: flex;
     flex-direction: column;
@@ -832,17 +835,27 @@ ul {
 
 .footer {
   grid-column: center-start / center-end;
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
   .footer__navigation {
     display: flex;
     justify-content: space-between;
-    width: 100%; }
+    width: 100%;
+    border-bottom: 1px dotted #faf8f8; }
     @media screen and (max-width: 1000px) {
       .footer__navigation {
         flex-direction: column; } }
   .footer__navigation-block {
     flex: 1;
     padding-right: 2rem; }
+    .footer__navigation-block input {
+      display: block;
+      width: 100%;
+      border-radius: 0;
+      padding: .5rem 2rem;
+      opacity: .8;
+      font: inherit;
+      font-size: 1.2rem; }
     @media screen and (max-width: 1000px) {
       .footer__navigation-block {
         padding-right: 0; } }
@@ -895,6 +908,31 @@ ul {
   .footer__logo {
     max-width: 9rem;
     max-height: 2.5rem; }
+  .footer__copy-and-pay {
+    display: flex; }
+    @media screen and (max-width: 770px) {
+      .footer__copy-and-pay {
+        flex-direction: column;
+        align-items: center; } }
+  .footer__copy, .footer__pay {
+    flex: 1; }
+  .footer__copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left; }
+    @media screen and (max-width: 770px) {
+      .footer__copy {
+        order: 2;
+        text-align: center; } }
+  .footer__pay {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 1rem 0; }
+    @media screen and (max-width: 770px) {
+      .footer__pay {
+        order: 1; } }
 
 .sidebar {
   background-color: #fff;
@@ -917,7 +955,10 @@ ul {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    cursor: pointer; }
+    cursor: pointer;
+    border-bottom: 1px solid #faf8f8;
+    font-size: 1rem;
+    padding-bottom: .25rem; }
   .sidebar__wrapper {
     display: flex;
     flex-direction: column;
