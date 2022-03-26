@@ -4,6 +4,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 
 	&__container {
 		max-width: 100vw;
@@ -26,6 +27,11 @@
 
 	&__my-slider {
 		position: relative;
+		
+	}
+
+	&__slide {
+		text-align: center;
 	}
 
 	&__slide-img {
@@ -83,7 +89,7 @@
 
 		cursor: pointer;
 		display: inline-block;
-		margin: 0 0.5rem;
+		
 		padding: 0 0.5rem;
 	}
 

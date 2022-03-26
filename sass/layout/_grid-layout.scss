@@ -9,9 +9,9 @@
 		[center-end] minmax(3rem, 1fr)
 		[full-end];
 
-	grid-template-rows: 6rem 70vh repeat(13, min-content);
+	grid-template-rows: 6rem min-content repeat(13, min-content);
 
 	@media screen and (max-width: 770px) {
-		grid-template-rows: 6rem 40vh repeat(13, min-content);
+		grid-template-rows: 6rem min-content repeat(13, min-content);
 	}
 }

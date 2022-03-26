@@ -20,12 +20,13 @@
 		padding-right: 2rem;
 
 		input {
-			display: block;
+			
 			width: 100%;
 			border-radius: 0;
+			border: 1px solid $color-dark-gray;
 			
 			padding: .5rem 2rem;
-			opacity: .8;
+			
 			font: inherit;
 			font-size: 1.2rem;
 
