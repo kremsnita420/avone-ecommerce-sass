@@ -4,7 +4,7 @@
 	background-color: $color-white;
 	display: grid;
 	grid-template-columns:
-		[sidebar-start] 0 [sidebar-end full-start] minmax(3rem, 1fr)
+		[full-start] minmax(3rem, 1fr)
 		[center-start] repeat(8, [col-start] minmax(1rem, 14rem) [col-end])
 		[center-end] minmax(3rem, 1fr)
 		[full-end];

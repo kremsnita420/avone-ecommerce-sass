@@ -27,6 +27,13 @@
 			opacity: .8;
 			font: inherit;
 			font-size: 1.2rem;
+
+			@media screen and (max-width: 1000px) {
+			width: 70%;
+			}
+			@media screen and (max-width: 770px) {
+			width: 100%;
+			}
 			
 		}
 

@@ -93,10 +93,47 @@
 		text-transform: uppercase;
 		cursor: pointer;
 		transition: color 0.2s;
+		
 
+		&--active {
+			position: relative;
+			
+		}
+
+		&--active::before {
+			transition: all 1s ease;
+			content: '';
+			position: absolute;
+			bottom: .5rem;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 90%;
+				
+			height: 2px;
+			background-color: $color-red;	
+			
+		}
+
+		&--active::after {
+			transition: all 1s ease;
+			content: '';
+			position: absolute;
+			bottom: 3px;
+			left: 25%;
+			
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: $color-red;
+			
+		}
+
+		
 		&:hover {
 			color: $color-red;
 		}
+
+
 	}
 
 	&__nav-icons {

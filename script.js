@@ -51,7 +51,10 @@ for (i = 0; i < acc.length; i++) {
 }
 
 // ! Timer
-
+const daysContainer = document.getElementById("days")
+const hoursContainer = document.getElementById("hours")
+const minutesContainer = document.getElementById("minutes")
+const secondsContainer = document.getElementById("seconds")
 // Set the date we're counting down to
 const countDownDate = new Date("jun 5, 2022 15:37:25").getTime();
 
@@ -71,10 +74,12 @@ const x = setInterval(function () {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="countdown-timer"
-    document.getElementById("days").innerHTML = days < 10 ? `0${days}` : `${days}`
-    document.getElementById("hours").innerHTML = hours < 10 ? `0${hours}` : `${hours}`
-    document.getElementById("minutes").innerHTML = minutes < 10 ? `0${minutes}` : `${minutes}`
-    document.getElementById("seconds").innerHTML = seconds < 10 ? `0${seconds}` : `${seconds}`
+    if (secondsContainer) {
+        daysContainer.innerHTML = days < 10 ? `0${days}` : `${days}`
+        hoursContainer.innerHTML = hours < 10 ? `0${hours}` : `${hours}`
+        minutesContainer.innerHTML = minutes < 10 ? `0${minutes}` : `${minutes}`
+        secondsContainer.innerHTML = seconds < 10 ? `0${seconds}` : `${seconds}`
+    }
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
