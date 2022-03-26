@@ -227,10 +227,16 @@ ul {
 
 .carousel {
   grid-column: full-start / full-end;
-  height: 70vh;
+  height: 70rem;
   width: 100%;
   position: relative;
   border-top: 1px solid rgba(250, 248, 248, 0.3); }
+  @media screen and (max-width: 1000px) {
+    .carousel {
+      height: 55rem; } }
+  @media screen and (max-width: 770px) {
+    .carousel {
+      height: 35rem; } }
   .carousel__item {
     width: 100%;
     height: 100%;
@@ -623,9 +629,9 @@ ul {
   display: grid;
   grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(1rem, 14rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
   grid-template-rows: 6rem min-content repeat(13, min-content); }
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 1000px) {
     .container {
-      grid-template-rows: 6rem min-content repeat(13, min-content); } }
+      grid-template-rows: 5rem min-content repeat(13, min-content); } }
 
 .header {
   font-size: 1.3rem;
@@ -634,8 +640,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  .header h1 {
-    line-height: 1; }
   .header__left-icons {
     display: flex; }
     @media screen and (min-width: 1000px) {

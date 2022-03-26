@@ -1,10 +1,16 @@
 .carousel {
 	grid-column: full-start / full-end;
-	height: 70vh;
+	height: 70rem;
 	width: 100%;
 	position: relative;
-
 	border-top: 1px solid rgba($color-grey-1, 0.3);
+
+	@media screen and (max-width: 1000px) {
+			height: 55rem;
+		}
+	@media screen and (max-width: 770px) {
+			height: 35rem;
+		}
 
 	&__item {
 		width: 100%;
