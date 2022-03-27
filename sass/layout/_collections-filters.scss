@@ -1,0 +1,92 @@
+.product-filters {
+	grid-column: center-start / col-start 3;
+	padding-right: 2rem;
+
+	// list;
+	&__list {
+	}
+
+	&__list-item {
+		transition: color 0.2s;
+
+		&:hover {
+			color: $color-red;
+		}
+	}
+
+	// colors
+
+	&__colors {
+	}
+
+	&__colors-list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__colors-list-item {
+		padding: 0.25rem;
+
+		&:not(:last-child) {
+			margin-right: 0.25rem;
+		}
+	}
+
+	&__colors-span {
+		display: inline-block;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		cursor: pointer;
+		background-size: cover;
+
+		&--black {
+			background-color: $color-black;
+		}
+		&--pattern-1 {
+			background-image: url('../img/color-swatch-1.webp');
+		}
+		&--pattern-2 {
+			background-image: url('../img/color-swatch-2.webp');
+		}
+		&--blue {
+			background-color: $color-blue-2;
+		}
+		&--pattern-3 {
+			background-image: url('../img/color-swatch-3.webp');
+		}
+		&--camel {
+			background-color: $color-camel;
+		}
+		&--emerald {
+			background-color: $color-emerald;
+		}
+		&--green {
+			background-color: $color-green;
+		}
+		&--grey {
+			background-color: $color-grey-3;
+		}
+		&--khaki {
+			background-color: $color-khaki;
+		}
+		&--olive-green {
+			background-color: $color-olive-green;
+		}
+		&--orange {
+			background-color: $color-orange;
+		}
+		&--pink {
+			background-color: $color-pink;
+		}
+		&--red {
+			background-color: $color-red;
+		}
+		&--sage {
+			background-color: $color-sage;
+		}
+		&--pattern-4 {
+			background-image: url('../img/color-swatch-4.webp');
+		}
+	}
+}
