@@ -1,0 +1,21 @@
+.filter-toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__icons {
+	}
+
+	&__icon {
+		display: inline-block;
+		cursor: pointer;
+		padding: 0.5rem;
+
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+
+	&__results {
+	}
+}

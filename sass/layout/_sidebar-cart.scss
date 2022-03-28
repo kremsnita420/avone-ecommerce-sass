@@ -1,0 +1,63 @@
+.sidebar-cart {
+	background-color: $color-white;
+	position: fixed;
+	width: 35rem;
+	height: 100vh;
+	z-index: 3000;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+	&--visible {
+		right: 0;
+	}
+	&--hidden {
+		right: -35rem;
+	}
+
+	&__title-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid $color-grey-1;
+	}
+
+	&__close-icon {
+		cursor: pointer;
+
+		padding-bottom: 0.25rem;
+
+		i {
+			display: block;
+			height: 100%;
+		}
+	}
+
+	&__shipping-info {
+		background-color: $color-grey-2;
+	}
+
+	&__shipping-info-text {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+	}
+
+	&__button-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__shipping-icon {
+		display: inline-block;
+		font-size: 2rem;
+		margin-right: 1rem;
+	}
+
+	&__total-price-legal {
+		display: flex;
+		justify-content: space-between;
+	}
+}

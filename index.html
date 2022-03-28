@@ -121,11 +121,69 @@
 		</div>
 	</div>
 
+	<!-- ! Sidebar cart -->
+	<div class="sidebar-cart sidebar-cart--hidden small-subtitle">
+		<!-- title -->
+		<div class="sidebar-cart__title-wrapper px-sm">
+			<h4 class="large-subtitle my-xsm"><b>Your cart</b> </h4>
+			<i class="sidebar-cart__close-icon fas fa-times"></i>
+		</div>
+		<!-- product teaser -->
+		<div class="product-teaser p-sm">
+			<div>
+				<img class="product-teaser__img" src="/img/new-arival-1-1-small" alt="cart teaser image">
+			</div>
+			<div class="product-teaser__info">
+				<p class="product-teaser__title mb-xsm">
+					<a href="#">Innerbloom Puffer Jacket</a>
+					<i class="fas fa-times"></i>
+				</p>
+				<p class="product-teaser__color-size mb-sm">Red / S</p>
+				<div class="product-teaser__price">
+					<p>€443,95</p>
+					<div class="product-teaser__quantity-selector">
+						<input type="number" value="2" min="1">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- shipping info -->
+		<div class="sidebar-cart__shipping-info px-sm mb-sm">
+
+			<p class="sidebar-cart__shipping-info-text py-xsm">
+				<i class="sidebar-cart__shipping-icon fas fa-shipping-fast"></i>
+				You have got <b class="medium-title px-xsm">Free Shipping</b>
+			</p>
+		</div>
+		<!-- total price and legal -->
+		<div class="sidebar-cart__total-price-legal mb-sm px-sm">
+			<p class="medium-title"><b>Subtotal:</b> </p>
+			<p class="medium-title"><b>€443,95</b> </p>
+		</div>
+		<p class="small-subtitle px-sm mb-sm">Shipping & taxes calculated at checkout</p>
+		<div class="px-sm mb-xsm">
+			<label class="product-filters__checkbox-container">
+				I agree with the terms and conditions
+				<input type="radio" hidden>
+				<span class="product-filters__checkmark"></span>
+			</label>
+		</div>
+
+
+		<!-- buttons -->
+		<div class="sidebar-cart__button-wrapper mx-sm">
+			<button class="btn btn--black mb-sm">Proceed to checkout</button>
+			<button class="btn btn--red mb-sm">View cart</button>
+		</div>
+
+
+	</div>
+
 	<!-- ! Header -->
 	<header class="header">
 		<div class="header__left-icons">
 			<!-- hamburger icon -->
-			<div class="header__hamburger-menu nav-toggler">
+			<div class="header__hamburger-menu">
 				<span class="header__hamburger-line-1"></span>
 				<span class="header__hamburger-line-2"></span>
 				<span class="header__hamburger-line-3"></span>
@@ -164,22 +222,23 @@
 				<a href="index.html">Home</a>
 			</li>
 			<li class="header__nav-list-item">
-				<a href="collections.html">Collections</a>
+				<a href="shop.html">Shop</a>
 			</li>
 			<li href="#" class="header__nav-list-item">Look Book</li>
-			<li href="#" class="header__nav-list-item">About Us</li>
-			<li href="#" class="header__nav-list-item">Blog</li>
 			<li href="#" class="header__nav-list-item">Contact Us</li>
 		</ul>
 
 		<!-- icons -->
 		<div class="header__nav-icons">
-			<i class="header__nav-icon header__nav-icon--hidden fas fa-search"></i>
-			<i class="header__nav-icon fas fa-cog"></i>
-			<i class="header__nav-icon header__nav-icon--hidden fas fa-heart"></i>
-			<i class="header__nav-icon fas fa-shopping-bag">
-				<span>2</span>
-			</i>
+			<a class="header__nav-icon header__nav-icon--hidden " href="#" title="Search"><i
+					class="fas fa-search"></i></a>
+			<a class="header__nav-icon " href="#" title="Settings"><i class="fas fa-cog"></i></a>
+			<a class="header__nav-icon header__nav-icon--hidden" href="#" title="Wishlist"><i
+					class="fas fa-heart"></i></a>
+			<a class="header__nav-icon shopping-bag" href="#" title="Cart"><i class="fas fa-shopping-bag">
+					<span>2</span>
+				</i></a>
+
 		</div>
 	</header>
 
@@ -277,7 +336,7 @@
 			<div class="slider__container">
 				<div class="slider__sub-container">
 					<!-- slider -->
-					<div class="slider__my-slider my-lg">
+					<div id="slider__my-slider" class="slider__my-slider my-lg">
 						<!-- slide 1 -->
 						<div>
 							<div class="slider__slide">
@@ -307,9 +366,15 @@
 									</div>
 									<!--! product shortcuts -->
 									<div class="product-shortcuts">
-										<i class="product-shortcuts__icon fas fa-heart"></i>
-										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-										<i class="product-shortcuts__icon fas fa-search-plus"></i>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
+											<i class="product-shortcuts__icon fas fa-heart"></i>
+										</span>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
+											<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
+										</span>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+											<i class="product-shortcuts__icon fas fa-search-plus"></i>
+										</span>
 									</div>
 								</div>
 
@@ -324,18 +389,22 @@
 										</span>
 									</p>
 
+									<!-- ! Colors -->
 									<div class="slider__slide-colors my-xsm">
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
 											<input type="radio" checked="checked" name="radio" />
 											<span
 												class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
 										</label>
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle"
+											data-tooltip="Green">
 											<input type="radio" name="radio" />
 											<span
-												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"></span>
+												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
+												data-tooltip="White/Grey"></span>
 										</label>
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle"
+											data-tooltip="Black">
 											<input type="radio" name="radio" />
 											<span
 												class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
@@ -358,9 +427,15 @@
 								<div class="slider__slide-img slider__slide-img--img-1">
 									<!--! product shortcuts -->
 									<div class="product-shortcuts">
-										<i class="product-shortcuts__icon fas fa-heart"></i>
-										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-										<i class="product-shortcuts__icon fas fa-search-plus"></i>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
+											<i class="product-shortcuts__icon fas fa-heart"></i>
+										</span>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
+											<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
+										</span>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+											<i class="product-shortcuts__icon fas fa-search-plus"></i>
+										</span>
 									</div>
 								</div>
 								<br />
@@ -370,18 +445,22 @@
 										€694,95
 									</p>
 
+									<!-- ! Colors -->
 									<div class="slider__slide-colors my-xsm">
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
 											<input type="radio" checked="checked" name="radio" />
 											<span
 												class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
 										</label>
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle"
+											data-tooltip="Green">
 											<input type="radio" name="radio" />
 											<span
-												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"></span>
+												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
+												data-tooltip="White/Grey"></span>
 										</label>
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle"
+											data-tooltip="Black">
 											<input type="radio" name="radio" />
 											<span
 												class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
@@ -404,9 +483,15 @@
 								<div class="slider__slide-img slider__slide-img--img-1">
 									<!--! product shortcuts -->
 									<div class="product-shortcuts">
-										<i class="product-shortcuts__icon fas fa-heart"></i>
-										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-										<i class="product-shortcuts__icon fas fa-search-plus"></i>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
+											<i class="product-shortcuts__icon fas fa-heart"></i>
+										</span>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
+											<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
+										</span>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+											<i class="product-shortcuts__icon fas fa-search-plus"></i>
+										</span>
 									</div>
 								</div>
 								<br />
@@ -416,18 +501,22 @@
 										€694,95
 									</p>
 
+									<!-- ! Colors -->
 									<div class="slider__slide-colors my-xsm">
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
 											<input type="radio" checked="checked" name="radio" />
 											<span
 												class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
 										</label>
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle"
+											data-tooltip="Green">
 											<input type="radio" name="radio" />
 											<span
-												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"></span>
+												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
+												data-tooltip="White/Grey"></span>
 										</label>
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle"
+											data-tooltip="Black">
 											<input type="radio" name="radio" />
 											<span
 												class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
@@ -438,8 +527,8 @@
 										<i class="fas fa-star"></i>
 										<i class="fas fa-star"></i>
 										<i class="fas fa-star"></i>
-										<i class="far fa-star"></i>
-										<i class="far fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
 									</div>
 								</div>
 							</div>
@@ -450,9 +539,15 @@
 								<div class="slider__slide-img slider__slide-img--img-1">
 									<!--! product shortcuts -->
 									<div class="product-shortcuts">
-										<i class="product-shortcuts__icon fas fa-heart"></i>
-										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-										<i class="product-shortcuts__icon fas fa-search-plus"></i>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
+											<i class="product-shortcuts__icon fas fa-heart"></i>
+										</span>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
+											<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
+										</span>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+											<i class="product-shortcuts__icon fas fa-search-plus"></i>
+										</span>
 									</div>
 								</div>
 								<br />
@@ -462,18 +557,22 @@
 										€694,95
 									</p>
 
+									<!-- ! Colors -->
 									<div class="slider__slide-colors my-xsm">
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
 											<input type="radio" checked="checked" name="radio" />
 											<span
 												class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
 										</label>
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle"
+											data-tooltip="Green">
 											<input type="radio" name="radio" />
 											<span
-												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"></span>
+												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
+												data-tooltip="White/Grey"></span>
 										</label>
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle"
+											data-tooltip="Black">
 											<input type="radio" name="radio" />
 											<span
 												class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
@@ -485,7 +584,7 @@
 										<i class="fas fa-star"></i>
 										<i class="fas fa-star"></i>
 										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
 									</div>
 								</div>
 							</div>
@@ -496,9 +595,15 @@
 								<div class="slider__slide-img slider__slide-img--img-1">
 									<!--! product shortcuts -->
 									<div class="product-shortcuts">
-										<i class="product-shortcuts__icon fas fa-heart"></i>
-										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-										<i class="product-shortcuts__icon fas fa-search-plus"></i>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
+											<i class="product-shortcuts__icon fas fa-heart"></i>
+										</span>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
+											<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
+										</span>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+											<i class="product-shortcuts__icon fas fa-search-plus"></i>
+										</span>
 									</div>
 								</div>
 								<br />
@@ -508,18 +613,22 @@
 										€694,95
 									</p>
 
+									<!-- ! Colors -->
 									<div class="slider__slide-colors my-xsm">
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
 											<input type="radio" checked="checked" name="radio" />
 											<span
 												class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
 										</label>
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle"
+											data-tooltip="Green">
 											<input type="radio" name="radio" />
 											<span
-												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"></span>
+												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
+												data-tooltip="White/Grey"></span>
 										</label>
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle"
+											data-tooltip="Black">
 											<input type="radio" name="radio" />
 											<span
 												class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
@@ -531,7 +640,7 @@
 										<i class="fas fa-star"></i>
 										<i class="fas fa-star"></i>
 										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
 									</div>
 								</div>
 							</div>
@@ -542,9 +651,15 @@
 								<div class="slider__slide-img slider__slide-img--img-1">
 									<!--! product shortcuts -->
 									<div class="product-shortcuts">
-										<i class="product-shortcuts__icon fas fa-heart"></i>
-										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-										<i class="product-shortcuts__icon fas fa-search-plus"></i>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
+											<i class="product-shortcuts__icon fas fa-heart"></i>
+										</span>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
+											<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
+										</span>
+										<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+											<i class="product-shortcuts__icon fas fa-search-plus"></i>
+										</span>
 									</div>
 								</div>
 								<br />
@@ -554,18 +669,22 @@
 										€694,95
 									</p>
 
+									<!-- ! Colors -->
 									<div class="slider__slide-colors my-xsm">
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
 											<input type="radio" checked="checked" name="radio" />
 											<span
 												class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
 										</label>
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle"
+											data-tooltip="Green">
 											<input type="radio" name="radio" />
 											<span
-												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"></span>
+												class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
+												data-tooltip="White/Grey"></span>
 										</label>
-										<label class="slider__slide-color">
+										<label class="slider__slide-color tooltip tooltip--triangle"
+											data-tooltip="Black">
 											<input type="radio" name="radio" />
 											<span
 												class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
@@ -577,7 +696,7 @@
 										<i class="fas fa-star"></i>
 										<i class="fas fa-star"></i>
 										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
 									</div>
 								</div>
 							</div>
@@ -605,7 +724,7 @@
 				<img src="/img/two-column-grid-1.webp" alt="Featured image 1" class="two-column-grid__image" />
 				<div class="shop-now-window">
 					<h3 class="medium-title mb-sm">
-						<b>Find the best collection around the world</b>
+						<b>Find the best collections around the world</b>
 					</h3>
 
 					<button class="btn btn--black">Discover Now</button>
@@ -1072,6 +1191,7 @@
 			</div>
 		</div>
 	</footer>
+
 
 	<!-- Tiny slider -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"

@@ -39,7 +39,6 @@
 .medium-title {
 	font-size: 1.4rem;
 	text-transform: uppercase;
-	
 }
 .small-title {
 	font-size: 1rem;
@@ -47,20 +46,24 @@
 	font-weight: normal;
 }
 
+.large-subtitle {
+	@extend %heading;
+	font-size: 1.6rem;
+}
 .medium-subtitle {
 	@extend %heading;
 
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 }
 
 .small-subtitle {
 	@extend %heading;
 
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	font-weight: 400;
 }
 
 .xsm-subtitle {
-	font-size: 1.1rem;
+	font-size: 1rem;
 	font-weight: 400;
 }

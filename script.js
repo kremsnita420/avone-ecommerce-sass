@@ -4,29 +4,36 @@ const navClose = document.getElementsByClassName('sidebar__close-icon')
 const sidebar = document.getElementsByClassName('sidebar')
 
 navClose[0].addEventListener("click", () => {
+    sidebar[0].classList.remove("sidebar--visible")
+    sidebar[0].classList.add("sidebar--hidden")
 
-    if (sidebar[0].classList === "sidebar--hidden") {
-        sidebar[0].classList.remove("sidebar--hidden")
-        sidebar[0].classList.add("sidebar--visible")
-
-    } else {
-        sidebar[0].classList.add("sidebar--hidden")
-        sidebar[0].classList.remove("sidebar--visible")
-
-    }
 });
 
 navOpen[0].addEventListener("click", () => {
 
-    if (sidebar[0].classList === "sidebar--hidden") {
-        sidebar[0].classList.add("sidebar--hidden")
-        sidebar[0].classList.remove("sidebar--visible")
+    sidebar[0].classList.remove("sidebar--hidden")
+    sidebar[0].classList.add("sidebar--visible")
 
-    } else {
-        sidebar[0].classList.remove("sidebar--hidden")
-        sidebar[0].classList.add("sidebar--visible")
+});
 
-    }
+
+// ! Sidebar cart toggle
+const cartOpen = document.getElementsByClassName('shopping-bag')
+const cartClose = document.getElementsByClassName('sidebar-cart__close-icon')
+const sidebarCart = document.getElementsByClassName('sidebar-cart')
+
+cartClose[0].addEventListener("click", () => {
+    sidebarCart[0].classList.remove("sidebar-cart--visible")
+    sidebarCart[0].classList.add("sidebar-cart--hidden")
+    console.log('close')
+
+});
+
+cartOpen[0].addEventListener("click", () => {
+    sidebarCart[0].classList.remove("sidebar-cart--hidden")
+    sidebarCart[0].classList.add("sidebar-cart--visible")
+    console.log('open')
+
 });
 
 
@@ -49,6 +56,7 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
 
 // ! Timer
 const daysContainer = document.getElementById("days")

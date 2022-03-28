@@ -36,7 +36,11 @@ ul {
 	list-style: none;
 }
 
+li {
+	position: relative;
+}
+
 ::selection {
-	background-color: $color-red;
+	background-color: $color-blue-2;
 	color: $color-grey-1;
 }

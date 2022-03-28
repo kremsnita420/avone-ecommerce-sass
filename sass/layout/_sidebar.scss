@@ -1,7 +1,5 @@
 .sidebar {
 	background-color: $color-white;
-	grid-column: sidebar-start / sidebar-end;
-	grid-row: 1 / 15;
 
 	position: fixed;
 	width: 30rem;
@@ -9,7 +7,7 @@
 	z-index: 3000;
 	top: 0;
 
-	transition: all 1s;
+	transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
 	&--visible {
 		left: 0;
@@ -31,7 +29,7 @@
 		cursor: pointer;
 		border-bottom: 1px solid $color-grey-1;
 		font-size: 1rem;
-		padding-bottom: .25rem;
+		padding-bottom: 0.25rem;
 	}
 
 	&__wrapper {

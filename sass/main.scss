@@ -19,18 +19,23 @@
 @import 'components/product-slide';
 @import 'components/product-shortcuts';
 @import 'components/breadcrumbs';
+@import 'components/tooltip';
+@import 'components/filter-toolbar';
+@import 'components/dropdown';
+@import 'components/product-teaser';
 
 //layout
-@import 'layout/featured-grid';
-@import 'layout/grid-layout';
-@import 'layout/header';
-@import 'layout/sidebar';
-@import 'layout/new-arrivals';
-@import 'layout/blog-section';
-@import 'layout/info-banner';
 @import 'layout/footer';
 @import 'layout/sidebar';
-@import 'layout/collections-filters';
-@import 'layout/collections-grid';
+@import 'layout/grid-layout';
+@import 'layout/sidebar';
+@import 'layout/sidebar-cart';
+@import 'layout/home/header';
+@import 'layout/home/featured-grid';
+@import 'layout/home/new-arrivals';
+@import 'layout/home/blog-section';
+@import 'layout/home/info-banner';
+@import 'layout/shop/collections-filters';
+@import 'layout/shop/collections-grid';
 //pages
 @import 'pages/home';

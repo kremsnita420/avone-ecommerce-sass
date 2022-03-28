@@ -3,24 +3,23 @@
 	bottom: -5rem;
 	left: 50%;
 	opacity: 0;
-	transform: translate(-50%) ;
+	transform: translate(-50%);
 	width: 100%;
-	transition: all .5s ease;
-	
+	transition: all 0.5s ease;
 
 	@media screen and (max-width: 1000px) {
-			bottom: 2rem;
-			opacity: 1;
-		}
+		bottom: 2rem;
+		opacity: 1;
+	}
 
 	&__icon {
 		background-color: $color-black;
 		color: $color-white;
-		padding: 1rem;
-		border-radius: .5rem;
+		padding: 0.75rem;
+		border-radius: 0.5rem;
 
 		&:not(:last-child) {
-			margin-right: .5rem;
+			margin-right: 0.5rem;
 		}
 	}
 
@@ -28,5 +27,4 @@
 		bottom: 2rem;
 		opacity: 1;
 	}
-	
 }

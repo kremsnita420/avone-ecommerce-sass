@@ -3,7 +3,7 @@
 }
 
 .mb-sm {
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 }
 
 .mb-md {
@@ -12,6 +12,9 @@
 
 .mb-lg {
 	margin-bottom: 5rem;
+}
+.mb-xl {
+	margin-bottom: 10rem;
 }
 
 .mt-xsm {
@@ -30,8 +33,8 @@
 	margin-top: 5rem;
 }
 
-.my-xl {
-	margin-bottom: 8rem;
+.mt-xl {
+	margin-top: 8rem;
 }
 
 .my-xsm {
@@ -52,6 +55,26 @@
 
 .my-xl {
 	margin: 8rem 0;
+}
+
+.mx-xsm {
+	margin: 0 0.75rem;
+}
+
+.mx-sm {
+	margin: 0 2rem;
+}
+
+.mx-md {
+	margin: 0 3rem;
+}
+
+.mx-lg {
+	margin: 0 5rem;
+}
+
+.mx-xl {
+	margin: 0 8rem;
 }
 
 // ! PADDINGS

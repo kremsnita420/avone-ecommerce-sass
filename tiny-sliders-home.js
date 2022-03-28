@@ -26,7 +26,7 @@ let slider = tns({
 
 
 let slider2 = tns({
-    container: '.slider__my-slider',
+    container: '#slider__my-slider',
     items: 1,
     gutter: 20,
     edgePadding: 20,
@@ -51,11 +51,10 @@ let slider2 = tns({
         },
         490: {
             items: 2,
-            edgePadding: 0,
+            edgePadding: 20,
         },
     }
 });
-
 
 let slider3 = tns({
     container: '.blog__my-articles',
@@ -70,7 +69,7 @@ let slider3 = tns({
     nextButton: ".slider__next2",
 
     responsive: {
-        770: {
+        600: {
             items: 2,
         },
         1200: {
@@ -79,3 +78,5 @@ let slider3 = tns({
         }
     }
 });
+
+

@@ -1,0 +1,48 @@
+.product-teaser {
+	display: flex;
+	justify-content: space-between;
+
+	&__img {
+		display: block;
+		margin-right: 1rem;
+		cursor: pointer;
+		transition: opacity 0.3s ease-in-out;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	&__info {
+		width: 100%;
+	}
+
+	&__title {
+		display: flex;
+		justify-content: space-between;
+
+		i {
+			display: block;
+			border: 1px solid $color-grey-3;
+			color: $color-grey-3;
+			border-radius: 2px;
+			padding: 0 0.2rem;
+			font-size: 1.5rem;
+			line-height: 1.1;
+			cursor: pointer;
+		}
+	}
+
+	&__color-size {
+		color: $color-grey-3;
+	}
+
+	&__price {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__quantity-selector input {
+		width: 5rem;
+	}
+}
