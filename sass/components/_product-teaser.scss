@@ -22,13 +22,15 @@
 		justify-content: space-between;
 
 		i {
-			display: block;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			border: 1px solid $color-grey-3;
 			color: $color-grey-3;
 			border-radius: 2px;
-			padding: 0 0.2rem;
-			font-size: 1.5rem;
-			line-height: 1.1;
+			padding: 0 0.4rem;
+			font-size: 1.2rem;
+
 			cursor: pointer;
 		}
 	}

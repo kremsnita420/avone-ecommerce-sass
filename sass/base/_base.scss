@@ -40,6 +40,10 @@ li {
 	position: relative;
 }
 
+i {
+	display: inline-block;
+}
+
 ::selection {
 	background-color: $color-blue-2;
 	color: $color-grey-1;
