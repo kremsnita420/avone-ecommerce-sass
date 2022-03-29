@@ -150,6 +150,50 @@
 				</div>
 			</div>
 		</div>
+		<!-- product teaser -->
+		<div class="product-teaser p-sm">
+			<div>
+				<img class="product-teaser__img" src="/img/new-arival-1-1-small" alt="cart teaser image">
+			</div>
+			<div class="product-teaser__info">
+				<p class="product-teaser__title mb-xsm">
+					<a href="#">Innerbloom Puffer Jacket</a>
+					<a href="#" class="tooltip tooltip--triangle" data-tooltip="Remove from cart">
+						<i class="fas fa-times"></i>
+					</a>
+
+				</p>
+				<p class="product-teaser__color-size mb-sm">Red / S</p>
+				<div class="product-teaser__price">
+					<p>€443,95</p>
+					<div class="product-teaser__quantity-selector">
+						<input type="number" value="2" min="1">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- product teaser -->
+		<div class="product-teaser p-sm">
+			<div>
+				<img class="product-teaser__img" src="/img/new-arival-1-1-small" alt="cart teaser image">
+			</div>
+			<div class="product-teaser__info">
+				<p class="product-teaser__title mb-xsm">
+					<a href="#">Innerbloom Puffer Jacket</a>
+					<a href="#" class="tooltip tooltip--triangle" data-tooltip="Remove from cart">
+						<i class="fas fa-times"></i>
+					</a>
+
+				</p>
+				<p class="product-teaser__color-size mb-sm">Red / S</p>
+				<div class="product-teaser__price">
+					<p>€443,95</p>
+					<div class="product-teaser__quantity-selector">
+						<input type="number" value="2" min="1">
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- shipping info -->
 		<div class="sidebar-cart__shipping-info px-sm mb-sm">
 
@@ -222,10 +266,10 @@
 
 		<!-- navigation -->
 		<ul class="header__nav-list">
-			<li class="header__nav-list-item header__nav-list-item--active">
+			<li class="header__nav-list-item">
 				<a href="index.html">Home</a>
 			</li>
-			<li class="header__nav-list-item">
+			<li class="header__nav-list-item header__nav-list-item--active">
 				<a href="shop.html">Shop</a>
 			</li>
 			<li href="#" class="header__nav-list-item">Look Book</li>
@@ -674,8 +718,8 @@
 		<div class="product-filters p-sm">
 			<!-- ! categories -->
 			<!-- title -->
-			<div class="product-filters-sidebar__title-wrapper">
-				<h4 class="medium-title mb-sm">Categories</h4>
+			<div class="product-filters-sidebar__title-wrapper mb-sm">
+				<h4 class="medium-title">Categories</h4>
 				<i title="close" class="product-filters-sidebar__close-icon fas fa-times"></i>
 			</div>
 
@@ -1007,7 +1051,7 @@
 						<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
 							<i class="product-shortcuts__icon fas fa-heart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
+						<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
 						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
@@ -1038,9 +1082,9 @@
 						</div>
 					</div>
 				</div>
-
+				<!-- info -->
 				<div class="slider__slide-info">
-					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket</p>
+					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
 					<p class="small-subtitle  my-xsm">
 						€694,95
 					</p>
@@ -1067,6 +1111,14 @@
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star-half-alt"></i>
+					</div>
+				</div>
+
+				<!-- ! Quick shop modal -->
+				<div class="quick-shop-modal quick-shop-modal--hidden">
+					<div class="quick-shop-modal__close-icon px-xsm tooltip tooltip--triangle"
+						data-tooltip="Close quick shop">
+						<i class="fas fas fa-times"></i>
 					</div>
 				</div>
 			</div>
@@ -1787,6 +1839,7 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 	<script src="script.js"></script>
+	<script src="script-shop.js"></script>
 	<script src="tiny-sliders-shop.js"></script>
 
 </body>

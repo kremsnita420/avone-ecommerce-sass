@@ -1,8 +1,9 @@
-$sidebar-width: 34rem;
+$sidebar-width: 32rem;
 
 .sidebar-cart {
 	background-color: $color-white;
-
+	overflow-y: auto;
+	overflow-x: hidden;
 	position: fixed;
 	width: $sidebar-width;
 	height: 100vh;
@@ -31,7 +32,7 @@ $sidebar-width: 34rem;
 	&__close-icon {
 		cursor: pointer;
 
-		padding-bottom: 0.25rem;
+		padding-top: 0.15rem;
 	}
 
 	&__shipping-info {

@@ -504,7 +504,8 @@ i {
   position: relative; }
 
 .slider__slide {
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 .slider__slide-img {
   width: 100%;
@@ -704,7 +705,8 @@ input:checked ~ .slider__slide-color-span--black::before {
 .dropdown__filters {
   font-family: "Poppins", sans-serif;
   border: transparent;
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
 
 .product-teaser {
   display: flex;
@@ -739,6 +741,36 @@ input:checked ~ .slider__slide-color-span--black::before {
     justify-content: space-between; }
   .product-teaser__quantity-selector input {
     width: 5rem; }
+
+.quick-shop-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-origin: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: top; }
+  .quick-shop-modal--visible {
+    opacity: 1;
+    height: 100%;
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.25); }
+  .quick-shop-modal--hidden {
+    opacity: 0;
+    height: 0; }
+  .quick-shop-modal__close-icon {
+    display: inline-block;
+    align-self: flex-end;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out; }
+    .quick-shop-modal__close-icon:hover {
+      color: #e34848; }
 
 .footer {
   grid-column: center-start / center-end;
@@ -851,11 +883,12 @@ input:checked ~ .slider__slide-color-span--black::before {
 
 .sidebar {
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   width: 30rem;
-  height: 100vh;
+  max-height: 100vh;
   z-index: 3000;
   top: 0;
+  bottom: 0;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1); }
   .sidebar--visible {
     left: 0;
@@ -902,11 +935,12 @@ input:checked ~ .slider__slide-color-span--black::before {
 
 .sidebar {
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   width: 30rem;
-  height: 100vh;
+  max-height: 100vh;
   z-index: 3000;
   top: 0;
+  bottom: 0;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1); }
   .sidebar--visible {
     left: 0;
@@ -942,8 +976,10 @@ input:checked ~ .slider__slide-color-span--black::before {
 
 .sidebar-cart {
   background-color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
   position: fixed;
-  width: 34rem;
+  width: 32rem;
   height: 100vh;
   z-index: 3000;
   top: 0;
@@ -955,7 +991,7 @@ input:checked ~ .slider__slide-color-span--black::before {
     right: 0;
     box-shadow: -2px -1px 6px 1px rgba(0, 0, 0, 0.25); }
   .sidebar-cart--hidden {
-    right: -34rem; }
+    right: -32rem; }
   .sidebar-cart__title-wrapper {
     display: flex;
     justify-content: space-between;
@@ -963,7 +999,7 @@ input:checked ~ .slider__slide-color-span--black::before {
     border-bottom: 1px solid #faf8f8; }
   .sidebar-cart__close-icon {
     cursor: pointer;
-    padding-bottom: 0.25rem; }
+    padding-top: 0.15rem; }
   .sidebar-cart__shipping-info {
     background-color: #f2f2f2; }
   .sidebar-cart__shipping-info-text {
@@ -1236,6 +1272,7 @@ input:checked ~ .slider__slide-color-span--black::before {
       display: none; } }
 
 .product-filters {
+  height: calc(100vh - 4rem);
   /* ! custom checkbox */
   /* When the checkbox is checked, add a dark background */
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -1353,10 +1390,12 @@ input:checked ~ .slider__slide-color-span--black::before {
 
 .product-filters-sidebar {
   background-color: #fff;
+  height: 100vh;
   position: fixed;
   width: 30rem;
   z-index: 3000;
   top: 0;
+  overflow: auto;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1); }
   .product-filters-sidebar--visible {
     left: 0;
@@ -1368,5 +1407,4 @@ input:checked ~ .slider__slide-color-span--black::before {
     justify-content: space-between;
     align-items: center; }
   .product-filters-sidebar__close-icon {
-    align-self: flex-start;
     cursor: pointer; }

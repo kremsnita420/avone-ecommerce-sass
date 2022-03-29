@@ -1,11 +1,12 @@
 .sidebar {
 	background-color: $color-white;
 
-	position: absolute;
+	position: fixed;
 	width: 30rem;
-	height: 100vh;
+	max-height: 100vh;
 	z-index: 3000;
 	top: 0;
+	bottom: 0;
 
 	transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1);
 

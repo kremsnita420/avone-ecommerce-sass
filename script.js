@@ -36,26 +36,24 @@ cartOpen[0].addEventListener("click", () => {
 
 });
 
-// ! Sidebar filters toggle
-const filterOpen = document.getElementsByClassName('product-filter-btn')
-const filterClose = document.getElementsByClassName('product-filters-sidebar__close-icon')
+// ! Quick shop modal toggle
+const quickShopOpen = document.getElementsByClassName('quick-shop')
+const quickShopClose = document.getElementsByClassName('quick-shop-modal__close-icon')
+const quickShopModal = document.getElementsByClassName('quick-shop-modal')
 
-const sidebarFilters = document.getElementsByClassName('product-filters-sidebar')
-
-filterOpen[0].addEventListener("click", () => {
-    sidebarFilters[0].classList.add("product-filters-sidebar--visible")
-    sidebarFilters[0].classList.remove("product-filters-sidebar--hidden")
+quickShopOpen[0].addEventListener("click", () => {
+    quickShopModal[0].classList.add("quick-shop-modal--visible")
+    quickShopModal[0].classList.remove("quick-shop-modal--hidden")
     console.log('open')
 
 });
 
-filterClose[0].addEventListener("click", () => {
-    sidebarFilters[0].classList.add("product-filters-sidebar--hidden")
-    sidebarFilters[0].classList.remove("product-filters-sidebar--visible")
+quickShopClose[0].addEventListener("click", () => {
+    quickShopModal[0].classList.add("quick-shop-modal--hidden")
+    quickShopModal[0].classList.remove("quick-shop-modal--visible")
     console.log('close')
 
 });
-
 
 // ! Accordion toggle
 const acc = document.getElementsByClassName("accordion-toggle");
