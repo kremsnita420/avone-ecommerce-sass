@@ -4,6 +4,11 @@
 	align-items: center;
 
 	&__icons {
+		button {
+			@media screen and (min-width: 1000px) {
+				display: none;
+			}
+		}
 	}
 
 	&__icon {

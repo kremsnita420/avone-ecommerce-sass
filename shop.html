@@ -121,11 +121,73 @@
 		</div>
 	</div>
 
+	<!-- ! Sidebar cart -->
+	<div class="sidebar-cart sidebar-cart--hidden small-subtitle">
+		<!-- title -->
+		<div class="sidebar-cart__title-wrapper px-sm">
+			<h4 class="large-subtitle my-xsm"><b>Your cart</b> </h4>
+			<i title="close" class="sidebar-cart__close-icon fas fa-times"></i>
+		</div>
+		<!-- product teaser -->
+		<div class="product-teaser p-sm">
+			<div>
+				<img class="product-teaser__img" src="/img/new-arival-1-1-small" alt="cart teaser image">
+			</div>
+			<div class="product-teaser__info">
+				<p class="product-teaser__title mb-xsm">
+					<a href="#">Innerbloom Puffer Jacket</a>
+					<a href="#" class="tooltip tooltip--triangle" data-tooltip="Remove from cart">
+						<i class="fas fa-times"></i>
+					</a>
+
+				</p>
+				<p class="product-teaser__color-size mb-sm">Red / S</p>
+				<div class="product-teaser__price">
+					<p>€443,95</p>
+					<div class="product-teaser__quantity-selector">
+						<input type="number" value="2" min="1">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- shipping info -->
+		<div class="sidebar-cart__shipping-info px-sm mb-sm">
+
+			<p class="sidebar-cart__shipping-info-text py-xsm">
+				<i class="sidebar-cart__shipping-icon fas fa-shipping-fast"></i>
+				You have got <b class="medium-title px-xsm">Free Shipping</b>
+			</p>
+		</div>
+		<!-- total price and legal -->
+		<div class="sidebar-cart__total-price-legal mb-sm px-sm">
+			<p class="medium-title"><b>Subtotal:</b> </p>
+			<p class="medium-title"><b>€443,95</b> </p>
+		</div>
+		<p class="small-subtitle px-sm mb-sm">Shipping & taxes calculated at checkout</p>
+		<div class="px-sm mb-xsm">
+			<label class="product-filters__checkbox-container">
+				I agree with the terms and conditions
+				<input type="radio" hidden>
+				<span class="product-filters__checkmark"></span>
+			</label>
+		</div>
+
+
+		<!-- buttons -->
+		<div class="sidebar-cart__button-wrapper mx-sm">
+			<button class="btn btn--black mb-sm">Proceed to checkout</button>
+			<button class="btn btn--red mb-sm">View cart</button>
+		</div>
+
+
+	</div>
+
 	<!-- ! Header -->
+	<div class="header__background"></div>
 	<header class="header">
 		<div class="header__left-icons">
 			<!-- hamburger icon -->
-			<div class="header__hamburger-menu nav-toggler">
+			<div class="header__hamburger-menu">
 				<span class="header__hamburger-line-1"></span>
 				<span class="header__hamburger-line-2"></span>
 				<span class="header__hamburger-line-3"></span>
@@ -160,15 +222,14 @@
 
 		<!-- navigation -->
 		<ul class="header__nav-list">
-			<li class="header__nav-list-item">
+			<li class="header__nav-list-item header__nav-list-item--active">
 				<a href="index.html">Home</a>
 			</li>
-			<li class="header__nav-list-item  header__nav-list-item--active">
+			<li class="header__nav-list-item">
 				<a href="shop.html">Shop</a>
 			</li>
 			<li href="#" class="header__nav-list-item">Look Book</li>
-			<li href="#" class="header__nav-list-item">About Us</li>
-			<li href="#" class="header__nav-list-item">Blog</li>
+			<li href="#" class="header__nav-list-item">Contact Us</li>
 		</ul>
 
 		<!-- icons -->
@@ -176,9 +237,9 @@
 			<a class="header__nav-icon header__nav-icon--hidden " href="#" title="Search"><i
 					class="fas fa-search"></i></a>
 			<a class="header__nav-icon " href="#" title="Settings"><i class="fas fa-cog"></i></a>
-			<a class="header__nav-icon header__nav-icon--hidden " href="#" title="Wishlist"><i
+			<a class="header__nav-icon header__nav-icon--hidden" href="#" title="Wishlist"><i
 					class="fas fa-heart"></i></a>
-			<a class="header__nav-icon " href="#" title="Cart"><i class="fas fa-shopping-bag">
+			<a class="header__nav-icon shopping-bag" href="#" title="Cart"><i class="fas fa-shopping-bag">
 					<span>2</span>
 				</i></a>
 
@@ -195,419 +256,708 @@
 	</div>
 
 	<!-- ! Filters -->
-	<div class="product-filters">
-		<!-- ! categories -->
-		<h4 class="medium-title mb-sm">Categories</h4>
-		<ul class="product-filters__list small-subtitle mb-md">
-			<li class="product-filters__list-item mb-xsm"><a href="#"><b>Women</b></a></li>
-			<li class="product-filters__list-item mb-xsm"><a href="#">Men</a></li>
-			<li class="product-filters__list-item mb-xsm"><a href="#">Shoes</a></li>
-			<li class="product-filters__list-item mb-xsm"><a href="#">Popular</a></li>
-			<li class="product-filters__list-item mb-xsm"><a href="#">Best Seller</a></li>
-			<li class="product-filters__list-item mb-xsm"><a href="#">Accessories</a></li>
-		</ul>
-		<!-- ! colors -->
-		<h4 class="medium-title mb-sm">Color</h4>
-		<div class="product-filters__colors mb-md">
-			<ul class="product-filters__colors-list">
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--black"
-						data-tooltip="Black"></span>
-				</li>
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--pattern-1"
-						data-tooltip="Black/White"></span>
-				</li>
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--pattern-2"
-						data-tooltip="Black/Pink"></span>
-				</li>
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--blue"
-						data-tooltip="Blue"></span>
-				</li>
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--pattern-3"
-						data-tooltip="Blue/Red"></span>
-				</li>
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--camel"
-						data-tooltip="Camel"></span>
-				</li>
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--emerald"
-						data-tooltip="Emerald"></span>
-				</li>
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--green"
-						data-tooltip="Green"></span>
-				</li>
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--grey"
-						data-tooltip="Grey"></span>
-				</li>
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--khaki"
-						data-tooltip="Khaki"></span>
-				</li>
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--olive-green"
-						data-tooltip="Olive Green"></span>
-				</li>
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--orange"
-						data-tooltip="Orange"></span>
-				</li>
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--pink"
-						data-tooltip="Pink"></span>
-				</li>
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--red"
-						data-tooltip="Red"></span>
-				</li>
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--sage"
-						data-tooltip="Sage"></span>
-				</li>
-				<li class="product-filters__colors-list-item">
-					<span
-						class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--pattern-4"
-						data-tooltip="White/Grey"></span>
-				</li>
+	<div class="product-filters-wrapper">
+		<div class="product-filters">
+			<!-- ! categories -->
+			<h4 class="medium-title mb-sm">Categories</h4>
+			<ul class="product-filters__list small-subtitle mb-md">
+				<li class="product-filters__list-item mb-xsm"><a href="#"><b>Women</b></a></li>
+				<li class="product-filters__list-item mb-xsm"><a href="#">Men</a></li>
+				<li class="product-filters__list-item mb-xsm"><a href="#">Shoes</a></li>
+				<li class="product-filters__list-item mb-xsm"><a href="#">Popular</a></li>
+				<li class="product-filters__list-item mb-xsm"><a href="#">Best Seller</a></li>
+				<li class="product-filters__list-item mb-xsm"><a href="#">Accessories</a></li>
 			</ul>
-		</div>
-		<!-- ! sizes -->
-		<h4 class="medium-title mb-sm">Size</h4>
-		<div class="product-filters__sizes small-subtitle">
-			<!-- roman numbers sizes -->
-			<div class="product-filters__sizes-wrapper">
-				<label class="product-filters__checkbox-container">XS
-					<input type="radio" name="rd" checked="checked">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">S
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">M
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">L
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">XL
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
+			<!-- ! colors -->
+			<h4 class="medium-title mb-sm">Color</h4>
+			<div class="product-filters__colors mb-md">
+				<ul class="product-filters__colors-list">
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--black"
+							data-tooltip="Black"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--pattern-1"
+							data-tooltip="Black/White"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--pattern-2"
+							data-tooltip="Black/Pink"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--blue"
+							data-tooltip="Blue"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--pattern-3"
+							data-tooltip="Blue/Red"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--camel"
+							data-tooltip="Camel"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--emerald"
+							data-tooltip="Emerald"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--green"
+							data-tooltip="Green"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--grey"
+							data-tooltip="Grey"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--khaki"
+							data-tooltip="Khaki"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--olive-green"
+							data-tooltip="Olive Green"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--orange"
+							data-tooltip="Orange"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--pink"
+							data-tooltip="Pink"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--red"
+							data-tooltip="Red"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--sage"
+							data-tooltip="Sage"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--pattern-4"
+							data-tooltip="White/Grey"></span>
+					</li>
+				</ul>
 			</div>
-			<!-- numbers sizes-->
-			<div class="product-filters__sizes-wrapper">
-				<label class="product-filters__checkbox-container">5
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
+			<!-- ! sizes -->
+			<h4 class="medium-title mb-sm">Size</h4>
+			<div class="product-filters__sizes small-subtitle">
+				<!-- roman numbers sizes -->
+				<div class="product-filters__sizes-wrapper">
+					<label class="product-filters__checkbox-container">XS
+						<input type="radio" name="rd" checked="checked">
+						<span class="product-filters__checkmark"></span>
+					</label>
 
-				<label class="product-filters__checkbox-container">6
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
+					<label class="product-filters__checkbox-container">S
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
 
-				<label class="product-filters__checkbox-container">7
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
+					<label class="product-filters__checkbox-container">M
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
 
-				<label class="product-filters__checkbox-container">8
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
+					<label class="product-filters__checkbox-container">L
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
 
-			</div>
+					<label class="product-filters__checkbox-container">XL
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+				</div>
+				<!-- numbers sizes-->
+				<div class="product-filters__sizes-wrapper">
+					<label class="product-filters__checkbox-container">5
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
 
-		</div>
-		<button class="btn btn--black mb-md">Size Guide</button>
-		<!-- ! product types -->
-		<h4 class="medium-title mb-sm">Product type</h4>
-		<div class="product-filters__sizes small-subtitle mb-md">
-			<div class="product-filters__sizes-wrapper">
-				<label class="product-filters__checkbox-container">Accessories
-					<input type="radio" name="typ" checked="checked">
-					<span class="product-filters__checkmark"></span>
-				</label>
+					<label class="product-filters__checkbox-container">6
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
 
-				<label class="product-filters__checkbox-container">Bags
-					<input type="radio" name="typ">
-					<span class="product-filters__checkmark"></span>
-				</label>
+					<label class="product-filters__checkbox-container">7
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
 
-				<label class="product-filters__checkbox-container">Dress
-					<input type="radio" name="typ">
-					<span class="product-filters__checkmark"></span>
-				</label>
+					<label class="product-filters__checkbox-container">8
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
 
-				<label class="product-filters__checkbox-container">Jacket
-					<input type="radio" name="typ">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">Pants
-					<input type="radio" name="typ">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">Shoes
-					<input type="radio" name="typ">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">Shorts
-					<input type="radio" name="typ">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">Tops
-					<input type="radio" name="typ">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">T-Shirts
-					<input type="radio" name="typ">
-					<span class="product-filters__checkmark"></span>
-				</label>
-			</div>
-
-		</div>
-		<!-- ! brands -->
-		<h4 class="medium-title mb-sm">Brand</h4>
-		<div class="product-filters__sizes small-subtitle mb-md">
-			<!-- wrapper 1 -->
-			<div class="product-filters__sizes-wrapper">
-				<label class="product-filters__checkbox-container">Amyar
-					<input type="radio" name="rd" checked="checked">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">Angel
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">Bruglia
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">Burberry
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">Camper
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
-			</div>
-			<!-- wrapper 2-->
-			<div class="product-filters__sizes-wrapper">
-				<label class="product-filters__checkbox-container">Charcoal
-					<input type="radio" name="rd" checked="checked">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">Croock
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">Cruciani
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">Givenchy
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
-
-				<label class="product-filters__checkbox-container">Valentino
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
+				</div>
 
 			</div>
-		</div>
-		<!-- ! availability -->
-		<h4 class="medium-title mb-sm">Availability</h4>
-		<div class="product-filters__sizes small-subtitle mb-md">
-			<!-- wrapper 1 -->
-			<div class="product-filters__sizes-wrapper">
-				<label class="product-filters__checkbox-container">In stock
-					<input type="radio" name="rd" checked="checked">
-					<span class="product-filters__checkmark"></span>
-				</label>
+			<button class="btn btn--black mb-md">Size Guide</button>
+			<!-- ! product types -->
+			<h4 class="medium-title mb-sm">Product type</h4>
+			<div class="product-filters__sizes small-subtitle mb-md">
+				<div class="product-filters__sizes-wrapper">
+					<label class="product-filters__checkbox-container">Accessories
+						<input type="radio" name="typ" checked="checked">
+						<span class="product-filters__checkmark"></span>
+					</label>
 
-				<label class="product-filters__checkbox-container">Out of stock
-					<input type="radio" name="rd">
-					<span class="product-filters__checkmark"></span>
-				</label>
+					<label class="product-filters__checkbox-container">Bags
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Dress
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Jacket
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Pants
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Shoes
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Shorts
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Tops
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">T-Shirts
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+				</div>
+
 			</div>
-		</div>
-		<!--! Popular products -->
-		<h4 class="medium-title negative-margin mb-sm">Popular Products</h4>
-		<div class="slider">
-			<div class="slider__container">
-				<div class="slider__sub-container">
-					<!-- slider -->
-					<div id="product-filters__slider" class="slider__my-slider">
-						<!-- slide 1 -->
-						<div>
-							<div class="slider__slide">
-								<div class="slider__slide-img slider__slide-img--img-1">
-									<!--! product shortcuts -->
-									<div class="product-shortcuts">
-										<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
+			<!-- ! brands -->
+			<h4 class="medium-title mb-sm">Brand</h4>
+			<div class="product-filters__sizes small-subtitle mb-md">
+				<!-- wrapper 1 -->
+				<div class="product-filters__sizes-wrapper">
+					<label class="product-filters__checkbox-container">Amyar
+						<input type="radio" name="rd" checked="checked">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Angel
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Bruglia
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Burberry
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Camper
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+				</div>
+				<!-- wrapper 2-->
+				<div class="product-filters__sizes-wrapper">
+					<label class="product-filters__checkbox-container">Charcoal
+						<input type="radio" name="rd" checked="checked">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Croock
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Cruciani
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Givenchy
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Valentino
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+				</div>
+			</div>
+			<!-- ! availability -->
+			<h4 class="medium-title mb-sm">Availability</h4>
+			<div class="product-filters__sizes small-subtitle mb-md">
+				<!-- wrapper 1 -->
+				<div class="product-filters__sizes-wrapper">
+					<label class="product-filters__checkbox-container">In stock
+						<input type="radio" name="rd" checked="checked">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Out of stock
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+				</div>
+			</div>
+			<!--! Popular products -->
+			<h4 class="medium-title negative-margin mb-sm">Popular Products</h4>
+			<div class="slider">
+				<div class="slider__container">
+					<div class="slider__sub-container">
+						<!-- slider -->
+						<div id="product-filters__slider" class="slider__my-slider">
+							<!-- slide 1 -->
+							<div>
+								<div class="slider__slide">
+									<div class="slider__slide-img slider__slide-img--img-1">
+										<!--! product shortcuts -->
+										<div class="product-shortcuts">
+											<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
+												<i class="product-shortcuts__icon fas fa-heart"></i>
+											</span>
+											<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
+												<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
+											</span>
+											<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+												<i class="product-shortcuts__icon fas fa-search-plus"></i>
+											</span>
+										</div>
+									</div>
+
+									<br />
+
+									<div class="slider__slide-info">
+										<p class="small-subtitle">Innerbloom Puffer Jacket</p>
+										<p class="small-subtitle  my-xsm">
+											<strike>€694,95</strike>
+											<span class="slider__slide-span small-subtitle">
+												€443,95
+											</span>
+										</p>
+
+										<div title="rating" class="slider__slide-stars my-xsm">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- slide 2 -->
+							<div>
+								<div class="slider__slide">
+									<div class="slider__slide-img slider__slide-img--img-1">
+
+										<!--! product shortcuts -->
+										<div class="product-shortcuts">
 											<i class="product-shortcuts__icon fas fa-heart"></i>
-										</span>
-										<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
 											<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-										</span>
-										<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
 											<i class="product-shortcuts__icon fas fa-search-plus"></i>
-										</span>
+										</div>
+									</div>
+
+									<br />
+
+									<div class="slider__slide-info">
+										<p class="small-subtitle">Innerbloom Puffer Jacket</p>
+										<p class="small-subtitle  my-xsm">
+											<strike>€694,95</strike>
+											<span class="slider__slide-span small-subtitle">
+												€443,95
+											</span>
+										</p>
+
+										<div title="rating" class="slider__slide-stars my-xsm">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+										</div>
 									</div>
 								</div>
+							</div>
+							<!-- slide 3 -->
+							<div>
+								<div class="slider__slide">
+									<div class="slider__slide-img slider__slide-img--img-1">
 
-								<br />
+										<!--! product shortcuts -->
+										<div class="product-shortcuts">
+											<i class="product-shortcuts__icon fas fa-heart"></i>
+											<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
+											<i class="product-shortcuts__icon fas fa-search-plus"></i>
+										</div>
+									</div>
 
-								<div class="slider__slide-info">
-									<p class="small-subtitle">Innerbloom Puffer Jacket</p>
-									<p class="small-subtitle  my-xsm">
-										<strike>€694,95</strike>
-										<span class="slider__slide-span small-subtitle">
-											€443,95
-										</span>
-									</p>
+									<br />
 
-									<div title="rating" class="slider__slide-stars my-xsm">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="far fa-star"></i>
+									<div class="slider__slide-info">
+										<p class="small-subtitle">Innerbloom Puffer Jacket</p>
+										<p class="small-subtitle  my-xsm">
+											<strike>€694,95</strike>
+											<span class="slider__slide-span small-subtitle">
+												€443,95
+											</span>
+										</p>
+
+										<div title="rating" class="slider__slide-stars my-xsm">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<!-- slide 2 -->
-						<div>
-							<div class="slider__slide">
-								<div class="slider__slide-img slider__slide-img--img-1">
 
-									<!--! product shortcuts -->
-									<div class="product-shortcuts">
-										<i class="product-shortcuts__icon fas fa-heart"></i>
-										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-										<i class="product-shortcuts__icon fas fa-search-plus"></i>
-									</div>
-								</div>
-
-								<br />
-
-								<div class="slider__slide-info">
-									<p class="small-subtitle">Innerbloom Puffer Jacket</p>
-									<p class="small-subtitle  my-xsm">
-										<strike>€694,95</strike>
-										<span class="slider__slide-span small-subtitle">
-											€443,95
-										</span>
-									</p>
-
-									<div title="rating" class="slider__slide-stars my-xsm">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="far fa-star"></i>
-									</div>
-								</div>
+						<!-- controls -->
+						<div class="slider__controller">
+							<div class="slider__controls3">
+								<button class="slider__previous3 carousel__btn">
+									<i class="carousel__nav-icon fas fa-chevron-left" aria-label="previous slide"></i>
+								</button>
+								<button class="slider__next3 carousel__btn">
+									<i class="carousel__nav-icon fas fa-chevron-right" aria-label="next slide"></i>
+								</button>
 							</div>
-						</div>
-						<!-- slide 3 -->
-						<div>
-							<div class="slider__slide">
-								<div class="slider__slide-img slider__slide-img--img-1">
-
-									<!--! product shortcuts -->
-									<div class="product-shortcuts">
-										<i class="product-shortcuts__icon fas fa-heart"></i>
-										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-										<i class="product-shortcuts__icon fas fa-search-plus"></i>
-									</div>
-								</div>
-
-								<br />
-
-								<div class="slider__slide-info">
-									<p class="small-subtitle">Innerbloom Puffer Jacket</p>
-									<p class="small-subtitle  my-xsm">
-										<strike>€694,95</strike>
-										<span class="slider__slide-span small-subtitle">
-											€443,95
-										</span>
-									</p>
-
-									<div title="rating" class="slider__slide-stars my-xsm">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="far fa-star"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- controls -->
-					<div class="slider__controller">
-						<div class="slider__controls3">
-							<button class="slider__previous3 carousel__btn">
-								<i class="carousel__nav-icon fas fa-chevron-left" aria-label="previous slide"></i>
-							</button>
-							<button class="slider__next3 carousel__btn">
-								<i class="carousel__nav-icon fas fa-chevron-right" aria-label="next slide"></i>
-							</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-
-
 	</div>
+
+	<!-- ! Product Filters Sidebar -->
+	<div class="product-filters-sidebar product-filters-sidebar--hidden">
+		<div class="product-filters p-sm">
+			<!-- ! categories -->
+			<!-- title -->
+			<div class="product-filters-sidebar__title-wrapper">
+				<h4 class="medium-title mb-sm">Categories</h4>
+				<i title="close" class="product-filters-sidebar__close-icon fas fa-times"></i>
+			</div>
+
+			<ul class="product-filters__list small-subtitle mb-md">
+				<li class="product-filters__list-item mb-xsm"><a href="#"><b>Women</b></a></li>
+				<li class="product-filters__list-item mb-xsm"><a href="#">Men</a></li>
+				<li class="product-filters__list-item mb-xsm"><a href="#">Shoes</a></li>
+				<li class="product-filters__list-item mb-xsm"><a href="#">Popular</a></li>
+				<li class="product-filters__list-item mb-xsm"><a href="#">Best Seller</a></li>
+				<li class="product-filters__list-item mb-xsm"><a href="#">Accessories</a></li>
+			</ul>
+			<!-- ! colors -->
+			<h4 class="medium-title mb-sm">Color</h4>
+			<div class="product-filters__colors mb-md">
+				<ul class="product-filters__colors-list">
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--black"
+							data-tooltip="Black"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--pattern-1"
+							data-tooltip="Black/White"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--pattern-2"
+							data-tooltip="Black/Pink"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--blue"
+							data-tooltip="Blue"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--pattern-3"
+							data-tooltip="Blue/Red"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--camel"
+							data-tooltip="Camel"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--emerald"
+							data-tooltip="Emerald"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--green"
+							data-tooltip="Green"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--grey"
+							data-tooltip="Grey"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--khaki"
+							data-tooltip="Khaki"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--olive-green"
+							data-tooltip="Olive Green"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--orange"
+							data-tooltip="Orange"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--pink"
+							data-tooltip="Pink"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--red"
+							data-tooltip="Red"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--sage"
+							data-tooltip="Sage"></span>
+					</li>
+					<li class="product-filters__colors-list-item">
+						<span
+							class="tooltip tooltip--triangle product-filters__colors-span product-filters__colors-span--pattern-4"
+							data-tooltip="White/Grey"></span>
+					</li>
+				</ul>
+			</div>
+			<!-- ! sizes -->
+			<h4 class="medium-title mb-sm">Size</h4>
+			<div class="product-filters__sizes small-subtitle">
+				<!-- roman numbers sizes -->
+				<div class="product-filters__sizes-wrapper">
+					<label class="product-filters__checkbox-container">XS
+						<input type="radio" name="rd" checked="checked">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">S
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">M
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">L
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">XL
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+				</div>
+				<!-- numbers sizes-->
+				<div class="product-filters__sizes-wrapper">
+					<label class="product-filters__checkbox-container">5
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">6
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">7
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">8
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+				</div>
+
+			</div>
+			<button class="btn btn--black mb-md">Size Guide</button>
+			<!-- ! product types -->
+			<h4 class="medium-title mb-sm">Product type</h4>
+			<div class="product-filters__sizes small-subtitle mb-md">
+				<div class="product-filters__sizes-wrapper">
+					<label class="product-filters__checkbox-container">Accessories
+						<input type="radio" name="typ" checked="checked">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Bags
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Dress
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Jacket
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Pants
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Shoes
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Shorts
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Tops
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">T-Shirts
+						<input type="radio" name="typ">
+						<span class="product-filters__checkmark"></span>
+					</label>
+				</div>
+
+			</div>
+			<!-- ! brands -->
+			<h4 class="medium-title mb-sm">Brand</h4>
+			<div class="product-filters__sizes small-subtitle mb-md">
+				<!-- wrapper 1 -->
+				<div class="product-filters__sizes-wrapper">
+					<label class="product-filters__checkbox-container">Amyar
+						<input type="radio" name="rd" checked="checked">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Angel
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Bruglia
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Burberry
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Camper
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+				</div>
+				<!-- wrapper 2-->
+				<div class="product-filters__sizes-wrapper">
+					<label class="product-filters__checkbox-container">Charcoal
+						<input type="radio" name="rd" checked="checked">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Croock
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Cruciani
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Givenchy
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Valentino
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+				</div>
+			</div>
+			<!-- ! availability -->
+			<h4 class="medium-title mb-sm">Availability</h4>
+			<div class="product-filters__sizes small-subtitle mb-md">
+				<!-- wrapper 1 -->
+				<div class="product-filters__sizes-wrapper">
+					<label class="product-filters__checkbox-container">In stock
+						<input type="radio" name="rd" checked="checked">
+						<span class="product-filters__checkmark"></span>
+					</label>
+
+					<label class="product-filters__checkbox-container">Out of stock
+						<input type="radio" name="rd">
+						<span class="product-filters__checkmark"></span>
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<!-- ! Products grid -->
 	<div class="products-wrapper mb-xl">
@@ -621,6 +971,7 @@
 		<!-- ! Filter toolbar -->
 		<div class="filter-toolbar mb-sm">
 			<div class="filter-toolbar__icons">
+				<button class="product-filter-btn btn btn--black mb-sm"><i class="fas fa-filter"></i>Filter</button>
 				<span class="filter-toolbar__icon tooltip tooltip--triangle" data-tooltip="Grid view">
 					<i class="fas fa-th"></i>
 				</span>

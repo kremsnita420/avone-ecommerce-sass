@@ -12,6 +12,10 @@
 		transition: background-color 0.4s;
 	}
 
+	&--rounded {
+		border-radius: 0.4rem;
+	}
+
 	&--black {
 		background-color: $color-black;
 		color: $color-white;
@@ -28,6 +32,7 @@
 			background-color: $color-black;
 		}
 	}
+
 	&--gray {
 		background-color: $color-grey-3;
 		color: $color-white;

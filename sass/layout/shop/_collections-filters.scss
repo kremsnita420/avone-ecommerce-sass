@@ -1,7 +1,12 @@
-.product-filters {
+.product-filters-wrapper {
 	grid-column: center-start / col-start 3;
 	padding-right: 2rem;
 
+	@media screen and (max-width: 1000px) {
+		display: none;
+	}
+}
+.product-filters {
 	// list;
 	&__list {
 	}

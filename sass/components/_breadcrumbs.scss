@@ -1,22 +1,21 @@
 .breadcrumbs {
-    grid-column: center-start / center-end;
-    position: relative;
-    height: 3rem;
- 
-    
-    &__background {
-        position: absolute;
-        background-color: $color-grey-2;
-        height:3rem;
-        width: 100vw;
-        left: 0;
-        top: 6rem;
-        z-index: -1;
-    }
+	grid-column: center-start / center-end;
+	position: relative;
+	height: 3rem;
 
-    &__links {
-        display: block;
-        padding: .5rem 0;
-        z-index: 1;
-    }
+	&__background {
+		position: absolute;
+		background-color: $color-grey-2;
+		height: 3rem;
+		width: 100%;
+		left: 0;
+		top: 6rem;
+		z-index: -1;
+	}
+
+	&__links {
+		display: block;
+		padding: 0.5rem 0;
+		z-index: 1;
+	}
 }
