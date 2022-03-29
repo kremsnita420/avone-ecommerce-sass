@@ -49,10 +49,10 @@
 		}
 
 		&--img-1 {
-			background-image: url('/img/new-arival-1-1.jpg');
+			background-image: url('../img/new-arival-1-1.jpg');
 
 			&:hover {
-				background-image: url('/img/new-arival-1-2.jpg');
+				background-image: url('../img/new-arival-1-2.jpg');
 
 				.countdown-timer {
 					bottom: 7rem;

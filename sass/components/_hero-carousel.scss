@@ -6,11 +6,11 @@
 	border-top: 1px solid rgba($color-grey-1, 0.3);
 
 	@media screen and (max-width: 1000px) {
-			height: 55rem;
-		}
+		height: 55rem;
+	}
 	@media screen and (max-width: 770px) {
-			height: 35rem;
-		}
+		height: 35rem;
+	}
 
 	&__item {
 		width: 100%;
@@ -18,31 +18,28 @@
 		display: none;
 		position: relative;
 		transform: all 2s;
-		
 
 		&--hidden {
 			display: none;
 		}
 
 		&--image-1 {
-			background: url('../../img/hero-banner-1.jpg') no-repeat center top;
+			background: url('../img/hero-banner-1.jpg') no-repeat center top;
 			background-size: cover;
 			animation: fadeVisibility 2s;
 
 			@media screen and (max-width: 770px) {
-				background: url('../../img/hero-banner-1-mobile.webp') no-repeat center
-					top;
+				background: url('../img/hero-banner-1-mobile.webp') no-repeat center top;
 			}
 		}
 
 		&--image-2 {
-			background: url('../../img/hero-banner-2.jpg') no-repeat center top;
+			background: url('../img/hero-banner-2.jpg') no-repeat center top;
 			background-size: cover;
 			animation: fadeVisibility 2s;
 
 			@media screen and (max-width: 770px) {
-				background: url('../../img/hero-banner-2-mobile.webp') no-repeat center
-					top;
+				background: url('../img/hero-banner-2-mobile.webp') no-repeat center top;
 			}
 		}
 
@@ -65,8 +62,6 @@
 			top: 50%;
 			left: 75%;
 			transform: translate(-50%, -50%);
-			
-			
 
 			@media screen and (max-width: 770px) {
 				left: 50%;
@@ -83,8 +78,7 @@
 			left: 25%;
 
 			transform: translate(-50%, -50%);
-			
-			
+
 			@media screen and (max-width: 770px) {
 				left: 50%;
 				width: 90vw;

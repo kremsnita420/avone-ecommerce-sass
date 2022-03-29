@@ -282,19 +282,19 @@ i {
     .carousel__item--hidden {
       display: none; }
     .carousel__item--image-1 {
-      background: url("../../img/hero-banner-1.jpg") no-repeat center top;
+      background: url("../img/hero-banner-1.jpg") no-repeat center top;
       background-size: cover;
       animation: fadeVisibility 2s; }
       @media screen and (max-width: 770px) {
         .carousel__item--image-1 {
-          background: url("../../img/hero-banner-1-mobile.webp") no-repeat center top; } }
+          background: url("../img/hero-banner-1-mobile.webp") no-repeat center top; } }
     .carousel__item--image-2 {
-      background: url("../../img/hero-banner-2.jpg") no-repeat center top;
+      background: url("../img/hero-banner-2.jpg") no-repeat center top;
       background-size: cover;
       animation: fadeVisibility 2s; }
       @media screen and (max-width: 770px) {
         .carousel__item--image-2 {
-          background: url("../../img/hero-banner-2-mobile.webp") no-repeat center top; } }
+          background: url("../img/hero-banner-2-mobile.webp") no-repeat center top; } }
     .carousel__item__text-wrapper {
       transform: translate(-50%, -50%);
       display: flex;
@@ -526,9 +526,9 @@ i {
     .slider__slide-img {
       height: 33rem; } }
   .slider__slide-img--img-1 {
-    background-image: url("/img/new-arival-1-1.jpg"); }
+    background-image: url("../img/new-arival-1-1.jpg"); }
     .slider__slide-img--img-1:hover {
-      background-image: url("/img/new-arival-1-2.jpg"); }
+      background-image: url("../img/new-arival-1-2.jpg"); }
       .slider__slide-img--img-1:hover .countdown-timer {
         bottom: 7rem; }
 
