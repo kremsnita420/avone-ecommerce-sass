@@ -740,7 +740,7 @@ input:checked ~ .slider__slide-color-span--black::before {
     display: flex;
     justify-content: space-between; }
   .product-teaser__quantity-selector input {
-    width: 5rem; }
+    width: 3rem; }
 
 .quick-shop-modal {
   position: absolute;
