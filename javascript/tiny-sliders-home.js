@@ -47,7 +47,7 @@ let slider2 = tns({
         },
         740: {
             items: 3,
-            edgePadding: 0,
+            edgePadding: 20,
         },
         490: {
             items: 2,
