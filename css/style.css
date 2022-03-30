@@ -1382,7 +1382,7 @@ input:checked ~ .slider__slide-color-span--black::before {
     display: grid;
     grid-template-columns: repeat(3, minmax(5rem, 1fr));
     column-gap: 2rem;
-    row-gap: 4rem; }
+    row-gap: 2rem; }
     @media screen and (max-width: 770px) {
       .products-wrapper__grid {
         grid-template-columns: repeat(2, minmax(5rem, 1fr)); } }
