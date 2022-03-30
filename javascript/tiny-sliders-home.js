@@ -28,8 +28,8 @@ let slider = tns({
 let slider2 = tns({
     container: '#slider__my-slider',
     items: 1,
-    gutter: 20,
-    edgePadding: 20,
+    gutter: 0,
+    edgePadding: 0,
     slideBy: '1',
     loop: false,
     rewind: true,
@@ -43,15 +43,14 @@ let slider2 = tns({
     responsive: {
         1020: {
             items: 4,
-            edgePadding: 0,
+
         },
         740: {
             items: 3,
-            edgePadding: 20,
+
         },
         490: {
             items: 2,
-            edgePadding: 20,
         },
     }
 });

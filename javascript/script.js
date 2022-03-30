@@ -22,14 +22,16 @@ const cartOpen = document.getElementsByClassName('shopping-bag')
 const cartClose = document.getElementsByClassName('sidebar-cart__close-icon')
 const sidebarCart = document.getElementsByClassName('sidebar-cart')
 
-cartClose[0].addEventListener("click", () => {
+cartClose[0].addEventListener("click", (e) => {
+    e.preventDefault()
     sidebarCart[0].classList.remove("sidebar-cart--visible")
     sidebarCart[0].classList.add("sidebar-cart--hidden")
     console.log('close')
 
 });
 
-cartOpen[0].addEventListener("click", () => {
+cartOpen[0].addEventListener("click", (e) => {
+    e.preventDefault()
     sidebarCart[0].classList.remove("sidebar-cart--hidden")
     sidebarCart[0].classList.add("sidebar-cart--visible")
     console.log('open')
@@ -41,29 +43,64 @@ const quickShopOpen = document.getElementsByClassName('quick-shop')
 const quickShopClose = document.getElementsByClassName('quick-shop-modal__close-icon')
 const quickShopModal = document.getElementsByClassName('quick-shop-modal')
 
-quickShopOpen[0].addEventListener("click", () => {
-    quickShopModal[0].classList.add("quick-shop-modal--visible")
-    quickShopModal[0].classList.remove("quick-shop-modal--hidden")
-    console.log('open')
 
-});
+const toggleModalFirst = () => {
 
-quickShopClose[0].addEventListener("click", () => {
-    quickShopModal[0].classList.add("quick-shop-modal--hidden")
-    quickShopModal[0].classList.remove("quick-shop-modal--visible")
-    console.log('close')
+    quickShopModal[0].classList.toggle("quick-shop-modal--visible")
 
-});
+}
+const toggleModalSecond = () => {
+
+    quickShopModal[1].classList.toggle("quick-shop-modal--visible")
+
+}
+const toggleModalThird = () => {
+
+    quickShopModal[2].classList.toggle("quick-shop-modal--visible")
+
+}
+const toggleModalFourth = () => {
+
+    quickShopModal[3].classList.toggle("quick-shop-modal--visible")
+
+}
+const toggleModalFifth = () => {
+
+    quickShopModal[4].classList.toggle("quick-shop-modal--visible")
+
+}
+const toggleModalSixth = () => {
+
+    quickShopModal[5].classList.toggle("quick-shop-modal--visible")
+
+}
+const toggleModalSeventh = () => {
+
+    quickShopModal[6].classList.toggle("quick-shop-modal--visible")
+
+}
+const toggleModalEighth = () => {
+
+    quickShopModal[7].classList.toggle("quick-shop-modal--visible")
+
+}
+const toggleModalNinth = () => {
+
+    quickShopModal[8].classList.toggle("quick-shop-modal--visible")
+
+}
+
+
+
+
 
 // ! Accordion toggle
 const acc = document.getElementsByClassName("accordion-toggle");
-let i;
 
-for (i = 0; i < acc.length; i++) {
+
+for (let i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
+
 
         /* Toggle between hiding and showing the active panel */
         var panel = this.nextElementSibling;

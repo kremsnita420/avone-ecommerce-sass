@@ -369,7 +369,7 @@ i {
   left: 50%;
   width: 60%;
   transform: translate(-50%);
-  z-index: 1000;
+  z-index: 10;
   padding: 2rem;
   background-color: #fff; }
   @media screen and (max-width: 770px) {
@@ -491,7 +491,7 @@ i {
 .slider__container {
   max-width: 100vw;
   margin: auto; }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1120px) {
     .slider__container {
       max-width: 112rem; } }
 
@@ -509,7 +509,7 @@ i {
 
 .slider__slide-img {
   width: 100%;
-  height: 37rem;
+  height: 35rem;
   background-position: top;
   background-size: cover;
   cursor: pointer;
@@ -521,10 +521,10 @@ i {
   z-index: 4; }
   @media screen and (max-width: 570px) {
     .slider__slide-img {
-      height: 30rem; } }
+      height: 28rem; } }
   @media screen and (max-width: 770px) {
     .slider__slide-img {
-      height: 33rem; } }
+      height: 31rem; } }
   .slider__slide-img--img-1 {
     background-image: url("../img/new-arival-1-1.jpg"); }
     .slider__slide-img--img-1:hover {
@@ -745,24 +745,23 @@ input:checked ~ .slider__slide-color-span--black::before {
 .quick-shop-modal {
   position: absolute;
   top: 0;
-  left: 0;
   bottom: 0;
+  left: 0;
   right: 0;
-  z-index: 1000;
   background-color: #fff;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transform-origin: center center;
+  transform-origin: left;
+  opacity: 0;
+  width: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: top; }
   .quick-shop-modal--visible {
     opacity: 1;
-    height: 100%;
-    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.25); }
-  .quick-shop-modal--hidden {
-    opacity: 0;
-    height: 0; }
+    width: 100%;
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.25);
+    z-index: 10; }
   .quick-shop-modal__close-icon {
     display: inline-block;
     align-self: flex-end;
@@ -1021,7 +1020,7 @@ input:checked ~ .slider__slide-color-span--black::before {
   font-size: 1.3rem;
   letter-spacing: 1px;
   grid-column: center-start / center-end;
-  z-index: 100;
+  z-index: 10000;
   position: sticky;
   top: 0;
   left: 0;
@@ -1035,7 +1034,7 @@ input:checked ~ .slider__slide-color-span--black::before {
     width: 100%;
     left: 0;
     top: 0;
-    z-index: 99;
+    z-index: 9999;
     box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.25); }
   .header__left-icons {
     display: flex; }

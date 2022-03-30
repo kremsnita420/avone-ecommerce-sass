@@ -594,24 +594,13 @@
 							<div>
 								<div class="slider__slide">
 									<div class="slider__slide-img slider__slide-img--img-1">
-										<!--! product shortcuts -->
-										<div class="product-shortcuts">
-											<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
-												<i class="product-shortcuts__icon fas fa-heart"></i>
-											</span>
-											<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
-												<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-											</span>
-											<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
-												<i class="product-shortcuts__icon fas fa-search-plus"></i>
-											</span>
-										</div>
+
 									</div>
 
 									<br />
 
 									<div class="slider__slide-info">
-										<p class="small-subtitle">Innerbloom Puffer Jacket</p>
+										<p class="small-subtitle">Innerbloom Puffer Jacket 1</p>
 										<p class="small-subtitle  my-xsm">
 											<strike>€694,95</strike>
 											<span class="slider__slide-span small-subtitle">
@@ -634,18 +623,12 @@
 								<div class="slider__slide">
 									<div class="slider__slide-img slider__slide-img--img-1">
 
-										<!--! product shortcuts -->
-										<div class="product-shortcuts">
-											<i class="product-shortcuts__icon fas fa-heart"></i>
-											<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-											<i class="product-shortcuts__icon fas fa-search-plus"></i>
-										</div>
 									</div>
 
 									<br />
 
 									<div class="slider__slide-info">
-										<p class="small-subtitle">Innerbloom Puffer Jacket</p>
+										<p class="small-subtitle">Innerbloom Puffer Jacket 2</p>
 										<p class="small-subtitle  my-xsm">
 											<strike>€694,95</strike>
 											<span class="slider__slide-span small-subtitle">
@@ -668,18 +651,12 @@
 								<div class="slider__slide">
 									<div class="slider__slide-img slider__slide-img--img-1">
 
-										<!--! product shortcuts -->
-										<div class="product-shortcuts">
-											<i class="product-shortcuts__icon fas fa-heart"></i>
-											<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-											<i class="product-shortcuts__icon fas fa-search-plus"></i>
-										</div>
 									</div>
 
 									<br />
 
 									<div class="slider__slide-info">
-										<p class="small-subtitle">Innerbloom Puffer Jacket</p>
+										<p class="small-subtitle">Innerbloom Puffer Jacket 3</p>
 										<p class="small-subtitle  my-xsm">
 											<strike>€694,95</strike>
 											<span class="slider__slide-span small-subtitle">
@@ -1046,7 +1023,7 @@
 
 		<!-- ! Products grid -->
 		<div class="products-wrapper__grid">
-			<!-- item 1 -->
+			<!-- slide 1 -->
 			<div class="slider__slide">
 				<div class="slider__slide-img slider__slide-img--img-1">
 					<!--! product shortcuts -->
@@ -1054,7 +1031,8 @@
 						<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
 							<i class="product-shortcuts__icon fas fa-heart"></i>
 						</span>
-						<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop">
+						<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop"
+							onclick="toggleModalFirst()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
 						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
@@ -1118,14 +1096,14 @@
 				</div>
 
 				<!-- ! Quick shop modal -->
-				<div class="quick-shop-modal quick-shop-modal--hidden">
+				<div class="quick-shop-modal ">
 					<div class="quick-shop-modal__close-icon px-xsm tooltip tooltip--triangle"
-						data-tooltip="Close quick shop">
+						onclick="toggleModalFirst()" data-tooltip="Close quick shop">
 						<i class="fas fas fa-times"></i>
 					</div>
 				</div>
 			</div>
-			<!-- item 2 -->
+			<!-- slide 2 -->
 			<div class="slider__slide">
 				<div class="slider__slide-img slider__slide-img--img-1">
 					<!--! product shortcuts -->
@@ -1133,17 +1111,19 @@
 						<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
 							<i class="product-shortcuts__icon fas fa-heart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
+						<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+							onclick="toggleModalSecond()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
 						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
-				</div>
 
+				</div>
+				<!-- info -->
 				<div class="slider__slide-info">
-					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket</p>
+					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
 					<p class="small-subtitle  my-xsm">
 						€694,95
 					</p>
@@ -1172,8 +1152,16 @@
 						<i class="fas fa-star-half-alt"></i>
 					</div>
 				</div>
+
+				<!-- ! Quick shop modal -->
+				<div class="quick-shop-modal ">
+					<div class="quick-shop-modal__close-icon px-xsm tooltip tooltip--triangle"
+						data-tooltip="Close quick shop" onclick="toggleModalSecond()">
+						<i class="fas fas fa-times"></i>
+					</div>
+				</div>
 			</div>
-			<!-- item 3 -->
+			<!-- slide 3 -->
 			<div class="slider__slide">
 				<div class="slider__slide-img slider__slide-img--img-1">
 					<!--! product shortcuts -->
@@ -1181,17 +1169,19 @@
 						<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
 							<i class="product-shortcuts__icon fas fa-heart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
+						<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+							onclick="toggleModalThird()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
 						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
-				</div>
 
+				</div>
+				<!-- info -->
 				<div class="slider__slide-info">
-					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket</p>
+					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
 					<p class="small-subtitle  my-xsm">
 						€694,95
 					</p>
@@ -1220,8 +1210,16 @@
 						<i class="fas fa-star-half-alt"></i>
 					</div>
 				</div>
+
+				<!-- ! Quick shop modal -->
+				<div class="quick-shop-modal ">
+					<div class="quick-shop-modal__close-icon px-xsm tooltip tooltip--triangle"
+						data-tooltip="Close quick shop" onclick="toggleModalThird()">
+						<i class="fas fas fa-times"></i>
+					</div>
+				</div>
 			</div>
-			<!-- item 4 -->
+			<!-- slide 4 -->
 			<div class="slider__slide">
 				<div class="slider__slide-img slider__slide-img--img-1">
 					<!--! product shortcuts -->
@@ -1229,17 +1227,19 @@
 						<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
 							<i class="product-shortcuts__icon fas fa-heart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
+						<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+							onclick="toggleModalFourth()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
 						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
-				</div>
 
+				</div>
+				<!-- info -->
 				<div class="slider__slide-info">
-					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket</p>
+					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
 					<p class="small-subtitle  my-xsm">
 						€694,95
 					</p>
@@ -1268,8 +1268,16 @@
 						<i class="fas fa-star-half-alt"></i>
 					</div>
 				</div>
+
+				<!-- ! Quick shop modal -->
+				<div class="quick-shop-modal ">
+					<div class="quick-shop-modal__close-icon px-xsm tooltip tooltip--triangle"
+						data-tooltip="Close quick shop" onclick="toggleModalFourth()">
+						<i class="fas fas fa-times"></i>
+					</div>
+				</div>
 			</div>
-			<!-- item 5 -->
+			<!-- slide 5 -->
 			<div class="slider__slide">
 				<div class="slider__slide-img slider__slide-img--img-1">
 					<!--! product shortcuts -->
@@ -1277,17 +1285,19 @@
 						<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
 							<i class="product-shortcuts__icon fas fa-heart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
+						<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+							onclick="toggleModalFifth()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
 						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
-				</div>
 
+				</div>
+				<!-- info -->
 				<div class="slider__slide-info">
-					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket</p>
+					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
 					<p class="small-subtitle  my-xsm">
 						€694,95
 					</p>
@@ -1316,8 +1326,16 @@
 						<i class="fas fa-star-half-alt"></i>
 					</div>
 				</div>
+
+				<!-- ! Quick shop modal -->
+				<div class="quick-shop-modal ">
+					<div class="quick-shop-modal__close-icon px-xsm tooltip tooltip--triangle"
+						data-tooltip="Close quick shop" onclick="toggleModalFifth()">
+						<i class="fas fas fa-times"></i>
+					</div>
+				</div>
 			</div>
-			<!-- item 6 -->
+			<!-- slide 6 -->
 			<div class="slider__slide">
 				<div class="slider__slide-img slider__slide-img--img-1">
 					<!--! product shortcuts -->
@@ -1325,17 +1343,19 @@
 						<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
 							<i class="product-shortcuts__icon fas fa-heart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
+						<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+							onclick="toggleModalSixth()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
 						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
-				</div>
 
+				</div>
+				<!-- info -->
 				<div class="slider__slide-info">
-					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket</p>
+					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
 					<p class="small-subtitle  my-xsm">
 						€694,95
 					</p>
@@ -1364,8 +1384,16 @@
 						<i class="fas fa-star-half-alt"></i>
 					</div>
 				</div>
+
+				<!-- ! Quick shop modal -->
+				<div class="quick-shop-modal ">
+					<div class="quick-shop-modal__close-icon px-xsm tooltip tooltip--triangle"
+						data-tooltip="Close quick shop" onclick="toggleModalSixth()">
+						<i class="fas fas fa-times"></i>
+					</div>
+				</div>
 			</div>
-			<!-- item 7 -->
+			<!-- slide 7 -->
 			<div class="slider__slide">
 				<div class="slider__slide-img slider__slide-img--img-1">
 					<!--! product shortcuts -->
@@ -1373,17 +1401,19 @@
 						<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
 							<i class="product-shortcuts__icon fas fa-heart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
+						<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+							onclick="toggleModalSeventh()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
 						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
-				</div>
 
+				</div>
+				<!-- info -->
 				<div class="slider__slide-info">
-					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket</p>
+					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
 					<p class="small-subtitle  my-xsm">
 						€694,95
 					</p>
@@ -1412,8 +1442,16 @@
 						<i class="fas fa-star-half-alt"></i>
 					</div>
 				</div>
+
+				<!-- ! Quick shop modal -->
+				<div class="quick-shop-modal ">
+					<div class="quick-shop-modal__close-icon px-xsm tooltip tooltip--triangle"
+						data-tooltip="Close quick shop" onclick="toggleModalSeventh()">
+						<i class="fas fas fa-times"></i>
+					</div>
+				</div>
 			</div>
-			<!-- item 8 -->
+			<!-- slide 8 -->
 			<div class="slider__slide">
 				<div class="slider__slide-img slider__slide-img--img-1">
 					<!--! product shortcuts -->
@@ -1421,87 +1459,19 @@
 						<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
 							<i class="product-shortcuts__icon fas fa-heart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
+						<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+							onclick="toggleModalEighth()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
 						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
-					<!--! countdown timer -->
-					<div class="countdown-timer countdown-timer1 small-title">
-						<!-- days -->
-						<div class="countdown-timer__block-wrapper">
-							<span id="days1" class="countdown-timer__time-block"></span>
-							<span class="countdown-timer__text-block">days</span>
-						</div>
-						<!-- hours -->
-						<div class="countdown-timer__block-wrapper">
-							<span id="hours1" class="countdown-timer__time-block"></span>
-							<span class="countdown-timer__text-block">hrs</span>
-						</div>
-						<!-- minutes -->
-						<div class="countdown-timer__block-wrapper">
-							<span id="minutes1" class="countdown-timer__time-block"></span>
-							<span class="countdown-timer__text-block">min</span>
-						</div>
-						<!-- seconds -->
-						<div class="countdown-timer__block-wrapper">
-							<span id="seconds1" class="countdown-timer__time-block"></span>
-							<span class="countdown-timer__text-block">sec</span>
-						</div>
-					</div>
-				</div>
 
+				</div>
+				<!-- info -->
 				<div class="slider__slide-info">
-					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket</p>
-					<p class="small-subtitle  my-xsm">
-						€694,95
-					</p>
-
-					<div class="slider__slide-colors my-xsm">
-						<label class="slider__slide-color">
-							<input type="radio" checked="checked" name="radio" />
-							<span class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
-						</label>
-						<label class="slider__slide-color">
-							<input type="radio" name="radio" />
-							<span class="slider__slide-color-span slider__slide-color-span--green  py-xsm"></span>
-						</label>
-						<label class="slider__slide-color">
-							<input type="radio" name="radio" />
-							<span class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
-						</label>
-					</div>
-
-					<div title="rating" class="slider__slide-stars my-xsm">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half-alt"></i>
-					</div>
-				</div>
-			</div>
-			<!-- item 9 -->
-			<div class="slider__slide">
-				<div class="slider__slide-img slider__slide-img--img-1">
-					<!--! product shortcuts -->
-					<div class="product-shortcuts">
-						<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
-							<i class="product-shortcuts__icon fas fa-heart"></i>
-						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick shop">
-							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
-							<i class="product-shortcuts__icon fas fa-search-plus"></i>
-						</span>
-					</div>
-				</div>
-
-				<div class="slider__slide-info">
-					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket</p>
+					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
 					<p class="small-subtitle  my-xsm">
 						€694,95
 					</p>
@@ -1528,6 +1498,72 @@
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star-half-alt"></i>
+					</div>
+				</div>
+
+				<!-- ! Quick shop modal -->
+				<div class="quick-shop-modal ">
+					<div class="quick-shop-modal__close-icon px-xsm tooltip tooltip--triangle"
+						data-tooltip="Close quick shop" onclick="toggleModalEighth()">
+						<i class="fas fas fa-times"></i>
+					</div>
+				</div>
+			</div>
+			<!-- slide 9 -->
+			<div class="slider__slide">
+				<div class="slider__slide-img slider__slide-img--img-1">
+					<!--! product shortcuts -->
+					<div class="product-shortcuts">
+						<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
+							<i class="product-shortcuts__icon fas fa-heart"></i>
+						</span>
+						<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+							onclick="toggleModalNinth()">
+							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
+						</span>
+						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+							<i class="product-shortcuts__icon fas fa-search-plus"></i>
+						</span>
+					</div>
+
+				</div>
+				<!-- info -->
+				<div class="slider__slide-info">
+					<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
+					<p class="small-subtitle  my-xsm">
+						€694,95
+					</p>
+
+					<div class="slider__slide-colors my-xsm">
+						<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
+							<input type="radio" checked="checked" name="radio" />
+							<span class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
+						</label>
+						<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Green">
+							<input type="radio" name="radio" />
+							<span class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
+								data-tooltip="White/Grey"></span>
+						</label>
+						<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Black">
+							<input type="radio" name="radio" />
+							<span class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
+						</label>
+					</div>
+
+					<div title="rating" class="slider__slide-stars my-xsm">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star-half-alt"></i>
+					</div>
+				</div>
+
+				<!-- ! Quick shop modal -->
+				<div class="quick-shop-modal ">
+					<div class="quick-shop-modal__close-icon px-xsm tooltip tooltip--triangle"
+						data-tooltip="Close quick shop" onclick="toggleModalNinth()">
+						<i class="fas fas fa-times"></i>
 					</div>
 				</div>
 			</div>
