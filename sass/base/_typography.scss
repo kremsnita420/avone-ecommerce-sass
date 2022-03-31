@@ -1,7 +1,6 @@
 // !extends nad helpers
 %heading {
 	font-family: $font-primary;
-	font-weight: 400;
 }
 
 // ! Headings
@@ -9,7 +8,7 @@
 	@extend %heading;
 
 	font-size: 3.5rem;
-	font-weight: 900;
+	font-weight: 700;
 	line-height: 1.1;
 }
 
@@ -17,7 +16,7 @@
 	@extend %heading;
 
 	font-size: 2rem;
-	font-weight: 900;
+	font-weight: 700;
 	line-height: 1.1;
 	text-transform: uppercase;
 }
@@ -26,13 +25,13 @@
 	@extend %heading;
 
 	font-size: 1.6rem;
-	font-weight: 900;
+	font-weight: 700;
 	line-height: 1.1;
 }
 
 .large-title {
 	font-size: 1.8rem;
-	font-weight: 900;
+	font-weight: 700;
 	text-transform: uppercase;
 }
 

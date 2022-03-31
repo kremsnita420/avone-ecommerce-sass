@@ -12,7 +12,6 @@
 @import 'components/buttons';
 @import 'components/hero-carousel';
 @import 'components/shop-now-window';
-@import 'components/radio-buttons';
 @import 'components/two-column-grid';
 @import 'components/company-logos';
 @import 'components/countdown-timer';
@@ -24,6 +23,7 @@
 @import 'components/dropdown';
 @import 'components/product-teaser';
 @import 'components/quick-shop-modal';
+@import 'components/quick-view-modal';
 
 //layout
 @import 'layout/footer';
@@ -39,5 +39,3 @@
 @import 'layout/shop/collections-filters';
 @import 'layout/shop/collections-grid';
 @import 'layout/shop/filters-sidebar';
-//pages
-@import 'pages/home';

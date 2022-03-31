@@ -91,6 +91,39 @@ const toggleModalNinth = () => {
 }
 
 
+// ! Quick View Modal
+
+
+const modalOpen = document.querySelectorAll('.quick-view');
+const modalClose = document.getElementById('quick-view-modal__close')
+const modal = document.getElementById('quick-view-modal')
+
+function transition() {
+    if (modal.classList.contains('quick-view-modal--hidden')) {
+        modal.classList.remove('quick-view-modal--hidden')
+        console.log('add')
+    } else {
+        modal.classList.add('quick-view-modal--hidden');
+        console.log('remove')
+    }
+}
+
+modalOpen.forEach(card => card.addEventListener('click', transition));
+
+// When the user clicks on <span> (x), close the modal
+modalClose.onclick = function () {
+    modal.classList.add('quick-view-modal--hidden');
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target === modal || event.target === modalClose) {
+        modal.classList.add('quick-view-modal--hidden');
+    }
+}
+
+
+
 
 
 
