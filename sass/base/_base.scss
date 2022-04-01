@@ -45,6 +45,12 @@ i {
 }
 
 ::selection {
-	background-color: $color-blue-2;
+	background-color: $color-pink;
 	color: $color-grey-1;
+}
+
+.stop-scroll {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
 }

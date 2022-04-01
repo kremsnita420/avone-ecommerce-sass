@@ -22,7 +22,7 @@
 	<title>Avone | Shop</title>
 </head>
 
-<body class="container">
+<body id="appBody" class="container">
 	<!-- ! Sidebar -->
 	<div class="sidebar sidebar--hidden medium-title py-xsm">
 		<div class="sidebar__close-icon px-xsm">
@@ -66,7 +66,7 @@
 
 				<ul id="acordion-toggle" class="sidebar__nav">
 					<li class="sidebar__nav-link mb-xsm px-sm">
-						<a href="#">About us</a>
+						<a href="product-page.html">Product Page</a>
 					</li>
 					<li class="sidebar__nav-link mb-xsm px-sm">
 						<a href="#">Contact us</a>
@@ -1035,7 +1035,8 @@
 							onclick="toggleModalFirst()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+						<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
+							onclick="toggleQuickFirst()">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
@@ -1139,6 +1140,18 @@
 						<button class="btn btn--black">Add to cart</button>
 					</div>
 				</div>
+
+				<!-- ! Quick View Modal -->
+				<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+					<!-- Modal content -->
+					<div class="quick-view-modal__content mx-md">
+						<span id="quick-view-modal__close" class="quick-view-modal__close"
+							onclick="toggleQuickFirst()">&times;</span>
+						<p>Some text in the Modal1..</p>
+						<p>Some text in the Modal..</p>
+						<p>Some text in the Modal..</p>
+					</div>
+				</div>
 			</div>
 			<!-- slide 2 -->
 			<div class="slider__slide">
@@ -1152,7 +1165,8 @@
 							onclick="toggleModalSecond()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+						<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
+							onclick="toggleQuickSecond()">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
@@ -1234,6 +1248,18 @@
 						<button class="btn btn--black">Add to cart</button>
 					</div>
 				</div>
+
+				<!-- ! Quick View Modal -->
+				<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+					<!-- Modal content -->
+					<div class="quick-view-modal__content mx-md">
+						<span id="quick-view-modal__close" class="quick-view-modal__close"
+							onclick="toggleQuickSecond()">&times;</span>
+						<p>Some text in the Modal 2..</p>
+						<p>Some text in the Modal..</p>
+						<p>Some text in the Modal..</p>
+					</div>
+				</div>
 			</div>
 			<!-- slide 3 -->
 			<div class="slider__slide">
@@ -1247,7 +1273,8 @@
 							onclick="toggleModalThird()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+						<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
+							onclick="toggleQuickThird()">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
@@ -1329,6 +1356,18 @@
 						<button class="btn btn--black">Add to cart</button>
 					</div>
 				</div>
+
+				<!-- ! Quick View Modal -->
+				<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+					<!-- Modal content -->
+					<div class="quick-view-modal__content mx-md">
+						<span id="quick-view-modal__close" class="quick-view-modal__close"
+							onclick="toggleQuickThird()">&times;</span>
+						<p>Some text in the Modal 3..</p>
+						<p>Some text in the Modal..</p>
+						<p>Some text in the Modal..</p>
+					</div>
+				</div>
 			</div>
 			<!-- slide 4 -->
 			<div class="slider__slide">
@@ -1342,7 +1381,8 @@
 							onclick="toggleModalFourth()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+						<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
+							onclick="toggleQuickFourth()">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
@@ -1424,6 +1464,18 @@
 						<button class="btn btn--black">Add to cart</button>
 					</div>
 				</div>
+
+				<!-- ! Quick View Modal -->
+				<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+					<!-- Modal content -->
+					<div class="quick-view-modal__content mx-md">
+						<span id="quick-view-modal__close" class="quick-view-modal__close"
+							onclick="toggleQuickFourth()">&times;</span>
+						<p>Some text in the Modal 4..</p>
+						<p>Some text in the Modal..</p>
+						<p>Some text in the Modal..</p>
+					</div>
+				</div>
 			</div>
 			<!-- slide 5 -->
 			<div class="slider__slide">
@@ -1437,7 +1489,8 @@
 							onclick="toggleModalFifth()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+						<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
+							onclick="toggleQuickFifth()">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
@@ -1519,6 +1572,18 @@
 						<button class="btn btn--black">Add to cart</button>
 					</div>
 				</div>
+
+				<!-- ! Quick View Modal -->
+				<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+					<!-- Modal content -->
+					<div class="quick-view-modal__content mx-md">
+						<span id="quick-view-modal__close" class="quick-view-modal__close"
+							onclick="toggleQuickFifth()">&times;</span>
+						<p>Some text in the Modal 5..</p>
+						<p>Some text in the Modal..</p>
+						<p>Some text in the Modal..</p>
+					</div>
+				</div>
 			</div>
 			<!-- slide 6 -->
 			<div class="slider__slide">
@@ -1532,7 +1597,8 @@
 							onclick="toggleModalSixth()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+						<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
+							onclick="toggleQuickSixth()">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
@@ -1614,6 +1680,18 @@
 						<button class="btn btn--black">Add to cart</button>
 					</div>
 				</div>
+
+				<!-- ! Quick View Modal -->
+				<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+					<!-- Modal content -->
+					<div class="quick-view-modal__content mx-md">
+						<span id="quick-view-modal__close" class="quick-view-modal__close"
+							onclick="toggleQuickSixth()">&times;</span>
+						<p>Some text in the Modal 6..</p>
+						<p>Some text in the Modal..</p>
+						<p>Some text in the Modal..</p>
+					</div>
+				</div>
 			</div>
 			<!-- slide 7 -->
 			<div class="slider__slide">
@@ -1627,7 +1705,8 @@
 							onclick="toggleModalSeventh()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+						<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
+							onclick="toggleQuickSeventh()">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
@@ -1709,6 +1788,18 @@
 						<button class="btn btn--black">Add to cart</button>
 					</div>
 				</div>
+
+				<!-- ! Quick View Modal -->
+				<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+					<!-- Modal content -->
+					<div class="quick-view-modal__content mx-md">
+						<span id="quick-view-modal__close" class="quick-view-modal__close"
+							onclick="toggleQuickSeventh()">&times;</span>
+						<p>Some text in the Modal 7..</p>
+						<p>Some text in the Modal..</p>
+						<p>Some text in the Modal..</p>
+					</div>
+				</div>
 			</div>
 			<!-- slide 8 -->
 			<div class="slider__slide">
@@ -1722,7 +1813,8 @@
 							onclick="toggleModalEighth()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+						<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
+							onclick="toggleQuickEighth()">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
@@ -1804,6 +1896,18 @@
 						<button class="btn btn--black">Add to cart</button>
 					</div>
 				</div>
+
+				<!-- ! Quick View Modal -->
+				<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+					<!-- Modal content -->
+					<div class="quick-view-modal__content mx-md">
+						<span id="quick-view-modal__close" class="quick-view-modal__close"
+							onclick="toggleQuickEighth()">&times;</span>
+						<p>Some text in the Modal 8..</p>
+						<p>Some text in the Modal..</p>
+						<p>Some text in the Modal..</p>
+					</div>
+				</div>
 			</div>
 			<!-- slide 9 -->
 			<div class="slider__slide">
@@ -1817,7 +1921,8 @@
 							onclick="toggleModalNinth()">
 							<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 						</span>
-						<span class=" tooltip tooltip--triangle" data-tooltip="Quick view">
+						<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
+							onclick="toggleQuickNinth()">
 							<i class="product-shortcuts__icon fas fa-search-plus"></i>
 						</span>
 					</div>
@@ -1897,6 +2002,18 @@
 
 					<div>
 						<button class="btn btn--black">Add to cart</button>
+					</div>
+				</div>
+
+				<!-- ! Quick View Modal -->
+				<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+					<!-- Modal content -->
+					<div class="quick-view-modal__content mx-md">
+						<span id="quick-view-modal__close" class="quick-view-modal__close"
+							onclick="toggleQuickNinth()">&times;</span>
+						<p>Some text in the Modal 9..</p>
+						<p>Some text in the Modal..</p>
+						<p>Some text in the Modal..</p>
 					</div>
 				</div>
 			</div>
@@ -2057,9 +2174,9 @@
 					all items.
 				</p>
 				<form action="#">
-					<input class=" mb-xsm" type="email" placeholder="Email address" />
+					<input class="mb-sm" type="email" placeholder="Email address" />
 					<br />
-					<button class="btn btn--black">Subscribe</button>
+					<button class="btn btn--black mb-sm">Subscribe</button>
 				</form>
 			</div>
 		</div>
@@ -2212,7 +2329,9 @@
 
 	<script src="javascript/script.js"></script>
 	<script src="javascript/script-shop.js"></script>
+	<script src="javascript/tiny-sliders.js"></script>
 	<script src="javascript/tiny-sliders-shop.js"></script>
+	<script src="javascript/quick-view-carousel.js"></script>
 
 </body>
 

@@ -93,38 +93,78 @@ const toggleModalNinth = () => {
 
 // ! Quick View Modal
 
+// modal open
+const modalOpen = document.getElementById('quick-view');
+// modal close
+const modalClose = document.getElementsByClassName('quick-view-modal__close');
+const modal = document.getElementsByClassName('quick-view-modal')
+const bodyElement = document.getElementById("appBody");
 
-const modalOpen = document.querySelectorAll('.quick-view');
-const modalClose = document.getElementById('quick-view-modal__close')
-const modal = document.getElementById('quick-view-modal')
+const toggleQuickFirst = () => {
 
-function transition() {
-    if (modal.classList.contains('quick-view-modal--hidden')) {
-        modal.classList.remove('quick-view-modal--hidden')
-        console.log('add')
-    } else {
-        modal.classList.add('quick-view-modal--hidden');
-        console.log('remove')
-    }
+    modal[0].classList.toggle("quick-view-modal--hidden")
+
 }
+const toggleQuickSecond = () => {
 
-modalOpen.forEach(card => card.addEventListener('click', transition));
+    modal[1].classList.toggle("quick-view-modal--hidden")
+
+}
+const toggleQuickThird = () => {
+
+    modal[2].classList.toggle("quick-view-modal--hidden")
+
+}
+const toggleQuickFourth = () => {
+
+    modal[3].classList.toggle("quick-view-modal--hidden")
+
+}
+const toggleQuickFifth = () => {
+
+    modal[4].classList.toggle("quick-view-modal--hidden")
+
+}
+const toggleQuickSixth = () => {
+
+    modal[5].classList.toggle("quick-view-modal--hidden")
+
+}
+const toggleQuickSeventh = () => {
+
+    modal[6].classList.toggle("quick-view-modal--hidden")
+
+}
+const toggleQuickEighth = () => {
+
+    modal[7].classList.toggle("quick-view-modal--hidden")
+
+}
+const toggleQuickNinth = () => {
+
+    modal[8].classList.toggle("quick-view-modal--hidden")
+
+}
 
 // When the user clicks on <span> (x), close the modal
 modalClose.onclick = function () {
+    // hide modal
     modal.classList.add('quick-view-modal--hidden');
+    //remove scrolling on body when modal is open
+    bodyElement.classList.remove("stop-scroll");
+
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target === modal || event.target === modalClose) {
+        // hide modal
         modal.classList.add('quick-view-modal--hidden');
+        //remove scrolling on body when modal is open
+        bodyElement.classList.remove("stop-scroll");
+
     }
 }
-
-
-
-
 
 
 // ! Accordion toggle

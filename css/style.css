@@ -57,8 +57,13 @@ i {
   display: inline-block; }
 
 ::selection {
-  background-color: #77bff2;
+  background-color: #ffc0cb;
   color: #faf8f8; }
+
+.stop-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden; }
 
 .heading-1, .heading-2, .heading-3, .large-subtitle, .medium-subtitle, .small-subtitle {
   font-family: "Poppins", sans-serif; }
@@ -221,6 +226,9 @@ i {
   cursor: pointer;
   transition: background-color 0.4s; }
 
+.btn--full-width {
+  width: 100%; }
+
 .btn--rounded {
   border-radius: 0.4rem; }
 
@@ -264,8 +272,7 @@ i {
   grid-column: full-start / full-end;
   height: 70rem;
   width: 100%;
-  position: relative;
-  border-top: 1px solid rgba(250, 248, 248, 0.3); }
+  position: relative; }
   @media screen and (max-width: 1000px) {
     .carousel {
       height: 55rem; } }
@@ -331,6 +338,7 @@ i {
     display: block;
     animation: fadeVisibility 2s; }
   .carousel__buttons {
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     width: 95%;
@@ -841,11 +849,12 @@ input:checked ~ .slider__slide-color-span--black::before {
 .quick-view-modal {
   position: fixed;
   z-index: 10000;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* Full width */
   height: 100vh;
+  /* Full height */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -856,28 +865,48 @@ input:checked ~ .slider__slide-color-span--black::before {
     display: none; }
   .quick-view-modal__content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    flex-direction: column;
+    padding: 2rem;
     position: relative;
     background-color: #fff;
-    height: 60rem;
+    max-height: 70rem;
     width: 80rem; }
   .quick-view-modal__close {
     color: #a5a5a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0.5rem;
+    right: 0.5rem;
     padding: 0.5rem;
-    display: block;
-    line-height: 1;
-    font-size: 28px;
+    width: 2.5rem;
+    height: 2.5rem;
     transition: color 0.3s ease; }
     .quick-view-modal__close:hover,
     .quick-view-modal__close :focus {
       color: #e34848;
       text-decoration: none;
       cursor: pointer; }
+
+.quick-view-carousel {
+  width: 40rem;
+  position: relative;
+  transition: opacity 0.3s ease; }
+  .quick-view-carousel .slider__slide {
+    padding: 0; }
+  .quick-view-carousel:hover button {
+    opacity: 1; }
+  @media screen and (max-width: 1000px) {
+    .quick-view-carousel {
+      opacity: 1; } }
+  .quick-view-carousel__img {
+    width: 100%;
+    height: 100%;
+    display: block; }
+    .quick-view-carousel__img--hidden {
+      display: none; }
 
 .footer {
   grid-column: center-start / center-end;

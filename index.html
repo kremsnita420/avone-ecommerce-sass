@@ -22,7 +22,7 @@
 	<title>Avone | Online eCommerce website</title>
 </head>
 
-<body class="container">
+<body id="appBody" class="container">
 	<!-- ! Sidebar -->
 	<div class="sidebar sidebar--hidden medium-title py-xsm">
 		<div class="sidebar__close-icon px-xsm">
@@ -66,7 +66,7 @@
 
 				<ul id="acordion-toggle" class="sidebar__nav">
 					<li class="sidebar__nav-link mb-xsm px-sm">
-						<a href="#">About us</a>
+						<a href="product-page.html">Product Page</a>
 					</li>
 					<li class="sidebar__nav-link mb-xsm px-sm">
 						<a href="#">Contact us</a>
@@ -520,13 +520,111 @@
 
 	<!-- ! Quick View Modal -->
 	<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
-
 		<!-- Modal content -->
-		<div class="quick-view-modal__content">
-			<span id="quick-view-modal__close" class="quick-view-modal__close">&times;</span>
-			<p>Some text in the Modal..</p>
-		</div>
+		<div class="quick-view-modal__content mx-md">
+			<span id="quick-view-modal__close" class="quick-view-modal__close"
+				onclick="toggleQuickFirst()">&times;</span>
 
+			<div class="quick-view-carousel">
+
+
+				<div class="slider">
+					<div class="slider__container">
+
+						<!-- slider -->
+						<div id="quick-view__slider" class="slider__my-slider">
+							<!-- slide 1 -->
+							<div>
+								<div class="slider__slide">
+									<img class="quick-view-carousel__img" src="img/product-1/product-1-1.webp"
+										alt="product image" />
+								</div>
+							</div>
+							<!-- slide 2 -->
+							<div>
+								<div class="slider__slide">
+									<img class="quick-view-carousel__img" src="img/product-1/product-1-2.webp"
+										alt="product image" />
+								</div>
+							</div>
+							<!-- slide 3 -->
+							<div>
+								<div class="slider__slide">
+									<img class="quick-view-carousel__img" src="img/product-1/product-1-3.webp"
+										alt="product image" />
+								</div>
+							</div>
+							<!-- slide 4 -->
+							<div>
+								<div class="slider__slide">
+									<img class="quick-view-carousel__img" src="img/product-1/product-1-4.webp"
+										alt="product image" />
+								</div>
+							</div>
+							<!-- slide 5 -->
+							<div>
+								<div class="slider__slide">
+									<img class="quick-view-carousel__img" src="img/product-1/product-1-5.webp"
+										alt="product image" />
+								</div>
+							</div>
+							<!-- slide 6 -->
+							<div>
+								<div class="slider__slide">
+									<img class="quick-view-carousel__img" src="img/product-1/product-1-6.webp"
+										alt="product image" />
+								</div>
+							</div>
+							<!-- slide 7 -->
+							<div>
+								<div class="slider__slide">
+									<img class="quick-view-carousel__img" src="img/product-1/product-1-7.webp"
+										alt="product image" />
+								</div>
+							</div>
+							<!-- slide 8 -->
+							<div>
+								<div class="slider__slide">
+									<img class="quick-view-carousel__img" src="img/product-1/product-1-8.webp"
+										alt="product image" />
+								</div>
+							</div>
+							<!-- slide 9 -->
+							<div>
+								<div class="slider__slide">
+									<img class="quick-view-carousel__img" src="img/product-1/product-1-9.webp"
+										alt="product image" />
+								</div>
+							</div>
+							<!-- slide 10 -->
+							<div>
+								<div class="slider__slide">
+									<img class="quick-view-carousel__img" src="img/product-1/product-1-10.webp"
+										alt="product image" />
+								</div>
+							</div>
+						</div>
+
+						<!-- controls -->
+						<div class="slider__controller">
+							<div class="slider__controls4">
+								<button class="slider__previous4 carousel__btn">
+									<i class="carousel__nav-icon fas fa-chevron-left" aria-label="previous slide"></i>
+								</button>
+								<button class="slider__next4 carousel__btn">
+									<i class="carousel__nav-icon fas fa-chevron-right" aria-label="next slide"></i>
+								</button>
+							</div>
+						</div>
+
+					</div>
+					<button class="btn btn--full-width btn--black">View More Details</button>
+				</div>
+
+
+
+			</div>
+		</div>
 	</div>
 
 	<!-- ! Header -->
@@ -700,8 +798,8 @@
 										onclick="toggleModalFirst()">
 										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 									</span>
-									<span id="quick-view" class="quick-view tooltip tooltip--triangle"
-										data-tooltip="Quick view">
+									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
+										onclick="toggleQuickFirst()">
 										<i class="product-shortcuts__icon fas fa-search-plus"></i>
 									</span>
 								</div>
@@ -824,8 +922,8 @@
 										onclick="toggleModalSecond()">
 										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 									</span>
-									<span id="quick-view" class="quick-view tooltip tooltip--triangle"
-										data-tooltip="Quick view">
+									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
+										onclick="toggleQuickSecond()">
 										<i class="product-shortcuts__icon fas fa-search-plus"></i>
 									</span>
 								</div>
@@ -919,12 +1017,12 @@
 									<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
 										<i class="product-shortcuts__icon fas fa-heart"></i>
 									</span>
-									<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+									<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop"
 										onclick="toggleModalThird()">
 										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 									</span>
-									<span id="quick-view" class="quick-view tooltip tooltip--triangle"
-										data-tooltip="Quick view">
+									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
+										onclick="toggleQuickThird()">
 										<i class="product-shortcuts__icon fas fa-search-plus"></i>
 									</span>
 								</div>
@@ -1018,12 +1116,12 @@
 									<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
 										<i class="product-shortcuts__icon fas fa-heart"></i>
 									</span>
-									<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+									<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop"
 										onclick="toggleModalFourth()">
 										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 									</span>
-									<span id="quick-view" class="quick-view tooltip tooltip--triangle"
-										data-tooltip="Quick view">
+									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
+										onclick="toggleQuickFourth()">
 										<i class="product-shortcuts__icon fas fa-search-plus"></i>
 									</span>
 								</div>
@@ -1117,12 +1215,12 @@
 									<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
 										<i class="product-shortcuts__icon fas fa-heart"></i>
 									</span>
-									<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+									<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop"
 										onclick="toggleModalFifth()">
 										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 									</span>
-									<span id="quick-view" class="quick-view tooltip tooltip--triangle"
-										data-tooltip="Quick view">
+									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
+										onclick="toggleQuickFifth()">
 										<i class="product-shortcuts__icon fas fa-search-plus"></i>
 									</span>
 								</div>
@@ -1216,12 +1314,12 @@
 									<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
 										<i class="product-shortcuts__icon fas fa-heart"></i>
 									</span>
-									<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+									<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop"
 										onclick="toggleModalSixth()">
 										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 									</span>
-									<span id="quick-view" class="quick-view tooltip tooltip--triangle"
-										data-tooltip="Quick view">
+									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
+										onclick="toggleQuickSixth()">
 										<i class="product-shortcuts__icon fas fa-search-plus"></i>
 									</span>
 								</div>
@@ -1650,9 +1748,9 @@
 					all items.
 				</p>
 				<form action="#">
-					<input class=" mb-xsm" type="email" placeholder="Email address" />
+					<input class="mb-sm" type="email" placeholder="Email address" />
 					<br />
-					<button class="btn btn--black">Subscribe</button>
+					<button class="btn btn--black mb-sm">Subscribe</button>
 				</form>
 			</div>
 		</div>
@@ -1806,7 +1904,9 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 	<script src="javascript/script.js"></script>
+	<script src="javascript/tiny-sliders.js"></script>
 	<script src="javascript/tiny-sliders-home.js"></script>
+	<script src="javascript/quick-view-carousel.js"></script>
 	<script src="javascript/hero-carousel.js"></script>
 </body>
 
