@@ -525,9 +525,8 @@
 			<span id="quick-view-modal__close" class="quick-view-modal__close"
 				onclick="toggleQuickFirst()">&times;</span>
 
-			<div class="quick-view-carousel">
-
-
+			<!-- !carousel -->
+			<div class="quick-view-modal__carousel quick-view-carousel p-sm">
 				<div class="slider">
 					<div class="slider__container">
 
@@ -620,9 +619,66 @@
 					</div>
 					<button class="btn btn--full-width btn--black">View More Details</button>
 				</div>
+			</div>
 
+			<!--! product info -->
+			<div class="quick-view-modal__info p-sm">
+				<a href="#" class="medium-subtitle quick-view-modal__title-link mb-xsm">Crook</a>
+				<a href="#" class="quick-view-modal__title-link">
+					<h4 class="large-subtitle mb-xsm">Innerbloom Puffer Jacket</h4>
+				</a>
 
+				<div title="rating" class="slider__slide-stars mb-sm small-subtitle">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<span class="slider__reviews">14 reviews</span>
+					<span class="px-sm slider__in-stock">In Stock</span>
+				</div>
+				<h4 class="heading-2 mb-xsm">€459,96</h4>
+				<p class="medium-subtitle mb-sm">Tax included</p>
 
+				<ul class="quick-view-modal__list mb-sm">
+					<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
+					<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
+					<li class="quick-view-modal__list-item">Asymmetrical hem</li>
+					<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
+				</ul>
+
+				<!--! colors -->
+				<p class="medium-title mb-sm">Color: <b>Green</b></p>
+				<div class="product-colors mb-sm">
+					<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
+						<input type="radio" name="radio1" />
+						<div class="product-color-image product-color-image--img-2" data-tooltip="White/Grey"></div>
+					</label>
+					<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
+						<input type="radio" name="radio1" />
+						<div class="product-color-image product-color-image--img-3"></div>
+					</label>
+					<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
+						<input type="radio" name="radio1" />
+						<div class="product-color-image product-color-image--img-4"></div>
+					</label>
+				</div>
+				<!--! sizes -->
+				<p class="medium-title mb-sm">Size: <b>M</b></p>
+				<div class="product-sizes mb-sm">
+					<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
+						<input type="radio" name="radio2" />
+						<span class="product-size-span">S</span>
+					</label>
+					<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
+						<input type="radio" name="radio2" />
+						<span class="product-size-span" data-tooltip="White/Grey">M</span>
+					</label>
+					<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
+						<input type="radio" name="radio2" />
+						<span class="product-size-span">L</span>
+					</label>
+				</div>
 			</div>
 		</div>
 	</div>

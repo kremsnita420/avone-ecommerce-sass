@@ -74,6 +74,14 @@
 		color: $color-yellow;
 	}
 
+	&__reviews {
+		color: $color-grey-3;
+	}
+
+	&__in-stock {
+		color: $color-green;
+	}
+
 	&__slide-colors {
 		display: flex;
 		align-items: center;
