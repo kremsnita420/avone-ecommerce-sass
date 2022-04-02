@@ -1,0 +1,73 @@
+//! Colors
+.product-colors {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.product-color {
+	input {
+		display: none;
+	}
+
+	cursor: pointer;
+	display: inline-block;
+	padding: 0 0.5rem;
+
+	&:hover .product-color-image::before {
+		border: 3px solid $color-red;
+	}
+}
+
+.product-color-image {
+	position: relative;
+	width: 3rem;
+	height: 3rem;
+	background-size: cover;
+
+	&::before {
+		position: absolute;
+		top: -10%;
+		left: -10%;
+		display: block;
+		content: '';
+		border: 1px solid $color-grey-3;
+		padding: 0.5rem;
+		width: 120%;
+		height: 120%;
+
+		transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}
+
+	&::after {
+		position: absolute;
+		top: -10%;
+		left: -10%;
+		display: block;
+		content: '';
+
+		padding: 0.5rem;
+		width: 120%;
+		height: 120%;
+	}
+
+	&--img-1 {
+		background-image: url('/img/new-arival-1-1-small.webp');
+	}
+
+	&--img-2 {
+		background-image: url('/img/new-arival-2-1-small.webp');
+	}
+
+	&--img-3 {
+		background-image: url('/img/new-arival-3-1-small.webp');
+	}
+
+	&--img-4 {
+		background-image: url('/img/new-arival-4-1-small.webp');
+	}
+}
+
+.product-color input:checked ~ .product-color-image::before {
+	border: 3px solid $color-red;
+}

@@ -42,9 +42,6 @@
 	&__price {
 		display: flex;
 		justify-content: space-between;
-	}
-
-	&__quantity-selector input {
-		width: 3rem;
+		align-items: center;
 	}
 }

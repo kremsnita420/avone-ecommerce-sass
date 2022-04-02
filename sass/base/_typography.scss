@@ -46,18 +46,13 @@
 }
 
 .large-subtitle {
-	@extend %heading;
 	font-size: 1.8rem;
 }
 .medium-subtitle {
-	@extend %heading;
-
 	font-size: 1.5rem;
 }
 
 .small-subtitle {
-	@extend %heading;
-
 	font-size: 1.2rem;
 	font-weight: 400;
 }

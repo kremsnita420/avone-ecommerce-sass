@@ -1,6 +1,6 @@
 .quick-view-carousel {
-	width: 40rem;
-	height: 100%;
+	width: 100%;
+
 	position: relative;
 	transition: opacity 0.3s ease;
 
@@ -18,7 +18,7 @@
 
 	&__img {
 		width: 100%;
-		height: 100%;
+
 		display: block;
 
 		&--hidden {

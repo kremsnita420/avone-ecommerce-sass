@@ -1,0 +1,24 @@
+.quantity-selector {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid $color-grey-3;
+
+	input {
+		width: 3rem;
+		border: 0;
+		text-align: center;
+		outline: 0;
+		user-select: none;
+	}
+
+	&__up,
+	&__down {
+		display: block;
+
+		padding: 0 0.5rem;
+		cursor: pointer;
+		color: $color-grey-3;
+		user-select: none;
+	}
+}
