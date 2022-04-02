@@ -97,52 +97,44 @@ const modalOpen = document.getElementById('quick-view');
 // modal close
 const modalClose = document.getElementsByClassName('quick-view-modal__close');
 const modal = document.getElementsByClassName('quick-view-modal')
+const modalContent = document.getElementsByClassName('quick-view-modal__content')
 const bodyElement = document.getElementById("appBody");
 
 const toggleQuickFirst = () => {
-
     modal[0].classList.toggle("quick-view-modal--hidden")
-
+    modalContent[0].classList.toggle("quick-view-modal__content-wrapper--hidden")
 }
 const toggleQuickSecond = () => {
-
     modal[1].classList.toggle("quick-view-modal--hidden")
-
+    modalContent[1].classList.toggle("quick-view-modal__content-wrapper--hidden")
 }
 const toggleQuickThird = () => {
-
     modal[2].classList.toggle("quick-view-modal--hidden")
-
+    modalContent[2].classList.toggle("quick-view-modal__content-wrapper--hidden")
 }
 const toggleQuickFourth = () => {
-
     modal[3].classList.toggle("quick-view-modal--hidden")
-
+    modalContent[3].classList.toggle("quick-view-modal__content-wrapper--hidden")
 }
 const toggleQuickFifth = () => {
-
     modal[4].classList.toggle("quick-view-modal--hidden")
-
+    modalContent[4].classList.toggle("quick-view-modal__content-wrapper--hidden")
 }
 const toggleQuickSixth = () => {
-
     modal[5].classList.toggle("quick-view-modal--hidden")
-
+    modalContent[5].classList.toggle("quick-view-modal__content-wrapper--hidden")
 }
 const toggleQuickSeventh = () => {
-
     modal[6].classList.toggle("quick-view-modal--hidden")
-
+    modalContent[6].classList.toggle("quick-view-modal__content-wrapper--hidden")
 }
 const toggleQuickEighth = () => {
-
     modal[7].classList.toggle("quick-view-modal--hidden")
-
+    modalContent[7].classList.toggle("quick-view-modal__content-wrapper--hidden")
 }
 const toggleQuickNinth = () => {
-
     modal[8].classList.toggle("quick-view-modal--hidden")
-
+    modalContent[8].classList.toggle("quick-view-modal__content-wrapper--hidden")
 }
 
 // When the user clicks on <span> (x), close the modal
