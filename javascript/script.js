@@ -26,23 +26,18 @@ cartClose[0].addEventListener("click", (e) => {
     e.preventDefault()
     sidebarCart[0].classList.remove("sidebar-cart--visible")
     sidebarCart[0].classList.add("sidebar-cart--hidden")
-    console.log('close')
-
 });
 
 cartOpen[0].addEventListener("click", (e) => {
     e.preventDefault()
     sidebarCart[0].classList.remove("sidebar-cart--hidden")
     sidebarCart[0].classList.add("sidebar-cart--visible")
-    console.log('open')
-
 });
 
 // ! Quick shop modal toggle
 const quickShopOpen = document.getElementsByClassName('quick-shop')
 const quickShopClose = document.getElementsByClassName('quick-shop-modal__close-icon')
 const quickShopModal = document.getElementsByClassName('quick-shop-modal')
-
 
 const toggleModalFirst = () => {
 
@@ -103,6 +98,7 @@ const bodyElement = document.getElementById("appBody");
 const toggleQuickFirst = () => {
     modal[0].classList.toggle("quick-view-modal--hidden")
     modalContent[0].classList.toggle("quick-view-modal__content-wrapper--hidden")
+    bodyElement.classList.toggle("stop-scroll");
 }
 const toggleQuickSecond = () => {
     modal[1].classList.toggle("quick-view-modal--hidden")
@@ -140,9 +136,9 @@ const toggleQuickNinth = () => {
 // When the user clicks on <span> (x), close the modal
 modalClose.onclick = function () {
     // hide modal
-    modal.classList.add('quick-view-modal--hidden');
+    modal.classList.toggle('quick-view-modal--hidden');
     //remove scrolling on body when modal is open
-    bodyElement.classList.remove("stop-scroll");
+    bodyElement.classList.toggle("stop-scroll");
 
 }
 
@@ -150,14 +146,14 @@ modalClose.onclick = function () {
 window.onclick = function (event) {
     if (event.target === modal || event.target === modalClose) {
         // hide modal
-        modal.classList.add('quick-view-modal--hidden');
+        modal.classList.toggle('quick-view-modal--hidden');
         //remove scrolling on body when modal is open
-        bodyElement.classList.remove("stop-scroll");
+        bodyElement.classList.toggle("stop-scroll");
 
     }
 }
 
-//! Product QUantity selector
+//! Product Quantity selector
 
 function increaseCount(a, b) {
     var input = b.previousElementSibling;
