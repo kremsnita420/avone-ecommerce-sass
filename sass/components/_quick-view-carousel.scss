@@ -17,13 +17,13 @@
 	}
 
 	&__img {
-		height: 55rem;
+		height: 50rem;
 		width: 100%;
 		object-fit: cover;
 		display: block;
 
 		@media screen and (max-width: 770px) {
-			height: 70rem;
+			height: 60rem;
 			width: 90%;
 			margin: auto;
 		}
