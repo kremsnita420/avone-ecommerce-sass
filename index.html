@@ -604,7 +604,7 @@
 
 						</div>
 					</div>
-					<button class="btn btn--full-width btn--black my-sm">View More Details</button>
+					<button class="btn btn--black my-sm">View More Details</button>
 				</div>
 
 				<!--! product info -->
@@ -635,7 +635,7 @@
 
 					<div>
 						<!--! colors -->
-						<p class="medium-title mb-xsm">Color: <b>Green</b></p>
+						<p class="medium-title mb-smm">Color: <b>Green</b></p>
 						<div class="product-colors mb-md">
 							<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
 								<input type="radio" name="radio1" />
@@ -670,7 +670,15 @@
 							</label>
 						</div>
 					</div>
-
+					<!-- ! Add to cart -->
+					<div class="quick-view-modal__add-to-cart">
+						<div class="quantity-selector p-xsm">
+							<span class="quantity-selector__down" onClick="decreaseCount(event, this)">-</span>
+							<input class="" type="text" value="1">
+							<span class="quantity-selector__up" onClick="increaseCount(event, this)">+</span>
+						</div>
+						<button class="btn btn--black ">Add to Cart</button>
+					</div>
 
 
 				</div>

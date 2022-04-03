@@ -17,9 +17,20 @@
 	}
 
 	&__img {
+		height: 55rem;
 		width: 100%;
-
+		object-fit: cover;
 		display: block;
+
+		@media screen and (max-width: 770px) {
+			height: 70rem;
+			width: 90%;
+			margin: auto;
+		}
+
+		@media screen and (max-width: 550px) {
+			width: 100%;
+		}
 
 		&--hidden {
 			display: none;

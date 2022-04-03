@@ -133,6 +133,9 @@ i {
 .mb-xsm {
   margin-bottom: 0.5rem; }
 
+.mb-smm {
+  margin-bottom: 1.5rem; }
+
 .mb-sm {
   margin-bottom: 2rem; }
 
@@ -243,6 +246,9 @@ i {
   border: none;
   cursor: pointer;
   transition: background-color 0.4s; }
+
+.btn--full-height {
+  height: 100%; }
 
 .btn--full-width {
   width: 100%; }
@@ -938,7 +944,8 @@ input:checked ~ .slider__slide-color-span--black::before {
     cursor: pointer; }
   .quick-view-modal__content-wrapper {
     display: flex;
-    position: relative; }
+    position: relative;
+    height: 100%; }
     @media screen and (max-width: 770px) {
       .quick-view-modal__content-wrapper {
         flex-direction: column; } }
@@ -970,8 +977,13 @@ input:checked ~ .slider__slide-color-span--black::before {
           /* IE and Edge */
           scrollbar-width: none;
           /* Firefox */ } }
+    @media screen and (max-width: 550px) {
+      .quick-view-modal__content {
+        padding: 1rem; } }
   .quick-view-modal__carousel {
     flex: 1; }
+    .quick-view-modal__carousel .btn {
+      width: 100%; }
   .quick-view-modal__info {
     flex: 1;
     display: flex;
@@ -983,6 +995,23 @@ input:checked ~ .slider__slide-color-span--black::before {
   .quick-view-modal__list {
     list-style-type: disc;
     padding-left: 2rem; }
+  .quick-view-modal .product-color-image {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+    border-radius: 5px; }
+    .quick-view-modal .product-color-image::before {
+      border-radius: 5px; }
+  .quick-view-modal__add-to-cart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .quick-view-modal__add-to-cart .quantity-selector {
+      margin-right: 1rem; }
+    .quick-view-modal__add-to-cart .btn {
+      width: 100%;
+      height: 100%; }
 
 .quick-view-carousel {
   width: 100%;
@@ -996,8 +1025,18 @@ input:checked ~ .slider__slide-color-span--black::before {
     .quick-view-carousel {
       opacity: 1; } }
   .quick-view-carousel__img {
+    height: 55rem;
     width: 100%;
+    object-fit: cover;
     display: block; }
+    @media screen and (max-width: 770px) {
+      .quick-view-carousel__img {
+        height: 70rem;
+        width: 90%;
+        margin: auto; } }
+    @media screen and (max-width: 550px) {
+      .quick-view-carousel__img {
+        width: 100%; } }
     .quick-view-carousel__img--hidden {
       display: none; }
 

@@ -1,0 +1,46 @@
+.filter-toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media screen and (max-width: 770px) {
+		flex-direction: column;
+	}
+
+	.product-filter-toggler {
+		padding: 0.75rem 1.25rem;
+
+		@media screen and (min-width: 1000px) {
+			display: none;
+		}
+
+		@media screen and (min-width: 770px) {
+			margin-right: 2rem;
+		}
+
+		@media screen and (max-width: 770px) {
+			width: 100%;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__filter-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	&__icon {
+		display: inline-block;
+		cursor: pointer;
+		padding: 1rem;
+
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+
+	&__results {
+	}
+}
