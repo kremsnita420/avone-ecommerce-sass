@@ -78,11 +78,6 @@ i {
 ::-webkit-scrollbar-thumb:hover {
   background: #ea7474; }
 
-.stop-scroll {
-  margin: 0;
-  height: 100%;
-  overflow: hidden; }
-
 .heading-1, .heading-2, .heading-3 {
   font-family: "Poppins", sans-serif; }
 
@@ -895,8 +890,13 @@ input:checked ~ .slider__slide-color-span--black::before {
     .quick-shop-modal__close-icon:hover {
       color: #e34848; }
 
-/* The Modal (background) */
+.stop-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden; }
+
 .quick-view-modal {
+  transform: none;
   position: fixed;
   z-index: 10000;
   top: 0;
@@ -944,7 +944,6 @@ input:checked ~ .slider__slide-color-span--black::before {
       .quick-view-modal__content-wrapper {
         flex-direction: column; } }
   .quick-view-modal__content {
-    z-index: 10001;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -953,12 +952,7 @@ input:checked ~ .slider__slide-color-span--black::before {
     background-color: #fff;
     height: 70rem;
     width: 77rem;
-    overflow: auto;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1); }
-    .quick-view-modal__content--hidden {
-      transform: scale(0.8);
-      opacity: 0;
-      z-index: -10000; }
+    overflow: auto; }
     @media screen and (max-width: 770px) {
       .quick-view-modal__content {
         min-height: 100vh;

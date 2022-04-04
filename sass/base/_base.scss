@@ -73,9 +73,3 @@ i {
 ::-webkit-scrollbar-thumb:hover {
 	background: lighten($color-red, 10);
 }
-
-.stop-scroll {
-	margin: 0;
-	height: 100%;
-	overflow: hidden;
-}
