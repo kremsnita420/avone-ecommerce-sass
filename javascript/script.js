@@ -86,72 +86,95 @@ const toggleModalNinth = () => {
 }
 
 
-// ! Quick View Modal
+// ! Quick View Modal toggle
 // modal open
-const modalOpen = document.getElementById('quick-view');
+const modalOpen = document.getElementsByClassName('quick-view');
 // modal close
 const modalClose = document.getElementsByClassName('quick-view-modal__close');
+
 const modal = document.getElementsByClassName('quick-view-modal')
 const modalContent = document.getElementsByClassName('quick-view-modal__content')
 const bodyElement = document.getElementById("appBody");
 
+
+
 const toggleQuickFirst = () => {
     modal[0].classList.toggle("quick-view-modal--hidden")
-    modalContent[0].classList.toggle("quick-view-modal__content-wrapper--hidden")
+    modalContent[0].classList.toggle("quick-view-modal__content--hidden")
     bodyElement.classList.toggle("stop-scroll");
 }
 const toggleQuickSecond = () => {
     modal[1].classList.toggle("quick-view-modal--hidden")
-    modalContent[1].classList.toggle("quick-view-modal__content-wrapper--hidden")
+    modalContent[1].classList.remove("quick-view-modal__content--hidden")
+    bodyElement.classList.toggle("stop-scroll");
+
 }
 const toggleQuickThird = () => {
     modal[2].classList.toggle("quick-view-modal--hidden")
-    modalContent[2].classList.toggle("quick-view-modal__content-wrapper--hidden")
+    modalContent[2].classList.remove("quick-view-modal__content--hidden")
+    bodyElement.classList.toggle("stop-scroll");
+
 }
 const toggleQuickFourth = () => {
     modal[3].classList.toggle("quick-view-modal--hidden")
-    modalContent[3].classList.toggle("quick-view-modal__content-wrapper--hidden")
+    modalContent[3].classList.remove("quick-view-modal__content--hidden")
+    bodyElement.classList.toggle("stop-scroll");
+
 }
 const toggleQuickFifth = () => {
     modal[4].classList.toggle("quick-view-modal--hidden")
-    modalContent[4].classList.toggle("quick-view-modal__content-wrapper--hidden")
+    modalContent[4].classList.remove("quick-view-modal__content--hidden")
+    bodyElement.classList.toggle("stop-scroll");
+
 }
 const toggleQuickSixth = () => {
     modal[5].classList.toggle("quick-view-modal--hidden")
-    modalContent[5].classList.toggle("quick-view-modal__content-wrapper--hidden")
+    modalContent[5].classList.remove("quick-view-modal__content--hidden")
+    bodyElement.classList.toggle("stop-scroll");
+
 }
 const toggleQuickSeventh = () => {
     modal[6].classList.toggle("quick-view-modal--hidden")
-    modalContent[6].classList.toggle("quick-view-modal__content-wrapper--hidden")
+    modalContent[6].classList.remove("quick-view-modal__content--hidden")
+    bodyElement.classList.toggle("stop-scroll");
+
 }
 const toggleQuickEighth = () => {
     modal[7].classList.toggle("quick-view-modal--hidden")
-    modalContent[7].classList.toggle("quick-view-modal__content-wrapper--hidden")
+    modalContent[7].classList.remove("quick-view-modal__content--hidden")
+    bodyElement.classList.toggle("stop-scroll");
+
 }
 const toggleQuickNinth = () => {
     modal[8].classList.toggle("quick-view-modal--hidden")
-    modalContent[8].classList.toggle("quick-view-modal__content-wrapper--hidden")
-}
-
-// When the user clicks on <span> (x), close the modal
-modalClose.onclick = function () {
-    // hide modal
-    modal.classList.toggle('quick-view-modal--hidden');
-    //remove scrolling on body when modal is open
+    modalContent[8].classList.remove("quick-view-modal__content--hidden")
     bodyElement.classList.toggle("stop-scroll");
 
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target === modal || event.target === modalClose) {
-        // hide modal
-        modal.classList.toggle('quick-view-modal--hidden');
-        //remove scrolling on body when modal is open
-        bodyElement.classList.toggle("stop-scroll");
+// When the user clicks on <span> (x), close the modal
+modalClose.onclick = () => {
+    // hide modal
+    modal.classList.add('quick-view-modal--hidden');
+    //remove scrolling on body when modal is open
+    bodyElement.classList.remove("stop-scroll");
 
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = (event) => {
+
+    if (event.target === modal && event.target.classList.contains('quick-view-modal--hidden')) {
+        modal.classList.remove('quick-view-modal--hidden');
+
+        bodyElement.classList.toggle("stop-scroll");
     }
 }
+
+
+
+
+
 
 //! Product Quantity selector
 

@@ -2,7 +2,6 @@
 	&__container {
 		max-width: 100vw;
 		margin: auto;
-		margin-bottom: 3rem;
 
 		@media screen and (min-width: 1200px) {
 			width: 112rem;
@@ -16,13 +15,6 @@
 
 		.carousel__btn {
 			background-color: $color-white;
-			opacity: 1;
-		}
-
-		.slider__controls1 {
-			@media screen and (min-width: 1200px) {
-				display: none;
-			}
 		}
 	}
 }

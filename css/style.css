@@ -448,8 +448,7 @@ i {
 
 .company-logos__container {
   max-width: 100vw;
-  margin: auto;
-  margin-bottom: 3rem; }
+  margin: auto; }
   @media screen and (min-width: 1200px) {
     .company-logos__container {
       width: 112rem; } }
@@ -459,11 +458,7 @@ i {
   margin: auto;
   position: relative; }
   .company-logos__sub-container .carousel__btn {
-    background-color: #fff;
-    opacity: 1; }
-  @media screen and (min-width: 1200px) {
-    .company-logos__sub-container .slider__controls1 {
-      display: none; } }
+    background-color: #fff; }
 
 .countdown-timer {
   display: flex;
@@ -914,7 +909,8 @@ input:checked ~ .slider__slide-color-span--black::before {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease-in-out;
+  pointer-events: all;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1);
   transform-origin: center;
   /* The Close Button */
   /* Modal Content/Box */ }
@@ -948,6 +944,7 @@ input:checked ~ .slider__slide-color-span--black::before {
       .quick-view-modal__content-wrapper {
         flex-direction: column; } }
   .quick-view-modal__content {
+    z-index: 10001;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -957,9 +954,9 @@ input:checked ~ .slider__slide-color-span--black::before {
     height: 70rem;
     width: 77rem;
     overflow: auto;
-    transition: all 0.6s ease-in-out; }
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1); }
     .quick-view-modal__content--hidden {
-      transform: scale(1);
+      transform: scale(0.8);
       opacity: 0;
       z-index: -10000; }
     @media screen and (max-width: 770px) {
@@ -1002,9 +999,9 @@ input:checked ~ .slider__slide-color-span--black::before {
     width: 5rem;
     height: 5rem;
     margin-right: 1rem;
-    border-radius: 5px; }
+    border-radius: 0.5rem; }
     .quick-view-modal .product-color-image::before {
-      border-radius: 5px; }
+      border-radius: 0.2rem; }
   .quick-view-modal__add-to-cart {
     width: 100%;
     display: flex;

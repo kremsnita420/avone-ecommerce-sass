@@ -505,11 +505,10 @@
 	<!-- ! Quick View Modal -->
 	<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
 		<!-- Modal content -->
-		<div class="quick-view-modal__content">
-			<span id="quick-view-modal__close" class="quick-view-modal__close"
-				onclick="toggleQuickFirst()">&times;</span>
+		<div id="quick-view-modal__content" class="quick-view-modal__content quick-view-modal__content--hidden">
+			<span class="quick-view-modal__close" onclick="toggleQuickFirst()">&times;</span>
 
-			<div class="quick-view-modal__content-wrapper quick-view-modal__content-wrapper--hidden">
+			<div class="quick-view-modal__content-wrapper">
 				<!-- !carousel -->
 				<div class="quick-view-modal__carousel quick-view-carousel px-sm">
 					<div class="slider">
@@ -982,15 +981,14 @@
 										<i class="product-shortcuts__icon fas fa-heart"></i>
 									</span>
 									<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop"
-										onclick="toggleModalSecond()">
+										onclick="toggleModalFirst()">
 										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 									</span>
 									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
-										onclick="toggleQuickSecond()">
+										onclick="toggleQuickFirst()">
 										<i class="product-shortcuts__icon fas fa-search-plus"></i>
 									</span>
 								</div>
-
 							</div>
 							<!-- info -->
 							<div class="slider__slide-info">
@@ -1029,7 +1027,7 @@
 							<!-- ! Quick shop modal -->
 							<div class="quick-shop-modal">
 								<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
-									onclick="toggleModalSecond()" data-tooltip="Close quick shop">
+									onclick="toggleModalFirst()" data-tooltip="Close quick shop">
 									<i class="fas fas fa-times"></i>
 								</div>
 								<p class="heading-2 mb-md">€694,95</p>
@@ -1071,6 +1069,9 @@
 									<button class="btn btn--black">Add to cart</button>
 								</div>
 							</div>
+
+
+
 						</div>
 						<!-- slide 3 -->
 						<div class="slider__slide">
@@ -1081,15 +1082,14 @@
 										<i class="product-shortcuts__icon fas fa-heart"></i>
 									</span>
 									<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop"
-										onclick="toggleModalThird()">
+										onclick="toggleModalFirst()">
 										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 									</span>
 									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
-										onclick="toggleQuickThird()">
+										onclick="toggleQuickFirst()">
 										<i class="product-shortcuts__icon fas fa-search-plus"></i>
 									</span>
 								</div>
-
 							</div>
 							<!-- info -->
 							<div class="slider__slide-info">
@@ -1128,7 +1128,7 @@
 							<!-- ! Quick shop modal -->
 							<div class="quick-shop-modal">
 								<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
-									onclick="toggleModalThird()" data-tooltip="Close quick shop">
+									onclick="toggleModalFirst()" data-tooltip="Close quick shop">
 									<i class="fas fas fa-times"></i>
 								</div>
 								<p class="heading-2 mb-md">€694,95</p>
@@ -1170,6 +1170,9 @@
 									<button class="btn btn--black">Add to cart</button>
 								</div>
 							</div>
+
+
+
 						</div>
 						<!-- slide 4 -->
 						<div class="slider__slide">
@@ -1180,15 +1183,14 @@
 										<i class="product-shortcuts__icon fas fa-heart"></i>
 									</span>
 									<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop"
-										onclick="toggleModalFourth()">
+										onclick="toggleModalFirst()">
 										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 									</span>
 									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
-										onclick="toggleQuickFourth()">
+										onclick="toggleQuickFirst()">
 										<i class="product-shortcuts__icon fas fa-search-plus"></i>
 									</span>
 								</div>
-
 							</div>
 							<!-- info -->
 							<div class="slider__slide-info">
@@ -1227,7 +1229,7 @@
 							<!-- ! Quick shop modal -->
 							<div class="quick-shop-modal">
 								<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
-									onclick="toggleModalFourth()" data-tooltip="Close quick shop">
+									onclick="toggleModalFirst()" data-tooltip="Close quick shop">
 									<i class="fas fas fa-times"></i>
 								</div>
 								<p class="heading-2 mb-md">€694,95</p>
@@ -1269,6 +1271,9 @@
 									<button class="btn btn--black">Add to cart</button>
 								</div>
 							</div>
+
+
+
 						</div>
 						<!-- slide 5 -->
 						<div class="slider__slide">
@@ -1279,15 +1284,14 @@
 										<i class="product-shortcuts__icon fas fa-heart"></i>
 									</span>
 									<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop"
-										onclick="toggleModalFifth()">
+										onclick="toggleModalFirst()">
 										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 									</span>
 									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
-										onclick="toggleQuickFifth()">
+										onclick="toggleQuickFirst()">
 										<i class="product-shortcuts__icon fas fa-search-plus"></i>
 									</span>
 								</div>
-
 							</div>
 							<!-- info -->
 							<div class="slider__slide-info">
@@ -1326,7 +1330,7 @@
 							<!-- ! Quick shop modal -->
 							<div class="quick-shop-modal">
 								<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
-									onclick="toggleModalFifth()" data-tooltip="Close quick shop">
+									onclick="toggleModalFirst()" data-tooltip="Close quick shop">
 									<i class="fas fas fa-times"></i>
 								</div>
 								<p class="heading-2 mb-md">€694,95</p>
@@ -1368,6 +1372,9 @@
 									<button class="btn btn--black">Add to cart</button>
 								</div>
 							</div>
+
+
+
 						</div>
 						<!-- slide 6 -->
 						<div class="slider__slide">
@@ -1378,15 +1385,14 @@
 										<i class="product-shortcuts__icon fas fa-heart"></i>
 									</span>
 									<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop"
-										onclick="toggleModalSixth()">
+										onclick="toggleModalFirst()">
 										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
 									</span>
 									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view"
-										onclick="toggleQuickSixth()">
+										onclick="toggleQuickFirst()">
 										<i class="product-shortcuts__icon fas fa-search-plus"></i>
 									</span>
 								</div>
-
 							</div>
 							<!-- info -->
 							<div class="slider__slide-info">
@@ -1425,7 +1431,7 @@
 							<!-- ! Quick shop modal -->
 							<div class="quick-shop-modal">
 								<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
-									onclick="toggleModalSixth()" data-tooltip="Close quick shop">
+									onclick="toggleModalFirst()" data-tooltip="Close quick shop">
 									<i class="fas fas fa-times"></i>
 								</div>
 								<p class="heading-2 mb-md">€694,95</p>
@@ -1467,6 +1473,9 @@
 									<button class="btn btn--black">Add to cart</button>
 								</div>
 							</div>
+
+
+
 						</div>
 					</div>
 
@@ -1511,7 +1520,7 @@
 		</div>
 
 		<!--! company logos -->
-		<div class="company-logos">
+		<div class="company-logos mb-sm">
 			<div class="company-logos__container">
 				<div class="company-logos__sub-container">
 					<div class="company-logos__my-logos">
