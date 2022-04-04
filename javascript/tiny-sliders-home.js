@@ -29,7 +29,7 @@ let slider2 = tns({
     container: '#slider__my-slider',
     items: 2,
     gutter: 0,
-    edgePadding: 10,
+    edgePadding: 0,
     slideBy: '1',
     loop: false,
     rewind: true,
@@ -37,8 +37,7 @@ let slider2 = tns({
     "nav": false,
     viewportMax: true,
     controlsContainer: ".slider__controls",
-    prevButton: ".slider__previous",
-    nextButton: ".slider__next",
+
 
     responsive: {
         1200: {

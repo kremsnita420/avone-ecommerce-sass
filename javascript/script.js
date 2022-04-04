@@ -42,47 +42,47 @@ const quickShopModal = document.getElementsByClassName('quick-shop-modal')
 
 
 
-const toggleModalFirst = () => {
+const toggleQuickShopFirst = () => {
 
     quickShopModal[0].classList.toggle("quick-shop-modal--visible")
 
 }
-const toggleModalSecond = () => {
+const toggleQuickShopSecond = () => {
 
     quickShopModal[1].classList.toggle("quick-shop-modal--visible")
 
 }
-const toggleModalThird = () => {
+const toggleQuickShopThird = () => {
 
     quickShopModal[2].classList.toggle("quick-shop-modal--visible")
 
 }
-const toggleModalFourth = () => {
+const toggleQuickShopFourth = () => {
 
     quickShopModal[3].classList.toggle("quick-shop-modal--visible")
 
 }
-const toggleModalFifth = () => {
+const toggleQuickShopFifth = () => {
 
     quickShopModal[4].classList.toggle("quick-shop-modal--visible")
 
 }
-const toggleModalSixth = () => {
+const toggleQuickShopSixth = () => {
 
     quickShopModal[5].classList.toggle("quick-shop-modal--visible")
 
 }
-const toggleModalSeventh = () => {
+const toggleQuickShopSeventh = () => {
 
     quickShopModal[6].classList.toggle("quick-shop-modal--visible")
 
 }
-const toggleModalEighth = () => {
+const toggleQuickShopEighth = () => {
 
     quickShopModal[7].classList.toggle("quick-shop-modal--visible")
 
 }
-const toggleModalNinth = () => {
+const toggleQuickShopNinth = () => {
 
     quickShopModal[8].classList.toggle("quick-shop-modal--visible")
 
