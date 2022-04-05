@@ -105,6 +105,7 @@ const bodyElement = document.getElementById("appBody");
 [...modalOpen].forEach((btn, ind) => {
     btn.onclick = () => (
         modals[ind].classList.toggle("quick-view-modal--hidden"),
+        modalContent[ind].classList.toggle("quick-view-modal__content--hidden"),
         bodyElement.classList.toggle("stop-scroll")
     );
 
@@ -115,6 +116,7 @@ const bodyElement = document.getElementById("appBody");
 [...modalClose].forEach((span, ind) => {
     span.onclick = () => (
         modals[ind].classList.toggle("quick-view-modal--hidden"),
+        modalContent[ind].classList.toggle("quick-view-modal__content--hidden"),
         bodyElement.classList.toggle("stop-scroll")
     );
 

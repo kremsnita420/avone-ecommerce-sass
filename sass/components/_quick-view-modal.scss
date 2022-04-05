@@ -79,6 +79,15 @@
 		width: 77rem;
 		overflow: auto;
 
+		transition: all 0.9s cubic-bezier(0.175, 0.885, 0.32, 1);
+		transform-origin: center;
+
+		&--hidden {
+			transform: scale(0.8);
+			z-index: -1000;
+			opacity: 0;
+		}
+
 		@media screen and (max-width: 770px) {
 			min-height: 100vh;
 			width: 95vw;
@@ -121,6 +130,7 @@
 		position: relative;
 		flex-direction: column;
 		width: 100%;
+		text-align: left;
 
 		justify-content: flex-start;
 		align-items: flex-start;

@@ -480,9 +480,6 @@ i {
 .slider__container {
   max-width: 100vw;
   margin: auto; }
-  @media screen and (min-width: 1120px) {
-    .slider__container {
-      width: 114rem; } }
 
 .slider__sub-container {
   position: relative; }
@@ -589,7 +586,7 @@ input:checked ~ .slider__slide-color-span--green::before {
 input:checked ~ .slider__slide-color-span--black::before {
   background-color: #000; }
 
-.slider__controls, .slider__controls2, .slider__controls3, .slider__controls4 {
+.slider__controls {
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -598,8 +595,9 @@ input:checked ~ .slider__slide-color-span--black::before {
   width: 100%;
   z-index: 200; }
   @media screen and (max-width: 770px) {
-    .slider__controls, .slider__controls2, .slider__controls3, .slider__controls4 {
-      width: 95%; } }
+    .slider__controls {
+      width: 95%;
+      margin: auto; } }
 
 .product-shortcuts {
   position: absolute;
@@ -951,7 +949,13 @@ input:checked ~ .slider__slide-color-span--black::before {
     background-color: #fff;
     height: 70rem;
     width: 77rem;
-    overflow: auto; }
+    overflow: auto;
+    transition: all 0.9s cubic-bezier(0.175, 0.885, 0.32, 1);
+    transform-origin: center; }
+    .quick-view-modal__content--hidden {
+      transform: scale(0.8);
+      z-index: -1000;
+      opacity: 0; }
     @media screen and (max-width: 770px) {
       .quick-view-modal__content {
         min-height: 100vh;
@@ -983,6 +987,7 @@ input:checked ~ .slider__slide-color-span--black::before {
     position: relative;
     flex-direction: column;
     width: 100%;
+    text-align: left;
     justify-content: flex-start;
     align-items: flex-start; }
   .quick-view-modal__list {
