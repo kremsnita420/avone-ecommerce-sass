@@ -63,6 +63,9 @@ i {
 /* width */
 ::-webkit-scrollbar {
   width: 1rem; }
+  @media screen and (min-width: 770px) {
+    ::-webkit-scrollbar {
+      display: none; } }
 
 /* Track */
 ::-webkit-scrollbar-track {
@@ -958,7 +961,7 @@ input:checked ~ .slider__slide-color-span--black::before {
       opacity: 0; }
     @media screen and (max-width: 770px) {
       .quick-view-modal__content {
-        min-height: 100vh;
+        min-height: calc(100vh - 6rem);
         width: 95vw;
         margin: auto;
         /* Hide scrollbar for Chrome, Safari and Opera */ }

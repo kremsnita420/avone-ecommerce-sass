@@ -89,7 +89,7 @@
 		}
 
 		@media screen and (max-width: 770px) {
-			min-height: 100vh;
+			min-height: calc(100vh - 6rem);
 			width: 95vw;
 			margin: auto;
 
