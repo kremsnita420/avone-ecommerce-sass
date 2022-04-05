@@ -597,10 +597,6 @@ input:checked ~ .slider__slide-color-span--black::before {
   left: 0;
   width: 100%;
   z-index: 200; }
-  @media screen and (max-width: 770px) {
-    .slider__controls {
-      width: 95%;
-      margin: auto; } }
 
 .product-shortcuts {
   position: absolute;
