@@ -1,3 +1,4 @@
+//! Company logos slider
 let slider = tns({
     container: '.company-logos__my-logos',
     items: 2,
@@ -24,7 +25,7 @@ let slider = tns({
     }
 });
 
-
+// ! New arrivals slider
 let slider2 = tns({
     container: '#slider__my-slider',
     items: 2,
@@ -34,8 +35,9 @@ let slider2 = tns({
     loop: false,
     rewind: true,
     autoplay: false,
+    "swipeAngle": false,
     "nav": false,
-    viewportMax: true,
+
     controlsContainer: ".slider__controls-new-arrivals",
 
 
@@ -52,6 +54,7 @@ let slider2 = tns({
     }
 });
 
+// ! Blog articles slider
 let slider3 = tns({
     container: '.blog__my-articles',
     items: 1,

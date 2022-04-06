@@ -1,13 +1,22 @@
 .product-page {
-	grid-column: full-start / full-end;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	grid-column: center-start / center-end;
+	position: relative;
 
 	&__block {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-between;
+	}
+
+	&__carousel-wrapper {
+		flex: 1;
+	}
+
+	&__actions-wrapper {
+		flex: 1;
+		position: relative;
 	}
 }

@@ -1,0 +1,59 @@
+.vertical-carousel {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+
+	&:hover button {
+		opacity: 1;
+	}
+
+	img {
+		max-width: 100%;
+		display: block;
+	}
+
+	// nav
+	&__navigation {
+		position: relative;
+		width: 15%;
+	}
+
+	&__thumbnails {
+		text-align: center;
+		overflow-y: scroll;
+		max-height: 40rem;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	&__thumbnail {
+		max-height: 15rem;
+		margin: 0.5rem;
+		cursor: pointer;
+		transition: all 0.3s ease;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	// gallery
+	&__controls-wrapper {
+		position: relative;
+		width: 85%;
+	}
+
+	&__gallery {
+	}
+
+	&__gallery img {
+		height: 100%;
+	}
+}
