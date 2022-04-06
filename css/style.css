@@ -1673,3 +1673,9 @@ input:checked ~ .slider__slide-color-span--black::before {
     align-items: center; }
   .product-filters-sidebar__close-icon {
     cursor: pointer; }
+
+.product-page {
+  grid-column: full-start / full-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }

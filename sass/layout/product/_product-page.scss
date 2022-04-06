@@ -1,0 +1,13 @@
+.product-page {
+	grid-column: full-start / full-end;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	&__block {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
