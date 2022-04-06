@@ -146,7 +146,8 @@
 		display: flex;
 		justify-content: space-between;
 		position: absolute;
-		top: 45%;
+		top: 50%;
+		transform: translateY(-50%);
 		left: 0;
 		width: 100%;
 		z-index: 200;

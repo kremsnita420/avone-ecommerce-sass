@@ -516,7 +516,7 @@
 			<i class="header__nav-icon header__search-icon fas fa-search px-xsm"></i>
 		</div>
 		<!-- logo -->
-		<a href="#">
+		<a href="index.html">
 			<svg class="header__logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 				width="400px" height="82px" viewBox="0 0 400 82" enable-background="new 0 0 400 82"
 				xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
@@ -576,7 +576,10 @@
 					Speed up your store to convert more sales
 				</h2>
 				<p class="small-subtitle mb-sm">The powerful store you can trust</p>
-				<button class="btn btn--black">Shop Now</button>
+				<a href="product-page.html">
+					<button class="btn btn--black">Shop Now</button>
+				</a>
+
 			</div>
 		</div>
 
@@ -587,7 +590,9 @@
 				<p class="small-title">Are you ready?</p>
 				<h2 class="heading-1 mb-sm">Start Selling Online Successfully</h2>
 				<p class="small-subtitle mb-sm">Creative and Flexible Online Store</p>
-				<button class="btn btn--black">Shop Now</button>
+				<a href="product-page.html">
+					<button class="btn btn--black">Shop Now</button>
+				</a>
 			</div>
 		</div>
 
@@ -615,7 +620,9 @@
 			<div class="shop-now-window">
 				<h3 class="medium-title"><b>Women Tops</b></h3>
 				<p class="small-subtitle mb-sm">From world's top designers</p>
-				<button class="btn btn--black">Discover Now</button>
+				<a href="shop.html">
+					<button class="btn btn--black">Discover Now</button>
+				</a>
 			</div>
 		</div>
 		<!-- item 2 -->
@@ -624,7 +631,9 @@
 			<div class="shop-now-window">
 				<h3 class="medium-title"><b>Men shirts</b></h3>
 				<p class="small-subtitle mb-sm">Up to 70% of on selected items</p>
-				<button class="btn btn--black">Shop Now</button>
+				<a href="shop.html">
+					<button class="btn btn--black">Discover Now</button>
+				</a>
 			</div>
 		</div>
 		<!-- item 3 -->
@@ -633,7 +642,9 @@
 			<div class="shop-now-window">
 				<h3 class="medium-title"><b>Accessories</b></h3>
 				<p class="small-subtitle mb-sm">Add finishing touch to your outfit</p>
-				<button class="btn btn--black">Discover Now</button>
+				<a href="shop.html">
+					<button class="btn btn--black">Discover Now</button>
+				</a>
 			</div>
 		</div>
 		<!-- item 4 -->
@@ -642,7 +653,9 @@
 			<div class="shop-now-window">
 				<h3 class="medium-title"><b>Denim</b></h3>
 				<p class="small-subtitle mb-sm">Find your perfect outfit</p>
-				<button class="btn btn--black">Discover Now</button>
+				<a href="shop.html">
+					<button class="btn btn--black">Discover Now</button>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -650,1813 +663,1843 @@
 	<!-- ! New arrivals -->
 	<section class="new-arrivals">
 		<!-- title -->
-		<h3 class="heading-2 mb-xsm">New Arrivals</h3>
+		<h3 class="heading-2 my-sm">New Arrivals</h3>
 		<p class="small-subtitle mb-xsm">
 			Shop our new arrivals from established brands
 		</p>
 
 		<!--! slider -->
 		<div class="slider">
+			<div class="slider__container">
+				<div class="slider__sub-container">
+					<!-- ! Quick View Modal 1 -->
+					<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+						<!-- Modal content -->
+						<div id="quick-view-modal__content"
+							class="quick-view-modal__content quick-view-modal__content--hidden">
+							<span class="quick-view-modal__close" onclick="toggleQuickFirst()">&times;</span>
 
-			<div class="slider__sub-container">
-				<!-- ! Quick View Modal 1 -->
-				<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
-					<!-- Modal content -->
-					<div id="quick-view-modal__content"
-						class="quick-view-modal__content quick-view-modal__content--hidden">
-						<span class="quick-view-modal__close" onclick="toggleQuickFirst()">&times;</span>
+							<div class="quick-view-modal__content-wrapper">
+								<!-- !carousel -->
+								<div class="quick-view-modal__carousel quick-view-carousel px-sm">
+									<div class="slider">
+										<div class="slider__container">
 
-						<div class="quick-view-modal__content-wrapper">
-							<!-- !carousel -->
-							<div class="quick-view-modal__carousel quick-view-carousel px-sm">
-								<div class="slider">
-									<div class="slider__container">
+											<!-- slider -->
+											<div id="quick-view__slider-home-1" class="slider__my-slider">
+												<!-- slide 1 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-1.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 2 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-2.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 3 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-3.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 4 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-4.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 5 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-5.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 6 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-6.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 7 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-7.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 8 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-8.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 9 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-9.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 10 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-10.webp" alt="product image" />
+													</div>
+												</div>
+											</div>
 
-										<!-- slider -->
-										<div id="quick-view__slider-home-1" class="slider__my-slider">
-											<!-- slide 1 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-1.webp" alt="product image" />
+											<!-- controls -->
+											<div class="slider__controller">
+												<div class="slider__controls slider__controls-home-4">
+													<button class="slider__previous-home-4 carousel__btn">
+														<i class="carousel__nav-icon fas fa-chevron-left"
+															aria-label="previous slide"></i>
+													</button>
+													<button class="slider__next-home-4 carousel__btn">
+														<i class="carousel__nav-icon fas fa-chevron-right"
+															aria-label="next slide"></i>
+													</button>
 												</div>
 											</div>
-											<!-- slide 2 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-2.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 3 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-3.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 4 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-4.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 5 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-5.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 6 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-6.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 7 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-7.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 8 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-8.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 9 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-9.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 10 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-10.webp" alt="product image" />
-												</div>
-											</div>
+
 										</div>
-
-										<!-- controls -->
-										<div class="slider__controller">
-											<div class="slider__controls slider__controls-home-4">
-												<button class="slider__previous-home-4 carousel__btn">
-													<i class="carousel__nav-icon fas fa-chevron-left"
-														aria-label="previous slide"></i>
-												</button>
-												<button class="slider__next-home-4 carousel__btn">
-													<i class="carousel__nav-icon fas fa-chevron-right"
-														aria-label="next slide"></i>
-												</button>
-											</div>
-										</div>
-
 									</div>
+									<a href="product-page.html">
+										<button class="btn btn--black my-sm">
+											View More Details
+										</button>
+									</a>
 								</div>
-								<button class="btn btn--black my-sm">View More Details</button>
+
+								<!--! product info -->
+								<div class="quick-view-modal__info medium-subtitle px-sm">
+									<a href="#" class="medium-subtitle quick-view-modal__title-link mb-xsm">Crook</a>
+									<a href="#" class="quick-view-modal__title-link">
+										<h4 class="large-subtitle mb-xsm">Innerbloom Puffer Jacket</h4>
+									</a>
+
+									<div title="rating" class="slider__slide-stars mb-sm small-subtitle">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<span class="slider__reviews">14 reviews</span>
+										<span class="px-sm slider__in-stock small-subtitle">In Stock</span>
+									</div>
+									<h4 class="heading-2 mb-xsm">€459,96</h4>
+									<p class="small-subtitle mb-sm">Tax included</p>
+
+									<ul class="quick-view-modal__list mb-sm">
+										<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
+										<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
+										<li class="quick-view-modal__list-item">Asymmetrical hem</li>
+										<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
+									</ul>
+
+									<div>
+										<!--! colors -->
+										<p class="medium-title mb-smm">Color: <b>Green</b></p>
+										<div class="product-colors mb-md">
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-2"
+													data-tooltip="White/Grey">
+												</div>
+											</label>
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-3"></div>
+											</label>
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-4"></div>
+											</label>
+										</div>
+									</div>
+									<!--! sizes -->
+									<div>
+										<p class="medium-title mb-xsm">Size: <b>M</b></p>
+										<div class="product-sizes mb-md">
+											<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span">S</span>
+											</label>
+											<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span" data-tooltip="White/Grey">M</span>
+											</label>
+											<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span">L</span>
+											</label>
+										</div>
+									</div>
+									<!-- ! Add to cart -->
+									<div class="quick-view-modal__add-to-cart mb-sm">
+										<div class="quantity-selector p-xsm">
+											<span class="quantity-selector__down"
+												onClick="decreaseCount(event, this)">-</span>
+											<input class="" type="text" value="1">
+											<span class="quantity-selector__up"
+												onClick="increaseCount(event, this)">+</span>
+										</div>
+										<button class="btn btn--black ">Add to Cart</button>
+									</div>
+
+
+								</div>
 							</div>
 
-							<!--! product info -->
-							<div class="quick-view-modal__info medium-subtitle px-sm">
-								<a href="#" class="medium-subtitle quick-view-modal__title-link mb-xsm">Crook</a>
-								<a href="#" class="quick-view-modal__title-link">
-									<h4 class="large-subtitle mb-xsm">Innerbloom Puffer Jacket</h4>
-								</a>
+						</div>
+					</div>
+					<!-- ! Quick View Modal 2 -->
+					<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+						<!-- Modal content -->
+						<div id="quick-view-modal__content"
+							class="quick-view-modal__content quick-view-modal__content--hidden">
+							<span class="quick-view-modal__close" onclick="toggleQuickFirst()">&times;</span>
 
-								<div title="rating" class="slider__slide-stars mb-sm small-subtitle">
+							<div class="quick-view-modal__content-wrapper">
+								<!-- !carousel -->
+								<div class="quick-view-modal__carousel quick-view-carousel px-sm">
+									<div class="slider">
+										<div class="slider__container">
+
+											<!-- slider -->
+											<div id="quick-view__slider-home-2" class="slider__my-slider">
+												<!-- slide 1 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-1.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 2 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-2.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 3 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-3.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 4 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-4.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 5 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-5.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 6 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-6.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 7 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-7.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 8 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-8.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 9 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-9.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 10 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-10.webp" alt="product image" />
+													</div>
+												</div>
+											</div>
+
+											<!-- controls -->
+											<div class="slider__controller">
+												<div class="slider__controls slider__controls-home-5">
+													<button class="slider__previous-home-5 carousel__btn">
+														<i class="carousel__nav-icon fas fa-chevron-left"
+															aria-label="previous slide"></i>
+													</button>
+													<button class="slider__next-home-5 carousel__btn">
+														<i class="carousel__nav-icon fas fa-chevron-right"
+															aria-label="next slide"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<a href="product-page.html">
+										<button class="btn btn--black my-sm">
+											View More Details
+										</button>
+									</a>
+								</div>
+
+								<!--! product info -->
+								<div class="quick-view-modal__info medium-subtitle px-sm">
+									<a href="#" class="medium-subtitle quick-view-modal__title-link mb-xsm">Crook</a>
+									<a href="#" class="quick-view-modal__title-link">
+										<h4 class="large-subtitle mb-xsm">Innerbloom Puffer Jacket</h4>
+									</a>
+
+									<div title="rating" class="slider__slide-stars mb-sm small-subtitle">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<span class="slider__reviews">14 reviews</span>
+										<span class="px-sm slider__in-stock small-subtitle">In Stock</span>
+									</div>
+									<h4 class="heading-2 mb-xsm">€459,96</h4>
+									<p class="small-subtitle mb-sm">Tax included</p>
+
+									<ul class="quick-view-modal__list mb-sm">
+										<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
+										<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
+										<li class="quick-view-modal__list-item">Asymmetrical hem</li>
+										<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
+									</ul>
+
+									<div>
+										<!--! colors -->
+										<p class="medium-title mb-smm">Color: <b>Green</b></p>
+										<div class="product-colors mb-md">
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-2"
+													data-tooltip="White/Grey">
+												</div>
+											</label>
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-3"></div>
+											</label>
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-4"></div>
+											</label>
+										</div>
+									</div>
+									<!--! sizes -->
+									<div>
+										<p class="medium-title mb-xsm">Size: <b>M</b></p>
+										<div class="product-sizes mb-md">
+											<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span">S</span>
+											</label>
+											<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span" data-tooltip="White/Grey">M</span>
+											</label>
+											<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span">L</span>
+											</label>
+										</div>
+									</div>
+									<!-- ! Add to cart -->
+									<div class="quick-view-modal__add-to-cart mb-sm">
+										<div class="quantity-selector p-xsm">
+											<span class="quantity-selector__down"
+												onClick="decreaseCount(event, this)">-</span>
+											<input class="" type="text" value="1">
+											<span class="quantity-selector__up"
+												onClick="increaseCount(event, this)">+</span>
+										</div>
+										<button class="btn btn--black ">Add to Cart</button>
+									</div>
+
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- ! Quick View Modal 3 -->
+					<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+						<!-- Modal content -->
+						<div id="quick-view-modal__content"
+							class="quick-view-modal__content quick-view-modal__content--hidden">
+							<span class="quick-view-modal__close" onclick="toggleQuickFirst()">&times;</span>
+
+							<div class="quick-view-modal__content-wrapper">
+								<!-- !carousel -->
+								<div class="quick-view-modal__carousel quick-view-carousel px-sm">
+									<div class="slider">
+										<div class="slider__container">
+
+											<!-- slider -->
+											<div id="quick-view__slider-home-3" class="slider__my-slider">
+												<!-- slide 1 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-1.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 2 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-2.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 3 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-3.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 4 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-4.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 5 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-5.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 6 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-6.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 7 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-7.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 8 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-8.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 9 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-9.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 10 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-10.webp" alt="product image" />
+													</div>
+												</div>
+											</div>
+
+											<!-- controls -->
+											<div class="slider__controller">
+												<div class="slider__controls slider__controls-home-6">
+													<button class="slider__previous-home-6 carousel__btn">
+														<i class="carousel__nav-icon fas fa-chevron-left"
+															aria-label="previous slide"></i>
+													</button>
+													<button class="slider__next-home-6 carousel__btn">
+														<i class="carousel__nav-icon fas fa-chevron-right"
+															aria-label="next slide"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<a href="product-page.html">
+										<button class="btn btn--black my-sm">
+											View More Details
+										</button>
+									</a>
+								</div>
+
+								<!--! product info -->
+								<div class="quick-view-modal__info medium-subtitle px-sm">
+									<a href="#" class="medium-subtitle quick-view-modal__title-link mb-xsm">Crook</a>
+									<a href="#" class="quick-view-modal__title-link">
+										<h4 class="large-subtitle mb-xsm">Innerbloom Puffer Jacket</h4>
+									</a>
+
+									<div title="rating" class="slider__slide-stars mb-sm small-subtitle">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<span class="slider__reviews">14 reviews</span>
+										<span class="px-sm slider__in-stock small-subtitle">In Stock</span>
+									</div>
+									<h4 class="heading-2 mb-xsm">€459,96</h4>
+									<p class="small-subtitle mb-sm">Tax included</p>
+
+									<ul class="quick-view-modal__list mb-sm">
+										<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
+										<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
+										<li class="quick-view-modal__list-item">Asymmetrical hem</li>
+										<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
+									</ul>
+
+									<div>
+										<!--! colors -->
+										<p class="medium-title mb-smm">Color: <b>Green</b></p>
+										<div class="product-colors mb-md">
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-2"
+													data-tooltip="White/Grey">
+												</div>
+											</label>
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-3"></div>
+											</label>
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-4"></div>
+											</label>
+										</div>
+									</div>
+									<!--! sizes -->
+									<div>
+										<p class="medium-title mb-xsm">Size: <b>M</b></p>
+										<div class="product-sizes mb-md">
+											<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span">S</span>
+											</label>
+											<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span" data-tooltip="White/Grey">M</span>
+											</label>
+											<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span">L</span>
+											</label>
+										</div>
+									</div>
+									<!-- ! Add to cart -->
+									<div class="quick-view-modal__add-to-cart mb-sm">
+										<div class="quantity-selector p-xsm">
+											<span class="quantity-selector__down"
+												onClick="decreaseCount(event, this)">-</span>
+											<input class="" type="text" value="1">
+											<span class="quantity-selector__up"
+												onClick="increaseCount(event, this)">+</span>
+										</div>
+										<button class="btn btn--black ">Add to Cart</button>
+									</div>
+
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- ! Quick View Modal 4 -->
+					<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+						<!-- Modal content -->
+						<div id="quick-view-modal__content"
+							class="quick-view-modal__content quick-view-modal__content--hidden">
+							<span class="quick-view-modal__close" onclick="toggleQuickFirst()">&times;</span>
+
+							<div class="quick-view-modal__content-wrapper">
+								<!-- !carousel -->
+								<div class="quick-view-modal__carousel quick-view-carousel px-sm">
+									<div class="slider">
+										<div class="slider__container">
+
+											<!-- slider -->
+											<div id="quick-view__slider-home-4" class="slider__my-slider">
+												<!-- slide 1 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-1.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 2 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-2.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 3 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-3.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 4 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-4.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 5 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-5.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 6 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-6.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 7 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-7.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 8 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-8.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 9 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-9.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 10 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-10.webp" alt="product image" />
+													</div>
+												</div>
+											</div>
+
+											<!-- controls -->
+											<div class="slider__controller">
+												<div class="slider__controls slider__controls-home-7">
+													<button class="slider__previous-home-7 carousel__btn">
+														<i class="carousel__nav-icon fas fa-chevron-left"
+															aria-label="previous slide"></i>
+													</button>
+													<button class="slider__next-home-7 carousel__btn">
+														<i class="carousel__nav-icon fas fa-chevron-right"
+															aria-label="next slide"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<a href="product-page.html">
+										<button class="btn btn--black my-sm">
+											View More Details
+										</button>
+									</a>
+								</div>
+
+								<!--! product info -->
+								<div class="quick-view-modal__info medium-subtitle px-sm">
+									<a href="#" class="medium-subtitle quick-view-modal__title-link mb-xsm">Crook</a>
+									<a href="#" class="quick-view-modal__title-link">
+										<h4 class="large-subtitle mb-xsm">Innerbloom Puffer Jacket</h4>
+									</a>
+
+									<div title="rating" class="slider__slide-stars mb-sm small-subtitle">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<span class="slider__reviews">14 reviews</span>
+										<span class="px-sm slider__in-stock small-subtitle">In Stock</span>
+									</div>
+									<h4 class="heading-2 mb-xsm">€459,96</h4>
+									<p class="small-subtitle mb-sm">Tax included</p>
+
+									<ul class="quick-view-modal__list mb-sm">
+										<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
+										<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
+										<li class="quick-view-modal__list-item">Asymmetrical hem</li>
+										<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
+									</ul>
+
+									<div>
+										<!--! colors -->
+										<p class="medium-title mb-smm">Color: <b>Green</b></p>
+										<div class="product-colors mb-md">
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-2"
+													data-tooltip="White/Grey">
+												</div>
+											</label>
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-3"></div>
+											</label>
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-4"></div>
+											</label>
+										</div>
+									</div>
+									<!--! sizes -->
+									<div>
+										<p class="medium-title mb-xsm">Size: <b>M</b></p>
+										<div class="product-sizes mb-md">
+											<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span">S</span>
+											</label>
+											<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span" data-tooltip="White/Grey">M</span>
+											</label>
+											<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span">L</span>
+											</label>
+										</div>
+									</div>
+									<!-- ! Add to cart -->
+									<div class="quick-view-modal__add-to-cart mb-sm">
+										<div class="quantity-selector p-xsm">
+											<span class="quantity-selector__down"
+												onClick="decreaseCount(event, this)">-</span>
+											<input class="" type="text" value="1">
+											<span class="quantity-selector__up"
+												onClick="increaseCount(event, this)">+</span>
+										</div>
+										<button class="btn btn--black ">Add to Cart</button>
+									</div>
+
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- ! Quick View Modal 5 -->
+					<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+						<!-- Modal content -->
+						<div id="quick-view-modal__content"
+							class="quick-view-modal__content quick-view-modal__content--hidden">
+							<span class="quick-view-modal__close" onclick="toggleQuickFirst()">&times;</span>
+
+							<div class="quick-view-modal__content-wrapper">
+								<!-- !carousel -->
+								<div class="quick-view-modal__carousel quick-view-carousel px-sm">
+									<div class="slider">
+										<div class="slider__container">
+
+											<!-- slider -->
+											<div id="quick-view__slider-home-5" class="slider__my-slider">
+												<!-- slide 1 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-1.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 2 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-2.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 3 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-3.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 4 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-4.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 5 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-5.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 6 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-6.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 7 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-7.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 8 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-8.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 9 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-9.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 10 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-10.webp" alt="product image" />
+													</div>
+												</div>
+											</div>
+
+											<!-- controls -->
+											<div class="slider__controller">
+												<div class="slider__controls slider__controls-home-8">
+													<button class="slider__previous-home-8 carousel__btn">
+														<i class="carousel__nav-icon fas fa-chevron-left"
+															aria-label="previous slide"></i>
+													</button>
+													<button class="slider__next-home-8 carousel__btn">
+														<i class="carousel__nav-icon fas fa-chevron-right"
+															aria-label="next slide"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<a href="product-page.html">
+										<button class="btn btn--black my-sm">
+											View More Details
+										</button>
+									</a>
+								</div>
+
+								<!--! product info -->
+								<div class="quick-view-modal__info medium-subtitle px-sm">
+									<a href="#" class="medium-subtitle quick-view-modal__title-link mb-xsm">Crook</a>
+									<a href="#" class="quick-view-modal__title-link">
+										<h4 class="large-subtitle mb-xsm">Innerbloom Puffer Jacket</h4>
+									</a>
+
+									<div title="rating" class="slider__slide-stars mb-sm small-subtitle">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<span class="slider__reviews">14 reviews</span>
+										<span class="px-sm slider__in-stock small-subtitle">In Stock</span>
+									</div>
+									<h4 class="heading-2 mb-xsm">€459,96</h4>
+									<p class="small-subtitle mb-sm">Tax included</p>
+
+									<ul class="quick-view-modal__list mb-sm">
+										<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
+										<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
+										<li class="quick-view-modal__list-item">Asymmetrical hem</li>
+										<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
+									</ul>
+
+									<div>
+										<!--! colors -->
+										<p class="medium-title mb-smm">Color: <b>Green</b></p>
+										<div class="product-colors mb-md">
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-2"
+													data-tooltip="White/Grey">
+												</div>
+											</label>
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-3"></div>
+											</label>
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-4"></div>
+											</label>
+										</div>
+									</div>
+									<!--! sizes -->
+									<div>
+										<p class="medium-title mb-xsm">Size: <b>M</b></p>
+										<div class="product-sizes mb-md">
+											<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span">S</span>
+											</label>
+											<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span" data-tooltip="White/Grey">M</span>
+											</label>
+											<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span">L</span>
+											</label>
+										</div>
+									</div>
+									<!-- ! Add to cart -->
+									<div class="quick-view-modal__add-to-cart mb-sm">
+										<div class="quantity-selector p-xsm">
+											<span class="quantity-selector__down"
+												onClick="decreaseCount(event, this)">-</span>
+											<input class="" type="text" value="1">
+											<span class="quantity-selector__up"
+												onClick="increaseCount(event, this)">+</span>
+										</div>
+										<button class="btn btn--black ">Add to Cart</button>
+									</div>
+
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- ! Quick View Modal 6 -->
+					<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+						<!-- Modal content -->
+						<div id="quick-view-modal__content"
+							class="quick-view-modal__content quick-view-modal__content--hidden">
+							<span class="quick-view-modal__close" onclick="toggleQuickFirst()">&times;</span>
+
+							<div class="quick-view-modal__content-wrapper">
+								<!-- !carousel -->
+								<div class="quick-view-modal__carousel quick-view-carousel px-sm">
+									<div class="slider">
+										<div class="slider__container">
+
+											<!-- slider -->
+											<div id="quick-view__slider-home-6" class="slider__my-slider">
+												<!-- slide 1 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-1.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 2 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-2.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 3 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-3.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 4 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-4.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 5 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-5.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 6 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-6.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 7 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-7.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 8 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-8.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 9 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-9.webp" alt="product image" />
+													</div>
+												</div>
+												<!-- slide 10 -->
+												<div>
+													<div class="slider__slide">
+														<img class="quick-view-carousel__img"
+															src="img/product-1/product-1-10.webp" alt="product image" />
+													</div>
+												</div>
+											</div>
+
+											<!-- controls -->
+											<div class="slider__controller">
+												<div class="slider__controls slider__controls-home-9">
+													<button class="slider__previous-home-9 carousel__btn">
+														<i class="carousel__nav-icon fas fa-chevron-left"
+															aria-label="previous slide"></i>
+													</button>
+													<button class="slider__next-home-9 carousel__btn">
+														<i class="carousel__nav-icon fas fa-chevron-right"
+															aria-label="next slide"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<a href="product-page.html">
+										<button class="btn btn--black my-sm">
+											View More Details
+										</button>
+									</a>
+								</div>
+
+								<!--! product info -->
+								<div class="quick-view-modal__info medium-subtitle px-sm">
+									<a href="#" class="medium-subtitle quick-view-modal__title-link mb-xsm">Crook</a>
+									<a href="#" class="quick-view-modal__title-link">
+										<h4 class="large-subtitle mb-xsm">Innerbloom Puffer Jacket</h4>
+									</a>
+
+									<div title="rating" class="slider__slide-stars mb-sm small-subtitle">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<span class="slider__reviews">14 reviews</span>
+										<span class="px-sm slider__in-stock small-subtitle">In Stock</span>
+									</div>
+									<h4 class="heading-2 mb-xsm">€459,96</h4>
+									<p class="small-subtitle mb-sm">Tax included</p>
+
+									<ul class="quick-view-modal__list mb-sm">
+										<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
+										<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
+										<li class="quick-view-modal__list-item">Asymmetrical hem</li>
+										<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
+									</ul>
+
+									<div>
+										<!--! colors -->
+										<p class="medium-title mb-smm">Color: <b>Green</b></p>
+										<div class="product-colors mb-md">
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-2"
+													data-tooltip="White/Grey">
+												</div>
+											</label>
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-3"></div>
+											</label>
+											<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
+												<input type="radio" name="radio1" />
+												<div class="product-color-image product-color-image--img-4"></div>
+											</label>
+										</div>
+									</div>
+									<!--! sizes -->
+									<div>
+										<p class="medium-title mb-xsm">Size: <b>M</b></p>
+										<div class="product-sizes mb-md">
+											<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span">S</span>
+											</label>
+											<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span" data-tooltip="White/Grey">M</span>
+											</label>
+											<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
+												<input type="radio" name="radio2" />
+												<span class="product-size-span">L</span>
+											</label>
+										</div>
+									</div>
+									<!-- ! Add to cart -->
+									<div class="quick-view-modal__add-to-cart mb-sm">
+										<div class="quantity-selector p-xsm">
+											<span class="quantity-selector__down"
+												onClick="decreaseCount(event, this)">-</span>
+											<input class="" type="text" value="1">
+											<span class="quantity-selector__up"
+												onClick="increaseCount(event, this)">+</span>
+										</div>
+										<button class="btn btn--black ">Add to Cart</button>
+									</div>
+
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!--! Products slider -->
+					<div id="slider__my-slider" class="slider__my-slider my-lg">
+						<!-- slide 1 -->
+						<div class="slider__slide">
+							<div class="slider__slide-img slider__slide-img--img-1">
+								<!--! product shortcuts -->
+								<div class="product-shortcuts">
+									<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
+										<i class="product-shortcuts__icon fas fa-heart"></i>
+									</span>
+									<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop"
+										onclick="toggleQuickShopFirst()">
+										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
+									</span>
+									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view">
+										<i class="product-shortcuts__icon fas fa-search-plus"></i>
+									</span>
+								</div>
+								<!--! countdown timer -->
+								<div class="countdown-timer small-title">
+									<!-- days -->
+									<div class="countdown-timer__block-wrapper">
+										<span id="days" class="countdown-timer__time-block"></span>
+										<span class="countdown-timer__text-block">days</span>
+									</div>
+									<!-- hours -->
+									<div class="countdown-timer__block-wrapper">
+										<span id="hours" class="countdown-timer__time-block"></span>
+										<span class="countdown-timer__text-block">hrs</span>
+									</div>
+									<!-- minutes -->
+									<div class="countdown-timer__block-wrapper">
+										<span id="minutes" class="countdown-timer__time-block"></span>
+										<span class="countdown-timer__text-block">min</span>
+									</div>
+									<!-- seconds -->
+									<div class="countdown-timer__block-wrapper">
+										<span id="seconds" class="countdown-timer__time-block"></span>
+										<span class="countdown-timer__text-block">sec</span>
+									</div>
+								</div>
+							</div>
+							<!-- info -->
+							<div class="slider__slide-info">
+								<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
+								<p class="small-subtitle  my-xsm">
+									€694,95
+								</p>
+
+								<div class="slider__slide-colors my-xsm">
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
+										<input type="radio" checked="checked" name="radio" />
+										<span
+											class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
+									</label>
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Green">
+										<input type="radio" name="radio" />
+										<span class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
+											data-tooltip="White/Grey"></span>
+									</label>
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Black">
+										<input type="radio" name="radio" />
+										<span
+											class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
+									</label>
+								</div>
+
+								<div title="rating" class="slider__slide-stars my-xsm">
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star-half-alt"></i>
-									<span class="slider__reviews">14 reviews</span>
-									<span class="px-sm slider__in-stock small-subtitle">In Stock</span>
 								</div>
-								<h4 class="heading-2 mb-xsm">€459,96</h4>
-								<p class="small-subtitle mb-sm">Tax included</p>
+							</div>
 
-								<ul class="quick-view-modal__list mb-sm">
-									<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
-									<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
-									<li class="quick-view-modal__list-item">Asymmetrical hem</li>
-									<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
-								</ul>
+							<!-- ! Quick shop modal -->
+							<div class="quick-shop-modal">
+								<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
+									onclick="toggleQuickShopFirst()" data-tooltip="Close quick shop">
+									<i class="fas fas fa-times"></i>
+								</div>
+								<p class="heading-2 mb-md">€694,95</p>
+								<!-- colors -->
+								<p class="medium-title mb-sm">Color: <b>Green</b></p>
+								<div class="product-colors mb-lg">
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-2"
+											data-tooltip="White/Grey"></div>
+									</label>
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-3"></div>
+									</label>
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-4"></div>
+									</label>
+								</div>
+								<!-- sizes -->
+								<p class="medium-title mb-sm">Size: <b>M</b></p>
+								<div class="product-sizes mb-lg">
+									<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span">S</span>
+									</label>
+									<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span" data-tooltip="White/Grey">M</span>
+									</label>
+									<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span">L</span>
+									</label>
+								</div>
 
 								<div>
-									<!--! colors -->
-									<p class="medium-title mb-smm">Color: <b>Green</b></p>
-									<div class="product-colors mb-md">
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-2"
-												data-tooltip="White/Grey">
-											</div>
-										</label>
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-3"></div>
-										</label>
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-4"></div>
-										</label>
-									</div>
+									<button class="btn btn--black">Add to cart</button>
 								</div>
-								<!--! sizes -->
-								<div>
-									<p class="medium-title mb-xsm">Size: <b>M</b></p>
-									<div class="product-sizes mb-md">
-										<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span">S</span>
-										</label>
-										<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span" data-tooltip="White/Grey">M</span>
-										</label>
-										<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span">L</span>
-										</label>
-									</div>
-								</div>
-								<!-- ! Add to cart -->
-								<div class="quick-view-modal__add-to-cart mb-sm">
-									<div class="quantity-selector p-xsm">
-										<span class="quantity-selector__down"
-											onClick="decreaseCount(event, this)">-</span>
-										<input class="" type="text" value="1">
-										<span class="quantity-selector__up"
-											onClick="increaseCount(event, this)">+</span>
-									</div>
-									<button class="btn btn--black ">Add to Cart</button>
-								</div>
-
-
 							</div>
 						</div>
 
-					</div>
-				</div>
-				<!-- ! Quick View Modal 2 -->
-				<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
-					<!-- Modal content -->
-					<div id="quick-view-modal__content"
-						class="quick-view-modal__content quick-view-modal__content--hidden">
-						<span class="quick-view-modal__close" onclick="toggleQuickFirst()">&times;</span>
-
-						<div class="quick-view-modal__content-wrapper">
-							<!-- !carousel -->
-							<div class="quick-view-modal__carousel quick-view-carousel px-sm">
-								<div class="slider">
-									<div class="slider__container">
-
-										<!-- slider -->
-										<div id="quick-view__slider-home-2" class="slider__my-slider">
-											<!-- slide 1 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-1.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 2 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-2.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 3 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-3.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 4 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-4.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 5 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-5.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 6 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-6.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 7 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-7.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 8 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-8.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 9 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-9.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 10 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-10.webp" alt="product image" />
-												</div>
-											</div>
-										</div>
-
-										<!-- controls -->
-										<div class="slider__controller">
-											<div class="slider__controls slider__controls-home-5">
-												<button class="slider__previous-home-5 carousel__btn">
-													<i class="carousel__nav-icon fas fa-chevron-left"
-														aria-label="previous slide"></i>
-												</button>
-												<button class="slider__next-home-5 carousel__btn">
-													<i class="carousel__nav-icon fas fa-chevron-right"
-														aria-label="next slide"></i>
-												</button>
-											</div>
-										</div>
-
+						<!-- slide 2 -->
+						<div class="slider__slide">
+							<div class="slider__slide-img slider__slide-img--img-1">
+								<!--! product shortcuts -->
+								<div class="product-shortcuts">
+									<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
+										<i class="product-shortcuts__icon fas fa-heart"></i>
+									</span>
+									<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop"
+										onclick="toggleQuickShopSecond()">
+										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
+									</span>
+									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view">
+										<i class="product-shortcuts__icon fas fa-search-plus"></i>
+									</span>
+								</div>
+								<!--! countdown timer -->
+								<div class="countdown-timer small-title">
+									<!-- days -->
+									<div class="countdown-timer__block-wrapper">
+										<span id="days" class="countdown-timer__time-block"></span>
+										<span class="countdown-timer__text-block">days</span>
+									</div>
+									<!-- hours -->
+									<div class="countdown-timer__block-wrapper">
+										<span id="hours" class="countdown-timer__time-block"></span>
+										<span class="countdown-timer__text-block">hrs</span>
+									</div>
+									<!-- minutes -->
+									<div class="countdown-timer__block-wrapper">
+										<span id="minutes" class="countdown-timer__time-block"></span>
+										<span class="countdown-timer__text-block">min</span>
+									</div>
+									<!-- seconds -->
+									<div class="countdown-timer__block-wrapper">
+										<span id="seconds" class="countdown-timer__time-block"></span>
+										<span class="countdown-timer__text-block">sec</span>
 									</div>
 								</div>
-								<button class="btn btn--black my-sm">View More Details</button>
 							</div>
+							<!-- info -->
+							<div class="slider__slide-info">
+								<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
+								<p class="small-subtitle  my-xsm">
+									€694,95
+								</p>
 
-							<!--! product info -->
-							<div class="quick-view-modal__info medium-subtitle px-sm">
-								<a href="#" class="medium-subtitle quick-view-modal__title-link mb-xsm">Crook</a>
-								<a href="#" class="quick-view-modal__title-link">
-									<h4 class="large-subtitle mb-xsm">Innerbloom Puffer Jacket</h4>
-								</a>
+								<div class="slider__slide-colors my-xsm">
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
+										<input type="radio" checked="checked" name="radio" />
+										<span
+											class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
+									</label>
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Green">
+										<input type="radio" name="radio" />
+										<span class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
+											data-tooltip="White/Grey"></span>
+									</label>
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Black">
+										<input type="radio" name="radio" />
+										<span
+											class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
+									</label>
+								</div>
 
-								<div title="rating" class="slider__slide-stars mb-sm small-subtitle">
+								<div title="rating" class="slider__slide-stars my-xsm">
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star-half-alt"></i>
-									<span class="slider__reviews">14 reviews</span>
-									<span class="px-sm slider__in-stock small-subtitle">In Stock</span>
 								</div>
-								<h4 class="heading-2 mb-xsm">€459,96</h4>
-								<p class="small-subtitle mb-sm">Tax included</p>
+							</div>
 
-								<ul class="quick-view-modal__list mb-sm">
-									<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
-									<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
-									<li class="quick-view-modal__list-item">Asymmetrical hem</li>
-									<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
-								</ul>
+							<!-- ! Quick shop modal -->
+							<div class="quick-shop-modal">
+								<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
+									onclick="toggleQuickShopSecond()" data-tooltip="Close quick shop">
+									<i class="fas fas fa-times"></i>
+								</div>
+								<p class="heading-2 mb-md">€694,95</p>
+								<!-- colors -->
+								<p class="medium-title mb-sm">Color: <b>Green</b></p>
+								<div class="product-colors mb-lg">
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-2"
+											data-tooltip="White/Grey"></div>
+									</label>
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-3"></div>
+									</label>
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-4"></div>
+									</label>
+								</div>
+								<!-- sizes -->
+								<p class="medium-title mb-sm">Size: <b>M</b></p>
+								<div class="product-sizes mb-lg">
+									<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span">S</span>
+									</label>
+									<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span" data-tooltip="White/Grey">M</span>
+									</label>
+									<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span">L</span>
+									</label>
+								</div>
 
 								<div>
-									<!--! colors -->
-									<p class="medium-title mb-smm">Color: <b>Green</b></p>
-									<div class="product-colors mb-md">
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-2"
-												data-tooltip="White/Grey">
-											</div>
-										</label>
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-3"></div>
-										</label>
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-4"></div>
-										</label>
-									</div>
+									<button class="btn btn--black">Add to cart</button>
 								</div>
-								<!--! sizes -->
-								<div>
-									<p class="medium-title mb-xsm">Size: <b>M</b></p>
-									<div class="product-sizes mb-md">
-										<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span">S</span>
-										</label>
-										<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span" data-tooltip="White/Grey">M</span>
-										</label>
-										<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span">L</span>
-										</label>
-									</div>
-								</div>
-								<!-- ! Add to cart -->
-								<div class="quick-view-modal__add-to-cart mb-sm">
-									<div class="quantity-selector p-xsm">
-										<span class="quantity-selector__down"
-											onClick="decreaseCount(event, this)">-</span>
-										<input class="" type="text" value="1">
-										<span class="quantity-selector__up"
-											onClick="increaseCount(event, this)">+</span>
-									</div>
-									<button class="btn btn--black ">Add to Cart</button>
-								</div>
-
-
 							</div>
 						</div>
-
-					</div>
-				</div>
-				<!-- ! Quick View Modal 3 -->
-				<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
-					<!-- Modal content -->
-					<div id="quick-view-modal__content"
-						class="quick-view-modal__content quick-view-modal__content--hidden">
-						<span class="quick-view-modal__close" onclick="toggleQuickFirst()">&times;</span>
-
-						<div class="quick-view-modal__content-wrapper">
-							<!-- !carousel -->
-							<div class="quick-view-modal__carousel quick-view-carousel px-sm">
-								<div class="slider">
-									<div class="slider__container">
-
-										<!-- slider -->
-										<div id="quick-view__slider-home-3" class="slider__my-slider">
-											<!-- slide 1 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-1.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 2 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-2.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 3 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-3.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 4 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-4.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 5 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-5.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 6 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-6.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 7 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-7.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 8 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-8.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 9 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-9.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 10 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-10.webp" alt="product image" />
-												</div>
-											</div>
-										</div>
-
-										<!-- controls -->
-										<div class="slider__controller">
-											<div class="slider__controls slider__controls-home-6">
-												<button class="slider__previous-home-6 carousel__btn">
-													<i class="carousel__nav-icon fas fa-chevron-left"
-														aria-label="previous slide"></i>
-												</button>
-												<button class="slider__next-home-6 carousel__btn">
-													<i class="carousel__nav-icon fas fa-chevron-right"
-														aria-label="next slide"></i>
-												</button>
-											</div>
-										</div>
-
-									</div>
+						<!-- slide 3 -->
+						<div class="slider__slide">
+							<div class="slider__slide-img slider__slide-img--img-1">
+								<!--! product shortcuts -->
+								<div class="product-shortcuts">
+									<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
+										<i class="product-shortcuts__icon fas fa-heart"></i>
+									</span>
+									<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+										onclick="toggleQuickShopThird()">
+										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
+									</span>
+									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view">
+										<i class="product-shortcuts__icon fas fa-search-plus"></i>
+									</span>
 								</div>
-								<button class="btn btn--black my-sm">View More Details</button>
+
 							</div>
+							<!-- info -->
+							<div class="slider__slide-info">
+								<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
+								<p class="small-subtitle  my-xsm">
+									€694,95
+								</p>
 
-							<!--! product info -->
-							<div class="quick-view-modal__info medium-subtitle px-sm">
-								<a href="#" class="medium-subtitle quick-view-modal__title-link mb-xsm">Crook</a>
-								<a href="#" class="quick-view-modal__title-link">
-									<h4 class="large-subtitle mb-xsm">Innerbloom Puffer Jacket</h4>
-								</a>
+								<div class="slider__slide-colors my-xsm">
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
+										<input type="radio" checked="checked" name="radio" />
+										<span
+											class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
+									</label>
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Green">
+										<input type="radio" name="radio" />
+										<span class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
+											data-tooltip="White/Grey"></span>
+									</label>
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Black">
+										<input type="radio" name="radio" />
+										<span
+											class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
+									</label>
+								</div>
 
-								<div title="rating" class="slider__slide-stars mb-sm small-subtitle">
+								<div title="rating" class="slider__slide-stars my-xsm">
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star-half-alt"></i>
-									<span class="slider__reviews">14 reviews</span>
-									<span class="px-sm slider__in-stock small-subtitle">In Stock</span>
 								</div>
-								<h4 class="heading-2 mb-xsm">€459,96</h4>
-								<p class="small-subtitle mb-sm">Tax included</p>
-
-								<ul class="quick-view-modal__list mb-sm">
-									<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
-									<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
-									<li class="quick-view-modal__list-item">Asymmetrical hem</li>
-									<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
-								</ul>
-
-								<div>
-									<!--! colors -->
-									<p class="medium-title mb-smm">Color: <b>Green</b></p>
-									<div class="product-colors mb-md">
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-2"
-												data-tooltip="White/Grey">
-											</div>
-										</label>
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-3"></div>
-										</label>
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-4"></div>
-										</label>
-									</div>
-								</div>
-								<!--! sizes -->
-								<div>
-									<p class="medium-title mb-xsm">Size: <b>M</b></p>
-									<div class="product-sizes mb-md">
-										<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span">S</span>
-										</label>
-										<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span" data-tooltip="White/Grey">M</span>
-										</label>
-										<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span">L</span>
-										</label>
-									</div>
-								</div>
-								<!-- ! Add to cart -->
-								<div class="quick-view-modal__add-to-cart mb-sm">
-									<div class="quantity-selector p-xsm">
-										<span class="quantity-selector__down"
-											onClick="decreaseCount(event, this)">-</span>
-										<input class="" type="text" value="1">
-										<span class="quantity-selector__up"
-											onClick="increaseCount(event, this)">+</span>
-									</div>
-									<button class="btn btn--black ">Add to Cart</button>
-								</div>
-
-
 							</div>
+
+							<!-- ! Quick shop modal -->
+							<div class="quick-shop-modal">
+								<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
+									onclick="toggleQuickShopThird()" data-tooltip="Close quick shop">
+									<i class="fas fas fa-times"></i>
+								</div>
+								<p class="heading-2 mb-md">€694,95</p>
+								<!-- colors -->
+								<p class="medium-title mb-sm">Color: <b>Green</b></p>
+								<div class="product-colors mb-lg">
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-2"
+											data-tooltip="White/Grey"></div>
+									</label>
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-3"></div>
+									</label>
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-4"></div>
+									</label>
+								</div>
+								<!-- sizes -->
+								<p class="medium-title mb-sm">Size: <b>M</b></p>
+								<div class="product-sizes mb-lg">
+									<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span">S</span>
+									</label>
+									<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span" data-tooltip="White/Grey">M</span>
+									</label>
+									<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span">L</span>
+									</label>
+								</div>
+
+								<div>
+									<button class="btn btn--black">Add to cart</button>
+								</div>
+							</div>
+
+
 						</div>
-
-					</div>
-				</div>
-				<!-- ! Quick View Modal 4 -->
-				<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
-					<!-- Modal content -->
-					<div id="quick-view-modal__content"
-						class="quick-view-modal__content quick-view-modal__content--hidden">
-						<span class="quick-view-modal__close" onclick="toggleQuickFirst()">&times;</span>
-
-						<div class="quick-view-modal__content-wrapper">
-							<!-- !carousel -->
-							<div class="quick-view-modal__carousel quick-view-carousel px-sm">
-								<div class="slider">
-									<div class="slider__container">
-
-										<!-- slider -->
-										<div id="quick-view__slider-home-4" class="slider__my-slider">
-											<!-- slide 1 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-1.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 2 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-2.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 3 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-3.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 4 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-4.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 5 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-5.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 6 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-6.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 7 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-7.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 8 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-8.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 9 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-9.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 10 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-10.webp" alt="product image" />
-												</div>
-											</div>
-										</div>
-
-										<!-- controls -->
-										<div class="slider__controller">
-											<div class="slider__controls slider__controls-home-7">
-												<button class="slider__previous-home-7 carousel__btn">
-													<i class="carousel__nav-icon fas fa-chevron-left"
-														aria-label="previous slide"></i>
-												</button>
-												<button class="slider__next-home-7 carousel__btn">
-													<i class="carousel__nav-icon fas fa-chevron-right"
-														aria-label="next slide"></i>
-												</button>
-											</div>
-										</div>
-
-									</div>
+						<!-- slide 4 -->
+						<div class="slider__slide">
+							<div class="slider__slide-img slider__slide-img--img-1">
+								<!--! product shortcuts -->
+								<div class="product-shortcuts">
+									<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
+										<i class="product-shortcuts__icon fas fa-heart"></i>
+									</span>
+									<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+										onclick="toggleQuickShopFourth()">
+										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
+									</span>
+									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view">
+										<i class="product-shortcuts__icon fas fa-search-plus"></i>
+									</span>
 								</div>
-								<button class="btn btn--black my-sm">View More Details</button>
+
 							</div>
+							<!-- info -->
+							<div class="slider__slide-info">
+								<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
+								<p class="small-subtitle  my-xsm">
+									€694,95
+								</p>
 
-							<!--! product info -->
-							<div class="quick-view-modal__info medium-subtitle px-sm">
-								<a href="#" class="medium-subtitle quick-view-modal__title-link mb-xsm">Crook</a>
-								<a href="#" class="quick-view-modal__title-link">
-									<h4 class="large-subtitle mb-xsm">Innerbloom Puffer Jacket</h4>
-								</a>
+								<div class="slider__slide-colors my-xsm">
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
+										<input type="radio" checked="checked" name="radio" />
+										<span
+											class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
+									</label>
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Green">
+										<input type="radio" name="radio" />
+										<span class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
+											data-tooltip="White/Grey"></span>
+									</label>
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Black">
+										<input type="radio" name="radio" />
+										<span
+											class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
+									</label>
+								</div>
 
-								<div title="rating" class="slider__slide-stars mb-sm small-subtitle">
+								<div title="rating" class="slider__slide-stars my-xsm">
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star-half-alt"></i>
-									<span class="slider__reviews">14 reviews</span>
-									<span class="px-sm slider__in-stock small-subtitle">In Stock</span>
 								</div>
-								<h4 class="heading-2 mb-xsm">€459,96</h4>
-								<p class="small-subtitle mb-sm">Tax included</p>
-
-								<ul class="quick-view-modal__list mb-sm">
-									<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
-									<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
-									<li class="quick-view-modal__list-item">Asymmetrical hem</li>
-									<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
-								</ul>
-
-								<div>
-									<!--! colors -->
-									<p class="medium-title mb-smm">Color: <b>Green</b></p>
-									<div class="product-colors mb-md">
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-2"
-												data-tooltip="White/Grey">
-											</div>
-										</label>
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-3"></div>
-										</label>
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-4"></div>
-										</label>
-									</div>
-								</div>
-								<!--! sizes -->
-								<div>
-									<p class="medium-title mb-xsm">Size: <b>M</b></p>
-									<div class="product-sizes mb-md">
-										<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span">S</span>
-										</label>
-										<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span" data-tooltip="White/Grey">M</span>
-										</label>
-										<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span">L</span>
-										</label>
-									</div>
-								</div>
-								<!-- ! Add to cart -->
-								<div class="quick-view-modal__add-to-cart mb-sm">
-									<div class="quantity-selector p-xsm">
-										<span class="quantity-selector__down"
-											onClick="decreaseCount(event, this)">-</span>
-										<input class="" type="text" value="1">
-										<span class="quantity-selector__up"
-											onClick="increaseCount(event, this)">+</span>
-									</div>
-									<button class="btn btn--black ">Add to Cart</button>
-								</div>
-
-
 							</div>
+
+							<!-- ! Quick shop modal -->
+							<div class="quick-shop-modal">
+								<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
+									onclick="toggleQuickShopFourth()" data-tooltip="Close quick shop">
+									<i class="fas fas fa-times"></i>
+								</div>
+								<p class="heading-2 mb-md">€694,95</p>
+								<!-- colors -->
+								<p class="medium-title mb-sm">Color: <b>Green</b></p>
+								<div class="product-colors mb-lg">
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-2"
+											data-tooltip="White/Grey"></div>
+									</label>
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-3"></div>
+									</label>
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-4"></div>
+									</label>
+								</div>
+								<!-- sizes -->
+								<p class="medium-title mb-sm">Size: <b>M</b></p>
+								<div class="product-sizes mb-lg">
+									<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span">S</span>
+									</label>
+									<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span" data-tooltip="White/Grey">M</span>
+									</label>
+									<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span">L</span>
+									</label>
+								</div>
+
+								<div>
+									<button class="btn btn--black">Add to cart</button>
+								</div>
+							</div>
+
+
 						</div>
-
-					</div>
-				</div>
-				<!-- ! Quick View Modal 5 -->
-				<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
-					<!-- Modal content -->
-					<div id="quick-view-modal__content"
-						class="quick-view-modal__content quick-view-modal__content--hidden">
-						<span class="quick-view-modal__close" onclick="toggleQuickFirst()">&times;</span>
-
-						<div class="quick-view-modal__content-wrapper">
-							<!-- !carousel -->
-							<div class="quick-view-modal__carousel quick-view-carousel px-sm">
-								<div class="slider">
-									<div class="slider__container">
-
-										<!-- slider -->
-										<div id="quick-view__slider-home-5" class="slider__my-slider">
-											<!-- slide 1 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-1.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 2 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-2.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 3 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-3.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 4 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-4.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 5 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-5.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 6 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-6.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 7 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-7.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 8 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-8.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 9 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-9.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 10 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-10.webp" alt="product image" />
-												</div>
-											</div>
-										</div>
-
-										<!-- controls -->
-										<div class="slider__controller">
-											<div class="slider__controls slider__controls-home-8">
-												<button class="slider__previous-home-8 carousel__btn">
-													<i class="carousel__nav-icon fas fa-chevron-left"
-														aria-label="previous slide"></i>
-												</button>
-												<button class="slider__next-home-8 carousel__btn">
-													<i class="carousel__nav-icon fas fa-chevron-right"
-														aria-label="next slide"></i>
-												</button>
-											</div>
-										</div>
-
-									</div>
+						<!-- slide 5 -->
+						<div class="slider__slide">
+							<div class="slider__slide-img slider__slide-img--img-1">
+								<!--! product shortcuts -->
+								<div class="product-shortcuts">
+									<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
+										<i class="product-shortcuts__icon fas fa-heart"></i>
+									</span>
+									<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+										onclick="toggleQuickShopFifth()">
+										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
+									</span>
+									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view">
+										<i class="product-shortcuts__icon fas fa-search-plus"></i>
+									</span>
 								</div>
-								<button class="btn btn--black my-sm">View More Details</button>
+
 							</div>
+							<!-- info -->
+							<div class="slider__slide-info">
+								<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
+								<p class="small-subtitle  my-xsm">
+									€694,95
+								</p>
 
-							<!--! product info -->
-							<div class="quick-view-modal__info medium-subtitle px-sm">
-								<a href="#" class="medium-subtitle quick-view-modal__title-link mb-xsm">Crook</a>
-								<a href="#" class="quick-view-modal__title-link">
-									<h4 class="large-subtitle mb-xsm">Innerbloom Puffer Jacket</h4>
-								</a>
+								<div class="slider__slide-colors my-xsm">
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
+										<input type="radio" checked="checked" name="radio" />
+										<span
+											class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
+									</label>
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Green">
+										<input type="radio" name="radio" />
+										<span class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
+											data-tooltip="White/Grey"></span>
+									</label>
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Black">
+										<input type="radio" name="radio" />
+										<span
+											class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
+									</label>
+								</div>
 
-								<div title="rating" class="slider__slide-stars mb-sm small-subtitle">
+								<div title="rating" class="slider__slide-stars my-xsm">
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star-half-alt"></i>
-									<span class="slider__reviews">14 reviews</span>
-									<span class="px-sm slider__in-stock small-subtitle">In Stock</span>
 								</div>
-								<h4 class="heading-2 mb-xsm">€459,96</h4>
-								<p class="small-subtitle mb-sm">Tax included</p>
+							</div>
 
-								<ul class="quick-view-modal__list mb-sm">
-									<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
-									<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
-									<li class="quick-view-modal__list-item">Asymmetrical hem</li>
-									<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
-								</ul>
+							<!-- ! Quick shop modal -->
+							<div class="quick-shop-modal">
+								<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
+									onclick="toggleQuickShopFifth()" data-tooltip="Close quick shop">
+									<i class="fas fas fa-times"></i>
+								</div>
+								<p class="heading-2 mb-md">€694,95</p>
+								<!-- colors -->
+								<p class="medium-title mb-sm">Color: <b>Green</b></p>
+								<div class="product-colors mb-lg">
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-2"
+											data-tooltip="White/Grey"></div>
+									</label>
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-3"></div>
+									</label>
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-4"></div>
+									</label>
+								</div>
+								<!-- sizes -->
+								<p class="medium-title mb-sm">Size: <b>M</b></p>
+								<div class="product-sizes mb-lg">
+									<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span">S</span>
+									</label>
+									<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span" data-tooltip="White/Grey">M</span>
+									</label>
+									<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span">L</span>
+									</label>
+								</div>
 
 								<div>
-									<!--! colors -->
-									<p class="medium-title mb-smm">Color: <b>Green</b></p>
-									<div class="product-colors mb-md">
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-2"
-												data-tooltip="White/Grey">
-											</div>
-										</label>
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-3"></div>
-										</label>
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-4"></div>
-										</label>
-									</div>
+									<button class="btn btn--black">Add to cart</button>
 								</div>
-								<!--! sizes -->
-								<div>
-									<p class="medium-title mb-xsm">Size: <b>M</b></p>
-									<div class="product-sizes mb-md">
-										<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span">S</span>
-										</label>
-										<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span" data-tooltip="White/Grey">M</span>
-										</label>
-										<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span">L</span>
-										</label>
-									</div>
-								</div>
-								<!-- ! Add to cart -->
-								<div class="quick-view-modal__add-to-cart mb-sm">
-									<div class="quantity-selector p-xsm">
-										<span class="quantity-selector__down"
-											onClick="decreaseCount(event, this)">-</span>
-										<input class="" type="text" value="1">
-										<span class="quantity-selector__up"
-											onClick="increaseCount(event, this)">+</span>
-									</div>
-									<button class="btn btn--black ">Add to Cart</button>
-								</div>
+							</div>
 
-
+							<!-- ! Quick View Modal -->
+							<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+								<!-- Modal content -->
+								<div class="quick-view-modal__content mx-md">
+									<span id="quick-view-modal__close" class="quick-view-modal__close">&times;</span>
+									<p>Some text in the Modal 5..</p>
+									<p>Some text in the Modal..</p>
+									<p>Some text in the Modal..</p>
+								</div>
 							</div>
 						</div>
-
-					</div>
-				</div>
-				<!-- ! Quick View Modal 6 -->
-				<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
-					<!-- Modal content -->
-					<div id="quick-view-modal__content"
-						class="quick-view-modal__content quick-view-modal__content--hidden">
-						<span class="quick-view-modal__close" onclick="toggleQuickFirst()">&times;</span>
-
-						<div class="quick-view-modal__content-wrapper">
-							<!-- !carousel -->
-							<div class="quick-view-modal__carousel quick-view-carousel px-sm">
-								<div class="slider">
-									<div class="slider__container">
-
-										<!-- slider -->
-										<div id="quick-view__slider-home-6" class="slider__my-slider">
-											<!-- slide 1 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-1.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 2 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-2.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 3 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-3.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 4 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-4.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 5 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-5.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 6 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-6.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 7 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-7.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 8 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-8.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 9 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-9.webp" alt="product image" />
-												</div>
-											</div>
-											<!-- slide 10 -->
-											<div>
-												<div class="slider__slide">
-													<img class="quick-view-carousel__img"
-														src="img/product-1/product-1-10.webp" alt="product image" />
-												</div>
-											</div>
-										</div>
-
-										<!-- controls -->
-										<div class="slider__controller">
-											<div class="slider__controls slider__controls-home-9">
-												<button class="slider__previous-home-9 carousel__btn">
-													<i class="carousel__nav-icon fas fa-chevron-left"
-														aria-label="previous slide"></i>
-												</button>
-												<button class="slider__next-home-9 carousel__btn">
-													<i class="carousel__nav-icon fas fa-chevron-right"
-														aria-label="next slide"></i>
-												</button>
-											</div>
-										</div>
-
-									</div>
+						<!-- slide 6 -->
+						<div class="slider__slide">
+							<div class="slider__slide-img slider__slide-img--img-1">
+								<!--! product shortcuts -->
+								<div class="product-shortcuts">
+									<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
+										<i class="product-shortcuts__icon fas fa-heart"></i>
+									</span>
+									<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
+										onclick="toggleQuickShopSixth()">
+										<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
+									</span>
+									<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view">
+										<i class="product-shortcuts__icon fas fa-search-plus"></i>
+									</span>
 								</div>
-								<button class="btn btn--black my-sm">View More Details</button>
+
 							</div>
+							<!-- info -->
+							<div class="slider__slide-info">
+								<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
+								<p class="small-subtitle  my-xsm">
+									€694,95
+								</p>
 
-							<!--! product info -->
-							<div class="quick-view-modal__info medium-subtitle px-sm">
-								<a href="#" class="medium-subtitle quick-view-modal__title-link mb-xsm">Crook</a>
-								<a href="#" class="quick-view-modal__title-link">
-									<h4 class="large-subtitle mb-xsm">Innerbloom Puffer Jacket</h4>
-								</a>
+								<div class="slider__slide-colors my-xsm">
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
+										<input type="radio" checked="checked" name="radio" />
+										<span
+											class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
+									</label>
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Green">
+										<input type="radio" name="radio" />
+										<span class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
+											data-tooltip="White/Grey"></span>
+									</label>
+									<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Black">
+										<input type="radio" name="radio" />
+										<span
+											class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
+									</label>
+								</div>
 
-								<div title="rating" class="slider__slide-stars mb-sm small-subtitle">
+								<div title="rating" class="slider__slide-stars my-xsm">
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star-half-alt"></i>
-									<span class="slider__reviews">14 reviews</span>
-									<span class="px-sm slider__in-stock small-subtitle">In Stock</span>
 								</div>
-								<h4 class="heading-2 mb-xsm">€459,96</h4>
-								<p class="small-subtitle mb-sm">Tax included</p>
+							</div>
 
-								<ul class="quick-view-modal__list mb-sm">
-									<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
-									<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
-									<li class="quick-view-modal__list-item">Asymmetrical hem</li>
-									<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
-								</ul>
+							<!-- ! Quick shop modal -->
+							<div class="quick-shop-modal">
+								<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
+									onclick="toggleQuickShopSixth()" data-tooltip="Close quick shop">
+									<i class="fas fas fa-times"></i>
+								</div>
+								<p class="heading-2 mb-md">€694,95</p>
+								<!-- colors -->
+								<p class="medium-title mb-sm">Color: <b>Green</b></p>
+								<div class="product-colors mb-lg">
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-2"
+											data-tooltip="White/Grey"></div>
+									</label>
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-3"></div>
+									</label>
+									<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
+										<input type="radio" name="radio1" />
+										<div class="product-color-image product-color-image--img-4"></div>
+									</label>
+								</div>
+								<!-- sizes -->
+								<p class="medium-title mb-sm">Size: <b>M</b></p>
+								<div class="product-sizes mb-lg">
+									<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span">S</span>
+									</label>
+									<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span" data-tooltip="White/Grey">M</span>
+									</label>
+									<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
+										<input type="radio" name="radio2" />
+										<span class="product-size-span">L</span>
+									</label>
+								</div>
 
 								<div>
-									<!--! colors -->
-									<p class="medium-title mb-smm">Color: <b>Green</b></p>
-									<div class="product-colors mb-md">
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-2"
-												data-tooltip="White/Grey">
-											</div>
-										</label>
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-3"></div>
-										</label>
-										<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
-											<input type="radio" name="radio1" />
-											<div class="product-color-image product-color-image--img-4"></div>
-										</label>
-									</div>
+									<button class="btn btn--black">Add to cart</button>
 								</div>
-								<!--! sizes -->
-								<div>
-									<p class="medium-title mb-xsm">Size: <b>M</b></p>
-									<div class="product-sizes mb-md">
-										<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span">S</span>
-										</label>
-										<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span" data-tooltip="White/Grey">M</span>
-										</label>
-										<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
-											<input type="radio" name="radio2" />
-											<span class="product-size-span">L</span>
-										</label>
-									</div>
-								</div>
-								<!-- ! Add to cart -->
-								<div class="quick-view-modal__add-to-cart mb-sm">
-									<div class="quantity-selector p-xsm">
-										<span class="quantity-selector__down"
-											onClick="decreaseCount(event, this)">-</span>
-										<input class="" type="text" value="1">
-										<span class="quantity-selector__up"
-											onClick="increaseCount(event, this)">+</span>
-									</div>
-									<button class="btn btn--black ">Add to Cart</button>
-								</div>
+							</div>
 
-
+							<!-- ! Quick View Modal -->
+							<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
+								<!-- Modal content -->
+								<div class="quick-view-modal__content mx-md">
+									<span id="quick-view-modal__close" class="quick-view-modal__close">&times;</span>
+									<p>Some text in the Modal 6..</p>
+									<p>Some text in the Modal..</p>
+									<p>Some text in the Modal..</p>
+								</div>
 							</div>
 						</div>
-
 					</div>
+
+					<!-- controls -->
+					<div class="slider__controls slider__controls-new-arrivals">
+						<button class="slider__previous carousel__btn" id="carousel__btn--prev">
+							<i class="carousel__nav-icon fas fa-chevron-left" aria-label="previous slide"></i>
+						</button>
+						<button class="slider__next carousel__btn" id="carousel__btn--next">
+							<i class="carousel__nav-icon fas fa-chevron-right" aria-label="next slide"></i>
+						</button>
+					</div>
+
 				</div>
-
-				<!--! Products slider -->
-				<div id="slider__my-slider" class="slider__my-slider my-lg">
-					<!-- slide 1 -->
-					<div class="slider__slide">
-						<div class="slider__slide-img slider__slide-img--img-1">
-							<!--! product shortcuts -->
-							<div class="product-shortcuts">
-								<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
-									<i class="product-shortcuts__icon fas fa-heart"></i>
-								</span>
-								<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop"
-									onclick="toggleQuickShopFirst()">
-									<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-								</span>
-								<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view">
-									<i class="product-shortcuts__icon fas fa-search-plus"></i>
-								</span>
-							</div>
-							<!--! countdown timer -->
-							<div class="countdown-timer small-title">
-								<!-- days -->
-								<div class="countdown-timer__block-wrapper">
-									<span id="days" class="countdown-timer__time-block"></span>
-									<span class="countdown-timer__text-block">days</span>
-								</div>
-								<!-- hours -->
-								<div class="countdown-timer__block-wrapper">
-									<span id="hours" class="countdown-timer__time-block"></span>
-									<span class="countdown-timer__text-block">hrs</span>
-								</div>
-								<!-- minutes -->
-								<div class="countdown-timer__block-wrapper">
-									<span id="minutes" class="countdown-timer__time-block"></span>
-									<span class="countdown-timer__text-block">min</span>
-								</div>
-								<!-- seconds -->
-								<div class="countdown-timer__block-wrapper">
-									<span id="seconds" class="countdown-timer__time-block"></span>
-									<span class="countdown-timer__text-block">sec</span>
-								</div>
-							</div>
-						</div>
-						<!-- info -->
-						<div class="slider__slide-info">
-							<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
-							<p class="small-subtitle  my-xsm">
-								€694,95
-							</p>
-
-							<div class="slider__slide-colors my-xsm">
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
-									<input type="radio" checked="checked" name="radio" />
-									<span class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
-								</label>
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Green">
-									<input type="radio" name="radio" />
-									<span class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
-										data-tooltip="White/Grey"></span>
-								</label>
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Black">
-									<input type="radio" name="radio" />
-									<span
-										class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
-								</label>
-							</div>
-
-							<div title="rating" class="slider__slide-stars my-xsm">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
-							</div>
-						</div>
-
-						<!-- ! Quick shop modal -->
-						<div class="quick-shop-modal">
-							<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
-								onclick="toggleQuickShopFirst()" data-tooltip="Close quick shop">
-								<i class="fas fas fa-times"></i>
-							</div>
-							<p class="heading-2 mb-md">€694,95</p>
-							<!-- colors -->
-							<p class="medium-title mb-sm">Color: <b>Green</b></p>
-							<div class="product-colors mb-lg">
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-2"
-										data-tooltip="White/Grey"></div>
-								</label>
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-3"></div>
-								</label>
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-4"></div>
-								</label>
-							</div>
-							<!-- sizes -->
-							<p class="medium-title mb-sm">Size: <b>M</b></p>
-							<div class="product-sizes mb-lg">
-								<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span">S</span>
-								</label>
-								<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span" data-tooltip="White/Grey">M</span>
-								</label>
-								<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span">L</span>
-								</label>
-							</div>
-
-							<div>
-								<button class="btn btn--black">Add to cart</button>
-							</div>
-						</div>
-					</div>
-
-					<!-- slide 2 -->
-					<div class="slider__slide">
-						<div class="slider__slide-img slider__slide-img--img-1">
-							<!--! product shortcuts -->
-							<div class="product-shortcuts">
-								<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
-									<i class="product-shortcuts__icon fas fa-heart"></i>
-								</span>
-								<span class="quick-shop tooltip tooltip--triangle" data-tooltip="Quick shop"
-									onclick="toggleQuickShopSecond()">
-									<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-								</span>
-								<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view">
-									<i class="product-shortcuts__icon fas fa-search-plus"></i>
-								</span>
-							</div>
-							<!--! countdown timer -->
-							<div class="countdown-timer small-title">
-								<!-- days -->
-								<div class="countdown-timer__block-wrapper">
-									<span id="days" class="countdown-timer__time-block"></span>
-									<span class="countdown-timer__text-block">days</span>
-								</div>
-								<!-- hours -->
-								<div class="countdown-timer__block-wrapper">
-									<span id="hours" class="countdown-timer__time-block"></span>
-									<span class="countdown-timer__text-block">hrs</span>
-								</div>
-								<!-- minutes -->
-								<div class="countdown-timer__block-wrapper">
-									<span id="minutes" class="countdown-timer__time-block"></span>
-									<span class="countdown-timer__text-block">min</span>
-								</div>
-								<!-- seconds -->
-								<div class="countdown-timer__block-wrapper">
-									<span id="seconds" class="countdown-timer__time-block"></span>
-									<span class="countdown-timer__text-block">sec</span>
-								</div>
-							</div>
-						</div>
-						<!-- info -->
-						<div class="slider__slide-info">
-							<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
-							<p class="small-subtitle  my-xsm">
-								€694,95
-							</p>
-
-							<div class="slider__slide-colors my-xsm">
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
-									<input type="radio" checked="checked" name="radio" />
-									<span class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
-								</label>
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Green">
-									<input type="radio" name="radio" />
-									<span class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
-										data-tooltip="White/Grey"></span>
-								</label>
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Black">
-									<input type="radio" name="radio" />
-									<span
-										class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
-								</label>
-							</div>
-
-							<div title="rating" class="slider__slide-stars my-xsm">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
-							</div>
-						</div>
-
-						<!-- ! Quick shop modal -->
-						<div class="quick-shop-modal">
-							<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
-								onclick="toggleQuickShopSecond()" data-tooltip="Close quick shop">
-								<i class="fas fas fa-times"></i>
-							</div>
-							<p class="heading-2 mb-md">€694,95</p>
-							<!-- colors -->
-							<p class="medium-title mb-sm">Color: <b>Green</b></p>
-							<div class="product-colors mb-lg">
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-2"
-										data-tooltip="White/Grey"></div>
-								</label>
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-3"></div>
-								</label>
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-4"></div>
-								</label>
-							</div>
-							<!-- sizes -->
-							<p class="medium-title mb-sm">Size: <b>M</b></p>
-							<div class="product-sizes mb-lg">
-								<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span">S</span>
-								</label>
-								<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span" data-tooltip="White/Grey">M</span>
-								</label>
-								<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span">L</span>
-								</label>
-							</div>
-
-							<div>
-								<button class="btn btn--black">Add to cart</button>
-							</div>
-						</div>
-					</div>
-					<!-- slide 3 -->
-					<div class="slider__slide">
-						<div class="slider__slide-img slider__slide-img--img-1">
-							<!--! product shortcuts -->
-							<div class="product-shortcuts">
-								<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
-									<i class="product-shortcuts__icon fas fa-heart"></i>
-								</span>
-								<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
-									onclick="toggleQuickShopThird()">
-									<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-								</span>
-								<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view">
-									<i class="product-shortcuts__icon fas fa-search-plus"></i>
-								</span>
-							</div>
-
-						</div>
-						<!-- info -->
-						<div class="slider__slide-info">
-							<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
-							<p class="small-subtitle  my-xsm">
-								€694,95
-							</p>
-
-							<div class="slider__slide-colors my-xsm">
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
-									<input type="radio" checked="checked" name="radio" />
-									<span class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
-								</label>
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Green">
-									<input type="radio" name="radio" />
-									<span class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
-										data-tooltip="White/Grey"></span>
-								</label>
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Black">
-									<input type="radio" name="radio" />
-									<span
-										class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
-								</label>
-							</div>
-
-							<div title="rating" class="slider__slide-stars my-xsm">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
-							</div>
-						</div>
-
-						<!-- ! Quick shop modal -->
-						<div class="quick-shop-modal">
-							<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
-								onclick="toggleQuickShopThird()" data-tooltip="Close quick shop">
-								<i class="fas fas fa-times"></i>
-							</div>
-							<p class="heading-2 mb-md">€694,95</p>
-							<!-- colors -->
-							<p class="medium-title mb-sm">Color: <b>Green</b></p>
-							<div class="product-colors mb-lg">
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-2"
-										data-tooltip="White/Grey"></div>
-								</label>
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-3"></div>
-								</label>
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-4"></div>
-								</label>
-							</div>
-							<!-- sizes -->
-							<p class="medium-title mb-sm">Size: <b>M</b></p>
-							<div class="product-sizes mb-lg">
-								<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span">S</span>
-								</label>
-								<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span" data-tooltip="White/Grey">M</span>
-								</label>
-								<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span">L</span>
-								</label>
-							</div>
-
-							<div>
-								<button class="btn btn--black">Add to cart</button>
-							</div>
-						</div>
-
-
-					</div>
-					<!-- slide 4 -->
-					<div class="slider__slide">
-						<div class="slider__slide-img slider__slide-img--img-1">
-							<!--! product shortcuts -->
-							<div class="product-shortcuts">
-								<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
-									<i class="product-shortcuts__icon fas fa-heart"></i>
-								</span>
-								<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
-									onclick="toggleQuickShopFourth()">
-									<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-								</span>
-								<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view">
-									<i class="product-shortcuts__icon fas fa-search-plus"></i>
-								</span>
-							</div>
-
-						</div>
-						<!-- info -->
-						<div class="slider__slide-info">
-							<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
-							<p class="small-subtitle  my-xsm">
-								€694,95
-							</p>
-
-							<div class="slider__slide-colors my-xsm">
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
-									<input type="radio" checked="checked" name="radio" />
-									<span class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
-								</label>
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Green">
-									<input type="radio" name="radio" />
-									<span class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
-										data-tooltip="White/Grey"></span>
-								</label>
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Black">
-									<input type="radio" name="radio" />
-									<span
-										class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
-								</label>
-							</div>
-
-							<div title="rating" class="slider__slide-stars my-xsm">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
-							</div>
-						</div>
-
-						<!-- ! Quick shop modal -->
-						<div class="quick-shop-modal">
-							<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
-								onclick="toggleQuickShopFourth()" data-tooltip="Close quick shop">
-								<i class="fas fas fa-times"></i>
-							</div>
-							<p class="heading-2 mb-md">€694,95</p>
-							<!-- colors -->
-							<p class="medium-title mb-sm">Color: <b>Green</b></p>
-							<div class="product-colors mb-lg">
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-2"
-										data-tooltip="White/Grey"></div>
-								</label>
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-3"></div>
-								</label>
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-4"></div>
-								</label>
-							</div>
-							<!-- sizes -->
-							<p class="medium-title mb-sm">Size: <b>M</b></p>
-							<div class="product-sizes mb-lg">
-								<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span">S</span>
-								</label>
-								<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span" data-tooltip="White/Grey">M</span>
-								</label>
-								<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span">L</span>
-								</label>
-							</div>
-
-							<div>
-								<button class="btn btn--black">Add to cart</button>
-							</div>
-						</div>
-
-
-					</div>
-					<!-- slide 5 -->
-					<div class="slider__slide">
-						<div class="slider__slide-img slider__slide-img--img-1">
-							<!--! product shortcuts -->
-							<div class="product-shortcuts">
-								<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
-									<i class="product-shortcuts__icon fas fa-heart"></i>
-								</span>
-								<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
-									onclick="toggleQuickShopFifth()">
-									<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-								</span>
-								<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view">
-									<i class="product-shortcuts__icon fas fa-search-plus"></i>
-								</span>
-							</div>
-
-						</div>
-						<!-- info -->
-						<div class="slider__slide-info">
-							<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
-							<p class="small-subtitle  my-xsm">
-								€694,95
-							</p>
-
-							<div class="slider__slide-colors my-xsm">
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
-									<input type="radio" checked="checked" name="radio" />
-									<span class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
-								</label>
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Green">
-									<input type="radio" name="radio" />
-									<span class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
-										data-tooltip="White/Grey"></span>
-								</label>
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Black">
-									<input type="radio" name="radio" />
-									<span
-										class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
-								</label>
-							</div>
-
-							<div title="rating" class="slider__slide-stars my-xsm">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
-							</div>
-						</div>
-
-						<!-- ! Quick shop modal -->
-						<div class="quick-shop-modal">
-							<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
-								onclick="toggleQuickShopFifth()" data-tooltip="Close quick shop">
-								<i class="fas fas fa-times"></i>
-							</div>
-							<p class="heading-2 mb-md">€694,95</p>
-							<!-- colors -->
-							<p class="medium-title mb-sm">Color: <b>Green</b></p>
-							<div class="product-colors mb-lg">
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-2"
-										data-tooltip="White/Grey"></div>
-								</label>
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-3"></div>
-								</label>
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-4"></div>
-								</label>
-							</div>
-							<!-- sizes -->
-							<p class="medium-title mb-sm">Size: <b>M</b></p>
-							<div class="product-sizes mb-lg">
-								<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span">S</span>
-								</label>
-								<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span" data-tooltip="White/Grey">M</span>
-								</label>
-								<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span">L</span>
-								</label>
-							</div>
-
-							<div>
-								<button class="btn btn--black">Add to cart</button>
-							</div>
-						</div>
-
-						<!-- ! Quick View Modal -->
-						<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
-							<!-- Modal content -->
-							<div class="quick-view-modal__content mx-md">
-								<span id="quick-view-modal__close" class="quick-view-modal__close">&times;</span>
-								<p>Some text in the Modal 5..</p>
-								<p>Some text in the Modal..</p>
-								<p>Some text in the Modal..</p>
-							</div>
-						</div>
-					</div>
-					<!-- slide 6 -->
-					<div class="slider__slide">
-						<div class="slider__slide-img slider__slide-img--img-1">
-							<!--! product shortcuts -->
-							<div class="product-shortcuts">
-								<span class=" tooltip tooltip--triangle" data-tooltip="Add to wishlist">
-									<i class="product-shortcuts__icon fas fa-heart"></i>
-								</span>
-								<span class="quick-shop-2 tooltip tooltip--triangle" data-tooltip="Quick shop"
-									onclick="toggleQuickShopSixth()">
-									<i class="product-shortcuts__icon fas fa-shopping-cart"></i>
-								</span>
-								<span class="quick-view tooltip tooltip--triangle" data-tooltip="Quick view">
-									<i class="product-shortcuts__icon fas fa-search-plus"></i>
-								</span>
-							</div>
-
-						</div>
-						<!-- info -->
-						<div class="slider__slide-info">
-							<p class="small-subtitle py-xsm">Innerbloom Puffer Jacket 1</p>
-							<p class="small-subtitle  my-xsm">
-								€694,95
-							</p>
-
-							<div class="slider__slide-colors my-xsm">
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Red">
-									<input type="radio" checked="checked" name="radio" />
-									<span class="slider__slide-color-span slider__slide-color-span--red  py-xsm"></span>
-								</label>
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Green">
-									<input type="radio" name="radio" />
-									<span class="slider__slide-color-span slider__slide-color-span--green  py-xsm"
-										data-tooltip="White/Grey"></span>
-								</label>
-								<label class="slider__slide-color tooltip tooltip--triangle" data-tooltip="Black">
-									<input type="radio" name="radio" />
-									<span
-										class="slider__slide-color-span slider__slide-color-span--black  py-xsm"></span>
-								</label>
-							</div>
-
-							<div title="rating" class="slider__slide-stars my-xsm">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
-							</div>
-						</div>
-
-						<!-- ! Quick shop modal -->
-						<div class="quick-shop-modal">
-							<div class="quick-shop-modal__close-icon px-sm tooltip tooltip--triangle"
-								onclick="toggleQuickShopSixth()" data-tooltip="Close quick shop">
-								<i class="fas fas fa-times"></i>
-							</div>
-							<p class="heading-2 mb-md">€694,95</p>
-							<!-- colors -->
-							<p class="medium-title mb-sm">Color: <b>Green</b></p>
-							<div class="product-colors mb-lg">
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-2"
-										data-tooltip="White/Grey"></div>
-								</label>
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-3"></div>
-								</label>
-								<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
-									<input type="radio" name="radio1" />
-									<div class="product-color-image product-color-image--img-4"></div>
-								</label>
-							</div>
-							<!-- sizes -->
-							<p class="medium-title mb-sm">Size: <b>M</b></p>
-							<div class="product-sizes mb-lg">
-								<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span">S</span>
-								</label>
-								<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span" data-tooltip="White/Grey">M</span>
-								</label>
-								<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
-									<input type="radio" name="radio2" />
-									<span class="product-size-span">L</span>
-								</label>
-							</div>
-
-							<div>
-								<button class="btn btn--black">Add to cart</button>
-							</div>
-						</div>
-
-						<!-- ! Quick View Modal -->
-						<div id="quick-view-modal" class="quick-view-modal quick-view-modal--hidden">
-							<!-- Modal content -->
-							<div class="quick-view-modal__content mx-md">
-								<span id="quick-view-modal__close" class="quick-view-modal__close">&times;</span>
-								<p>Some text in the Modal 6..</p>
-								<p>Some text in the Modal..</p>
-								<p>Some text in the Modal..</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- controls -->
-				<div class="slider__controls slider__controls-new-arrivals">
-					<button class="slider__previous carousel__btn" id="carousel__btn--prev">
-						<i class="carousel__nav-icon fas fa-chevron-left" aria-label="previous slide"></i>
-					</button>
-					<button class="slider__next carousel__btn" id="carousel__btn--next">
-						<i class="carousel__nav-icon fas fa-chevron-right" aria-label="next slide"></i>
-					</button>
-				</div>
-
 			</div>
-
 		</div>
 
 		<!--! two column grid -->
@@ -2467,8 +2510,9 @@
 					<h3 class="medium-title mb-sm">
 						<b>Find the best collections around the world</b>
 					</h3>
-
-					<button class="btn btn--black">Discover Now</button>
+					<a href="shop.html">
+						<button class="btn btn--black">Discover Now</button>
+					</a>
 				</div>
 			</div>
 
@@ -2478,8 +2522,9 @@
 					<h3 class="medium-title mb-sm">
 						<b>Awesome t-shirts, crop tops and more...</b>
 					</h3>
-
-					<button class="btn btn--black">View collection</button>
+					<a href="shop.html">
+						<button class="btn btn--black">Discover Now</button>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -2539,7 +2584,7 @@
 	<!-- ! Blog section -->
 	<section class="blog py-lg">
 		<!-- ! Title -->
-		<h3 class="heading-2 mb-xsm">Fresh from our blog</h3>
+		<h3 class="heading-2 my-sm">Fresh from our blog</h3>
 		<p class="small-subtitle mb-lg">
 			You are going to love this amazing shopify theme.
 		</p>
@@ -2976,7 +3021,7 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 	<script src="javascript/script.js"></script>
-
+	<script src="javascript/tiny-sliders.js"></script>
 	<script src="javascript/tiny-sliders-home.js"></script>
 	<script src="javascript/hero-carousel.js"></script>
 </body>
