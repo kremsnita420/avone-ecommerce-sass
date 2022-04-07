@@ -1,16 +1,15 @@
 .countdown-timer {
 	display: flex;
-	
+
 	position: absolute;
 	bottom: 1rem;
 	left: 50%;
 	transform: translateX(-50%);
-	transition: all .5s ease;
+	transition: all 0.5s ease;
 
 	@media screen and (max-width: 1000px) {
-			bottom: 7rem;
-		
-		}
+		bottom: 7rem;
+	}
 
 	span {
 		display: inline-block;
@@ -19,6 +18,8 @@
 	&__block-wrapper {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 
 		background-color: rgba($color-white, 0.8);
 		padding: 0.4rem;

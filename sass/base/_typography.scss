@@ -16,8 +16,8 @@
 	@extend %heading;
 
 	font-size: 2rem;
-	font-weight: 700;
-	line-height: 1.1;
+	font-weight: 500;
+	line-height: 1.6;
 	text-transform: uppercase;
 }
 
@@ -60,4 +60,11 @@
 .xsm-subtitle {
 	font-size: 1rem;
 	font-weight: 400;
+	text-transform: lowercase;
+}
+
+//! COLORS
+
+.color-red {
+	color: $color-red;
 }

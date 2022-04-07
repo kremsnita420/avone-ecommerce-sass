@@ -446,10 +446,12 @@
 			<div class="product-page__actions-wrapper">
 				<!--! product info -->
 				<div class="quick-view-modal__info medium-subtitle px-sm">
-					<a href="#" class="medium-subtitle quick-view-modal__title-link mb-xsm">Crook</a>
-					<a href="#" class="quick-view-modal__title-link">
-						<h4 class="large-subtitle mb-xsm">Innerbloom Puffer Jacket</h4>
-					</a>
+					<p href="#" class="medium-subtitle mb-xsm">Crook</p>
+					<h1 class="heading-2 mb-xsm">
+						Innerbloom Puffer Jacket
+
+					</h1>
+
 
 					<div title="rating" class="slider__slide-stars mb-sm small-subtitle">
 						<i class="fas fa-star"></i>
@@ -460,15 +462,36 @@
 						<span class="slider__reviews">14 reviews</span>
 						<span class="px-sm slider__in-stock small-subtitle">In Stock</span>
 					</div>
-					<h4 class="heading-2 mb-xsm">€459,96</h4>
+					<p class="heading-2 mb-xsm"><del>€459,96</del> <span
+							class="discounted-price color-red">€299,99</span>
+					</p>
 					<p class="small-subtitle mb-sm">Tax included</p>
 
-					<ul class="quick-view-modal__list mb-sm">
-						<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
-						<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
-						<li class="quick-view-modal__list-item">Asymmetrical hem</li>
-						<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
-					</ul>
+					<!--! countdown timer -->
+					<div class="countdown-timer small-title">
+						<!-- days -->
+						<div class="countdown-timer__block-wrapper">
+							<span id="days" class="countdown-timer__time-block"></span>
+							<span class="countdown-timer__text-block">dys</span>
+						</div>
+						<!-- hours -->
+						<div class="countdown-timer__block-wrapper">
+							<span id="hours" class="countdown-timer__time-block"></span>
+							<span class="countdown-timer__text-block">hrs</span>
+						</div>
+						<!-- minutes -->
+						<div class="countdown-timer__block-wrapper">
+							<span id="minutes" class="countdown-timer__time-block"></span>
+							<span class="countdown-timer__text-block">min</span>
+						</div>
+						<!-- seconds -->
+						<div class="countdown-timer__block-wrapper">
+							<span id="seconds" class="countdown-timer__time-block"></span>
+							<span class="countdown-timer__text-block">sec</span>
+						</div>
+					</div>
+
+					<p class="hurry-button mb-sm">Hurry, Only 11 left!</p>
 
 
 
@@ -492,7 +515,12 @@
 
 					<!--! sizes -->
 					<div>
-						<p class="medium-title mb-xsm">Size: <b>M</b></p>
+						<p class="medium-title mb-xsm">
+							Size: <b>M</b>
+							<a class=" quick-view-modal__title-link xsm-subtitle px-xsm" href="#">
+								<i class="fas fa-tape"></i> Size chart
+							</a>
+						</p>
 						<div class="product-sizes mb-md">
 							<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
 								<input type="radio" name="radio2" />

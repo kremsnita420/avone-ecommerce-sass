@@ -19,6 +19,12 @@
 		width: 100%;
 	}
 
+	&--low-text {
+		text-transform: capitalize;
+		padding: 0.25rem;
+		letter-spacing: 1px;
+	}
+
 	&--rounded {
 		border-radius: 0.4rem;
 	}
