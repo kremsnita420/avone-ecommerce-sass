@@ -8,7 +8,7 @@
 		opacity: 1;
 	}
 
-	& img {
+	img {
 		max-width: 100%;
 		display: block;
 	}
@@ -51,6 +51,9 @@
 	}
 
 	&__gallery {
+	}
+
+	&__gallery-slide {
 	}
 
 	&__gallery img {

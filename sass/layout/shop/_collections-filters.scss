@@ -6,6 +6,7 @@
 		display: none;
 	}
 }
+
 .product-filters {
 	height: calc(100vh - 4rem);
 	// list;
@@ -124,6 +125,11 @@
 		margin-bottom: 1.2rem;
 		cursor: pointer;
 		user-select: none;
+	}
+
+	// popular products
+	& .slider__slide {
+		padding: 0;
 	}
 
 	/* ! custom checkbox */

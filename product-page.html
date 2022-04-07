@@ -132,9 +132,9 @@
 			<i title="close" class="sidebar-cart__close-icon fas fa-times"></i>
 		</div>
 		<!-- product teaser -->
-		<div class="product-teaser p-sm">
+		<div class="product-teaser p-sm medium-subtitle">
 			<div>
-				<img class="product-teaser__img" src="img/new-arival-2-1-small.webp" alt="cart teaser image">
+				<img class="product-teaser__img" src="/img/new-arival-1-1-small.webp" alt="cart teaser image">
 			</div>
 			<div class="product-teaser__info">
 				<p class="product-teaser__title mb-xsm">
@@ -147,16 +147,18 @@
 				<p class="product-teaser__color-size mb-sm">Red / S</p>
 				<div class="product-teaser__price">
 					<p>€443,95</p>
-					<div class="product-teaser__quantity-selector">
-						<input type="number" value="2" min="1">
+					<div class="quantity-selector">
+						<span class="quantity-selector__down" onClick="decreaseCount(event, this)">-</span>
+						<input class="" type="text" value="1">
+						<span class="quantity-selector__up" onClick="increaseCount(event, this)">+</span>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- product teaser -->
-		<div class="product-teaser p-sm">
+		<div class="product-teaser p-sm medium-subtitle">
 			<div>
-				<img class="product-teaser__img" src="img/new-arival-3-1-small.webp" alt="cart teaser image">
+				<img class="product-teaser__img" src="/img/new-arival-2-1-small.webp" alt="cart teaser image">
 			</div>
 			<div class="product-teaser__info">
 				<p class="product-teaser__title mb-xsm">
@@ -169,34 +171,16 @@
 				<p class="product-teaser__color-size mb-sm">Red / S</p>
 				<div class="product-teaser__price">
 					<p>€443,95</p>
-					<div class="product-teaser__quantity-selector">
-						<input type="number" value="2" min="1">
+					<div class="quantity-selector">
+						<span class="quantity-selector__down" onClick="decreaseCount(event, this)">-</span>
+						<input class="" type="text" value="1">
+						<span class="quantity-selector__up" onClick="increaseCount(event, this)">+</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- product teaser -->
-		<div class="product-teaser p-sm">
-			<div>
-				<img class="product-teaser__img" src="img/new-arival-4-1-small.webp" alt="cart teaser image">
-			</div>
-			<div class="product-teaser__info">
-				<p class="product-teaser__title mb-xsm">
-					<a href="#">Innerbloom Puffer Jacket</a>
-					<a href="#" class="tooltip tooltip--triangle" data-tooltip="Remove from cart">
-						<i class="fas fa-times"></i>
-					</a>
 
-				</p>
-				<p class="product-teaser__color-size mb-sm">Red / S</p>
-				<div class="product-teaser__price">
-					<p>€443,95</p>
-					<div class="product-teaser__quantity-selector">
-						<input type="number" value="2" min="1">
-					</div>
-				</div>
-			</div>
-		</div>
+
 		<!-- shipping info -->
 		<div class="sidebar-cart__shipping-info px-sm mb-sm">
 
@@ -297,10 +281,253 @@
 	<div class="breadcrumbs__background "></div>
 	<div class="breadcrumbs mb-lg">
 		<span class="breadcrumbs__links small-subtitle">
-			<a title="Back to home page" href="index.html">Home</a> | <b>Collections</b>
+			<a title="Back to home page" href="index.html">Home</a> | <a title="Back to women page"
+				href="shop.html">Women</a> | <b>Innerbloom Puffer Jacket</b>
 		</span>
-
 	</div>
+
+	<!-- ! Image carousel and buy -->
+	<section class="product-page">
+		<div class="product-page__block">
+			<!-- ! carousel -->
+			<div class="product-page__carousel-wrapper">
+				<div class="vertical-carousel">
+					<!-- navigation thumbnails -->
+					<div class="vertical-carousel__navigation">
+						<div class="vertical-carousel__thumbnails" id="customize-thumbnails">
+							<!-- slide 1 -->
+							<div>
+								<div class="vertical-carousel__thumbnail">
+									<img class="" src="img/product-1/product-1-1.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 2 -->
+							<div>
+								<div class="vertical-carousel__thumbnail">
+									<img class="" src="img/product-1/product-1-2.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 3 -->
+							<div>
+								<div class="vertical-carousel__thumbnail">
+									<img class="" src="img/product-1/product-1-3.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 4 -->
+							<div>
+								<div class="vertical-carousel__thumbnail">
+									<img class="" src="img/product-1/product-1-4.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 5 -->
+							<div>
+								<div class="vertical-carousel__thumbnail">
+									<img class="" src="img/product-1/product-1-5.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 6 -->
+							<div>
+								<div class="vertical-carousel__thumbnail">
+									<img class="" src="img/product-1/product-1-6.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 7 -->
+							<div>
+								<div class="vertical-carousel__thumbnail">
+									<img class="" src="img/product-1/product-1-7.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 8 -->
+							<div>
+								<div class="vertical-carousel__thumbnail">
+									<img class="" src="img/product-1/product-1-8.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 9 -->
+							<div>
+								<div class="vertical-carousel__thumbnail">
+									<img class="" src="img/product-1/product-1-9.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 10 -->
+							<div>
+								<div class="vertical-carousel__thumbnail">
+									<img class="" src="img/product-1/product-1-10.webp" alt="product image" />
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- main gallery -->
+					<div class="vertical-carousel__controls-wrapper">
+
+						<div class="vertical-carousel__gallery" id="customize">
+							<!-- slide 1 -->
+							<div>
+								<div class="vertical-carousel__gallery-slide">
+									<img class="" src="img/product-1/product-1-1.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 2 -->
+							<div>
+								<div class="vertical-carousel__gallery-slide">
+									<img class="" src="img/product-1/product-1-2.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 3 -->
+							<div>
+								<div class="vertical-carousel__gallery-slide">
+									<img class="" src="img/product-1/product-1-3.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 4 -->
+							<div>
+								<div class="vertical-carousel__gallery-slide">
+									<img class="" src="img/product-1/product-1-4.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 5 -->
+							<div>
+								<div class="vertical-carousel__gallery-slide">
+									<img class="" src="img/product-1/product-1-5.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 6 -->
+							<div>
+								<div class="vertical-carousel__gallery-slide">
+									<img class="" src="img/product-1/product-1-6.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 7 -->
+							<div>
+								<div class="vertical-carousel__gallery-slide">
+									<img class="" src="img/product-1/product-1-7.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 8 -->
+							<div>
+								<div class="vertical-carousel__gallery-slide">
+									<img class="" src="img/product-1/product-1-8.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 9 -->
+							<div>
+								<div class="vertical-carousel__gallery-slide">
+									<img class="" src="img/product-1/product-1-9.webp" alt="product image" />
+								</div>
+							</div>
+							<!-- slide 10 -->
+							<div>
+								<div class="vertical-carousel__gallery-slide">
+									<img class="" src="img/product-1/product-1-10.webp" alt="product image" />
+								</div>
+							</div>
+						</div>
+						<!-- controls -->
+						<div class="slider__controller">
+							<div id="customize-controls" class="slider__controls">
+								<button class="prev carousel__btn">
+									<i class="carousel__nav-icon fas fa-chevron-left" aria-label="previous slide"></i>
+								</button>
+								<button class="next carousel__btn">
+									<i class="carousel__nav-icon fas fa-chevron-right" aria-label="next slide"></i>
+								</button>
+							</div>
+						</div>
+
+
+					</div>
+
+
+				</div>
+			</div>
+
+			<!-- ! Buy -->
+			<div class="product-page__actions-wrapper">
+				<!--! product info -->
+				<div class="quick-view-modal__info medium-subtitle px-sm">
+					<a href="#" class="medium-subtitle quick-view-modal__title-link mb-xsm">Crook</a>
+					<a href="#" class="quick-view-modal__title-link">
+						<h4 class="large-subtitle mb-xsm">Innerbloom Puffer Jacket</h4>
+					</a>
+
+					<div title="rating" class="slider__slide-stars mb-sm small-subtitle">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star-half-alt"></i>
+						<span class="slider__reviews">14 reviews</span>
+						<span class="px-sm slider__in-stock small-subtitle">In Stock</span>
+					</div>
+					<h4 class="heading-2 mb-xsm">€459,96</h4>
+					<p class="small-subtitle mb-sm">Tax included</p>
+
+					<ul class="quick-view-modal__list mb-sm">
+						<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
+						<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
+						<li class="quick-view-modal__list-item">Asymmetrical hem</li>
+						<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
+					</ul>
+
+
+
+					<!--! colors -->
+					<p class="medium-title mb-smm">Color: <b>Green</b></p>
+					<div class="product-colors mb-md">
+						<label class="product-color tooltip tooltip--triangle" data-tooltip="Blue">
+							<input type="radio" name="radio1" />
+							<div class="product-color-image product-color-image--img-2" data-tooltip="White/Grey">
+							</div>
+						</label>
+						<label class="product-color tooltip tooltip--triangle" data-tooltip="Green">
+							<input type="radio" name="radio1" />
+							<div class="product-color-image product-color-image--img-3"></div>
+						</label>
+						<label class="product-color tooltip tooltip--triangle" data-tooltip="Pink">
+							<input type="radio" name="radio1" />
+							<div class="product-color-image product-color-image--img-4"></div>
+						</label>
+					</div>
+
+					<!--! sizes -->
+					<div>
+						<p class="medium-title mb-xsm">Size: <b>M</b></p>
+						<div class="product-sizes mb-md">
+							<label class=" product-size tooltip tooltip--triangle" data-tooltip="Small">
+								<input type="radio" name="radio2" />
+								<span class="product-size-span">S</span>
+							</label>
+							<label class="product-size tooltip tooltip--triangle" data-tooltip="Medium">
+								<input type="radio" name="radio2" />
+								<span class="product-size-span" data-tooltip="White/Grey">M</span>
+							</label>
+							<label class="product-size tooltip tooltip--triangle" data-tooltip="Large">
+								<input type="radio" name="radio2" />
+								<span class="product-size-span">L</span>
+							</label>
+						</div>
+					</div>
+					<!-- ! Add to cart -->
+					<div class="product-page__add-to-cart">
+						<div class="quantity-selector p-xsm">
+							<span class="quantity-selector__down" onClick="decreaseCount(event, this)">-</span>
+							<input class="" type="text" value="1">
+							<span class="quantity-selector__up" onClick="increaseCount(event, this)">+</span>
+						</div>
+						<button class="btn btn--black btn--full-width btn--full-height">Add to Cart</button>
+					</div>
+
+
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+
+
 
 	<!-- ! Footer -->
 	<footer class="footer py-md">
@@ -610,8 +837,8 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 	<script src="javascript/script.js"></script>
-	<script src="javascript/script-shop.js"></script>
-	<script src="javascript/tiny-sliders-shop.js"></script>
+	<script src="javascript/script-product.js"></script>
+	<script src="javascript/tiny-sliders-product.js"></script>
 
 </body>
 

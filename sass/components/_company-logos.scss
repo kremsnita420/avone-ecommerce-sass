@@ -1,7 +1,6 @@
 .company-logos {
 	&__container {
 		max-width: 100vw;
-		height: 5rem;
 		margin: auto;
 
 		@media screen and (min-width: 1200px) {
@@ -13,5 +12,9 @@
 		width: 100%;
 		margin: auto;
 		position: relative;
+
+		.carousel__btn {
+			background-color: $color-white;
+		}
 	}
 }

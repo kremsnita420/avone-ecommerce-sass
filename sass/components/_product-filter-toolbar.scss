@@ -1,34 +1,26 @@
 .filter-toolbar {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
 
 	@media screen and (max-width: 770px) {
 		flex-direction: column;
-	}
 
-	.product-filter-toggler {
-		padding: 0.75rem 1.25rem;
-
-		@media screen and (min-width: 1000px) {
+		&__results {
 			display: none;
 		}
-
-		@media screen and (min-width: 770px) {
-			margin-right: 2rem;
-		}
-
-		@media screen and (max-width: 770px) {
-			width: 100%;
-			margin-bottom: 1rem;
-		}
 	}
 
-	&__filter-wrapper {
+	&__search-wrapper {
 		display: flex;
+		flex: 1;
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
+	}
+
+	&__icons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	&__icon {
@@ -41,6 +33,17 @@
 		}
 	}
 
-	&__results {
+	&__btn {
+		margin-right: 1rem;
+		margin-left: 1rem;
+		border-radius: 3px;
+
+		@media screen and (min-width: 1000px) {
+			display: none;
+		}
+
+		@media screen and (max-width: 770px) {
+			width: 100%;
+		}
 	}
 }

@@ -21,9 +21,11 @@
 
 .product-color-image {
 	position: relative;
-	width: 3rem;
-	height: 3rem;
+	width: 5rem;
+	height: 5rem;
 	background-size: cover;
+	border-radius: 3px;
+	margin-right: 1rem;
 
 	&::before {
 		position: absolute;
@@ -32,6 +34,7 @@
 		display: block;
 		content: '';
 		border: 1px solid $color-grey-3;
+		border-radius: 5px;
 		padding: 0.5rem;
 		width: 120%;
 		height: 120%;
@@ -47,8 +50,8 @@
 		content: '';
 
 		padding: 0.5rem;
-		width: 120%;
-		height: 120%;
+		width: 110%;
+		height: 110%;
 	}
 
 	&--img-1 {
