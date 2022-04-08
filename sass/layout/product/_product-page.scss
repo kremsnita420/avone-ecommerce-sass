@@ -9,6 +9,10 @@
 		display: flex;
 		align-items: flex-start;
 		justify-content: space-between;
+
+		@media screen and (max-width: 770px) {
+			flex-direction: column;
+		}
 	}
 
 	&__carousel-wrapper {
@@ -22,6 +26,7 @@
 		display: flex;
 		justify-content: start;
 		align-items: flex-start;
+		width: 100%;
 
 		//countdown timer overwrites
 		& .countdown-timer {
@@ -65,6 +70,10 @@
 		justify-content: flex-start;
 		align-items: flex-start;
 		width: 100%;
+
+		@media screen and (max-width: 770px) {
+			padding: 2rem 0;
+		}
 	}
 
 	&__info-links {
@@ -72,6 +81,7 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	&__info-link {
@@ -92,6 +102,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: stretch;
+
+		@media screen and (max-width: 770px) {
+			width: 85%;
+		}
 	}
 
 	&__add-to-cart {
@@ -120,6 +134,10 @@
 		text-align: center;
 		transition: all 0.4s ease-in-out;
 
+		@media screen and (max-width: 770px) {
+			width: 85%;
+		}
+
 		&:hover {
 			text-decoration: underline;
 		}
@@ -128,6 +146,10 @@
 	&__checkout-img {
 		width: 100%;
 		height: 100%;
+
+		@media screen and (max-width: 770px) {
+			width: 85%;
+		}
 
 		img {
 			display: block;
@@ -144,6 +166,7 @@
 		flex-direction: column;
 	}
 
+	// tabs
 	.info-tab {
 		overflow: hidden;
 		border-bottom: 1px solid #ccc;
@@ -152,11 +175,10 @@
 		@media screen and (max-width: 770px) {
 			display: flex;
 			flex-direction: column;
+			border-bottom: none;
 		}
 
 		&__link {
-			/* Style the buttons inside the tab */
-
 			border: 1px solid #ccc;
 			border-bottom: none;
 			margin-right: 1rem;
@@ -164,22 +186,29 @@
 			cursor: pointer;
 			padding: 1rem;
 			position: relative;
-
 			transition: 0.3s;
-			/* Change background color of buttons on hover */
+
+			@media screen and (max-width: 770px) {
+				margin-right: 0;
+			}
+
 			&:hover,
 			&.active {
 				background-color: $color-white;
 			}
 		}
 
-		/* Style the tab content */
+		// content
 		&__content {
 			margin: 1rem 0;
 			display: none;
 			padding: 0.5rem 1rem;
 
-			animation: fadeEffect 1s; /* Fading effect takes 1 second */
+			animation: fadeEffect 1s;
+
+			& .quick-view-modal__list {
+				margin-left: 2rem;
+			}
 		}
 	}
 }
