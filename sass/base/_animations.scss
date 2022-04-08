@@ -6,7 +6,6 @@
 
 	100% {
 		opacity: 1;
-		
 	}
 }
 
@@ -28,10 +27,20 @@
 
 	90% {
 		bottom: 0;
-		opacity: .5;
+		opacity: 0.5;
 	}
 	100% {
 		bottom: 2rem;
+		opacity: 1;
+	}
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+	from {
+		opacity: 0;
+	}
+	to {
 		opacity: 1;
 	}
 }

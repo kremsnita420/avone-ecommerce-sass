@@ -6,7 +6,9 @@
 		text-transform: uppercase;
 		text-decoration: none;
 		padding: 1rem 2rem;
-		display: inline-block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		border: none;
 		cursor: pointer;
 		transition: background-color 0.4s;
@@ -32,14 +34,13 @@
 	&--black {
 		background-color: $color-black;
 		color: $color-white;
-		font-size: 1.2rem;
+
 		font-weight: 500;
 	}
 
 	&--red {
 		background-color: $color-red;
 		color: $color-white;
-		font-size: 1.2rem;
 
 		&:hover {
 			background-color: $color-black;
@@ -49,7 +50,6 @@
 	&--gray {
 		background-color: $color-grey-3;
 		color: $color-white;
-		font-size: 1.2rem;
 	}
 }
 
