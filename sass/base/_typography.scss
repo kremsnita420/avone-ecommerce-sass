@@ -31,17 +31,37 @@
 
 .large-title {
 	font-size: 1.8rem;
-	font-weight: 700;
+	font-weight: 400;
 	text-transform: uppercase;
 }
 
 .medium-title {
 	font-size: 1.6rem;
-	font-weight: 500;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.medium-title-bold {
+	font-size: 1.6rem;
+	font-weight: 700;
 	text-transform: uppercase;
 }
 .small-title {
 	font-size: 1.4rem;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.small-title-bold {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.xsm-title {
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.xsm-title-bold {
+	font-size: 1rem;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -50,18 +70,21 @@
 	font-size: 1.8rem;
 }
 .medium-subtitle {
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 }
 
 .small-subtitle {
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	font-weight: 400;
 }
 
 .xsm-subtitle {
 	font-size: 1.2rem;
 	font-weight: 400;
-	text-transform: lowercase;
+}
+.xsm-subtitle-bold {
+	font-size: 1.2rem;
+	font-weight: 700;
 }
 
 //! COLORS

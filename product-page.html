@@ -595,66 +595,253 @@
 		<!-- ! Info Tabs -->
 		<section class="product-page__tabs">
 			<!-- tab buttons -->
-			<div class="info-tab mb-sm">
-				<button class="info-tab__link small-title" onclick="openTab(event,'tab-1')" id="default-open">Product
+			<div class="info-tab">
+				<button class="info-tab__link small-title-bold" onclick="openTab(event,'tab-1')">Product
 					Details</button>
-				<button class="info-tab__link small-title" onclick="openTab(event,'tab-2')">Reviews</button>
-				<button class="info-tab__link small-title" onclick="openTab(event,'tab-3')">Size & Fit</button>
-				<button class="info-tab__link small-title" onclick="openTab(event,'tab-4')">Shippings &
+				<button id="default-open" class="info-tab__link small-title-bold"
+					onclick="openTab(event,'tab-2')">Reviews</button>
+				<button class="info-tab__link small-title-bold" onclick="openTab(event,'tab-3')">Size & Fit</button>
+				<button class="info-tab__link small-title-bold" onclick="openTab(event,'tab-4')">Shippings &
 					returns</button>
 			</div>
 			<!--! tabs -->
 			<!-- product details -->
 			<div id="tab-1" class="info-tab__content">
-				<!-- specifications -->
-				<h3 class="medium-title mb-xsm">SPECIFICATION</h3>
-				<p class="medium-subtitle mb-sm">
-					A little crisp, a little sunny, warm enough to skip a coat, just cool enough to wrap great cashmere
-					around is this
-					asymmetrical jumper. With a chic hue, this one makes for a perfect pick this fall. So get your
-					basics right and you are
-					good to go.
-				</p>
-				<ul class="quick-view-modal__list mb-sm">
-					<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
-					<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
-					<li class="quick-view-modal__list-item">Asymmetrical hem</li>
-					<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
-				</ul>
-				<!-- measurements -->
-				<h3 class="medium-title mb-xsm">MODEL MEASUREMENTS</h3>
-				<p class="medium-subtitle mb-sm">
-					Bust: 32" <br>
-					Waist: 28" <br>
-					Hips: 34" <br>
-					Wearing size: 24
-				</p>
-				<!-- fabric composition -->
-				<h3 class="medium-title mb-xsm">FABRIC COMPOSITION</h3>
-				<p class="medium-subtitle mb-sm">
-					This Cute Tank Tops is Lightweight, Relaxed and Comfortable to Wear. Pair it with variety of jeans,
-					skirts, and leggings
-					for a look that's easy to love all season long.
-				</p>
-				<!-- wash care -->
-				<h3 class="medium-title mb-xsm">WASH CARE</h3>
-				<p class="medium-subtitle mb-sm">
-					Machine Wash
-				</p>
-				<!-- note -->
-				<h3 class="medium-title mb-xsm">NOTE</h3>
-				<p class="medium-subtitle mb-sm">
-					It's a loose fit blouse. You could choose a size down it you prefer to get a more fitness blouse.
-					Please take our
-					customers reviews as reference to help you make an informed purchase decision.
-				</p>
+				<div class="info-tab__product-details-text">
+					<!-- specifications -->
+					<h3 class="medium-title-bold mb-xsm">SPECIFICATION</h3>
+					<p class="medium-subtitle mb-sm">
+						A little crisp, a little sunny, warm enough to skip a coat, just cool enough to wrap great
+						cashmere
+						around is this
+						asymmetrical jumper. With a chic hue, this one makes for a perfect pick this fall. So get your
+						basics right and you are
+						good to go.
+					</p>
+					<ul class="quick-view-modal__list mb-md">
+						<li class="quick-view-modal__list-item">High-neck style, Drop shoulders</li>
+						<li class="quick-view-modal__list-item">Fabric is very stretchy</li>
+						<li class="quick-view-modal__list-item">Asymmetrical hem</li>
+						<li class="quick-view-modal__list-item">85% Cotton, 15% Polyester</li>
+					</ul>
+					<!-- measurements -->
+					<h3 class="medium-title-bold mb-xsm">MODEL MEASUREMENTS</h3>
+					<p class="medium-subtitle mb-md">
+						Bust: 32" <br>
+						Waist: 28" <br>
+						Hips: 34" <br>
+						Wearing size: 24
+					</p>
+					<!-- fabric composition -->
+					<h3 class="medium-title-bold mb-xsm">FABRIC COMPOSITION</h3>
+					<p class="medium-subtitle mb-md">
+						This Cute Tank Tops is Lightweight, Relaxed and Comfortable to Wear. Pair it with variety of
+						jeans,
+						skirts, and leggings
+						for a look that's easy to love all season long.
+					</p>
+					<!-- wash care -->
+					<h3 class="medium-title-bold mb-xsm">WASH CARE</h3>
+					<p class="medium-subtitle mb-md">
+						Machine Wash
+					</p>
+					<!-- note -->
+					<h3 class="medium-title-bold mb-xsm">NOTE</h3>
+					<p class="medium-subtitle mb-md">
+						It's a loose fit blouse. You could choose a size down it you prefer to get a more fitness
+						blouse.
+						Please take our
+						customers reviews as reference to help you make an informed purchase decision.
+					</p>
+				</div>
+				<div class="info-tab__product-details-img">
+					<img src="img/product-details.webp" alt="">
+				</div>
 			</div>
 
-
+			<!-- product reviews -->
 			<div id="tab-2" class="info-tab__content">
-				<h3>Reviews</h3>
-				<p>This is tab 2</p>
+				<div class="product-reviews">
+					<!-- form container -->
+					<div class="product-reviews__form-container small-subtitle">
+						<!-- form button -->
+						<div class="product-reviews__form-btn-wrapper mb-sm pb-sm">
+							<div class="product-reviews__form-rating">
+								<div title="rating" class="slider__slide-stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star-half-alt"></i>
+								</div>
+								<p class="px-xsm">Based on 14 reviews</p>
+							</div>
+							<button id="review-form-toggle" class="btn btn--black">Write a review</button>
+						</div>
+						<!--! form -->
+						<form id="product-reviews__form" action="#"
+							class="product-reviews__form product-reviews__form--hidden">
+							<!-- form title -->
+							<div class="product-reviews__form-title">
+								<h3 class="medium-title-bold mb-sm">Write a review</h3>
+							</div>
+							<!-- form fields -->
+							<div class="product-reviews__form-fields">
+								<!-- name -->
+								<div class="product-reviews__form-field mb-sm">
+									<label for="name" class="product-reviews__form-label mb-xsm">Name</label>
+									<input type="text" placeholder="Enter your name" id="name"
+										class="product-reviews__form-input">
+								</div>
+								<!-- email -->
+								<div class="product-reviews__form-field mb-sm">
+									<label for="email" class="product-reviews__form-label mb-xsm">Email</label>
+									<input type="email" placeholder="john.smith@exmaple.com" id="email"
+										class="product-reviews__form-input">
+								</div>
+								<!-- title -->
+								<div class="product-reviews__form-field mb-sm">
+									<label for="title" class="product-reviews__form-label mb-xsm">Review Title</label>
+									<input type="text" placeholder="Give your review a title" id="title"
+										class="product-reviews__form-input">
+								</div>
+								<!-- textarea-->
+								<div class="product-reviews__form-field mb-sm">
+									<label for="review" class="product-reviews__form-label mb-xsm">Body of Review
+										(1500)</label>
+									<textarea id="review" rows="10" placeholder="write your comments here"
+										class="product-reviews__form-textarea"></textarea>
+									<button type="submit"
+										class="btn btn--black product-reviews__submit-btn my-sm">Submit
+										review</button>
+								</div>
+						</form>
+					</div>
+
+					<!--! reviews list -->
+					<div class="product-reviews__reviews-list">
+						<!-- review 1 -->
+						<div class="product-reviews__review mb-sm">
+							<div title="rating" class="slider__slide-stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<p class="product-reviews__reviewer xsm-subtitle-bold mb-xsm">Safet</p>
+							<p class="product-reviews__review-date mb-sm">
+								<span class="xsm-subtitle-bold">Safet</span>
+								<span class="xsm-subtitle"> on</span>
+								<span class="xsm-subtitle-bold">Oct 05, 2021</span>
+							</p>
+							<p class="product-reviews__review-comment mb-xsm">
+								This product is amazing. I have never seen anything like it. I am so happy with
+							</p>
+						</div>
+						<!-- review 2 -->
+						<div class="product-reviews__review mb-sm">
+							<div title="rating" class="slider__slide-stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<p class="product-reviews__reviewer xsm-subtitle-bold mb-xsm">Safet</p>
+							<p class="product-reviews__review-date mb-sm">
+								<span class="xsm-subtitle-bold">Safet</span>
+								<span class="xsm-subtitle"> on</span>
+								<span class="xsm-subtitle-bold">Oct 05, 2021</span>
+							</p>
+							<p class="product-reviews__review-comment mb-xsm">
+								This product is amazing. I have never seen anything like it. I am so happy with
+							</p>
+						</div>
+						<!-- review 3 -->
+						<div class="product-reviews__review mb-sm">
+							<div title="rating" class="slider__slide-stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<p class="product-reviews__reviewer xsm-subtitle-bold mb-xsm">Safet</p>
+							<p class="product-reviews__review-date mb-sm">
+								<span class="xsm-subtitle-bold">Safet</span>
+								<span class="xsm-subtitle"> on</span>
+								<span class="xsm-subtitle-bold">Oct 05, 2021</span>
+							</p>
+							<p class="product-reviews__review-comment mb-xsm">
+								This product is amazing. I have never seen anything like it. I am so happy with
+							</p>
+						</div>
+						<!-- review 4 -->
+						<div class="product-reviews__review mb-sm">
+							<div title="rating" class="slider__slide-stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<p class="product-reviews__reviewer xsm-subtitle-bold mb-xsm">Safet</p>
+							<p class="product-reviews__review-date mb-sm">
+								<span class="xsm-subtitle-bold">Safet</span>
+								<span class="xsm-subtitle"> on</span>
+								<span class="xsm-subtitle-bold">Oct 05, 2021</span>
+							</p>
+							<p class="product-reviews__review-comment mb-xsm">
+								This product is amazing. I have never seen anything like it. I am so happy with
+							</p>
+						</div>
+						<!-- review 5 -->
+						<div class="product-reviews__review mb-sm">
+							<div title="rating" class="slider__slide-stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<p class="product-reviews__reviewer xsm-subtitle-bold mb-xsm">Safet</p>
+							<p class="product-reviews__review-date mb-sm">
+								<span class="xsm-subtitle-bold">Safet</span>
+								<span class="xsm-subtitle"> on</span>
+								<span class="xsm-subtitle-bold">Oct 05, 2021</span>
+							</p>
+							<p class="product-reviews__review-comment mb-xsm">
+								This product is amazing. I have never seen anything like it. I am so happy with
+							</p>
+						</div>
+						<!-- review 6 -->
+						<div class="product-reviews__review mb-sm">
+							<div title="rating" class="slider__slide-stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<p class="product-reviews__reviewer xsm-subtitle-bold mb-xsm">Safet</p>
+							<p class="product-reviews__review-date mb-sm">
+								<span class="xsm-subtitle-bold">Safet</span>
+								<span class="xsm-subtitle"> on</span>
+								<span class="xsm-subtitle-bold">Oct 05, 2021</span>
+							</p>
+							<p class="product-reviews__review-comment mb-xsm">
+								This product is amazing. I have never seen anything like it. I am so happy with
+							</p>
+						</div>
+
+					</div>
+				</div>
 			</div>
+
+
+
+
 			<div id="tab-3" class="info-tab__content">
 				<h3>Size & Fit</h3>
 				<p>This is tab 3</p>
