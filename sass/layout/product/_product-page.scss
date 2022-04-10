@@ -170,7 +170,6 @@
 		@media screen and (max-width: 770px) {
 			display: flex;
 			flex-direction: column;
-			border-bottom: none;
 		}
 
 		&__link {
@@ -181,14 +180,14 @@
 			cursor: pointer;
 			padding: 1rem;
 			position: relative;
-			transition: 0.3s;
+			transition: all 0.3s;
 
 			@media screen and (max-width: 770px) {
 				margin-right: 0;
 			}
 
 			&:hover,
-			&.active {
+			&--active {
 				background-color: $color-white;
 			}
 		}
@@ -196,9 +195,12 @@
 		// content
 		&__content {
 			margin: 2rem 0;
-			display: none;
-
+			position: relative;
 			animation: fadeEffect 1s;
+
+			&--hidden {
+				display: none;
+			}
 
 			& .quick-view-modal__list {
 				margin-left: 2rem;

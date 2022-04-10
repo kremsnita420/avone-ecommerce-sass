@@ -1,21 +1,32 @@
 // ! Info tabs
+const infoTabToggle = document.querySelectorAll('.info-tab__link');
+const infoTab = document.querySelectorAll('.info-tab__content');
 
-function openTab(evt, tabNumber) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("info-tab__content");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+[...infoTabToggle].forEach((item, index) => {
+    item.onclick = () => {
+        // display content of clicked tab and hide other tabs
+        [...infoTab].forEach((item) => {
+            item.classList.add('info-tab__content--hidden');
+        });
+        infoTab[index].classList.toggle('info-tab__content--hidden');
+
+        //add active class to the clicked tab and remove previous active tab
+        [...infoTabToggle].forEach((item) => {
+            item.classList.remove('info-tab__link--active');
+        }
+        );
+        infoTabToggle[index].classList.toggle('info-tab__link--active');
+
+
+
+
+
     }
-    tablinks = document.getElementsByClassName("info-tab__link");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabNumber).style.display = "flex";
-    evt.currentTarget.className += " active";
-}
+});
+
 
 // Get the element with id="default-open" and click on it
-document.getElementById("default-open").click();
+//document.getElementById("default-open").click();
 
 // ! review form toggle
 
