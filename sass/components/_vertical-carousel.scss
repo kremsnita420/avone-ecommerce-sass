@@ -24,7 +24,11 @@
 	&__thumbnails {
 		text-align: center;
 		overflow-y: scroll;
-		max-height: 40rem;
+		max-height:35rem;
+
+	
+		
+		
 
 		&::-webkit-scrollbar {
 			display: none;
@@ -33,7 +37,7 @@
 
 	&__thumbnail {
 		max-height: 15rem;
-		margin: 0.5rem;
+		margin: 0.5rem 0;
 		cursor: pointer;
 		transition: all 0.3s ease;
 

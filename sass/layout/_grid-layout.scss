@@ -4,9 +4,9 @@
 	background-color: $color-white;
 	display: grid;
 	grid-template-columns:
-		[full-start] minmax(3rem, 1fr)
-		[center-start] repeat(8, [col-start] minmax(1rem, 15rem) [col-end])
-		[center-end] minmax(3rem, 1fr)
+		[full-start] minmax(2rem, 1fr)
+		[center-start] repeat(8, [col-start] minmax(1.5rem, 15rem) [col-end])
+		[center-end] minmax(2rem, 1fr)
 		[full-end];
 
 	grid-template-rows: 6rem min-content repeat(13, min-content);

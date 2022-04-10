@@ -15,7 +15,6 @@
 		}
 	}
 
-	//! Image carousel and buy
 	&__carousel-wrapper {
 		flex: 1;
 	}
@@ -125,10 +124,12 @@
 		}
 	}
 
-	&__google-pay i {
-		display: inline-block;
-		font-size: 3rem;
-		padding: 0 1rem;
+	&__google-pay {
+		i {
+			display: inline-block;
+			font-size: 3rem;
+			padding: 0 1rem;
+		}
 	}
 
 	&__pay-options {
@@ -154,13 +155,13 @@
 		}
 	}
 
-	// ! Product tabs
+	// ! Info tabs
 	&__tabs {
 		display: flex;
 		flex-direction: column;
 	}
 
-	// tab buttons
+	// tabs
 	.info-tab {
 		overflow: hidden;
 		border-bottom: 1px solid #ccc;
@@ -192,35 +193,15 @@
 			}
 		}
 
-		// tab content
+		// content
 		&__content {
-			justify-content: center;
-			align-items: flex-start;
-			margin: 1rem 0;
-			width: 100%;
-
-			padding: 0.5rem 1rem;
+			margin: 2rem 0;
+			display: none;
 
 			animation: fadeEffect 1s;
 
 			& .quick-view-modal__list {
 				margin-left: 2rem;
-			}
-		}
-
-		// product details
-		&__product-details-text {
-			flex: 2;
-		}
-
-		&__product-details-img {
-			flex: 1;
-
-			& img {
-				width: 100%;
-				height: 100%;
-				display: block;
-				object-fit: cover;
 			}
 		}
 	}
