@@ -65,7 +65,7 @@ i {
 
 ::selection {
   background-color: #ffc0cb;
-  color: #faf8f8; }
+  color: #686868; }
 
 /* width */
 ::-webkit-scrollbar {
@@ -1213,7 +1213,7 @@ i {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    border-bottom: 1px dotted #faf8f8; }
+    border-bottom: 1px dotted #686868; }
     @media screen and (max-width: 1000px) {
       .footer__navigation {
         flex-direction: column; } }
@@ -1243,7 +1243,7 @@ i {
       display: none; }
     @media screen and (max-width: 770px) {
       .footer__navigation-block h4 {
-        border-bottom: 1px solid #faf8f8;
+        border-bottom: 1px solid #686868;
         cursor: pointer; }
       .footer__navigation-block h4 i {
         display: inline-block; } }
@@ -1272,7 +1272,7 @@ i {
     @media screen and (max-width: 770px) {
       .footer__nav-links {
         display: none;
-        border-bottom: 1px solid #faf8f8; } }
+        border-bottom: 1px solid #686868; } }
   .footer__nav-link a {
     transition: all 0.5s; }
     .footer__nav-link a:hover {
@@ -1330,13 +1330,13 @@ i {
     left: -35rem; }
   .sidebar li, .sidebar__dropdown-title {
     margin: 1rem 0;
-    border-bottom: 1px solid #faf8f8; }
+    border-bottom: 1px solid #686868; }
   .sidebar__close-icon {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
-    border-bottom: 1px solid #faf8f8;
+    border-bottom: 1px solid #686868;
     font-size: 1rem;
     padding-bottom: 0.25rem; }
   .sidebar__wrapper {
@@ -1353,7 +1353,7 @@ i {
     flex-direction: column;
     justify-content: center; }
   .sidebar__nav-link {
-    border-bottom: 1px solid #faf8f8; }
+    border-bottom: 1px solid #686868; }
 
 .container {
   overflow-x: hidden;
@@ -1382,13 +1382,13 @@ i {
     left: -35rem; }
   .sidebar li, .sidebar__dropdown-title {
     margin: 1rem 0;
-    border-bottom: 1px solid #faf8f8; }
+    border-bottom: 1px solid #686868; }
   .sidebar__close-icon {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
-    border-bottom: 1px solid #faf8f8;
+    border-bottom: 1px solid #686868;
     font-size: 1rem;
     padding-bottom: 0.25rem; }
   .sidebar__wrapper {
@@ -1405,7 +1405,7 @@ i {
     flex-direction: column;
     justify-content: center; }
   .sidebar__nav-link {
-    border-bottom: 1px solid #faf8f8; }
+    border-bottom: 1px solid #686868; }
 
 .sidebar-cart {
   background-color: #fff;
@@ -1430,7 +1430,7 @@ i {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #faf8f8; }
+    border-bottom: 1px solid #686868; }
   .sidebar-cart__close-icon {
     cursor: pointer;
     padding-top: 0.15rem; }
@@ -1630,7 +1630,7 @@ i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #faf8f8; }
+  background-color: #686868; }
   .blog a:hover {
     color: #e34848; }
   .blog p {
@@ -1874,10 +1874,13 @@ i {
       left: 0;
       transform: translateX(0); }
       .product-page__actions-wrapper .countdown-timer__block-wrapper {
-        border: 1px solid #a5a5a5;
-        padding: 1rem; }
+        border: 1px solid #f2f2f2;
+        padding: 1rem;
+        color: #a5a5a5; }
         .product-page__actions-wrapper .countdown-timer__block-wrapper:first-child {
           margin-left: 0; }
+      .product-page__actions-wrapper .countdown-timer__time-block {
+        color: #686868; }
       .product-page__actions-wrapper .countdown-timer__time-block, .product-page__actions-wrapper .countdown-timer__block-wrapper {
         font-size: 1.5rem; }
       @media screen and (max-width: 1000px) {
@@ -1955,14 +1958,14 @@ i {
     flex-direction: column; }
   .product-page .info-tab {
     overflow: hidden;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #f2f2f2;
     background-color: #fff; }
     @media screen and (max-width: 770px) {
       .product-page .info-tab {
         display: flex;
         flex-direction: column; } }
     .product-page .info-tab__link {
-      border: 1px solid #ccc;
+      border: 1px solid #f2f2f2;
       border-bottom: none;
       margin-right: 1rem;
       outline: none;
