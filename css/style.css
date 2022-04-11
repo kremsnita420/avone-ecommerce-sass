@@ -2008,7 +2008,7 @@ i {
       .product-page .info-tab__size-chart table,
       .product-page .info-tab__size-chart td,
       .product-page .info-tab__size-chart th {
-        border: 1px solid #ddd;
+        border: 1px solid #a5a5a5;
         text-align: center; }
       .product-page .info-tab__size-chart table {
         border-collapse: collapse;
@@ -2016,3 +2016,10 @@ i {
       .product-page .info-tab__size-chart th,
       .product-page .info-tab__size-chart td {
         padding: 0.5rem; }
+    .product-page .info-tab__size-chart-img {
+      width: 100%;
+      max-width: 35rem;
+      margin: auto; }
+      .product-page .info-tab__size-chart-img img {
+        display: block;
+        width: 100%; }
