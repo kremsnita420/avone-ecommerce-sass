@@ -25,8 +25,7 @@ const infoTab = document.querySelectorAll('.info-tab__content');
 });
 
 
-// Get the element with id="default-open" and click on it
-//document.getElementById("default-open").click();
+
 
 // ! review form toggle
 

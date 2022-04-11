@@ -35,7 +35,7 @@
 			transform: translateX(0);
 
 			&__block-wrapper {
-				border: 1px solid $color-grey-2;
+				border: 1px solid $color-grey-3;
 				padding: 1rem;
 				color: $color-grey-3;
 
@@ -45,7 +45,7 @@
 			}
 
 			&__time-block {
-				color: $color-grey-1;
+				color: $color-dark-gray;
 			}
 
 			&__time-block,
@@ -199,9 +199,17 @@
 
 		// content
 		&__content {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
 			margin: 2rem 0;
 			position: relative;
 			animation: fadeEffect 1s;
+			width: 100%;
+
+			@media screen and (max-width: 770px) {
+				flex-direction: column;
+			}
 
 			&--hidden {
 				display: none;
@@ -209,6 +217,27 @@
 
 			& .quick-view-modal__list {
 				margin-left: 2rem;
+			}
+		}
+
+		&__size-chart {
+			width: 100%;
+			text-align: center;
+			table,
+			td,
+			th {
+				border: 1px solid #ddd;
+				text-align: center;
+			}
+
+			table {
+				border-collapse: collapse;
+				width: 100%;
+			}
+
+			th,
+			td {
+				padding: 0.5rem;
 			}
 		}
 	}

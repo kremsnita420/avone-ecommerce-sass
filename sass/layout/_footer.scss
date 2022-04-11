@@ -2,13 +2,14 @@
 	grid-column: center-start / center-end;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 
 	// navigation
 	&__navigation {
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
-		border-bottom: 1px dotted $color-grey-1 ;
+		border-bottom: 1px dotted $color-grey-1;
 
 		@media screen and (max-width: 1000px) {
 			flex-direction: column;
@@ -20,13 +21,12 @@
 		padding-right: 2rem;
 
 		input {
-			
 			width: 100%;
 			border-radius: 0;
 			border: 1px solid $color-dark-gray;
-			
-			padding: .5rem 2rem;
-			
+
+			padding: 0.5rem 2rem;
+
 			font: inherit;
 			font-size: 1.2rem;
 
@@ -37,12 +37,11 @@
 			}
 
 			@media screen and (max-width: 1000px) {
-			width: 70%;
+				width: 70%;
 			}
 			@media screen and (max-width: 770px) {
-			width: 100%;
+				width: 100%;
 			}
-			
 		}
 
 		@media screen and (max-width: 1000px) {
@@ -138,14 +137,12 @@
 			flex-direction: column;
 			align-items: center;
 		}
-		
 	}
 
 	&__copy,
 	&__pay {
-			flex: 1;
-			
-		}
+		flex: 1;
+	}
 
 	&__copy {
 		display: flex;
@@ -168,5 +165,4 @@
 			order: 1;
 		}
 	}
-
 }
