@@ -2,6 +2,7 @@
 	overflow-x: hidden;
 	position: relative;
 	background-color: $color-white;
+
 	display: grid;
 	grid-template-columns:
 		[full-start] minmax(2rem, 1fr)

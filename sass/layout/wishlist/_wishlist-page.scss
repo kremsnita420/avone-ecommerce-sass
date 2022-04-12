@@ -1,0 +1,74 @@
+.wishlist {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	grid-column: center-start / center-end;
+	position: relative;
+
+	h1 {
+		text-align: center;
+	}
+
+	&__list {
+		display: grid;
+		gap: 2rem;
+		width: 100%;
+	}
+
+	&__list-item {
+		display: grid;
+		grid-template-columns:
+			minmax(1rem, 10rem) minmax(1rem, 50rem) minmax(1rem, 16rem)
+			minmax(1rem, 16rem) minmax(1rem, 16rem) minmax(1rem, 5rem);
+		justify-items: flex-start;
+		gap: 2rem;
+		align-items: center;
+		position: relative;
+
+		@media screen and (max-width: 770px) {
+			display: flex;
+			flex-direction: column;
+			border-bottom: 1px solid $color-grey-3;
+		}
+
+		&:first-child {
+			background-color: $color-grey-1;
+			border-bottom: 1px solid $color-grey-3;
+			padding: 0.5rem 0;
+
+			@media screen and (max-width: 770px) {
+				display: none;
+			}
+		}
+	}
+
+	&__list-image {
+		& img {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		@media screen and (max-width: 770px) {
+			position: absolute;
+			left: 20%;
+
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	&__list-name {
+	}
+	&__list-price {
+	}
+	&__list-stock {
+	}
+	&__list-add-btn {
+	}
+	&__list-remove-btn {
+		@media screen and (max-width: 770px) {
+			margin-bottom: 2rem;
+		}
+	}
+}
