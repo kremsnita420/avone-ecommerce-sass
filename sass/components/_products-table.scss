@@ -1,0 +1,111 @@
+.products-table {
+	width: 100%;
+
+	table {
+		width: 100%;
+		text-align: left;
+		border: none;
+		border-spacing: 0;
+	}
+
+	tr {
+		&:first-child {
+			background-color: $color-grey-1;
+			padding: 0.5rem;
+			@media screen and (max-width: 770px) {
+				display: none;
+			}
+		}
+	}
+
+	th,
+	td {
+		padding: 1rem 0.5rem;
+	}
+
+	td {
+		border-bottom: 1px solid $color-grey-2;
+	}
+
+	th {
+	}
+
+	&__image-wrapper {
+		display: flex;
+	}
+
+	&__image {
+		width: 10rem;
+		margin-right: 1rem;
+
+		& img {
+			display: block;
+
+			height: 100%;
+			transition: opacity 0.3s ease;
+
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+
+	&__name {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		& a,
+		& span {
+			display: flex;
+		}
+	}
+
+	&__price-mobile {
+		@media screen and (min-width: 770px) {
+			display: none;
+		}
+	}
+
+	&__price-desktop {
+		@media screen and (max-width: 770px) {
+			display: none;
+		}
+	}
+
+	&__quantity-wrapper {
+		width: 5rem;
+
+		& .quantity-selector {
+			margin-right: 5rem;
+			padding: 0;
+
+			@media screen and (max-width: 770px) {
+				margin-right: 2rem;
+			}
+		}
+	}
+
+	&__close-btn {
+		@media screen and (max-width: 770px) {
+			display: none;
+		}
+	}
+
+	&__remove-item {
+		transition: all 0.3s ease;
+		text-decoration: underline;
+		display: block;
+		padding: 1rem 0 0 1.25rem;
+		color: $color-grey-3;
+
+		&:hover {
+			color: $color-red;
+		}
+
+		@media screen and (min-width: 770px) {
+			display: none;
+		}
+	}
+}

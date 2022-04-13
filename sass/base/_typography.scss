@@ -15,16 +15,15 @@
 .heading-2 {
 	@extend %heading;
 
-	font-size: 2rem;
-	font-weight: 500;
+	font-size: 2.4rem;
+	font-weight: 700;
 	line-height: 1.6;
-	text-transform: uppercase;
 }
 
 .heading-3 {
 	@extend %heading;
 
-	font-size: 1.8rem;
+	font-size: 2rem;
 	font-weight: 700;
 	line-height: 1.1;
 }
@@ -67,10 +66,10 @@
 }
 
 .large-subtitle {
-	font-size: 1.8rem;
+	font-size: 2rem;
 }
 .large-subtitle-bold {
-	font-size: 1.8rem;
+	font-size: 2rem;
 	font-weight: 700;
 }
 .medium-subtitle {
@@ -84,6 +83,10 @@
 .small-subtitle {
 	font-size: 1.2rem;
 	font-weight: 400;
+}
+.small-subtitle-bold {
+	font-size: 1.2rem;
+	font-weight: 700;
 }
 
 .xsm-subtitle {

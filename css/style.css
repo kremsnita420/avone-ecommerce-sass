@@ -98,13 +98,12 @@ i {
   line-height: 1.1; }
 
 .heading-2 {
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.6;
-  text-transform: uppercase; }
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.6; }
 
 .heading-3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.1; }
 
@@ -144,10 +143,10 @@ i {
   font-weight: 700; }
 
 .large-subtitle {
-  font-size: 1.8rem; }
+  font-size: 2rem; }
 
 .large-subtitle-bold {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700; }
 
 .medium-subtitle {
@@ -160,6 +159,10 @@ i {
 .small-subtitle {
   font-size: 1.2rem;
   font-weight: 400; }
+
+.small-subtitle-bold {
+  font-size: 1.2rem;
+  font-weight: 700; }
 
 .xsm-subtitle {
   font-size: 1.2rem;
@@ -307,6 +310,12 @@ i {
 
 .btn--rounded {
   border-radius: 0.4rem; }
+
+.btn--circle {
+  padding: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%; }
 
 .btn--black {
   background-color: #000;
@@ -731,6 +740,8 @@ i {
     user-select: none; }
   .quantity-selector__up, .quantity-selector__down {
     display: block;
+    font-weight: 500;
+    font-size: 2rem;
     padding: 0 0.5rem;
     cursor: pointer;
     color: #a5a5a5;
@@ -1214,6 +1225,72 @@ i {
     height: 100%;
     width: 100%; }
 
+.products-table {
+  width: 100%; }
+  .products-table table {
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-spacing: 0; }
+  .products-table tr:first-child {
+    background-color: #faf8f8;
+    padding: 0.5rem; }
+    @media screen and (max-width: 770px) {
+      .products-table tr:first-child {
+        display: none; } }
+  .products-table th,
+  .products-table td {
+    padding: 1rem 0.5rem; }
+  .products-table td {
+    border-bottom: 1px solid #f2f2f2; }
+  .products-table__image-wrapper {
+    display: flex; }
+  .products-table__image {
+    width: 10rem;
+    margin-right: 1rem; }
+    .products-table__image img {
+      display: block;
+      height: 100%;
+      transition: opacity 0.3s ease; }
+      .products-table__image img:hover {
+        opacity: 0.7; }
+  .products-table__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+    .products-table__name a,
+    .products-table__name span {
+      display: flex; }
+  @media screen and (min-width: 770px) {
+    .products-table__price-mobile {
+      display: none; } }
+  @media screen and (max-width: 770px) {
+    .products-table__price-desktop {
+      display: none; } }
+  .products-table__quantity-wrapper {
+    width: 5rem; }
+    .products-table__quantity-wrapper .quantity-selector {
+      margin-right: 5rem;
+      padding: 0; }
+      @media screen and (max-width: 770px) {
+        .products-table__quantity-wrapper .quantity-selector {
+          margin-right: 2rem; } }
+  @media screen and (max-width: 770px) {
+    .products-table__close-btn {
+      display: none; } }
+  .products-table__remove-item {
+    transition: all 0.3s ease;
+    text-decoration: underline;
+    display: block;
+    padding: 1rem 0 0 1.25rem;
+    color: #a5a5a5; }
+    .products-table__remove-item:hover {
+      color: #e34848; }
+    @media screen and (min-width: 770px) {
+      .products-table__remove-item {
+        display: none; } }
+
 .footer {
   grid-column: center-start / center-end;
   display: flex;
@@ -1591,15 +1668,17 @@ i {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 1.25rem;
+      height: 1.25rem;
       position: absolute;
       top: -1rem;
-      right: -1.5rem;
+      right: -1.25rem;
       color: #fff;
       background-color: #000;
       border-radius: 50%;
-      padding: 0.5rem; }
+      padding: 0.5rem;
+      font-size: 1rem;
+      opacity: 0.4; }
     .header__nav-icon:not(:last-child) {
       margin-right: 2rem; }
     @media screen and (max-width: 1000px) {
@@ -2085,7 +2164,6 @@ i {
     width: 10rem; }
     .wishlist__list-image img {
       display: block;
-      width: 100%;
       height: 100%;
       transition: opacity 0.3s ease; }
       .wishlist__list-image img:hover {
@@ -2111,3 +2189,11 @@ i {
       .wishlist__list-buttons {
         margin-top: 1rem;
         justify-content: flex-start; } }
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: center-start / center-end;
+  position: relative; }

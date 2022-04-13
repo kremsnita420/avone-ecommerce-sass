@@ -15,7 +15,8 @@
 	&__up,
 	&__down {
 		display: block;
-
+		font-weight: 500;
+		font-size: 2rem;
 		padding: 0 0.5rem;
 		cursor: pointer;
 		color: $color-grey-3;

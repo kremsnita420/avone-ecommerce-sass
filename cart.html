@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="shortcut icon" type="image/png" href="img/favicon_32x32.png" />
 
-	<title>Avone | Wishlist</title>
+	<title>Avone | Cart</title>
 </head>
 
 <body id="appBody" class="container">
@@ -285,139 +285,112 @@
 	<div class="breadcrumbs__background "></div>
 	<div class="breadcrumbs mb-md">
 		<span class="breadcrumbs__links small-subtitle">
-			<a title="Back to home page" href="index.html">Home</a> | <b>Wishlist</b>
+			<a title="Back to home page" href="index.html">Home</a> | <b>Your cart</b>
 		</span>
 	</div>
 
-	<main class="wishlist">
-		<h1 class="heading-2 mb-md">Wishlist</h1>
-		<ul class="wishlist__list small-subtitle">
-			<!-- header -->
-			<li class="wishlist__list-item mb-sm small-title-bold">
-				<!-- image -->
-				<div class="wishlist__list-image">
-					&nbsp;
-				</div>
-				<!-- name, price, stock -->
-				<div class="wishlist__wrapper">
-					<div class="wishlist__list-name">
-						<a href="product-page.html">Product</a>
-					</div>
-					<div class="wishlist__list-price">
-						<p>Price</p>
-					</div>
-					<div class="wishlist__list-stock">
-						&nbsp;
-					</div>
-					<!-- buttons -->
-					<div class="wishlist__list-buttons">
-						&nbsp;
 
-					</div>
-				</div>
+	<main class="cart">
+		<h1 class="heading-2 mb-md">Your cart</h1>
+		<div class="products-table">
+			<table class="small-subtitle">
+				<!-- header -->
+				<tr class="small-title-bold">
+					<th>&nbsp;</th>
+					<th>Product</th>
 
-			</li>
-			<!-- item 1 -->
-			<li class="wishlist__list-item mb-sm">
-				<!-- image -->
-				<div class="wishlist__list-image">
-					<a href="product-page.html">
-						<img src="./img/new-arival-1-1-small.webp" alt="wishlist image">
-					</a>
-
-				</div>
-				<!-- name, price, stock -->
-				<div class="wishlist__wrapper">
-					<div class="wishlist__list-name">
-						<a href="product-page.html">Innerbloom Puffer Jacket</a>
-					</div>
-					<div class="wishlist__list-price">
-						<p>€446,95</p>
-					</div>
-					<div class="wishlist__list-stock">
-						<span class="slider__in-stock small-subtitle">In Stock</span>
-					</div>
-					<!-- buttons -->
-					<div class="wishlist__list-buttons">
-						<button class="btn btn--black">
-							<a href="product-page.html">View Product</a>
-						</button>
-						<button class="btn btn--red">
+					<th>Price</th>
+					<th>Quantity</th>
+					<th>Total</th>
+				</tr>
+				<!-- item 1 -->
+				<tr>
+					<td>
+						<button title="remove item from cart"
+							class="btn btn--black btn--circle products-table__close-btn">
 							<a href="#">X</a>
 						</button>
-					</div>
-				</div>
+					</td>
+					<td class="products-table__image-wrapper">
+						<!-- product image -->
+						<div class="products-table__image">
+							<a href="product-page.html">
+								<img src="./img/new-arival-1-1-small.webp" alt="wishlist image">
+							</a>
+						</div>
+						<!-- product name -->
+						<h3 class="products-table__name small-subtitle">
+							<a class="small-subtitle-bold" href="product-page.html">Innerbloom Puffer Jacket</a>
+							<span>Color: Green</span>
+							<span>Size: S</span>
+							<p class="products-table__price-mobile">€446,95</p>
+						</h3>
+					</td>
+					<!-- price -->
+					<td>
+						<p class="products-table__price-desktop">€446,95</p>
+					</td>
+					<!-- quantity -->
+					<td class="products-table__quantity-wrapper">
+						<div class="quantity-selector">
+							<span class="quantity-selector__down" onClick="decreaseCount(event, this)">-</span>
+							<input class="" type="text" value="1">
+							<span class="quantity-selector__up" onClick="increaseCount(event, this)">+</span>
+						</div>
+						<a title="Remove from cart" class="products-table__remove-item" href="#">Remove</a>
+					</td>
 
-			</li>
-			<!-- item 2 -->
-			<li class="wishlist__list-item mb-sm">
-				<!-- image -->
-				<div class="wishlist__list-image">
-					<a href="product-page.html">
-						<img src="./img/new-arival-1-1-small.webp" alt="wishlist image">
-					</a>
-
-				</div>
-				<!-- name, price, stock -->
-				<div class="wishlist__wrapper">
-					<div class="wishlist__list-name">
-						<a href="product-page.html">Innerbloom Puffer Jacket</a>
-					</div>
-					<div class="wishlist__list-price">
-						<p>€446,95</p>
-					</div>
-					<div class="wishlist__list-stock">
-						<span class="slider__in-stock small-subtitle">In Stock</span>
-					</div>
-					<!-- buttons -->
-					<div class="wishlist__list-buttons">
-						<button class="btn btn--black">
-							<a href="product-page.html">View Product</a>
-						</button>
-						<button class="btn btn--red">
+					<!-- total -->
+					<td>
+						<p class="products-table__price-desktop">€446,95</p>
+					</td>
+				</tr>
+				<!-- item 2 -->
+				<tr>
+					<td>
+						<button title="remove item from cart"
+							class="btn btn--black btn--circle products-table__close-btn">
 							<a href="#">X</a>
 						</button>
-					</div>
-				</div>
+					</td>
+					<td class="products-table__image-wrapper">
+						<!-- product image -->
+						<div class="products-table__image">
+							<a href="product-page.html">
+								<img src="./img/new-arival-1-1-small.webp" alt="wishlist image">
+							</a>
+						</div>
+						<!-- product name -->
+						<h3 class="products-table__name small-subtitle">
+							<a class="small-subtitle-bold" href="product-page.html">Innerbloom Puffer Jacket</a>
+							<span>Color: Green</span>
+							<span>Size: S</span>
+							<p class="products-table__price-mobile">€446,95</p>
+						</h3>
+					</td>
+					<!-- price -->
+					<td>
+						<p class="products-table__price-desktop">€446,95</p>
+					</td>
+					<!-- quantity -->
+					<td class="products-table__quantity-wrapper">
+						<div class="quantity-selector">
+							<span class="quantity-selector__down" onClick="decreaseCount(event, this)">-</span>
+							<input class="" type="text" value="1">
+							<span class="quantity-selector__up" onClick="increaseCount(event, this)">+</span>
+						</div>
+						<a title="Remove from cart" class="products-table__remove-item" href="#">Remove</a>
+					</td>
 
-			</li>
-			<!-- item 3 -->
-			<li class="wishlist__list-item mb-sm">
-				<!-- image -->
-				<div class="wishlist__list-image">
-					<a href="product-page.html">
-						<img src="./img/new-arival-1-1-small.webp" alt="wishlist image">
-					</a>
+					<!-- total -->
+					<td>
+						<p class="products-table__price-desktop">€446,95</p>
+					</td>
+				</tr>
+			</table>
+		</div>
 
-				</div>
-				<!-- name, price, stock -->
-				<div class="wishlist__wrapper">
-					<div class="wishlist__list-name">
-						<a href="product-page.html">Innerbloom Puffer Jacket</a>
-					</div>
-					<div class="wishlist__list-price">
-						<p>€446,95</p>
-					</div>
-					<div class="wishlist__list-stock">
-						<span class="slider__in-stock small-subtitle">In Stock</span>
-					</div>
-					<!-- buttons -->
-					<div class="wishlist__list-buttons">
-						<button class="btn btn--black">
-							<a href="product-page.html">View Product</a>
-						</button>
-						<button class="btn btn--red">
-							<a href="#">X</a>
-						</button>
-					</div>
-				</div>
-
-			</li>
-
-
-		</ul>
 	</main>
-
 
 
 	<!-- ! Footer -->
