@@ -2197,3 +2197,22 @@ i {
   align-items: center;
   grid-column: center-start / center-end;
   position: relative; }
+  .cart__red-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
+    .cart__red-links .fa-angle-left {
+      border-radius: 50%;
+      border: 1px solid #e34848;
+      padding: 0.25rem 0.5rem;
+      transition: all 0.3s ease; }
+    .cart__red-links a {
+      transition: all 0.3s ease;
+      color: #e34848; }
+      .cart__red-links a i {
+        margin-right: 1rem; }
+      .cart__red-links a:hover, .cart__red-links a:focus,
+      .cart__red-links a:hover .fa-angle-left {
+        color: #000;
+        border-color: #000; }
