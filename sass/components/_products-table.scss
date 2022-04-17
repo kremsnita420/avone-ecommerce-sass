@@ -21,13 +21,11 @@
 	th,
 	td {
 		padding: 1rem 0.5rem;
-	}
-
-	td {
 		border-bottom: 1px solid $color-grey-2;
 	}
 
 	th {
+		border-top: 1px solid $color-grey-2;
 	}
 
 	&__image-wrapper {

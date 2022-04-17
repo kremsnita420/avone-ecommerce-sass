@@ -37,29 +37,30 @@ $sidebar-width: 32rem;
 		padding-top: 0.15rem;
 	}
 
-	&__shipping-info {
-		background-color: $color-grey-2;
-	}
-
-	&__shipping-info-text {
-		display: flex;
-		justify-content: start;
-		align-items: center;
-	}
-
 	&__button-wrapper {
 		display: flex;
 		flex-direction: column;
 	}
 
-	&__shipping-icon {
-		display: inline-block;
-		font-size: 2rem;
-		margin-right: 1rem;
-	}
-
 	&__total-price-legal {
 		display: flex;
 		justify-content: space-between;
+	}
+}
+
+.shipping-info {
+	background-color: $color-grey-2;
+	width: 100%;
+
+	&__text {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__icon {
+		display: inline-block;
+		font-size: 2rem;
+		margin-right: 1rem;
 	}
 }

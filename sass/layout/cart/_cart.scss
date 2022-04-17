@@ -6,6 +6,7 @@
 	grid-column: center-start / center-end;
 	position: relative;
 
+	//red links
 	&__red-links {
 		display: flex;
 		justify-content: space-between;
@@ -24,7 +25,7 @@
 			color: $color-red;
 
 			& i {
-				margin-right: 1rem;
+				margin-right: 0.5rem;
 			}
 
 			&:hover,
@@ -34,5 +35,79 @@
 				border-color: $color-black;
 			}
 		}
+	}
+
+	//three columns
+	&__three-columns {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1.5rem;
+
+		@media screen and (max-width: 770px) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__column {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: left;
+
+		background-color: $color-grey-1;
+		border-top: 1px solid $color-grey-2;
+		border-bottom: 1px solid $color-grey-2;
+
+		label,
+		p {
+			width: 100%;
+		}
+	}
+
+	//countries
+	.countries-dropdown,
+	.countries-postal-code,
+	&__form-textarea {
+		display: block;
+		width: 100%;
+		border-radius: 0;
+		font-family: inherit;
+		outline: none;
+		border: 1px solid $color-grey-2;
+		caret-color: $color-black;
+		padding: 0.5rem 1rem;
+
+		&:focus {
+			border-color: $color-black;
+		}
+	}
+
+	.countries-dropdown,
+	.countries-postal-code {
+		height: 4rem;
+	}
+
+	&__form-textarea {
+		height: 10rem;
+		resize: none;
+	}
+
+	//subtotal
+	&__subtotal-title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+
+		&__price {
+			text-align: right;
+		}
+	}
+
+	& .shipping-info {
+		background-color: inherit;
 	}
 }
