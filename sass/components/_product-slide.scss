@@ -59,6 +59,7 @@
 
 		&--img-1 {
 			background-image: url('../img/new-arival-1-1.jpg');
+			transition: background-image 0.2s ease-in-out;
 
 			&:hover {
 				background-image: url('../img/new-arival-1-2.jpg');

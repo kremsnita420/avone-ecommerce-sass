@@ -587,7 +587,8 @@ i {
       .slider__slide-img {
         height: 31rem; } }
     .slider__slide-img--img-1 {
-      background-image: url("../img/new-arival-1-1.jpg"); }
+      background-image: url("../img/new-arival-1-1.jpg");
+      transition: background-image 0.2s ease-in-out; }
       .slider__slide-img--img-1:hover {
         background-image: url("../img/new-arival-1-2.jpg"); }
         .slider__slide-img--img-1:hover .countdown-timer {
